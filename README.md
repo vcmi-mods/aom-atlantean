@@ -1,6 +1,6 @@
-# Age of Mythology: Atlanteans (VCMI town mod)
+# Age of Mythology: Atlantis (VCMI town mod)
 
-**神话时代：大西洲** — the Atlanteans of *Age of Mythology: Retold* turned into a full town for [VCMI](https://vcmi.eu).
+**神话时代：大西洲** — the Atlanteans of *Age of Mythology: Retold* turned into the town of Atlantis for [VCMI](https://vcmi.eu).
 
 ## Contents
 
