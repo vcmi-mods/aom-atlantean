@@ -17,7 +17,7 @@ Submods (both optional, enabled by default):
 - **Coastal Land Terrain** (海滩地形): the Coastal Land terrain with its map decorations, mines, battlefield and music, made the native terrain of Atlantis. Terrain originally by **Zeryss** (Coastal Lands); adapted by yche2990 (lighter ground tiles, Age of Mythology: Retold soundtrack as terrain music, random map biomes, no HotA dependency).
 - **Atlantis Wiki Page** (大西洲百科): adds a glossary page to the in-game wiki explaining the Titan Aspects, Favor, god powers, Ages and Return to Atlantis.
 
-Languages: Chinese and English.
+Languages: English (base) and Chinese. Players using any other game language get English.
 
 ## Requirements
 
