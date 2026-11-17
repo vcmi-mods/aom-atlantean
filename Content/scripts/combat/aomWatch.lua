@@ -1,6 +1,6 @@
--- 观象（指挥官“神谕长”）：先知站定不动，看得越来越远。
--- 回合开始时，神谕长上一回合没有挪过位置就叠一层（addInfo.max 层封顶），挪过就清零；
--- 每层让本方全体射手（含聚光镜塔）这一回合远程伤害 +val%。层数记在神谕长身上（AOM_WATCH，看得见），上回合站的格子记在 AOM_WATCH_POS（格子编号 + 1，隐藏）。
+-- Stargazing (commander Chief Oracle): the seer stands still and sees ever farther.
+-- At round start, if the Chief Oracle did not move last round it gains a stack (capped at addInfo.max), otherwise stacks reset;
+-- each stack gives all own shooters (Mirror Tower included) +val% ranged damage this round. Stacks are on the Chief Oracle (AOM_WATCH, visible), last round's hex in AOM_WATCH_POS (hex + 1, hidden).
 local Base = require("combat/combatScript")
 local Script = setmetatable({}, {__index = Base})
 Script.__index = Script
@@ -37,7 +37,7 @@ function Script:onRoundStart(server, battle, unit, other)
 	set(server, battle, unit, POS, here, true)
 	set(server, battle, unit, WATCH, layers, false)
 	if layers <= 0 then return end
-	if layers > before and (not server.describeChanges or server:describeChanges()) then      -- 战报：观象叠了一层
+	if layers > before and (not server.describeChanges or server:describeChanges()) then      -- battle log: Stargazing gained a stack
 		server:appendLog(battle, { append = { "core.bonus." .. WATCH .. ".description.900001" }, replaceStrings = { unit:getCreature():getNameTextID(unit:getCount()) }, replaceNumbers = { layers, (self.val or 5) * layers } })
 	end
 	local side = unit:getSide()

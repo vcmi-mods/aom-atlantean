@@ -1,6 +1,6 @@
 {
 	"aomKronosLord": {
-		"name": "时序领主",
+		"name": "Lord of Seasons",
 		"faction": "aomAtlantean",
 		"affinity": "might",
 		"commander": "aomCommander",
@@ -82,7 +82,7 @@
 		}
 	},
 	"aomOranosHerald": {
-		"name": "天穹使者",
+		"name": "Sky Herald",
 		"faction": "aomAtlantean",
 		"affinity": "might",
 		"commander": "aomCommander",
@@ -164,7 +164,7 @@
 		}
 	},
 	"aomGaiaPriest": {
-		"name": "大地祭司",
+		"name": "Earth Priest",
 		"faction": "aomAtlantean",
 		"affinity": "magic",
 		"commander": "aomCommander",

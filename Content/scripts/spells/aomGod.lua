@@ -1,4 +1,4 @@
--- 神力法术公用：施法英雄的主神（隐藏的 AOM_GOD，全军继承；1 克洛诺斯 2 乌拉诺斯 3 盖亚）、主神亲和判断、格子距离。
+-- Shared by god powers: the caster's patron god (hidden AOM_GOD, inherited by the army; 1 Kronos 2 Oranos 3 Gaia), affinity check, hex distance.
 local M = {}
 
 function M.casterGod(mechanics)
@@ -11,7 +11,7 @@ function M.casterGod(mechanics)
 	return 0
 end
 
---- effect.gods 名单里有施法英雄的主神
+--- the caster's patron god is in effect.gods
 function M.favoured(effect, mechanics)
 	local g = M.casterGod(mechanics)
 	for _, want in ipairs(effect.gods or {}) do
@@ -20,7 +20,7 @@ function M.favoured(effect, mechanics)
 	return false
 end
 
---- 两格之间的步数（和引擎 BattleHex::getDistance 同一算法）
+--- steps between two hexes (same algorithm as the engine's BattleHex::getDistance)
 function M.distance(a, b)
 	local y1, y2 = a:getY(), b:getY()
 	local x1, x2 = a:getX() + math.floor(y1 / 2), b:getX() + math.floor(y2 / 2)
@@ -29,7 +29,7 @@ function M.distance(a, b)
 	return math.abs(dx) + math.abs(dy)
 end
 
---- 战场上全部可站的格子，按离 centre 从近到远排好
+--- all standable hexes on the battlefield, sorted by distance from centre
 function M.hexesByDistance(battle, centre)
 	local arr, list = battle:getAllPossibleHexes(), {}
 	for i = 1, arr:size() do

@@ -1,15 +1,15 @@
--- 重返大西洲（圣杯法术）公用：空降一队随机的城外神话生物。
--- 施法时（spells/aomReturn.lua）立刻空降一队，并给本方部队记下每回合的生命预算（AOM_RETURN）；
--- 之后每回合开始（combat/aomReturn.lua）再空降一队，直到战斗结束。
+-- Return to Atlantis (Grail spell), shared: land one random out-of-town myth creature stack.
+-- On casting (spells/aomReturn.lua) one stack lands at once and own troops get the per-round health budget (AOM_RETURN);
+-- then at each round start (combat/aomReturn.lua) another stack lands, until the battle ends.
 local M = {}
 
 M.BUDGET, M.SEEN, M.TICK = "AOM_RETURN", "AOM_RETURN_SEEN", "AOM_RETURN_TICK"
 M.FX = "aom/atlantean/fx/favor.json"
--- 施法时的全场动画：海浪卷过战场、九环之城在金光里升起又散成光点（OpenArt PixVerse V6 文生视频，按亮度抠底，38 帧，只做 1x）。
--- 图是 820×1012，战场画面（800×556）放在左上角：引擎把图片中心对在所播格子的上边中点，播在最下一行的 (8,10) 格，
--- 中心正好落在战场的 (410,506)，整幅对齐战场；最下一行最后画，所以盖在所有部队上面。
+-- Full-battlefield cast animation: waves sweep the field, the city of nine rings rises in golden light and dissolves into sparks (OpenArt PixVerse V6 text-to-video, keyed by brightness, 38 frames, 1x only).
+-- The image is 820x1012 with the battlefield view (800x556) in the top-left corner: the engine centres the image on the top edge middle of the hex it plays on; played on hex (8,10) in the bottom row,
+-- its centre lands on (410,506) so the whole image lines up with the battlefield; the bottom row is drawn last, so it covers every unit.
 M.SCREEN_FX = "aom/atlantean/fx/returnAtl.json"
--- 城外的神话生物（人类兵种不算：神谕祭司、长锤步兵、破城兵、双刃狂徒、骑兵、喷火战车）
+-- out-of-town myth creatures (human units excluded: Oracle Priest, Katapeltes, Wall Breaker, Fanatic, cavalry, Fire Siphon)
 M.POOL = {
 	"aom-atlantean:aomPromethean", "aom-atlantean:aomPrometheanLava", "aom-atlantean:aomPrometheanOffspring",
 	"aom-atlantean:aomStymphalian", "aom-atlantean:aomTartarian", "aom-atlantean:aomArgus",
@@ -17,13 +17,13 @@ M.POOL = {
 	"aom-atlantean:aomDryad", "aom-atlantean:aomLampades", "aom-atlantean:aomLampadesStar",
 	"aom-atlantean:aomManOWar", "aom-atlantean:aomCarnivora", "aom-atlantean:aomBehemoth"
 }
-M.TRIAL = "aom-atlantean:aomTartarian"      -- 电脑试算时固定按冥渊恶兽估（试算里不掷骰）
+M.TRIAL = "aom-atlantean:aomTartarian"      -- AI evaluation always assumes the Tartarian Spawn (no dice rolls in evaluation)
 
 local function real(server)
 	return not server.describeChanges or server:describeChanges()
 end
 
---- 全场动画要播的那一格：最下一行（y = 10）的第 8 格
+--- hex for the full-battlefield animation: 8th hex of the bottom row (y = 10)
 function M.screenHex(battle)
 	local arr = battle:getAllPossibleHexes()
 	for i = 1, arr:size() do
@@ -33,7 +33,7 @@ function M.screenHex(battle)
 	return nil
 end
 
---- 给一个单位写一个数值标记（先撤旧的）
+--- write one numeric marker on a unit (removing the old one first)
 function M.setValue(server, battle, unit, bonusType, value)
 	local old = unit:getBonuses({ type = bonusType })
 	if old:size() > 0 then server:removeUnitBonuses(battle, unit, old) end
@@ -45,7 +45,7 @@ function M.setValue(server, battle, unit, bonusType, value)
 	end
 end
 
---- 空降一队：总生命 budget，至少 1 只。场上已有同种召唤物就并进那一队。没有空位时这一回合不降。
+--- land one stack: total health `budget`, at least 1 creature. Merges into an existing summoned stack of the same kind. No landing this round if there is no free hex.
 function M.drop(server, battle, side, budget)
 	if budget <= 0 then return false end
 	local name = M.TRIAL

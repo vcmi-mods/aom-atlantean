@@ -1,28 +1,28 @@
--- 恩惠：神话时代各族共用的英雄特长风格（大西洲版）。
--- 挂法：英雄特长里的 COMBAT_EVENT_TRIGGER（整支军队都继承），addInfo：
---   creatures  这位英雄的特长兵（各形态的标识符）
---   patron     守护神（6 点的小神神恩用），可不写
---   god        英雄职业对应的主神："kronos"、"oranos"、"gaia"（10 点的主神神力用）
--- val = 每回合开始加几点恩惠。
+-- Favor: a hero specialty style shared by all Age of Mythology towns (Atlantean version).
+-- Set up as a COMBAT_EVENT_TRIGGER in the hero specialty (inherited by the whole army), addInfo:
+--   creatures  the hero's specialty creatures (identifiers of every form)
+--   patron     minor god (for the 6-point minor blessing), optional
+--   god        major god of the hero class: "kronos", "oranos", "gaia" (for the 10-point god power)
+-- val = Favor gained at the start of each round.
 --
--- 恩惠值按“一方”计：脚本对每个单位各触发一次，所以用两个隐藏计数分辨“这一回合这一方算过没有”——
---   AOM_FAVOR_SEEN  这个单位经历过的回合数；AOM_FAVOR_TICK  这一方已经结算到第几回合。
--- 一方里第一个发现“自己的回合数 > 已结算回合数”的单位负责结算，其余跳过。
--- 恩惠值、已触发的档位记在这一方所有带脚本的单位上（特长兵身上的那份可见），谁阵亡都不会丢。
+-- Favor is counted per side: the script fires once per unit, so two hidden counters tell whether this side was already settled this round -
+--   AOM_FAVOR_SEEN  rounds this unit has seen; AOM_FAVOR_TICK  round this side has been settled up to.
+-- The first unit of a side that finds "own round count > settled round" settles; the rest skip.
+-- Favor and the tiers already triggered are stored on every unit of the side with this script (visible on the specialty creatures), so no death loses them.
 --
--- 三档神恩（每场各一次，自动触发，玩家和电脑一样）：
---   3 点  赐神性：特长兵 2 回合内攻击无视目标 15% 防御
---   6 点  小神神恩：按 patron（现在只有勒托：特长兵修复到满血）
---   10 点 主神神力：按 god（克洛诺斯：全场敌军时滞 +1 层；盖亚：本方脚下全部长出繁茂地面；乌拉诺斯的冲击波还没接）
+-- Three blessing tiers (once each per battle, automatic, same for players and AI):
+--   3 points  Divinity: specialty creatures ignore 15% of the target's Defense for 2 rounds
+--   6 points  minor blessing: by patron (e.g. Leto: specialty creatures repaired to full health)
+--   10 points god power: by god (Kronos: +1 Time Lag on every enemy; Gaia: Lush Ground under all own troops; Oranos: shockwave)
 local Base = require("combat/combatScript")
 local Script = setmetatable({}, {__index = Base})
 Script.__index = Script
 
 local FAVOR, SEEN, TICK, TIER, DIVINE = "AOM_FAVOR", "AOM_FAVOR_SEEN", "AOM_FAVOR_TICK", "AOM_FAVOR_TIER", "AOM_DIVINITY"
-local FAVOR_FX = "aom/atlantean/fx/favor.json"      -- 神恩降下的金色光柱（原来借用祝福术、祈祷的动画）
+local FAVOR_FX = "aom/atlantean/fx/favor.json"      -- golden light pillar of a blessing (previously borrowed the Bless / Prayer animations)
 local THRESHOLD = { 2, 4, 7 }      -- 3/6/10 before the 2026-11-14 audit: the later two rarely came up in a normal battle
 
--- 动画只在真打的时候放：电脑试算（describeChanges 为假）时发动画包，引擎每次报 "BattleAnimationPlayed is not allowed in battle evaluation"
+-- Animations only in real battles: sending animation packs during AI evaluation (describeChanges false) makes the engine log "BattleAnimationPlayed is not allowed in battle evaluation" every time
 local function showAnim(server, ...)
 	if server.describeChanges and not server:describeChanges() then return end
 	server:showBattleAnimation(...)
@@ -46,7 +46,7 @@ end
 local function shortKey(unit)
 	local key = unit:getCreature():getJsonKey()
 	key = key:match("([^:]+)$") or key
-	-- kad 的缩小态、降级态（kadMini_aom_atlantean_<兵> 等）按原兵算
+	-- shrunk / downgraded copies from other mods (kadMini_aom_atlantean_<creature> etc.) count as the original creature
 	return key:match("^kad%a+_aom_atlantean_(.+)$") or key
 end
 
@@ -58,7 +58,7 @@ function Script:isFavored(unit)
 	return false
 end
 
---- 这一方所有活着、带本脚本的单位
+--- all living units of this side that carry this script
 local function sideUnits(battle, unit)
 	local side = unit:getSide()
 	return battle:getUnitsIf(function(u)
@@ -85,11 +85,11 @@ function Script:grant(server, battle, units, tier, favor)
 	for _, u in ipairs(units) do
 		if self:isFavored(u) then favored[#favored + 1] = u end
 	end
-	-- 特长兵全部阵亡后神恩照常触发（Yu 2026-11-14）：只作用在特长兵身上的那几种这时没有对象，自然落空；
-	-- 作用在全军或敌军身上的（俄刻阿诺斯的潮涌、三位主神的神力）照常生效。
+	-- blessings still trigger after all specialty creatures are dead: the ones that only affect specialty creatures then have no target and do nothing;
+	-- those affecting the whole army or the enemy (Oceanus' tide, the three god powers) still work.
 	if #units == 0 then return end
 	local wholeArmy = tier == 3 or (tier == 2 and self.patron == "oceanus")
-	-- 特长兵不在场（没带或全部阵亡）：只给特长兵的那两档落在本方总生命最高的一队身上（Yu 2026-11-14，审计 P2）
+	-- specialty creatures absent (not brought or all dead): the two specialty-only tiers go to the own stack with the most total health (audit P2)
 	if #favored == 0 and not wholeArmy then
 		local best, bestHp
 		for _, u in ipairs(units) do
@@ -124,13 +124,13 @@ function Script:grant(server, battle, units, tier, favor)
 				if missing > 0 then server:healUnit(battle, u, missing, ENUM.HealLevel.heal, ENUM.HealPower.permanent) end
 			end
 			showAnim(server, battle, targets, "C06SPW", "CURE", 1.0, true) server:refreshBattleUnits(battle)
-		elseif self.patron == "atlas" then          -- 擎天：这一回合受到的伤害 -50%
+		elseif self.patron == "atlas" then          -- Titan's Burden: -50% damage taken this round
 			for _, u in ipairs(favored) do buff(server, battle, u, { type = "GENERAL_DAMAGE_REDUCTION", subtype = "damageTypeAll", val = 50, duration = ENUM.BonusDuration.nTurns, turns = 1, hidden = true }) end
 			showAnim(server, battle, targets, FAVOR_FX, "BLESS", 1.0, true) server:refreshBattleUnits(battle)
-		elseif self.patron == "krios" then          -- 星引：这一回合多攻击一次
+		elseif self.patron == "krios" then          -- Star Guide: one extra attack this round
 			for _, u in ipairs(favored) do buff(server, battle, u, { type = "ADDITIONAL_ATTACK", val = 1, duration = ENUM.BonusDuration.nTurns, turns = 1, hidden = true }) end
 			showAnim(server, battle, targets, FAVOR_FX, "BLESS", 1.0, true) server:refreshBattleUnits(battle)
-		elseif self.patron == "hyperion" then       -- 光耀：蓄力立刻蓄满（和 aomCharge.lua 蓄满时挂的两条一样）
+		elseif self.patron == "hyperion" then       -- Radiance: charge filled at once (the same two bonuses aomCharge.lua adds when charged)
 			for _, u in ipairs(favored) do
 				if not u:hasBonuses({ type = "AOM_CHARGE_READY" }) then
 					buff(server, battle, u, { type = "PERCENTAGE_DAMAGE_BOOST", subtype = "damageTypeMelee", val = 200, duration = ENUM.BonusDuration.untilOwnAttack, hidden = true })
@@ -138,10 +138,10 @@ function Script:grant(server, battle, units, tier, favor)
 				end
 			end
 			showAnim(server, battle, targets, FAVOR_FX, "PRAYER", 1.0, true) server:refreshBattleUnits(battle)
-		elseif self.patron == "helios" then         -- 烈日：2 回合内伤害 +25%
+		elseif self.patron == "helios" then         -- Blazing Sun: +25% damage for 2 rounds
 			for _, u in ipairs(favored) do buff(server, battle, u, { type = "PERCENTAGE_DAMAGE_BOOST", subtype = "damageTypeAll", val = 25, duration = ENUM.BonusDuration.nTurns, turns = 2, hidden = true }) end
 			showAnim(server, battle, targets, FAVOR_FX, "BLESS", 1.0, true) server:refreshBattleUnits(battle)
-		elseif self.patron == "oceanus" then        -- 潮涌：己方全体活物恢复 20% 生命
+		elseif self.patron == "oceanus" then        -- Tide: all own living troops regain 20% health
 			local healed = {}
 			for _, u in ipairs(units) do
 				if not u:hasBonuses({ type = "NON_LIVING" }) and not u:hasBonuses({ type = "MECHANICAL" }) and not u:hasBonuses({ type = "UNDEAD" }) and not u:hasBonuses({ type = "SIEGE_WEAPON" }) then
@@ -152,7 +152,7 @@ function Script:grant(server, battle, units, tier, favor)
 			end
 			if #healed > 0 then showAnim(server, battle, healed, "C06SPW", "CURE", 1.0, true) end
 			server:refreshBattleUnits(battle)
-		elseif self.patron == "kastor" then         -- 英雄之志：2 回合内攻击和防御 +4
+		elseif self.patron == "kastor" then         -- Heroic Will: +4 Attack and Defense for 2 rounds
 			for _, u in ipairs(favored) do
 				buff(server, battle, u, { type = "PRIMARY_SKILL", subtype = "attack", val = 4, duration = ENUM.BonusDuration.nTurns, turns = 2, hidden = true })
 				buff(server, battle, u, { type = "PRIMARY_SKILL", subtype = "defence", val = 4, duration = ENUM.BonusDuration.nTurns, turns = 2, hidden = true })
@@ -162,7 +162,7 @@ function Script:grant(server, battle, units, tier, favor)
 			return
 		end
 	else
-		-- 主神神力（每场一次）：克洛诺斯 = 全场敌军时滞 +1 层；盖亚 = 本方所有部队脚下长出繁茂地面；乌拉诺斯的冲击波等第 8 步的神力法术
+		-- god power (once per battle): Kronos = +1 Time Lag on every enemy; Gaia = Lush Ground under all own troops; Oranos = shockwave
 		local Aspect = require("combat/aomAspect")
 		local side = units[1]:getSide()
 		if self.god == "kronos" then
@@ -175,7 +175,7 @@ function Script:grant(server, battle, units, tier, favor)
 				Aspect.lush(Aspect, server, battle, own)
 			end
 			server:refreshBattleUnits(battle)
-		elseif self.god == "oranos" then            -- 冲击波：全场敌军速度 -2，持续 2 回合 [town_design2]
+		elseif self.god == "oranos" then            -- Shockwave: all enemies -2 Speed for 2 rounds [town_design2]
 			for _, enemy in ipairs(battle:getUnitsIf(function(u) return u:isAlive() and u:getSide() ~= side end)) do
 				buff(server, battle, enemy, { type = "STACKS_SPEED", val = -2, duration = ENUM.BonusDuration.nTurns, turns = 2 })
 			end
@@ -205,7 +205,7 @@ function Script:onRoundStart(server, battle, unit, other)
 	local units = sideUnits(battle, unit)
 	if sideMax(units, TICK) >= seen then return end
 
-	-- 祈神（指挥官神谕长，aomPray.lua）：神谕长活着时每回合多得它身上 AOM_FAVOR_PRAY 那么多点
+	-- Prayer (commander Chief Oracle, aomPray.lua): while the Chief Oracle lives, add its AOM_FAVOR_PRAY points each round
 	local side = unit:getSide()
 	local pray = sideMax(battle:getUnitsIf(function(u) return u:isAlive() and u:getSide() == side end), "AOM_FAVOR_PRAY")
 	local favor = sideMax(units, FAVOR) + (self.val or 1) + pray

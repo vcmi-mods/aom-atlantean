@@ -9,9 +9,9 @@
 	"AOM_SURGE": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{乘势}\n这一回合多攻击一次。",
+		"description": "{Surge}\nOne extra attack\nthis round.",
 		"valueDescriptions": {
-			"900001": "%s乘势而起，这一回合多攻击%d次。"
+			"900001": "%s surges forward: %d extra attack(s) this round."
 		},
 		"graphics": {
 			"icon": "aom/atlantean/abicons/surge.png"
@@ -20,7 +20,7 @@
 	"AOM_LUSH": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{繁茂}\n本回合回血10%、防御+2，免疫时滞定格。",
+		"description": "{Lush}\nThis round: heals 10%, +2\nDefense, no Time Lag.",
 		"graphics": {
 			"icon": "aom/atlantean/abicons/lush.png"
 		}
@@ -28,7 +28,7 @@
 	"AOM_MIRED": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{草木缠足}\n踩在敌方繁茂地面上，本回合速度-2。",
+		"description": "{Tangled Feet}\nOn enemy Lush Ground:\nSpeed -2 this round.",
 		"graphics": {
 			"icon": "aom/atlantean/abicons/mired.png"
 		}
@@ -61,9 +61,9 @@
 	},
 	"AOM_ECHO": {
 		"hidden": true,
-		"description": "{神力回响}\n神力法术有几率再生效一次。",
+		"description": "{Divine Echo}\nGod powers have a chance to take effect once more.",
 		"valueDescriptions": {
-			"1": "神力回响：%s再次生效（几率%d%）。"
+			"1": "Divine Echo: %s takes effect again (chance %d%)."
 		}
 	},
 	"AOM_ECHO_LUCK": {
@@ -75,37 +75,37 @@
 	"AOM_SEASON_TEMPLE": {
 		"hidden": true,
 		"valueDescriptions": {
-			"1": "主神神殿：守城战中，神代轮转从守城英雄的主神之相开始。"
+			"1": "Patron Temple: during sieges the Titan Cycle starts from the Aspect of the defending hero's patron god."
 		}
 	},
 	"AOM_INSEASON": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{当令}\n本相当令，本回合速度提高、伤害+${val}%。",
+		"description": "{Ascendant}\nIts Aspect is ascendant:\nfaster, damage +${val}%.",
 		"graphics": {
 			"icon": "aom/atlantean/abicons/season.png"
 		},
 		"valueDescriptions": {
-			"900001": "天相当令：本回合天相部队速度提高、伤害+%d%。",
-			"900002": "时相当令：本回合时相部队速度提高、伤害+%d%。",
-			"900003": "地相当令：本回合地相部队速度提高、伤害+%d%。"
+			"900001": "Sky is ascendant: Sky Aspect troops are faster and deal +%d% damage this round.",
+			"900002": "Time is ascendant: Time Aspect troops are faster and deal +%d% damage this round.",
+			"900003": "Earth is ascendant: Earth Aspect troops are faster and deal +%d% damage this round."
 		}
 	},
 	"AOM_SKYEYE": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{天眼}\n三相部队攻击它无距离城墙惩罚，幸运+1。",
+		"description": "{Sky Eye}\nAspect troops hit it with no\nrange/wall penalty, +1 Luck.",
 		"graphics": {
 			"icon": "aom/atlantean/abicons/sky.png"
 		},
 		"valueDescriptions": {
-			"900001": "天时：目标同时带天眼和时滞，%s的攻击无视它%d%的防御。"
+			"900001": "Sky and Time: the target bears both Sky Eye and Time Lag, so %s's attack ignores %d% of its Defense."
 		}
 	},
 	"AOM_TIMELAG": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{时滞}\n${val}层：每层速度-1，3层定格\n伤害不足总生命3%不叠层",
+		"description": "{Time Lag}\n${val}: -1 Speed per stack,\nTimelock at 3 stacks.",
 		"graphics": {
 			"icon": "aom/atlantean/abicons/time.png"
 		}
@@ -113,9 +113,9 @@
 	"AOM_FROZEN": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{定格}\n这一回合不能行动\n解除后2回合不受时滞",
+		"description": "{Timelock}\nCannot act this round.\nThen 2 rounds no Time Lag.",
 		"valueDescriptions": {
-			"900001": "%s的时滞叠满%d层，被定格。"
+			"900001": "%s reaches %d stacks of Time Lag and is Timelocked."
 		},
 		"graphics": {
 			"icon": "aom/atlantean/abicons/frozen.png"
@@ -131,9 +131,9 @@
 	"AOM_CHARGE_READY": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{蓄力已满}\n下一次近战攻击伤害+${val}%。",
+		"description": "{Fully Charged}\nNext melee attack deals\n+${val}% damage.",
 		"valueDescriptions": {
-			"900001": "%s蓄力已满，下一击伤害+%d%。"
+			"900001": "%s is fully charged: the next hit deals +%d% damage."
 		},
 		"graphics": {
 			"icon": "aom/atlantean/abicons/charge.png"
@@ -142,11 +142,11 @@
 	"AOM_FAVOR": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{恩惠}\n当前${val}点，2、4、7点各得一次神恩。",
+		"description": "{Favor}\n${val} Favor now.\nBoons at 2, 4 and 7.",
 		"valueDescriptions": {
-			"900001": "%s获得神性：恩惠%d点。",
-			"900002": "%s得到守护神的神恩：恩惠%d点。",
-			"900003": "%s得到主神神力：恩惠%d点。"
+			"900001": "%s gains Divinity: Favor %d.",
+			"900002": "%s receives the boon of its guardian god: Favor %d.",
+			"900003": "%s receives the power of the patron god: Favor %d."
 		},
 		"graphics": {
 			"icon": "aom/atlantean/abicons/favor.png"
@@ -155,7 +155,7 @@
 	"AOM_DIVINITY": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{神性}\n攻击无视目标15%防御。",
+		"description": "{Divinity}\nAttacks ignore 15% of\nthe target's Defense.",
 		"graphics": {
 			"icon": "aom/atlantean/abicons/divinity.png"
 		}
@@ -181,12 +181,12 @@
 	"AOM_FOCUS": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{聚光}\n已对同一目标聚光${val}层。",
+		"description": "{Focus}\n${val} Focus stacks on\nthe same target.",
 		"graphics": {
 			"icon": "aom/atlantean/abicons/focus.png"
 		},
 		"valueDescriptions": {
-			"900001": "聚光：%s对同一目标聚光%d层，下一次伤害+%d%。"
+			"900001": "Focus: %s has %d Focus stacks on the same target, the next hit deals +%d% damage."
 		}
 	},
 	"AOM_FOCUS_ID": {
@@ -195,12 +195,12 @@
 	"AOM_WATCH": {
 		"hidden": false,
 		"creatureNature": false,
-		"description": "{观象}\n已站定${val}回合，本方射手远程伤害提高。",
+		"description": "{Stargazing}\nStill ${val} rounds: allied\nshooters hit harder.",
 		"graphics": {
 			"icon": "aom/atlantean/abicons/watch.png"
 		},
 		"valueDescriptions": {
-			"900001": "观象：%s已站定%d回合，本方射手远程伤害+%d%。"
+			"900001": "%s has stood still for %d rounds: allied shooters deal +%d% ranged damage."
 		}
 	},
 	"AOM_WATCH_POS": {
@@ -215,15 +215,15 @@
 	"AOM_AGE_SIEGE": {
 		"hidden": true,
 		"valueDescriptions": {
-			"1": "神话时代：守城战中英雄的神力法术回响几率+10%。",
-			"2": "奇迹时代：守城战中英雄的神力法术回响几率+10%，守城部队生命+10%。"
+			"1": "Mythic Age: +10% Echo chance for the defending hero's god powers during sieges.",
+			"2": "Wonder Age: +10% Echo chance for the defending hero's god powers during sieges, and +10% Hit Points for the garrison."
 		}
 	},
 	"AOM_RETURN": {
 		"hidden": true,
-		"description": "{重返大西洲}\n每回合开始，一队神话生物空降到本方。",
+		"description": "{Return to Atlantis}\nEach round a myth unit\ndrops in on this side.",
 		"valueDescriptions": {
-			"1": "重返大西洲：%s从天而降（%d）。"
+			"1": "Return to Atlantis: %s drop from the sky (%d)."
 		}
 	},
 	"AOM_RETURN_SEEN": {

@@ -1,10 +1,10 @@
 {
 	"aomMurmillo": {
 		"name": {
-			"singular": "鱼盔角斗士",
-			"plural": "鱼盔角斗士"
+			"singular": "Murmillo",
+			"plural": "Murmillos"
 		},
-		"description": "大西洲的重步兵，戴鱼形盔，持短剑和方盾。",
+		"description": "Heavy infantry of Atlantis, with a fish-crested helmet, a short sword and a square shield.",
 		"faction": "aomAtlantean",
 		"level": 1,
 		"cost": {
@@ -35,7 +35,7 @@
 					"aspect": "sky"
 				},
 				"icon": "aom/atlantean/abicons/sky.png",
-				"description": "{天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+				"description": "{Sky Aspect}\nAttacks mark Sky Eye.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -225,10 +225,10 @@
 	},
 	"aomMurmilloChampion": {
 		"name": {
-			"singular": "双剑角斗士",
-			"plural": "双剑角斗士"
+			"singular": "Dimachaerus",
+			"plural": "Dimachaeri"
 		},
-		"description": "竞技场里杀出来的冠军，双手各执一剑。",
+		"description": "A champion who fought his way out of the arena, a sword in each hand.",
 		"faction": "aomAtlantean",
 		"level": 1,
 		"cost": {
@@ -264,7 +264,7 @@
 					"aspect": "time"
 				},
 				"icon": "aom/atlantean/abicons/time.png",
-				"description": "{时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+				"description": "{Time Aspect}\nAttacks add Time Lag.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -459,10 +459,10 @@
 	},
 	"aomMurmilloGuard": {
 		"name": {
-			"singular": "山铜卫士",
-			"plural": "山铜卫士"
+			"singular": "Orichalcum Guard",
+			"plural": "Orichalcum Guards"
 		},
-		"description": "披山铜甲的王城卫士，盾不离手。",
+		"description": "A guard of the royal city in orichalcum armor, never without his shield.",
 		"faction": "aomAtlantean",
 		"level": 1,
 		"cost": {
@@ -518,7 +518,7 @@
 					"aspect": "earth"
 				},
 				"icon": "aom/atlantean/abicons/lush.png",
-				"description": "{地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+				"description": "{Earth Aspect}\nGrows Lush Ground.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -714,10 +714,10 @@
 	},
 	"aomMurmilloHero": {
 		"name": {
-			"singular": "角斗英雄",
-			"plural": "角斗英雄"
+			"singular": "Murmillo Hero",
+			"plural": "Murmillo Heroes"
 		},
-		"description": "受神恩化身英雄的角斗士。",
+		"description": "A gladiator turned hero by the favor of the gods.",
 		"faction": "aomAtlantean",
 		"level": 1,
 		"cost": {
@@ -753,7 +753,7 @@
 					"aspect": "man"
 				},
 				"icon": "aom/atlantean/abicons/surge.png",
-				"description": "{人相}\n打天眼伤害翻倍，打时滞多叠一层。"
+				"description": "{Mortal Aspect}\nDouble dmg vs Sky Eye.\nAdds 1 extra Time Lag."
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -800,10 +800,10 @@
 	},
 	"aomArcus": {
 		"name": {
-			"singular": "反曲弓手",
-			"plural": "反曲弓手"
+			"singular": "Arcus",
+			"plural": "Arcus"
 		},
-		"description": "使反曲弓的大西洲射手。",
+		"description": "An Atlantean archer with a recurve bow.",
 		"faction": "aomAtlantean",
 		"level": 2,
 		"cost": {
@@ -834,7 +834,7 @@
 					"aspect": "earth"
 				},
 				"icon": "aom/atlantean/abicons/lush.png",
-				"description": "{地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+				"description": "{Earth Aspect}\nGrows Lush Ground.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -1068,10 +1068,10 @@
 	},
 	"aomArcusFar": {
 		"name": {
-			"singular": "翼盔长弓手",
-			"plural": "翼盔长弓手"
+			"singular": "Winged Longbowman",
+			"plural": "Winged Longbowmen"
 		},
-		"description": "头戴翼盔的长弓手，箭能及远。",
+		"description": "A longbowman in a winged helmet whose arrows carry far.",
 		"faction": "aomAtlantean",
 		"level": 2,
 		"cost": {
@@ -1105,7 +1105,7 @@
 					"aspect": "sky"
 				},
 				"icon": "aom/atlantean/abicons/sky.png",
-				"description": "{天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+				"description": "{Sky Aspect}\nAttacks mark Sky Eye.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -1338,10 +1338,10 @@
 	},
 	"aomArcusVolley": {
 		"name": {
-			"singular": "连珠弓手",
-			"plural": "连珠弓手"
+			"singular": "Volley Archer",
+			"plural": "Volley Archers"
 		},
-		"description": "一口气连发数箭的弓手。",
+		"description": "An archer who looses several arrows in one breath.",
 		"faction": "aomAtlantean",
 		"level": 2,
 		"cost": {
@@ -1377,7 +1377,7 @@
 					"aspect": "time"
 				},
 				"icon": "aom/atlantean/abicons/time.png",
-				"description": "{时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+				"description": "{Time Aspect}\nAttacks add Time Lag.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -1610,10 +1610,10 @@
 	},
 	"aomArcusHero": {
 		"name": {
-			"singular": "神射英雄",
-			"plural": "神射英雄"
+			"singular": "Arcus Hero",
+			"plural": "Arcus Heroes"
 		},
-		"description": "受神恩化身英雄的弓手。",
+		"description": "An archer turned hero by the favor of the gods.",
 		"faction": "aomAtlantean",
 		"level": 2,
 		"cost": {
@@ -1652,7 +1652,7 @@
 					"aspect": "man"
 				},
 				"icon": "aom/atlantean/abicons/surge.png",
-				"description": "{人相}\n打天眼伤害翻倍，打时滞多叠一层。"
+				"description": "{Mortal Aspect}\nDouble dmg vs Sky Eye.\nAdds 1 extra Time Lag."
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -1722,10 +1722,10 @@
 	},
 	"aomAutomaton": {
 		"name": {
-			"singular": "机关武士",
-			"plural": "机关武士"
+			"singular": "Automaton Warrior",
+			"plural": "Automaton Warriors"
 		},
-		"description": "青铜铸成的机关武士，倒下的同伴会被它们修好。",
+		"description": "A warrior cast in bronze. Fallen automatons are repaired by their companions.",
 		"faction": "aomAtlantean",
 		"level": 3,
 		"cost": {
@@ -1768,7 +1768,7 @@
 					"aspect": "sky"
 				},
 				"icon": "aom/atlantean/abicons/godOranos.png",
-				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+				"description": "{Oranos · Sky Aspect}\nAttacks mark Sky Eye.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -1948,10 +1948,10 @@
 	},
 	"aomAutomatonKronos": {
 		"name": {
-			"singular": "黑铁机关兵",
-			"plural": "黑铁机关兵"
+			"singular": "Iron Automaton",
+			"plural": "Iron Automatons"
 		},
-		"description": "黑铁打造的机关兵。",
+		"description": "An automaton forged of black iron.",
 		"faction": "aomAtlantean",
 		"level": 3,
 		"cost": {
@@ -1989,7 +1989,7 @@
 					"aspect": "time"
 				},
 				"icon": "aom/atlantean/abicons/godKronos.png",
-				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+				"description": "{Kronos · Time Aspect}\nAttacks add Time Lag.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -2175,10 +2175,10 @@
 	},
 	"aomAutomatonGaia": {
 		"name": {
-			"singular": "青铜机关兵",
-			"plural": "青铜机关兵"
+			"singular": "Bronze Automaton",
+			"plural": "Bronze Automatons"
 		},
-		"description": "生了铜绿的青铜机关兵。",
+		"description": "A bronze automaton covered in verdigris.",
 		"faction": "aomAtlantean",
 		"level": 3,
 		"cost": {
@@ -2220,7 +2220,7 @@
 					"aspect": "earth"
 				},
 				"icon": "aom/atlantean/abicons/godGaia.png",
-				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+				"description": "{Gaia · Earth Aspect}\nGrows Lush Ground.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -2389,10 +2389,10 @@
 	},
 	"aomCaladria": {
 		"name": {
-			"singular": "灵鸟女祭司",
-			"plural": "灵鸟女祭司"
+			"singular": "Caladria",
+			"plural": "Caladrias"
 		},
-		"description": "骑着灵鸟的女祭司，能为同伴疗伤。",
+		"description": "A priestess riding a sacred bird, able to heal her companions.",
 		"faction": "aomAtlantean",
 		"level": 4,
 		"cost": {
@@ -2433,7 +2433,7 @@
 					"aspect": "time"
 				},
 				"icon": "aom/atlantean/abicons/godKronos.png",
-				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+				"description": "{Kronos · Time Aspect}\nAttacks add Time Lag.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -2617,10 +2617,10 @@
 	},
 	"aomCaladriaUranus": {
 		"name": {
-			"singular": "白羽枪卫",
-			"plural": "白羽枪卫"
+			"singular": "White-Plume Lancer",
+			"plural": "White-Plume Lancers"
 		},
-		"description": "骑白羽灵鸟的持枪卫士。",
+		"description": "A lance-bearing guard riding a white-plumed sacred bird.",
 		"faction": "aomAtlantean",
 		"level": 4,
 		"cost": {
@@ -2668,7 +2668,7 @@
 					"aspect": "sky"
 				},
 				"icon": "aom/atlantean/abicons/godOranos.png",
-				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+				"description": "{Oranos · Sky Aspect}\nAttacks mark Sky Eye.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -2859,10 +2859,10 @@
 	},
 	"aomCaladriaGaia": {
 		"name": {
-			"singular": "翠羽神谕者",
-			"plural": "翠羽神谕者"
+			"singular": "Green-Plume Seer",
+			"plural": "Green-Plume Seers"
 		},
-		"description": "骑翠羽灵鸟的神谕者。",
+		"description": "A seer riding a green-plumed sacred bird.",
 		"faction": "aomAtlantean",
 		"level": 4,
 		"cost": {
@@ -2905,7 +2905,7 @@
 					"aspect": "earth"
 				},
 				"icon": "aom/atlantean/abicons/godGaia.png",
-				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+				"description": "{Gaia · Earth Aspect}\nGrows Lush Ground.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -3088,10 +3088,10 @@
 	},
 	"aomNereid": {
 		"name": {
-			"singular": "海仙女",
-			"plural": "海仙女"
+			"singular": "Nereid",
+			"plural": "Nereids"
 		},
-		"description": "骑着鲨鱼的海仙女。",
+		"description": "A sea nymph riding a shark.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -3136,7 +3136,7 @@
 					"aspect": "earth"
 				},
 				"icon": "aom/atlantean/abicons/godGaia.png",
-				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+				"description": "{Gaia · Earth Aspect}\nGrows Lush Ground.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -3310,10 +3310,10 @@
 	},
 	"aomNereidKronos": {
 		"name": {
-			"singular": "虎鲨海仙女",
-			"plural": "虎鲨海仙女"
+			"singular": "Tiger Shark Nereid",
+			"plural": "Tiger Shark Nereids"
 		},
-		"description": "驾虎鲨冲阵的海仙女。",
+		"description": "A sea nymph who charges the enemy line on a tiger shark.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -3358,7 +3358,7 @@
 					"aspect": "time"
 				},
 				"icon": "aom/atlantean/abicons/godKronos.png",
-				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+				"description": "{Kronos · Time Aspect}\nAttacks add Time Lag.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -3531,10 +3531,10 @@
 	},
 	"aomNereidUranus": {
 		"name": {
-			"singular": "掷戟海仙女",
-			"plural": "掷戟海仙女"
+			"singular": "Trident Nereid",
+			"plural": "Trident Nereids"
 		},
-		"description": "从鲨背上投掷三叉戟的海仙女。",
+		"description": "A sea nymph who hurls tridents from the back of her shark.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -3570,7 +3570,7 @@
 					"aspect": "sky"
 				},
 				"icon": "aom/atlantean/abicons/godOranos.png",
-				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+				"description": "{Oranos · Sky Aspect}\nAttacks mark Sky Eye.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -3788,10 +3788,10 @@
 	},
 	"aomCentimanus": {
 		"name": {
-			"singular": "百臂巨人",
-			"plural": "百臂巨人"
+			"singular": "Centimanus",
+			"plural": "Centimani"
 		},
-		"description": "百臂巨人，曾被囚在塔耳塔洛斯。",
+		"description": "A hundred-handed giant, once imprisoned in Tartarus.",
 		"faction": "aomAtlantean",
 		"level": 6,
 		"cost": {
@@ -3825,7 +3825,7 @@
 					"aspect": "earth"
 				},
 				"icon": "aom/atlantean/abicons/godGaia.png",
-				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+				"description": "{Gaia · Earth Aspect}\nGrows Lush Ground.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -3999,10 +3999,10 @@
 	},
 	"aomCentimanusKronos": {
 		"name": {
-			"singular": "断链百臂巨人",
-			"plural": "断链百臂巨人"
+			"singular": "Unbound Centimanus",
+			"plural": "Unbound Centimani"
 		},
-		"description": "挣断锁链的百臂巨人。",
+		"description": "A hundred-handed giant that has broken its chains.",
 		"faction": "aomAtlantean",
 		"level": 6,
 		"cost": {
@@ -4037,7 +4037,7 @@
 					"aspect": "time"
 				},
 				"icon": "aom/atlantean/abicons/godKronos.png",
-				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+				"description": "{Kronos · Time Aspect}\nAttacks add Time Lag.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -4255,10 +4255,10 @@
 	},
 	"aomCentimanusUranus": {
 		"name": {
-			"singular": "星芒百臂巨人",
-			"plural": "星芒百臂巨人"
+			"singular": "Starlit Centimanus",
+			"plural": "Starlit Centimani"
 		},
-		"description": "身上嵌着星芒的百臂巨人。",
+		"description": "A hundred-handed giant studded with starlight.",
 		"faction": "aomAtlantean",
 		"level": 6,
 		"cost": {
@@ -4297,7 +4297,7 @@
 					"aspect": "sky"
 				},
 				"icon": "aom/atlantean/abicons/godOranos.png",
-				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+				"description": "{Oranos · Sky Aspect}\nAttacks mark Sky Eye.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -4470,10 +4470,10 @@
 	},
 	"aomTitan": {
 		"name": {
-			"singular": "熔岩泰坦",
-			"plural": "熔岩泰坦"
+			"singular": "Lava Titan",
+			"plural": "Lava Titans"
 		},
-		"description": "浑身流淌熔岩的泰坦。",
+		"description": "A titan with molten lava flowing over its body.",
 		"faction": "aomAtlantean",
 		"level": 7,
 		"cost": {
@@ -4508,7 +4508,7 @@
 					"aspect": "sky"
 				},
 				"icon": "aom/atlantean/abicons/godOranos.png",
-				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+				"description": "{Oranos · Sky Aspect}\nAttacks mark Sky Eye.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -4683,7 +4683,7 @@
 					"type": "FEARFUL",
 					"valueType": "AT_MOST",
 					"val": 0,
-					"description": "{无惧}\n免疫恐惧特质"
+					"description": "{Fearless}\nImmune to Fear"
 				},
 				"values": [
 					false,
@@ -4702,10 +4702,10 @@
 	},
 	"aomTitanKronos": {
 		"name": {
-			"singular": "持镰泰坦",
-			"plural": "持镰泰坦"
+			"singular": "Sickle Titan",
+			"plural": "Sickle Titans"
 		},
-		"description": "手持巨镰的泰坦，时间之主的造物。",
+		"description": "A titan wielding a giant sickle, a creation of the Master of Time.",
 		"faction": "aomAtlantean",
 		"level": 7,
 		"cost": {
@@ -4741,7 +4741,7 @@
 					"surgeOnce": true
 				},
 				"icon": "aom/atlantean/abicons/godKronos.png",
-				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+				"description": "{Kronos · Time Aspect}\nAttacks add Time Lag.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -4912,7 +4912,7 @@
 					"type": "FEARFUL",
 					"valueType": "AT_MOST",
 					"val": 0,
-					"description": "{无惧}\n免疫恐惧特质"
+					"description": "{Fearless}\nImmune to Fear"
 				},
 				"values": [
 					false,
@@ -4934,10 +4934,10 @@
 	},
 	"aomTitanGaia": {
 		"name": {
-			"singular": "苔岩泰坦",
-			"plural": "苔岩泰坦"
+			"singular": "Moss Titan",
+			"plural": "Moss Titans"
 		},
-		"description": "覆满苔藓和岩石的泰坦，大地之母的造物。",
+		"description": "A titan covered in moss and rock, a creation of Mother Earth.",
 		"faction": "aomAtlantean",
 		"level": 7,
 		"cost": {
@@ -4994,7 +4994,7 @@
 					"aspect": "earth"
 				},
 				"icon": "aom/atlantean/abicons/godGaia.png",
-				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+				"description": "{Gaia · Earth Aspect}\nGrows Lush Ground.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -5165,7 +5165,7 @@
 					"type": "FEARFUL",
 					"valueType": "AT_MOST",
 					"val": 0,
-					"description": "{无惧}\n免疫恐惧特质"
+					"description": "{Fearless}\nImmune to Fear"
 				},
 				"values": [
 					false,
@@ -5187,10 +5187,10 @@
 	},
 	"aomPromethean": {
 		"name": {
-			"singular": "泥塑人",
-			"plural": "泥塑人"
+			"singular": "Promethean",
+			"plural": "Prometheans"
 		},
-		"description": "普罗米修斯用泥土捏成的人形，打碎了还能重新捏起来。",
+		"description": "A figure Prometheus shaped from clay. Shattered, it can be shaped again.",
 		"faction": "aomAtlantean",
 		"level": 3,
 		"cost": {
@@ -5227,7 +5227,7 @@
 				"addInfo": {
 					"guaranteed": false
 				},
-				"description": "{重塑}\n阵亡后有40%的数量重新站起来，每场战斗一次。",
+				"description": "{Reshape}\n40% of the stack rises\nafter it dies, 1/battle.",
 				"icon": "aom/atlantean/abicons/reform.png"
 			}
 		},
@@ -5389,10 +5389,10 @@
 	},
 	"aomStymphalian": {
 		"name": {
-			"singular": "铜羽怪鸟",
-			"plural": "铜羽怪鸟"
+			"singular": "Stymphalian Bird",
+			"plural": "Stymphalian Birds"
 		},
-		"description": "斯廷法罗斯湖的怪鸟，羽毛是铜的。",
+		"description": "A monstrous bird of Lake Stymphalia with feathers of bronze.",
 		"faction": "aomAtlantean",
 		"level": 4,
 		"cost": {
@@ -5622,10 +5622,10 @@
 	},
 	"aomTartarian": {
 		"name": {
-			"singular": "冥渊恶兽",
-			"plural": "冥渊恶兽"
+			"singular": "Tartarian Spawn",
+			"plural": "Tartarian Spawn"
 		},
-		"description": "从冥界之门里爬出来的恶兽。",
+		"description": "A fiend that crawled out of the Tartarian Gate.",
 		"faction": "aomAtlantean",
 		"level": 4,
 		"cost": {
@@ -5655,7 +5655,7 @@
 			"rend": {
 				"type": "ENEMY_DEFENCE_REDUCTION",
 				"val": 20,
-				"description": "{撕裂}\n攻击无视目标20%防御。",
+				"description": "{Rend}\nAttacks ignore 20%\nof the target's Defense.",
 				"icon": "aom/atlantean/abicons/rend.png"
 			},
 			"fireproof": {
@@ -5817,10 +5817,10 @@
 	},
 	"aomArgus": {
 		"name": {
-			"singular": "百眼怪",
-			"plural": "百眼怪"
+			"singular": "Argus",
+			"plural": "Arguses"
 		},
-		"description": "浑身是眼的怪物，能喷出腐蚀的酸液。",
+		"description": "A monster covered in eyes that spits corrosive acid.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -6052,10 +6052,10 @@
 	},
 	"aomPrometheanOffspring": {
 		"name": {
-			"singular": "小泥人",
-			"plural": "小泥人"
+			"singular": "Lesser Promethean",
+			"plural": "Lesser Prometheans"
 		},
-		"description": "用边角泥料捏成的小泥人。",
+		"description": "A small figure made from leftover clay.",
 		"faction": "aomAtlantean",
 		"level": 2,
 		"cost": {
@@ -6087,7 +6087,7 @@
 			},
 			"swarm": {
 				"type": "BLOCKS_RETALIATION",
-				"description": "{一拥而上}\n攻击不受反击。",
+				"description": "{Swarm}\nAttacks are not\nretaliated.",
 				"icon": "aom/atlantean/abicons/swarm.png"
 			}
 		},
@@ -6245,10 +6245,10 @@
 	},
 	"aomServant": {
 		"name": {
-			"singular": "海洋侍从",
-			"plural": "海洋侍从"
+			"singular": "Sea Servant",
+			"plural": "Sea Servants"
 		},
-		"description": "海神的侍从，能为同伴疗伤。",
+		"description": "A servant of the sea god, able to heal its companions.",
 		"faction": "aomAtlantean",
 		"level": 2,
 		"cost": {
@@ -6281,7 +6281,7 @@
 				"val": 4,
 				"addInfo": {},
 				"icon": "aom/atlantean/abicons/heal.png",
-				"description": "{治疗}\n回合开始为相邻友军各恢复4点生命。"
+				"description": "{Heal}\nHeals adjacent allies\n4 HP each round."
 			},
 			"mender": {
 				"type": "AOM_MENDER",
@@ -6448,10 +6448,10 @@
 	},
 	"aomSatyr": {
 		"name": {
-			"singular": "羊人",
-			"plural": "羊人"
+			"singular": "Wild Satyr",
+			"plural": "Wild Satyrs"
 		},
-		"description": "山林里的羊人，善投标枪。",
+		"description": "A goat-man of the wooded hills, skilled with the javelin.",
 		"faction": "aomAtlantean",
 		"level": 3,
 		"cost": {
@@ -6681,10 +6681,10 @@
 	},
 	"aomDryad": {
 		"name": {
-			"singular": "树仙女",
-			"plural": "树仙女"
+			"singular": "Hamadryad",
+			"plural": "Hamadryads"
 		},
-		"description": "守护金苹果树的树仙女。",
+		"description": "A tree nymph who guards the golden apple tree.",
 		"faction": "aomAtlantean",
 		"level": 4,
 		"cost": {
@@ -6714,7 +6714,7 @@
 			"regrow": {
 				"type": "HP_REGENERATION",
 				"val": 15,
-				"description": "{回春}\n每回合开始恢复15点生命。",
+				"description": "{Renewal}\nRestores 15 Hit Points\nat the start of each round.",
 				"icon": "aom/atlantean/abicons/regrow.png",
 				"stacking": "aomDryadExpRegen"
 			}
@@ -6874,10 +6874,10 @@
 	},
 	"aomLampades": {
 		"name": {
-			"singular": "火炬仙女",
-			"plural": "火炬仙女"
+			"singular": "Lampad",
+			"plural": "Lampades"
 		},
-		"description": "赫卡特的随从，手持火炬的冥府仙女。",
+		"description": "An attendant of Hekate, an underworld nymph carrying a torch.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -7116,10 +7116,10 @@
 	},
 	"aomManOWar": {
 		"name": {
-			"singular": "僧帽水母",
-			"plural": "僧帽水母"
+			"singular": "Man o' War",
+			"plural": "Men o' War"
 		},
-		"description": "浮在半空的僧帽水母，触须带电。",
+		"description": "A jellyfish floating in mid-air, its tentacles crackling with lightning.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -7353,10 +7353,10 @@
 	},
 	"aomCarnivora": {
 		"name": {
-			"singular": "食人花",
-			"plural": "食人花"
+			"singular": "Carnivora",
+			"plural": "Carnivoras"
 		},
-		"description": "扎根在地里的食人花。",
+		"description": "A man-eating plant rooted in the ground.",
 		"faction": "aomAtlantean",
 		"level": 4,
 		"cost": {
@@ -7544,10 +7544,10 @@
 	},
 	"aomPrometheanLava": {
 		"name": {
-			"singular": "熔岩泥塑人",
-			"plural": "熔岩泥塑人"
+			"singular": "Lava Promethean",
+			"plural": "Lava Prometheans"
 		},
-		"description": "用熔岩烧过的泥塑人。",
+		"description": "A Promethean fired in lava.",
 		"faction": "aomAtlantean",
 		"level": 3,
 		"cost": {
@@ -7586,7 +7586,7 @@
 				"subtype": "fireShield",
 				"val": 20,
 				"stacking": "fireShield",
-				"description": "{灼身}\n近战攻击它的敌人受到所造成伤害20%的火焰伤害。",
+				"description": "{Scorching Body}\nMelee attackers take 20%\nof their damage as fire.",
 				"icon": "aom/atlantean/abicons/scorch.png"
 			}
 		},
@@ -7745,10 +7745,10 @@
 	},
 	"aomSatyrGold": {
 		"name": {
-			"singular": "金角羊人",
-			"plural": "金角羊人"
+			"singular": "Gold-Horn Satyr",
+			"plural": "Gold-Horn Satyrs"
 		},
-		"description": "长着金角的羊人。",
+		"description": "A satyr with golden horns.",
 		"faction": "aomAtlantean",
 		"level": 3,
 		"cost": {
@@ -7975,10 +7975,10 @@
 	},
 	"aomLampadesStar": {
 		"name": {
-			"singular": "星炬仙女",
-			"plural": "星炬仙女"
+			"singular": "Star Lampad",
+			"plural": "Star Lampades"
 		},
-		"description": "火炬里燃着星光的冥府仙女。",
+		"description": "An underworld nymph whose torch burns with starlight.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -8214,10 +8214,10 @@
 	},
 	"aomOracle": {
 		"name": {
-			"singular": "神谕祭司",
-			"plural": "神谕祭司"
+			"singular": "Oracle Priest",
+			"plural": "Oracle Priests"
 		},
-		"description": "大西洲的神谕祭司，能预见不祥。",
+		"description": "An oracle priest of Atlantis who foresees ill omens.",
 		"faction": "aomAtlantean",
 		"level": 1,
 		"cost": {
@@ -8249,7 +8249,7 @@
 				],
 				"propagationUpdater": "BONUS_OWNER_UPDATER",
 				"stacking": "aomOracleOmen",
-				"description": "{凶兆}\n敌方全军幸运-1。多队神谕祭司不叠加。",
+				"description": "{Ill Omen}\nAll enemies get -1 Luck.\nDoes not stack.",
 				"icon": "aom/atlantean/abicons/omen.png"
 			},
 			"skeletonTarget": {
@@ -8412,10 +8412,10 @@
 	},
 	"aomKatapeltes": {
 		"name": {
-			"singular": "长锤步兵",
-			"plural": "长锤步兵"
+			"singular": "Katapeltes",
+			"plural": "Katapeltai"
 		},
-		"description": "专门对付骑兵和巨兽的长锤步兵。",
+		"description": "Infantry with long hammers, trained to bring down cavalry and giant beasts.",
 		"faction": "aomAtlantean",
 		"level": 2,
 		"cost": {
@@ -8447,7 +8447,7 @@
 				"type": "COMBAT_EVENT_TRIGGER",
 				"subtype": "aomBigMark",
 				"val": 30,
-				"description": "{克制巨物}\n对双格部队伤害+30%，不受冲锋加成。",
+				"description": "{Giant Slayer}\n+30% dmg vs 2-hex units.\nIgnores Jousting bonus.",
 				"icon": "aom/atlantean/abicons/bigHate.png"
 			},
 			"bigHate": {
@@ -8616,10 +8616,10 @@
 	},
 	"aomDestroyer": {
 		"name": {
-			"singular": "破城兵",
-			"plural": "破城兵"
+			"singular": "Wall Breaker",
+			"plural": "Wall Breakers"
 		},
-		"description": "披重甲的破城兵，不怕箭矢。",
+		"description": "A heavily armored siege soldier who does not fear arrows.",
 		"faction": "aomAtlantean",
 		"level": 3,
 		"cost": {
@@ -8646,7 +8646,7 @@
 				"type": "HATES_TRAIT",
 				"subtype": "SIEGE_WEAPON",
 				"val": 100,
-				"description": "{拆毁}\n对战争器械和机械部队伤害+100%。",
+				"description": "{Wrecker}\n+100% damage to war\nmachines and constructs.",
 				"icon": "aom/atlantean/abicons/wreck.png"
 			},
 			"wreckMech": {
@@ -8659,7 +8659,7 @@
 				"type": "GENERAL_DAMAGE_REDUCTION",
 				"subtype": "damageTypeRanged",
 				"val": 40,
-				"description": "{重甲}\n受到的远程伤害-40%。",
+				"description": "{Heavy Armor}\nTakes 40% less\nranged damage.",
 				"icon": "aom/atlantean/abicons/heavyArmor.png"
 			},
 			"skeletonTarget": {
@@ -8822,10 +8822,10 @@
 	},
 	"aomFanatic": {
 		"name": {
-			"singular": "双刃狂徒",
-			"plural": "双刃狂徒"
+			"singular": "Fanatic",
+			"plural": "Fanatics"
 		},
-		"description": "双手持刃的狂徒，一次攻击两下。",
+		"description": "A zealot with a blade in each hand, striking twice in one attack.",
 		"faction": "aomAtlantean",
 		"level": 4,
 		"cost": {
@@ -9012,10 +9012,10 @@
 	},
 	"aomTurma": {
 		"name": {
-			"singular": "标枪骑兵",
-			"plural": "标枪骑兵"
+			"singular": "Turma",
+			"plural": "Turmae"
 		},
-		"description": "骑马投标枪的轻骑兵。",
+		"description": "Light cavalry throwing javelins from horseback.",
 		"faction": "aomAtlantean",
 		"level": 3,
 		"cost": {
@@ -9243,10 +9243,10 @@
 	},
 	"aomContarius": {
 		"name": {
-			"singular": "长矛骑兵",
-			"plural": "长矛骑兵"
+			"singular": "Contarius",
+			"plural": "Contarii"
 		},
-		"description": "持长矛冲锋的重骑兵。",
+		"description": "Heavy cavalry charging with a long lance.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -9433,10 +9433,10 @@
 	},
 	"aomCheiroballista": {
 		"name": {
-			"singular": "手弩炮",
-			"plural": "手弩炮"
+			"singular": "Cheiroballista",
+			"plural": "Cheiroballistae"
 		},
-		"description": "大西洲的战争器械，架在车上的手弩炮。伤害随英雄的攻击力提高。",
+		"description": "The war machine of Atlantis, a bolt thrower mounted on a cart. Its damage grows with the hero's Attack.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -9532,10 +9532,10 @@
 	},
 	"aomFireSiphon": {
 		"name": {
-			"singular": "喷火战车",
-			"plural": "喷火战车"
+			"singular": "Fire Siphon",
+			"plural": "Fire Siphons"
 		},
-		"description": "喷吐火焰的攻城战车。",
+		"description": "A siege wagon that spews fire.",
 		"faction": "aomAtlantean",
 		"level": 5,
 		"cost": {
@@ -9744,10 +9744,10 @@
 	},
 	"aomBehemoth": {
 		"name": {
-			"singular": "铁甲巨兽",
-			"plural": "铁甲巨兽"
+			"singular": "Ironclad Behemoth",
+			"plural": "Ironclad Behemoths"
 		},
-		"description": "披着铁甲的巨兽，城墙也挡不住它。",
+		"description": "A giant beast clad in iron that no city wall can stop.",
 		"faction": "aomAtlantean",
 		"level": 6,
 		"cost": {
@@ -9777,13 +9777,13 @@
 			"ram": {
 				"type": "CATAPULT",
 				"subtype": "cyclopsShot",
-				"description": "{撞城}\n攻城时可以攻击城墙。",
+				"description": "{Battering Ram}\nCan attack walls\nduring sieges.",
 				"icon": "aom/atlantean/abicons/ram.png"
 			},
 			"regrow": {
 				"type": "HP_REGENERATION",
 				"val": 40,
-				"description": "{再生}\n每回合开始恢复40点生命。",
+				"description": "{Regeneration}\nRestores 40 Hit Points\nat the start of each round.",
 				"icon": "aom/atlantean/abicons/regen.png",
 				"stacking": "aomBehemothExpRegen"
 			},
@@ -9949,7 +9949,7 @@
 					"type": "FEARFUL",
 					"valueType": "AT_MOST",
 					"val": 0,
-					"description": "{无惧}\n免疫恐惧特质"
+					"description": "{Fearless}\nImmune to Fear"
 				},
 				"values": [
 					false,
@@ -9968,10 +9968,10 @@
 	},
 	"aomArcusTurret": {
 		"name": {
-			"singular": "箭塔弓手",
-			"plural": "箭塔弓手"
+			"singular": "Tower Archer",
+			"plural": "Tower Archers"
 		},
-		"description": "守在大西洲城墙箭塔里的反曲弓手。",
+		"description": "A recurve archer posted in the arrow towers of the Atlantean walls.",
 		"faction": "aomAtlantean",
 		"level": 2,
 		"cost": {
@@ -9997,7 +9997,7 @@
 					"aspect": "earth"
 				},
 				"icon": "aom/atlantean/abicons/lush.png",
-				"description": "{地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+				"description": "{Earth Aspect}\nGrows Lush Ground.\nAscendant: Spd+2 Dmg+15%"
 			},
 			"aspectMark": {
 				"type": "AOM_ASPECT",
@@ -10062,10 +10062,10 @@
 	},
 	"aomCommander": {
 		"name": {
-			"singular": "神谕长",
-			"plural": "神谕长"
+			"singular": "Chief Oracle",
+			"plural": "Chief Oracles"
 		},
-		"description": "大西洲的神谕长，随英雄出征的指挥官。他站定观象，为全军的射手指明目标；献祭祈神，为英雄求来众神的恩惠。",
+		"description": "The Chief Oracle of Atlantis, the commander who marches with the hero. Standing still to read the heavens, he points out targets for all the army's shooters; with sacrifice and prayer he wins the favor of the gods for the hero.",
 		"faction": "aomAtlantean",
 		"level": 0,
 		"special": true,
@@ -10179,7 +10179,7 @@
 				],
 				"propagationUpdater": "BONUS_OWNER_UPDATER",
 				"stacking": "aomOracleOmen",
-				"description": "{凶兆}\n敌方全军幸运-1。",
+				"description": "{Ill Omen}\nAll enemy troops\nget -1 Luck.",
 				"icon": "aom/atlantean/abicons/omen.png"
 			},
 			"castsAmount": {

@@ -1,5 +1,5 @@
--- 在目标格旁边召唤：和核心的 summon 一样，只是新部队落在离目标格最近的空格，而不是己方半场的默认位置。
--- 已有同种召唤物且 summonSameUnit 时照旧并进那一队。
+-- Summon next to the target hex: like core summon, but the new stack lands on the free hex nearest the target instead of the default spot on own half.
+-- With summonSameUnit and an existing summoned stack of the same kind it merges into that stack as usual.
 local Base = require("spells/summon")
 local God = require("spells/aomGod")
 local Script = setmetatable({}, {__index = Base})

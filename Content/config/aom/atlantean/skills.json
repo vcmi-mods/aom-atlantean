@@ -1,6 +1,6 @@
 {
 	"aomSeasonCommand": {
-		"name": "三相御令",
+		"name": "Triune Order",
 		"gainChance": {
 			"might": 0,
 			"magic": 0
@@ -80,7 +80,7 @@
 			}
 		},
 		"basic": {
-			"description": "{初级三相御令}\n\n当令的部队伤害加成提高到30%。\n英雄攻击力+1。\n\n {#F800F8|联动效果} \n {#002366|持镰泰坦}：持镰泰坦攻击和防御+2。\n {#D7D7D7|战术}：当令的部队速度再+1。\n {#D7D7D7|领导术}：当令的部队这一回合士气+1。\n {#D7D7D7|神力回响}：回响触发的回合，主神之相的部队当令。",
+			"description": "{Basic Triune Order}\n\nIncreases the damage bonus of ascendant troops to 30%.\nThe hero gets +1 Attack.\n\n {#F800F8|Synergies} \n {#002366|Sickle Titans}: Sickle Titans get +2 Attack and Defense.\n {#D7D7D7|Tactics}: ascendant troops get a further +1 Speed.\n {#D7D7D7|Leadership}: ascendant troops get +1 Morale this round.\n {#D7D7D7|Divine Echo}: in a round when an Echo occurs, troops of the patron god's Aspect are ascendant.",
 			"images": {
 				"small": "aom/atlantean/skills/aomSeasonCommand_basic_32",
 				"medium": "aom/atlantean/skills/aomSeasonCommand_basic_44",
@@ -102,7 +102,7 @@
 			}
 		},
 		"advanced": {
-			"description": "{中级三相御令}\n\n当令的部队伤害加成提高到45%。\n英雄攻击力+2。\n神代轮转从英雄主神之相开始。\n\n {#F800F8|联动效果} \n {#002366|持镰泰坦}：持镰泰坦攻击和防御+2。\n {#D7D7D7|战术}：当令的部队速度再+1。\n {#D7D7D7|领导术}：当令的部队这一回合士气+1。\n {#D7D7D7|神力回响}：回响触发的回合，主神之相的部队当令。",
+			"description": "{Advanced Triune Order}\n\nIncreases the damage bonus of ascendant troops to 45%.\nThe hero gets +2 Attack.\nThe Titan Cycle starts from the Aspect of the hero's patron god.\n\n {#F800F8|Synergies} \n {#002366|Sickle Titans}: Sickle Titans get +2 Attack and Defense.\n {#D7D7D7|Tactics}: ascendant troops get a further +1 Speed.\n {#D7D7D7|Leadership}: ascendant troops get +1 Morale this round.\n {#D7D7D7|Divine Echo}: in a round when an Echo occurs, troops of the patron god's Aspect are ascendant.",
 			"images": {
 				"small": "aom/atlantean/skills/aomSeasonCommand_advanced_32",
 				"medium": "aom/atlantean/skills/aomSeasonCommand_advanced_44",
@@ -124,7 +124,7 @@
 			}
 		},
 		"expert": {
-			"description": "{高级三相御令}\n\n当令的部队伤害加成提高到60%。\n英雄攻击力+3。\n神代轮转从英雄主神之相开始。\n英雄形态在主神之相当令的回合也算当令。\n\n {#F800F8|联动效果} \n {#002366|持镰泰坦}：持镰泰坦攻击和防御+2。\n {#D7D7D7|战术}：当令的部队速度再+1。\n {#D7D7D7|领导术}：当令的部队这一回合士气+1。\n {#D7D7D7|神力回响}：回响触发的回合，主神之相的部队当令。",
+			"description": "{Expert Triune Order}\n\nIncreases the damage bonus of ascendant troops to 60%.\nThe hero gets +3 Attack.\nThe Titan Cycle starts from the Aspect of the hero's patron god.\nHero forms also count as ascendant in rounds when the patron god's Aspect is ascendant.\n\n {#F800F8|Synergies} \n {#002366|Sickle Titans}: Sickle Titans get +2 Attack and Defense.\n {#D7D7D7|Tactics}: ascendant troops get a further +1 Speed.\n {#D7D7D7|Leadership}: ascendant troops get +1 Morale this round.\n {#D7D7D7|Divine Echo}: in a round when an Echo occurs, troops of the patron god's Aspect are ascendant.",
 			"images": {
 				"small": "aom/atlantean/skills/aomSeasonCommand_expert_32",
 				"medium": "aom/atlantean/skills/aomSeasonCommand_expert_44",
@@ -147,7 +147,7 @@
 		}
 	},
 	"aomEcho": {
-		"name": "神力回响",
+		"name": "Divine Echo",
 		"gainChance": {
 			"might": 0,
 			"magic": 0
@@ -241,7 +241,7 @@
 			}
 		},
 		"basic": {
-			"description": "{初级神力回响}\n\n英雄施放大西洲神力法术后，有30%几率回响：\n同一神力对随机目标再生效一次，效果减半，不耗法力。\n\n {#F800F8|联动效果} \n {#002366|苔岩泰坦}：苔岩泰坦攻击和防御+2。\n {#D7D7D7|魔力术}：回响几率+10%。\n {#D7D7D7|幸运术}：回响触发的回合全军幸运+1。\n {#D7D7D7|三相御令}：回响触发的回合，主神之相的部队当令。",
+			"description": "{Basic Divine Echo}\n\nAfter the hero casts an Atlantean god power, it has a 30% chance to echo:\nthe same power takes effect once more on a random target, at half strength and at no Spell Point cost.\n\n {#F800F8|Synergies} \n {#002366|Moss Titans}: Moss Titans get +2 Attack and Defense.\n {#D7D7D7|Sorcery}: Echo chance +10%.\n {#D7D7D7|Luck}: all your troops get +1 Luck in a round when an Echo occurs.\n {#D7D7D7|Triune Order}: in a round when an Echo occurs, troops of the patron god's Aspect are ascendant.",
 			"images": {
 				"small": "aom/atlantean/skills/aomEcho_basic_32",
 				"medium": "aom/atlantean/skills/aomEcho_basic_44",
@@ -257,7 +257,7 @@
 			}
 		},
 		"advanced": {
-			"description": "{中级神力回响}\n\n英雄施放大西洲神力法术后，有45%几率回响：\n同一神力对随机目标再生效一次，效果减半，不耗法力。\n\n {#F800F8|联动效果} \n {#002366|苔岩泰坦}：苔岩泰坦攻击和防御+2。\n {#D7D7D7|魔力术}：回响几率+10%。\n {#D7D7D7|幸运术}：回响触发的回合全军幸运+1。\n {#D7D7D7|三相御令}：回响触发的回合，主神之相的部队当令。",
+			"description": "{Advanced Divine Echo}\n\nAfter the hero casts an Atlantean god power, it has a 45% chance to echo:\nthe same power takes effect once more on a random target, at half strength and at no Spell Point cost.\n\n {#F800F8|Synergies} \n {#002366|Moss Titans}: Moss Titans get +2 Attack and Defense.\n {#D7D7D7|Sorcery}: Echo chance +10%.\n {#D7D7D7|Luck}: all your troops get +1 Luck in a round when an Echo occurs.\n {#D7D7D7|Triune Order}: in a round when an Echo occurs, troops of the patron god's Aspect are ascendant.",
 			"images": {
 				"small": "aom/atlantean/skills/aomEcho_advanced_32",
 				"medium": "aom/atlantean/skills/aomEcho_advanced_44",
@@ -273,7 +273,7 @@
 			}
 		},
 		"expert": {
-			"description": "{高级神力回响}\n\n英雄施放大西洲神力法术后，有60%几率回响：\n同一神力对随机目标再生效一次，效果减半，不耗法力。\n\n {#F800F8|联动效果} \n {#002366|苔岩泰坦}：苔岩泰坦攻击和防御+2。\n {#D7D7D7|魔力术}：回响几率+10%。\n {#D7D7D7|幸运术}：回响触发的回合全军幸运+1。\n {#D7D7D7|三相御令}：回响触发的回合，主神之相的部队当令。",
+			"description": "{Expert Divine Echo}\n\nAfter the hero casts an Atlantean god power, it has a 60% chance to echo:\nthe same power takes effect once more on a random target, at half strength and at no Spell Point cost.\n\n {#F800F8|Synergies} \n {#002366|Moss Titans}: Moss Titans get +2 Attack and Defense.\n {#D7D7D7|Sorcery}: Echo chance +10%.\n {#D7D7D7|Luck}: all your troops get +1 Luck in a round when an Echo occurs.\n {#D7D7D7|Triune Order}: in a round when an Echo occurs, troops of the patron god's Aspect are ascendant.",
 			"images": {
 				"small": "aom/atlantean/skills/aomEcho_expert_32",
 				"medium": "aom/atlantean/skills/aomEcho_expert_44",

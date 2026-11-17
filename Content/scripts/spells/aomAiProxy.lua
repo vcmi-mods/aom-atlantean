@@ -1,14 +1,14 @@
--- 电脑试算用的“代理价值”（整合检查清单“AI 与战力数值”）：盖亚之林、蛛穴陷阱这类只放障碍物的神力，
--- 电脑（BattleAI）在假想战场上试一遍后前后价值没变，估值是 0，所以从来不放。
--- 本效果和原效果并列挂在法术的 battleEffects 里（"optional": true）：
---   正式施放（server:describeChanges() 为真）什么都不做，玩家和电脑实际得到的效果完全不变；
---   只在电脑试算时（为假）把“这一招大概值多少”折成对敌军的等效扣血报给电脑，试算里的改动不会留到真战场。
--- 配置：
+-- Proxy value for AI evaluation: god powers that only place obstacles (Gaia's Forest, Spider Lair)
+-- show no value change when the AI (BattleAI) tries them on its imaginary battlefield, are valued at 0 and never cast.
+-- This effect sits next to the real effects in the spell's battleEffects ("optional": true):
+--   real casts (server:describeChanges() true) do nothing here, so what players and AI actually get is unchanged;
+--   only in AI evaluation (false) is "what this is worth" reported as equivalent damage to enemies; evaluation changes never reach the real battlefield.
+-- Config:
 --   {"type": "aomAiProxy", "optional": true, "mode": "wall", "radius": 3, "ratio": 0.06, "max": 2}
---       拦路的障碍（盖亚之林）：目标格 radius 步内、正朝我方走来的敌方地面近战部队，每队报 剩余总生命 × ratio（约等于耽误它一回合的一半），
---       最多 max 队。我方没有能射击的部队、目标格旁边有我方近战部队（会把自己人也挡住）、战场上已经有本法术的障碍时不报。
+--       blocking obstacle (Gaia's Forest): for enemy ground melee units within radius of the target hex that are moving toward us, report remaining health x ratio each (about half of delaying them a round),
+--       at most max stacks. Nothing is reported if we have no shooters, an own melee unit is next to the target hex (it would block our own), or this spell's obstacle is already on the battlefield.
 --   {"type": "aomAiProxy", "optional": true, "mode": "trap", "bite": "aom-atlantean:aomSpiderBite", "factor": 0.5, "max": 2}
---       随机埋的陷阱（蛛穴陷阱）：对最多 max 队敌方地面部队各报 陷阱伤害 × factor；战场上已经有本法术的陷阱时不报，免得每回合重复埋。
+--       random traps (Spider Lair): report trap damage x factor for up to max enemy ground stacks; nothing if this spell's trap is already on the battlefield, so it is not laid every round.
 local Base = require("spells/spellEffect")
 local P = require("lib/kadAiProxy")
 local Script = setmetatable({}, {__index = Base})
@@ -52,9 +52,9 @@ function Script:wall(mechanics, server, battle, side, hex)
 	local shooters = own(battle, side, function(u) return u:isShooter() and not u:hasBonuses({ type = "SIEGE_WEAPON" }) end)
 	if #shooters == 0 then return end
 	local radius = self.radius or 2
-	-- 自己人也要从这里过（近战、地面、就在旁边）就不放
+	-- don't cast if own units must pass here too (melee, ground, right next to it)
 	if #own(battle, side, function(u) return not u:isShooter() and walker(u) and P.unitDistance(u, hex) <= radius end) > 0 then return end
-	-- 我方射手在哪一边：障碍要落在敌人和射手之间
+	-- which side our shooters are on: the obstacle should fall between enemies and shooters
 	local sx = 0
 	for _, u in ipairs(shooters) do sx = sx + u:getPosition():getX() end
 	sx = sx / #shooters
@@ -84,7 +84,7 @@ function Script:trap(mechanics, server, battle, side)
 end
 
 function Script:apply(mechanics, server, target)
-	if not P.trial(server) then return end      -- 正式施放：什么都不做
+	if not P.trial(server) then return end      -- real cast: do nothing
 	local battle, side = mechanics:getBattle(), mechanics:getCasterSide()
 	if alreadyThere(mechanics, battle) then return end
 	if self.mode == "wall" then

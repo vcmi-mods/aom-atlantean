@@ -1,15 +1,15 @@
--- 神力回响（种族二级技能 aomEcho）的公用部分。
--- 技能给英雄一条隐藏的 AOM_ECHO（回响几率，百分数；魔力术联动再 +10），全军继承；幸运术联动是 AOM_ECHO_LUCK。
--- 每个神力法术在自己的效果后面带一个“回响”效果（aomEchoDamage／aomEchoTimed／aomEchoSummon），效果触发时先来这里掷骰。
--- 只有英雄施放才回响；AI 试算（describeChanges 为假）时不掷，免得白白消耗随机数。
+-- Divine Echo (racial secondary skill aomEcho), shared part.
+-- The skill gives the hero a hidden AOM_ECHO (echo chance in percent; +10 with the Sorcery synergy), inherited by the army; the Luck synergy is AOM_ECHO_LUCK.
+-- Every god power has an "echo" effect after its own effects (aomEchoDamage / aomEchoTimed / aomEchoSummon), which rolls here first.
+-- Only hero casts echo; no roll in AI evaluation (describeChanges false) so random numbers are not wasted.
 local M = {}
 
 local function own(battle, side)
 	return battle:getUnitsIf(function(u) return u:isAlive() and u:getSide() == side end)
 end
 
---- 掷回响。成功返回 true，并写一行战斗记录、结算幸运术联动。
-local BOOST = { [0] = 15, 30, 45, 60 }      -- 和 aomAspect.lua 的 CMD_BOOST 一致
+--- Roll the echo. Returns true on success, writes a battle log line and applies the Luck synergy.
+local BOOST = { [0] = 15, 30, 45, 60 }      -- same as CMD_BOOST in aomAspect.lua
 M.FX = "aom/atlantean/fx/echo.json"
 
 function M.roll(mechanics, server)
@@ -29,8 +29,8 @@ function M.roll(mechanics, server)
 				sourceType = ENUM.BonusSource.other, valueType = ENUM.BonusValueType.additiveValue }, false)
 		end
 	end
-	-- 三相御令联动（AOM_ECHO_SEASON）：回响触发的这一回合，英雄主神之相的部队当令（数值和 aomAspect.lua 的当令一致；已经当令的不重复加）
-	local cmd, godAspect = 0, { [1] = 2, [2] = 1, [3] = 3 }      -- 主神 → AOM_ASPECT（克洛诺斯 = 时 2，乌拉诺斯 = 天 1，盖亚 = 地 3）
+	-- Triune Order synergy (AOM_ECHO_SEASON): in the round an echo triggers, troops of the hero's patron aspect are ascendant (same values as aomAspect.lua; no double bonus if already ascendant)
+	local cmd, godAspect = 0, { [1] = 2, [2] = 1, [3] = 3 }      -- patron god -> AOM_ASPECT (Kronos = Time 2, Oranos = Sky 1, Gaia = Earth 3)
 	for _, u in ipairs(units) do
 		if u:getBonusesValue({ type = "AOM_ECHO_SEASON" }) > 0 then cmd = math.max(cmd, u:getBonusesValue({ type = "AOM_SEASON_CMD" })) end
 	end
@@ -55,13 +55,13 @@ function M.roll(mechanics, server)
 	return true
 end
 
---- 回响落在谁身上：法术本来能作用的部队里随机挑一支不在原目标里的；没有别的就落回原目标的第一支。
+--- Who the echo lands on: a random unit the spell can affect that was not an original target; if none, the first original target.
 function M.pick(effect, mechanics, server, target)
 	local hit = {}
 	for _, dest in ipairs(target) do
 		if dest.unit then hit[dest.unit:unitID()] = true end
 	end
-	-- 回响不误伤：负面神力只落在敌方，正面神力只落在己方（动荡之乱这类不分敌我的范围法术，原目标可以有己方，回响不会）
+	-- echoes never hit the wrong side: negative powers only land on enemies, positive ones only on allies (area spells like Chaos may hit own units originally, the echo will not)
 	local side = mechanics:getCasterSide()
 	local pool = mechanics:getBattle():getUnitsIf(function(u)
 		if not u:isAlive() or hit[u:unitID()] then return false end

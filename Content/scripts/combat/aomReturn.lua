@@ -1,7 +1,7 @@
--- 重返大西洲（圣杯法术）的每回合结算：施法之后，每回合开始本方空降一队随机的城外神话生物。
--- 这个战斗事件由法术的 timed 效果挂给施法时在场的本方部队；预算（AOM_RETURN）由 spells/aomReturn.lua 写。
--- 按“一方每回合一次”结算，写法和 aomFavor.lua 一样：每个单位数自己经历的回合（AOM_RETURN_SEEN），
--- 一方里第一个发现“自己的回合数 > 已结算回合数（AOM_RETURN_TICK）”的单位负责空降。
+-- Return to Atlantis (Grail spell), per-round part: after casting, a random out-of-town myth creature stack lands on your side at the start of every round.
+-- This combat event is given by the spell's timed effect to own units present at casting; the budget (AOM_RETURN) is written by spells/aomReturn.lua.
+-- Settled once per side per round, like aomFavor.lua: every unit counts its own rounds (AOM_RETURN_SEEN),
+-- the first unit of a side that finds "own round count > settled round (AOM_RETURN_TICK)" does the landing.
 local Base = require("combat/combatScript")
 local L = require("lib/aomReturnLib")
 local Script = setmetatable({}, {__index = Base})

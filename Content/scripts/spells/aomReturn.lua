@@ -1,6 +1,6 @@
--- 重返大西洲（圣杯法术）的施法效果：立刻空降一队，并让本方之后每回合开始再空降一队，直到战斗结束。
--- 每回合的生命预算 = 力量 × 本级 power（和核心召唤法术同一算法，吃魔力术等加成），记在本方部队身上（AOM_RETURN）。
--- 每回合结算在 combat/aomReturn.lua（法术另一个 timed 效果把那个战斗事件挂给本方部队）。一场战斗只能放一次。
+-- Return to Atlantis (Grail spell), cast effect: one stack lands at once, and another lands at the start of every following round until the battle ends.
+-- Per-round health budget = power x this level's power (same as core summon spells, so Sorcery etc. apply), stored on own units (AOM_RETURN).
+-- Per-round landing is in combat/aomReturn.lua (the spell's other timed effect gives that combat event to own units). Castable once per battle.
 local Base = require("spells/summon")
 local L = require("lib/aomReturnLib")
 local Script = setmetatable({}, {__index = Base})
@@ -35,10 +35,10 @@ function Script:apply(mechanics, server, target)
 		L.setValue(server, battle, u, L.BUDGET, budget)
 		L.setValue(server, battle, u, L.SEEN, 1)
 	end
-	-- 电脑试算（describeChanges 为假）只看得到这一下：按 6 队报，代表之后每回合还会再来（整合检查清单“AI 与战力数值”的代理价值）；
-	-- 试算里的改动不会留到真战场，正式施放照常只降一队。
+	-- AI evaluation (describeChanges false) only sees this one cast: report it as 6 stacks to stand for the ones landing later (proxy value);
+	-- evaluation changes never reach the real battlefield; real casts land one stack as usual.
 	local trial = server.describeChanges and not server:describeChanges()
-	if not trial then      -- 全场动画，播完再落兵（不 deferred）
+	if not trial then      -- full-battlefield animation, then land the stack (not deferred)
 		local hex = L.screenHex(battle)
 		if hex ~= nil then server:showBattleAnimation(battle, { { hex = hex } }, L.SCREEN_FX, "", 1.0, false) end
 	end

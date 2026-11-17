@@ -9,9 +9,6 @@
 			"config/translations/chinese.json"
 		]
 	},
-	"translations": [
-		"config/translations/english.json"
-	],
 	"author": "Zeryss (terrain), yche2990 (adaptation)",
 	"version": "1.0.0",
 	"modType": "Objects",

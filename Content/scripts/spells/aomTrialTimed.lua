@@ -1,8 +1,8 @@
--- 减速类附带效果（震地冲击的减速）用：正式施放和核心的 timed 完全一样。
--- 电脑试算（server:describeChanges() 为假）时不真的挂减速，改成对每支中招的敌方地面近战部队报 剩余总生命 × trialRatio 的等效扣血。
--- 为什么：BattleAI 一看到速度变了就整盘重估行动顺序，估出来的分比任何伤害都高，结果电脑手里有天穹内爆、冥界之门也只会每回合放震地冲击
--- （云端模拟器：12 种神力全在书里时 150 次施法里 129 次是震地冲击，而且大多打输；按伤害估值后 6 种神力轮着用，胜负反过来）。
--- 配置：核心 timed 的全部字段 + {"trialRatio": 0.04}
+-- For slowing side effects (the slow of Shockwave): real casts are exactly like core timed.
+-- In AI evaluation (server:describeChanges() false) no slow is applied; instead every hit enemy ground melee stack reports remaining health x trialRatio as equivalent damage.
+-- Why: BattleAI re-evaluates the whole turn order as soon as speed changes and scores that above any damage, so an AI with Implode and Tartarian Gate only ever cast Shockwave
+-- (battle simulator: with all 12 god powers in the book, 129 of 150 casts were Shockwave, mostly lost; with damage-based values 6 powers were used in turn and results reversed).
+-- Config: all fields of core timed + {"trialRatio": 0.04}
 local Base = require("spells/timed")
 local P = require("lib/kadAiProxy")
 local Script = setmetatable({}, {__index = Base})

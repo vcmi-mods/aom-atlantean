@@ -2,7 +2,7 @@
 	"core:creatureGeneratorCommon": {
 		"types": {
 			"aomAtlDwell1": {
-				"name": "角斗营",
+				"name": "Gladiator School",
 				"creatures": [
 					[
 						"aomMurmillo"
@@ -35,7 +35,7 @@
 				}
 			},
 			"aomAtlDwell2": {
-				"name": "弓术场",
+				"name": "Archery Range",
 				"creatures": [
 					[
 						"aomArcus"
@@ -68,7 +68,7 @@
 				}
 			},
 			"aomAtlDwell3": {
-				"name": "机械工坊",
+				"name": "Machine Workshop",
 				"creatures": [
 					[
 						"aomAutomaton"
@@ -101,7 +101,7 @@
 				}
 			},
 			"aomAtlDwell4": {
-				"name": "灵鸟圣所",
+				"name": "Bird Sanctuary",
 				"creatures": [
 					[
 						"aomCaladria"
@@ -134,7 +134,7 @@
 				}
 			},
 			"aomAtlDwell5": {
-				"name": "海仙洞窟",
+				"name": "Nereid Grotto",
 				"creatures": [
 					[
 						"aomNereid"
@@ -167,7 +167,7 @@
 				}
 			},
 			"aomAtlDwell6": {
-				"name": "百臂深牢",
+				"name": "Centimanus Prison",
 				"creatures": [
 					[
 						"aomCentimanus"
@@ -200,7 +200,7 @@
 				}
 			},
 			"aomAtlDwell7": {
-				"name": "泰坦之门",
+				"name": "Titan Gate",
 				"creatures": [
 					[
 						"aomTitan"
@@ -233,7 +233,7 @@
 				}
 			},
 			"aomAtlClayWorks": {
-				"name": "泥塑工坊",
+				"name": "Clay Works",
 				"creatures": [
 					[
 						"aomPrometheanOffspring"
@@ -270,7 +270,7 @@
 				"bannedForRandomDwelling": true
 			},
 			"aomAtlNymphGrove": {
-				"name": "仙女林",
+				"name": "Nymph Grove",
 				"creatures": [
 					[
 						"aomSatyr"
@@ -310,7 +310,7 @@
 				"bannedForRandomDwelling": true
 			},
 			"aomAtlCavalryYard": {
-				"name": "骑兵校场",
+				"name": "Cavalry Yard",
 				"creatures": [
 					[
 						"aomTurma"

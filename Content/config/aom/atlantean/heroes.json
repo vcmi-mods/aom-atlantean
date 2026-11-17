@@ -4,12 +4,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "克洛诺斯",
-			"biography": "泰坦之王，时间的主宰。被囚于塔耳塔洛斯深处，仍在等待归来的时刻。",
+			"name": "Kronos",
+			"biography": "King of the Titans and master of time. Imprisoned in the depths of Tartarus, he still awaits the hour of his return.",
 			"specialty": {
-				"name": "时间之主",
-				"tooltip": "时间之主",
-				"description": "神代轮转里“时”连续当令两回合（天、时、时、地）；迟缓术效果随等级提高。\n\n{主神克洛诺斯}：麾下“时”相的兵叠2层时滞就定格。\n{神力亲和}：克洛诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Master of Time",
+				"tooltip": "Master of Time",
+				"description": "In the Titan Cycle, Time stays ascendant for two rounds in a row (Sky, Time, Time, Earth). Slow is cast with increased effect, based on the hero's level.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -94,12 +94,12 @@
 		"female": true,
 		"special": false,
 		"texts": {
-			"name": "勒托",
-			"biography": "泰坦女神，机关武士的守护者。她的造物倒下后还能彼此修复。",
+			"name": "Leto",
+			"biography": "A Titaness, guardian of the Automaton Warriors. Her creations repair one another after they fall.",
 			"specialty": {
-				"name": "恩惠：机关武士",
-				"tooltip": "恩惠：机关武士",
-				"description": "每回合开始恩惠+1，到点得一次神恩：\n{2点}：机关武士获得神性2回合。\n{4点}：机关武士修复到满血。\n{7点}：全场敌军时滞+1层。\n\n{主神克洛诺斯}：麾下“时”相的兵叠2层时滞就定格。\n{神力亲和}：克洛诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Favor: Automatons",
+				"tooltip": "Favor: Automaton Warriors",
+				"description": "Gains 1 Favor at the start of each round and receives a boon at each mark:\n{2 Favor}: Automaton Warriors gain Divinity for 2 rounds.\n{4 Favor}: Automaton Warriors are repaired to full Hit Points.\n{7 Favor}: All enemy troops get +1 stack of Time Lag.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -189,12 +189,12 @@
 		"female": true,
 		"special": false,
 		"texts": {
-			"name": "瑞亚",
-			"biography": "克洛诺斯之妻，众神之母。信徒的恩惠在她手中源源不绝。",
+			"name": "Rheia",
+			"biography": "Wife of Kronos and mother of the gods. In her hands the favor of the faithful never runs dry.",
 			"specialty": {
-				"name": "+1水晶",
-				"tooltip": "资源增长：每天+1水晶",
-				"description": "为王国每天额外提供1水晶。\n\n{主神克洛诺斯}：麾下“时”相的兵叠2层时滞就定格。\n{神力亲和}：克洛诺斯名下的神力法术更强，见各法术说明。"
+				"name": "+1 Crystal",
+				"tooltip": "Resource Bonus: +1 Crystal per day",
+				"description": "Gives the kingdom an extra 1 Crystal each day.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -276,12 +276,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "擎天阿特拉斯",
-			"biography": "被罚擎天的泰坦。在他身边，没有什么能被撼动。",
+			"name": "Atlas the Skybearer",
+			"biography": "The Titan condemned to hold up the sky. Beside him, nothing can be shaken.",
 			"specialty": {
-				"name": "恩惠：熔岩泰坦",
-				"tooltip": "恩惠：熔岩泰坦",
-				"description": "每回合开始恩惠+1，到点得一次神恩：\n{2点}：熔岩泰坦获得神性2回合。\n{4点}：擎天，熔岩泰坦这一回合受到的伤害-50%。\n{7点}：全场敌军时滞+1层。\n\n{主神克洛诺斯}：麾下“时”相的兵叠2层时滞就定格。\n{神力亲和}：克洛诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Favor: Lava Titans",
+				"tooltip": "Favor: Lava Titans",
+				"description": "Gains 1 Favor at the start of each round and receives a boon at each mark:\n{2 Favor}: Lava Titans gain Divinity for 2 rounds.\n{4 Favor}: Skybearer: Lava Titans take 50% less damage this round.\n{7 Favor}: All enemy troops get +1 stack of Time Lag.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -371,12 +371,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "克里奥斯",
-			"biography": "大西洲的神权领袖，克洛诺斯的仆从，亲手把泰坦的信仰带回故土。",
+			"name": "Krios",
+			"biography": "The Theocrat of Atlantis and servant of Kronos, who brought the worship of the Titans back to his homeland with his own hands.",
 			"specialty": {
-				"name": "恩惠：反曲弓手",
-				"tooltip": "恩惠：反曲弓手",
-				"description": "每回合开始恩惠+1，到点得一次神恩：\n{2点}：反曲弓手获得神性2回合。\n{4点}：星引，反曲弓手这一回合多攻击一次。\n{7点}：全场敌军时滞+1层。\n\n{主神克洛诺斯}：麾下“时”相的兵叠2层时滞就定格。\n{神力亲和}：克洛诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Favor: Arcus",
+				"tooltip": "Favor: Arcus",
+				"description": "Gains 1 Favor at the start of each round and receives a boon at each mark:\n{2 Favor}: Arcus gain Divinity for 2 rounds.\n{4 Favor}: Starpath: Arcus attack one more time this round.\n{7 Favor}: All enemy troops get +1 stack of Time Lag.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -467,12 +467,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "墨斯托尔",
-			"biography": "柏拉图所记大西洲十王之一，以攻城器械闻名。",
+			"name": "Mestor",
+			"biography": "One of the ten kings of Atlantis recorded by Plato, famed for his siege engines.",
 			"specialty": {
-				"name": "箭术",
-				"tooltip": "技能加成：箭术",
-				"description": "在箭术上每级得到5%的额外奖励。\n\n{主神克洛诺斯}：麾下“时”相的兵叠2层时滞就定格。\n{神力亲和}：克洛诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Archery",
+				"tooltip": "Skill Bonus: Archery",
+				"description": "Receives a 5% per level bonus to the Archery skill percentage.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -549,12 +549,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "欧埃蒙",
-			"biography": "十王之一，统领王国的重装步兵。",
+			"name": "Euaemon",
+			"biography": "One of the ten kings, commander of the heavy infantry of the kingdom.",
 			"specialty": {
-				"name": "进攻术",
-				"tooltip": "技能加成：进攻术",
-				"description": "在进攻术上每级得到5%的额外奖励。\n\n{主神克洛诺斯}：麾下“时”相的兵叠2层时滞就定格。\n{神力亲和}：克洛诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Offense",
+				"tooltip": "Skill Bonus: Offense",
+				"description": "Receives a 5% per level bonus to the Offense skill percentage.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -631,12 +631,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "谟涅修斯",
-			"biography": "十王之一，守卫内环城墙的将领。",
+			"name": "Mneseus",
+			"biography": "One of the ten kings, the general who guards the walls of the inner ring.",
 			"specialty": {
-				"name": "防御术",
-				"tooltip": "技能加成：防御术",
-				"description": "在防御术上每级得到5%的额外奖励。\n\n{主神克洛诺斯}：麾下“时”相的兵叠2层时滞就定格。\n{神力亲和}：克洛诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Armorer",
+				"tooltip": "Skill Bonus: Armorer",
+				"description": "Receives a 5% per level bonus to the Armorer skill percentage.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -713,12 +713,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "乌拉诺斯",
-			"biography": "原初的天空之神。万物都在他的注视之下。",
+			"name": "Oranos",
+			"biography": "The primordial god of the sky. All things lie beneath his gaze.",
 			"specialty": {
-				"name": "天穹之父",
-				"tooltip": "天穹之父",
-				"description": "神代轮转里“天”当令的回合，麾下所有三相部队幸运+1、速度+1；加速术的效果随英雄等级提高。\n\n{主神乌拉诺斯}：麾下“天”相的兵挂的天眼持续3回合。\n{神力亲和}：乌拉诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Father of the Sky",
+				"tooltip": "Father of the Sky",
+				"description": "In rounds of the Titan Cycle when Sky is ascendant, all Aspect troops under the hero get +1 Luck and +1 Speed. Haste is cast with increased effect, based on the hero's level.\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -803,12 +803,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "普罗米修斯",
-			"biography": "为凡人盗来天火的泰坦。在他麾下，凡人也能成为英雄。",
+			"name": "Prometheus",
+			"biography": "The Titan who stole fire from heaven for mortals. Under his command, mortals too can become heroes.",
 			"specialty": {
-				"name": "盗火者",
-				"tooltip": "盗火者",
-				"description": "麾下部队获得的兵种经验+25%；在学习能力上每级得到5%的额外奖励。\n\n{主神乌拉诺斯}：麾下“天”相的兵挂的天眼持续3回合。\n{神力亲和}：乌拉诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Fire Thief",
+				"tooltip": "Fire Thief",
+				"description": "Troops under the hero gain +25% stack experience. Receives a 5% per level bonus to the Learning skill percentage.\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -889,12 +889,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "许珀里翁",
-			"biography": "高天之光的泰坦，海仙女追随他巡行四海。",
+			"name": "Hyperion",
+			"biography": "The Titan of heavenly light. The Nereids follow him on his rounds of the four seas.",
 			"specialty": {
-				"name": "恩惠：海仙女",
-				"tooltip": "恩惠：海仙女",
-				"description": "每回合开始恩惠+1，到点得一次神恩：\n{2点}：海仙女获得神性2回合。\n{4点}：光耀，海仙女蓄力立刻蓄满（下一次近战伤害+200%）。\n{7点}：冲击波，全场敌军速度-2，持续2回合。\n\n{主神乌拉诺斯}：麾下“天”相的兵挂的天眼持续3回合。\n{神力亲和}：乌拉诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Favor: Nereids",
+				"tooltip": "Favor: Nereids",
+				"description": "Gains 1 Favor at the start of each round and receives a boon at each mark:\n{2 Favor}: Nereids gain Divinity for 2 rounds.\n{4 Favor}: Radiance: Nereids are fully charged at once (next melee attack deals +200% damage).\n{7 Favor}: Shockwave: all enemy troops get -2 Speed for 2 rounds.\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -984,12 +984,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "赫利俄斯",
-			"biography": "驾日车的太阳神。百臂巨人为他守望天穹。",
+			"name": "Helios",
+			"biography": "The sun god who drives the chariot of the sun. The Centimani keep watch over the heavens for him.",
 			"specialty": {
-				"name": "恩惠：百臂巨人",
-				"tooltip": "恩惠：百臂巨人",
-				"description": "每回合开始恩惠+1，到点得一次神恩：\n{2点}：百臂巨人获得神性2回合。\n{4点}：烈日，百臂巨人2回合内伤害+25%。\n{7点}：冲击波，全场敌军速度-2，持续2回合。\n\n{主神乌拉诺斯}：麾下“天”相的兵挂的天眼持续3回合。\n{神力亲和}：乌拉诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Favor: Centimani",
+				"tooltip": "Favor: Centimani",
+				"description": "Gains 1 Favor at the start of each round and receives a boon at each mark:\n{2 Favor}: Centimani gain Divinity for 2 rounds.\n{4 Favor}: Blazing Sun: Centimani deal +25% damage for 2 rounds.\n{7 Favor}: Shockwave: all enemy troops get -2 Speed for 2 rounds.\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1079,12 +1079,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "神权领袖",
-			"biography": "劝众人改奉乌拉诺斯的大祭司，言语能让整支军队振奋。",
+			"name": "Theocrat",
+			"biography": "The high priest who urged the people to turn to Oranos. His words can lift the spirits of a whole army.",
 			"specialty": {
-				"name": "祈祷大师",
-				"tooltip": "祈祷大师",
-				"description": "祈祷的效果随英雄等级提高，目标生物等级越低提高越多。\n\n{主神乌拉诺斯}：麾下“天”相的兵挂的天眼持续3回合。\n{神力亲和}：乌拉诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Prayer Master",
+				"tooltip": "Prayer Master",
+				"description": "Prayer is cast with increased effect, based on the hero's level: the lower the level of the target creature, the greater the increase.\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1164,12 +1164,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "安斐瑞斯",
-			"biography": "十王之一，执掌外环港口的船队。",
+			"name": "Ampheres",
+			"biography": "One of the ten kings, master of the fleets in the harbors of the outer ring.",
 			"specialty": {
-				"name": "航海术",
-				"tooltip": "技能加成：航海术",
-				"description": "在航海术上每级得到5%的额外奖励。\n\n{主神乌拉诺斯}：麾下“天”相的兵挂的天眼持续3回合。\n{神力亲和}：乌拉诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Navigation",
+				"tooltip": "Skill Bonus: Navigation",
+				"description": "Receives a 5% per level bonus to the Navigation skill percentage.\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1246,12 +1246,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "奥托克同",
-			"biography": "十王之一，生于大地之人，熟悉王国每一条道路。",
+			"name": "Autochthon",
+			"biography": "One of the ten kings, a man born of the earth who knows every road in the kingdom.",
 			"specialty": {
-				"name": "后勤术",
-				"tooltip": "技能加成：后勤术",
-				"description": "在后勤术上每级得到5%的额外奖励。\n\n{主神乌拉诺斯}：麾下“天”相的兵挂的天眼持续3回合。\n{神力亲和}：乌拉诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Logistics",
+				"tooltip": "Skill Bonus: Logistics",
+				"description": "Receives a 5% per level bonus to the Logistics skill percentage.\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1328,12 +1328,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "厄拉西波斯",
-			"biography": "十王之一，名为“策马者”，亲率标枪骑兵。",
+			"name": "Elasippus",
+			"biography": "One of the ten kings, named \"the Horse-Driver\", who leads the Turmae in person.",
 			"specialty": {
-				"name": "标枪骑兵",
-				"tooltip": "标枪骑兵",
-				"description": "每3级提高标枪骑兵及其升级形态20%的攻击力和防御力。速度+1。可随时在兵种窗口把机关武士和标枪骑兵互相转换（按两者差价收费）。\n\n{主神乌拉诺斯}：麾下“天”相的兵挂的天眼持续3回合。\n{神力亲和}：乌拉诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Turmae",
+				"tooltip": "Turmae",
+				"description": "Increases the Attack and Defense of Turmae and their upgrades by 20% for every 3 levels. They also get +1 Speed. Can convert Automaton Warriors and Turmae into each other at any time from the creature window (paying the price difference).\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1430,12 +1430,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "阿特拉斯王",
-			"biography": "波塞冬长子，大西洲第一位国王，大洋因他得名。",
+			"name": "King Atlas",
+			"biography": "Eldest son of Poseidon and first king of Atlantis, for whom the ocean is named.",
 			"specialty": {
-				"name": "理财术",
-				"tooltip": "技能加成：理财术",
-				"description": "在理财术上每级得到5%的额外奖励。\n\n{主神乌拉诺斯}：麾下“天”相的兵挂的天眼持续3回合。\n{神力亲和}：乌拉诺斯名下的神力法术更强，见各法术说明。"
+				"name": "Estates",
+				"tooltip": "Skill Bonus: Estates",
+				"description": "Receives a 5% per level bonus to the Estates skill percentage.\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1512,12 +1512,12 @@
 		"female": true,
 		"special": false,
 		"texts": {
-			"name": "盖亚",
-			"biography": "大地之母。她的子民脚下，草木自会生长。",
+			"name": "Gaia",
+			"biography": "Mother Earth. Grass and trees spring up by themselves beneath her people's feet.",
 			"specialty": {
-				"name": "大地之母",
-				"tooltip": "大地之母",
-				"description": "神代轮转里“地”当令的回合，麾下所有三相部队防御+2并恢复5%生命；治疗术的效果随英雄等级提高。\n\n{主神盖亚}：繁茂地面每回合回血15%。\n{神力亲和}：盖亚名下的神力法术更强，见各法术说明。"
+				"name": "Mother Earth",
+				"tooltip": "Mother Earth",
+				"description": "In rounds of the Titan Cycle when Earth is ascendant, all Aspect troops under the hero get +2 Defense and recover 5% of their Hit Points. Cure is cast with increased effect, based on the hero's level.\n\n{Patron God: Gaia}: Lush Ground heals 15% per round.\n{Affinity}: god powers of Gaia are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1607,12 +1607,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "俄刻阿诺斯",
-			"biography": "环绕世界的大河之神，灵鸟女祭司奉他之名医治伤者。",
+			"name": "Oceanus",
+			"biography": "God of the great river that encircles the world. The Caladrias heal the wounded in his name.",
 			"specialty": {
-				"name": "恩惠：灵鸟女祭司",
-				"tooltip": "恩惠：灵鸟女祭司",
-				"description": "每回合开始恩惠+1，到点得一次神恩：\n{2点}：灵鸟女祭司获得神性2回合。\n{4点}：潮涌，己方全体活物恢复20%生命。\n{7点}：本方部队脚下全部长出繁茂地面。\n\n{主神盖亚}：繁茂地面每回合回血15%。\n{神力亲和}：盖亚名下的神力法术更强，见各法术说明。"
+				"name": "Favor: Caladrias",
+				"tooltip": "Favor: Caladrias",
+				"description": "Gains 1 Favor at the start of each round and receives a boon at each mark:\n{2 Favor}: Caladrias gain Divinity for 2 rounds.\n{4 Favor}: Tidal Surge: all friendly living troops recover 20% of their Hit Points.\n{7 Favor}: Lush Ground grows under all friendly troops.\n\n{Patron God: Gaia}: Lush Ground heals 15% per round.\n{Affinity}: god powers of Gaia are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1710,12 +1710,12 @@
 		"female": true,
 		"special": false,
 		"texts": {
-			"name": "忒亚",
-			"biography": "视觉与光辉的泰坦女神，先知的眼睛因她而明。",
+			"name": "Theia",
+			"biography": "The Titaness of sight and radiance, who makes clear the eyes of the seers.",
 			"specialty": {
-				"name": "侦察术",
-				"tooltip": "特殊奖励：侦察范围随等级提高",
-				"description": "侦察范围随等级提高：2级+1，8级+2，14级+3，此后约每6～7级再+1。\n\n{主神盖亚}：繁茂地面每回合回血15%。\n{神力亲和}：盖亚名下的神力法术更强，见各法术说明。"
+				"name": "Scouting",
+				"tooltip": "Special Bonus: scouting radius grows with level",
+				"description": "Scouting radius grows with level: +1 at level 2, +2 at level 8, +3 at level 14, then another +1 about every 6-7 levels.\n\n{Patron God: Gaia}: Lush Ground heals 15% per round.\n{Affinity}: god powers of Gaia are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1809,12 +1809,12 @@
 		"female": true,
 		"special": false,
 		"texts": {
-			"name": "赫卡特",
-			"biography": "掌管魔法与岔路的女神，冥界的门听她号令。",
+			"name": "Hekate",
+			"biography": "Goddess of magic and crossroads; the gates of the underworld obey her command.",
 			"specialty": {
-				"name": "冥界之门",
-				"tooltip": "冥界之门",
-				"description": "开局掌握冥界之门，这个法术的伤害和召唤量+50%（代替亲和的+25%）；在魔力上每级得到5%的额外奖励。\n\n{主神盖亚}：繁茂地面每回合回血15%。\n{神力亲和}：盖亚名下的神力法术更强，见各法术说明。"
+				"name": "Tartarian Gate",
+				"tooltip": "Tartarian Gate",
+				"description": "Starts with Tartarian Gate, and its damage and summoned amount are increased by 50% (instead of the +25% from Affinity). Receives a 5% per level bonus to the Sorcery skill percentage.\n\n{Patron God: Gaia}: Lush Ground heals 15% per round.\n{Affinity}: god powers of Gaia are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -1900,12 +1900,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "卡斯托耳",
-			"biography": "阿尔坎托斯之子，大西洲遗民的年轻领袖。",
+			"name": "Kastor",
+			"biography": "Son of Arkantos, the young leader of the survivors of Atlantis.",
 			"specialty": {
-				"name": "恩惠：鱼盔角斗士",
-				"tooltip": "恩惠：鱼盔角斗士",
-				"description": "每回合开始恩惠+1，到点得一次神恩：\n{2点}：鱼盔角斗士获得神性2回合。\n{4点}：英雄之志，鱼盔角斗士2回合内攻击和防御+4。\n{7点}：本方部队脚下全部长出繁茂地面。\n\n{主神盖亚}：繁茂地面每回合回血15%。\n{神力亲和}：盖亚名下的神力法术更强，见各法术说明。"
+				"name": "Favor: Murmillos",
+				"tooltip": "Favor: Murmillos",
+				"description": "Gains 1 Favor at the start of each round and receives a boon at each mark:\n{2 Favor}: Murmillos gain Divinity for 2 rounds.\n{4 Favor}: Hero's Will: Murmillos get +4 Attack and +4 Defense for 2 rounds.\n{7 Favor}: Lush Ground grows under all friendly troops.\n\n{Patron God: Gaia}: Lush Ground heals 15% per round.\n{Affinity}: god powers of Gaia are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -2004,12 +2004,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "加狄鲁斯",
-			"biography": "十王之一，又名欧墨洛斯，封地直抵海克力斯之柱，富甲一方。",
+			"name": "Gadeirus",
+			"biography": "One of the ten kings, also called Eumelus. His domain reaches the Pillars of Heracles, and his wealth has no equal.",
 			"specialty": {
-				"name": "+350个金币",
-				"tooltip": "资源增长：每天+350金币",
-				"description": "为王国每天额外提供350个金币。\n\n{主神盖亚}：繁茂地面每回合回血15%。\n{神力亲和}：盖亚名下的神力法术更强，见各法术说明。"
+				"name": "+350 Gold",
+				"tooltip": "Resource Bonus: +350 Gold per day",
+				"description": "Gives the kingdom an extra 350 gold each day.\n\n{Patron God: Gaia}: Lush Ground heals 15% per round.\n{Affinity}: god powers of Gaia are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -2099,12 +2099,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "阿札厄斯",
-			"biography": "十王之一，主持波塞冬神庙的祭礼。",
+			"name": "Azaes",
+			"biography": "One of the ten kings, who presides over the rites in the temple of Poseidon.",
 			"specialty": {
-				"name": "神秘术",
-				"tooltip": "技能加成：神秘术",
-				"description": "在神秘术上每级得到5%的额外奖励。\n\n{主神盖亚}：繁茂地面每回合回血15%。\n{神力亲和}：盖亚名下的神力法术更强，见各法术说明。"
+				"name": "Mysticism",
+				"tooltip": "Skill Bonus: Mysticism",
+				"description": "Receives a 5% per level bonus to the Mysticism skill percentage.\n\n{Patron God: Gaia}: Lush Ground heals 15% per round.\n{Affinity}: god powers of Gaia are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {
@@ -2189,12 +2189,12 @@
 		"female": false,
 		"special": false,
 		"texts": {
-			"name": "狄阿普瑞斯",
-			"biography": "十王之一，名为“显赫者”，王国律法的记录者。",
+			"name": "Diaprepes",
+			"biography": "One of the ten kings, named \"the Illustrious\", keeper of the laws of the kingdom.",
 			"specialty": {
-				"name": "智力",
-				"tooltip": "技能加成：智力",
-				"description": "在智力上每级得到5%的额外奖励。\n\n{主神盖亚}：繁茂地面每回合回血15%。\n{神力亲和}：盖亚名下的神力法术更强，见各法术说明。"
+				"name": "Intelligence",
+				"tooltip": "Skill Bonus: Intelligence",
+				"description": "Receives a 5% per level bonus to the Intelligence skill percentage.\n\n{Patron God: Gaia}: Lush Ground heals 15% per round.\n{Affinity}: god powers of Gaia are stronger in the hero's hands; see each spell."
 			}
 		},
 		"images": {

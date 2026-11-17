@@ -1,6 +1,6 @@
--- 克制巨物（长锤步兵）：对双格部队伤害加成。
--- 引擎的按标记加伤（HATES_TRAIT）只认加成标记，没有“双格”这个标记，所以由带这个能力的兵在战斗开始和每回合开始时，
--- 给敌方还活着的双格部队挂一个隐藏标记 AOM_BIG（整场有效；后来召唤出来的下一回合补上），兵自己带 HATES_TRAIT → AOM_BIG。
+-- Giant Slayer (Katapeltes): bonus damage against two-hex units.
+-- The engine's per-trait damage bonus (HATES_TRAIT) only knows bonus markers and has no "two-hex" marker, so units with this ability, at battle start and each round start,
+-- mark living enemy two-hex units with a hidden AOM_BIG (lasts the battle; units summoned later are marked next round); the unit itself has HATES_TRAIT -> AOM_BIG.
 local Base = require("combat/combatScript")
 local Script = setmetatable({}, {__index = Base})
 Script.__index = Script

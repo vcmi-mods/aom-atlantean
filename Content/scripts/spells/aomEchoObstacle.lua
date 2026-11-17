@@ -1,7 +1,7 @@
--- 神力回响，障碍类：回响触发时再放一个单格障碍。
--- radius 写了就落在目标格周围 radius 步以内的随机空格（盖亚之林多长一棵树）；没写就落在全场随机空格（蛛穴陷阱多一个）。
--- anchorWest：图片比一格宽、要靠左一格对齐时写 true（障碍的定位格在占用格的西边一格，占用格是它东边那格）。
--- 配置：{"type": "aomEchoObstacle", "radius": 2, "anchorWest": true, "hidden": false, "passable": false, "trap": false, "triggerAbility": "", "removeOnTrigger": false,
+-- Divine Echo, obstacles: when the echo triggers, places one more one-hex obstacle.
+-- With radius: a random free hex within radius of the target hex (one more tree for Gaia's Forest); without: a random free hex anywhere (one more Spider Lair trap).
+-- anchorWest: true when the image is wider than a hex and aligns one hex to the left (the anchor hex is west of the occupied hex, the occupied hex is east of it).
+-- Config: {"type": "aomEchoObstacle", "radius": 2, "anchorWest": true, "hidden": false, "passable": false, "trap": false, "triggerAbility": "", "removeOnTrigger": false,
 --        "turnsRemaining": 2, "animation": "…", "appearAnimation": "…", "appearSound": "…", "removalAnimation": "…"}
 local Base = require("spells/spellEffect")
 local God = require("spells/aomGod")

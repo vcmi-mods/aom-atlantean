@@ -1,6 +1,6 @@
--- 旋涡传送：把己方离目标格最近的 count 队部队瞬间传到目标格周围（各落在离目标格最近的空格）。
--- 主神亲和（gods）多传 1 队；神力回响触发时再多传 1 队。战争器械、箭塔不传。
--- 配置：{"type": "aomVortex", "count": 2, "gods": [1, 2], "animation": "落点动画"}
+-- Vortex: instantly moves the count own stacks nearest the target hex to around it (each on the free hex nearest the target).
+-- Patron affinity (gods) moves 1 more stack; a Divine Echo moves 1 more. War machines and arrow towers are not moved.
+-- Config: {"type": "aomVortex", "count": 2, "gods": [1, 2], "animation": "landing animation"}
 local Base = require("spells/spellEffect")
 local God = require("spells/aomGod")
 local Echo = require("spells/aomEchoCommon")
@@ -8,7 +8,7 @@ local P = require("lib/kadAiProxy")
 local Script = setmetatable({}, {__index = Base})
 Script.__index = Script
 
--- 动画只在真打的时候放：电脑试算（describeChanges 为假）时发动画包，引擎每次报 "BattleAnimationPlayed is not allowed in battle evaluation"
+-- Animations only in real battles: sending animation packs during AI evaluation (describeChanges false) makes the engine log "BattleAnimationPlayed is not allowed in battle evaluation" every time
 local function showAnim(server, ...)
 	if server.describeChanges and not server:describeChanges() then return end
 	server:showBattleAnimation(...)
@@ -56,9 +56,9 @@ function Script:apply(mechanics, server, target)
 		if da ~= db then return da < db end
 		return a:unitID() < b:unitID()
 	end)
-	-- 电脑试算（整合检查清单：会让部队换位的法术，试算时只报等效价值、不真改战场）：
-	-- 被卷过去的近战部队里，原本这一回合走不到目标格旁边敌军的，每队按“多打出的一下 × 0.6”记到那支敌军上；
-	-- 会把还有弹药的射手卷到敌人脸上、或者目标格旁边没有敌军时不报。
+	-- AI evaluation (spells that move units only report an equivalent value in evaluation and never change the battlefield):
+	-- for each moved melee stack that could not reach an enemy next to the target hex this round, book "one extra hit x 0.6" on that enemy;
+	-- nothing is reported if a shooter with ammo would be dropped in front of enemies, or no enemy is next to the target hex.
 	if P.trial(server) then
 		local near, nd = nil, 99
 		for _, e in ipairs(battle:getUnitsIf(function(x) return x:isAlive() and not x:isGhost() and not x:isTurret() and x:getSide() ~= mechanics:getCasterSide() end)) do
@@ -82,7 +82,7 @@ function Script:apply(mechanics, server, target)
 	for i = 1, math.min(n, #units) do
 		local unit, here = units[i], God.distance(units[i]:getPosition(), centre)
 		for _, cand in ipairs(order) do
-			if cand.d >= here then break end      -- 已经比能去的空格更近，就不动
+			if cand.d >= here then break end      -- already closer than any reachable free hex, don't move
 			if battle:isAccessibleForUnit(unit, cand.hex) then
 				server:moveUnit(battle, unit, cand.hex, true)
 				if self.animation then showAnim(server, battle, { { unit = unit } }, self.animation, "", 1.0, true) end

@@ -1,22 +1,22 @@
--- 泰坦三相（大西洲的种族系统）。每个兵种带一份，addInfo.aspect = "sky"（天）、"time"（时）、"earth"（地）或 "man"（人，英雄形态）。
+-- Titan Aspects (the Atlantean faction system). Every creature carries one; addInfo.aspect = "sky", "time", "earth" or "man" (hero forms).
 --
--- 天：攻击后给目标挂“天眼”2 回合。带三相脚本的部队攻击带天眼的目标：无距离、无城墙惩罚，幸运 +1。
--- 时：攻击后给目标叠一层“时滞”（速度 -1，3 回合），叠到 3 层时目标“定格”一回合（不能行动），层数清空。
--- 地：每回合开始在脚下留下“繁茂地面”3 回合（可通行的战场障碍物，两方各用一个标记法术区分是谁的）。
---     本方部队站在上面：这一回合回血 10%、防御 +2，并免疫时滞和定格（地利）；敌人站在上面：这一回合速度 -2。
---     人（英雄形态）站在繁茂地面上攻击 +3。
--- 人：借势——攻击带天眼的目标伤害 +100%；攻击带时滞的目标多叠一层。
--- 天时：目标同时带天眼和时滞时，攻击无视其 30% 防御。
--- 四者齐备：军中同时有天、时、地、人，英雄形态每场一次在一回合里多攻击一次。克洛诺斯泰坦（addInfo.surgeOnce）第一次当令时同样多攻击一次。
--- 神代轮转：每回合一相当令，顺序天 → 时 → 地；当令的兵这一回合速度 +2、伤害 +15%。
--- 主神：英雄特长里带隐藏的 AOM_GOD（1 克洛诺斯、2 乌拉诺斯、3 盖亚，全军继承），主神对应的那一相加强一档——
---     乌拉诺斯：天眼持续 3 回合；克洛诺斯：时滞 2 层即定格；盖亚：繁茂回血 15%。
--- 停转：英雄带 AOM_SEASON_HOLD（克洛诺斯本人）时，“时”连续当令两回合，轮转变成天 → 时 → 时 → 地。
--- 三相御令（种族二级技能，英雄带隐藏的 AOM_SEASON_CMD = 1／2／3，全军继承）：当令伤害 +30%／45%／60%（0.0.52 前是 25／35／50），另由技能配置给英雄攻击 +1／2／3；
---     高级起轮转从英雄主神之相开始；专家时英雄形态（人）在主神之相当令的回合也算当令。
---     主神神殿（城镇建筑，守城部队带隐藏的 AOM_SEASON_TEMPLE）：守城战里轮转同样从守城英雄主神之相开始。
---     泰坦遗宝（AOM_RELIC）：当令伤害再 +10%，第一回合三相同时当令。
---     联动：战术（AOM_SEASON_SPD）当令速度再 +1；领导术（AOM_SEASON_MORALE）当令的兵士气 +1。
+-- Sky: after attacking, marks the target with Sky Eye for 2 rounds. Units with this script attacking a Sky Eye target: no range or wall penalty, +1 Luck.
+-- Time: each attack adds one Time Lag stack (-1 Speed, 3 rounds); at 3 stacks the target is Frozen for one round (cannot act) and the stacks reset.
+-- Earth: at the start of each round leaves Lush Ground underfoot for 3 rounds (a passable battlefield obstacle; each side uses its own marker spell).
+--     Allied troops standing on it: this round regain 10% health, +2 Defense, immune to Time Lag and Freeze; enemies on it: -2 Speed this round.
+--     Man (hero forms) standing on Lush Ground get +3 Attack.
+-- Man: Seize the moment - +100% damage against Sky Eye targets; adds one extra Time Lag stack to lagged targets.
+-- Sky + Time: attacks against a target with both Sky Eye and Time Lag ignore 30% of its Defense.
+-- All four: with Sky, Time, Earth and Man in the army, hero forms attack one extra time in one round per battle. The Kronos Titan (addInfo.surgeOnce) also attacks one extra time the first time it is ascendant.
+-- Aspect rotation: one aspect is ascendant each round, in the order Sky -> Time -> Earth; ascendant troops get +2 Speed and +15% damage this round.
+-- Patron god: hero specialties carry a hidden AOM_GOD (1 Kronos, 2 Oranos, 3 Gaia, inherited by the army); the patron's aspect is one step stronger -
+--     Oranos: Sky Eye lasts 3 rounds; Kronos: 2 Time Lag stacks freeze; Gaia: Lush Ground heals 15%.
+-- Hold: when the hero has AOM_SEASON_HOLD (Kronos himself), Time stays ascendant for two rounds, rotation Sky -> Time -> Time -> Earth.
+-- Triune Order (racial secondary skill, hidden AOM_SEASON_CMD = 1/2/3 on the hero, inherited by the army): ascendant damage +30%/45%/60% (25/35/50 before 0.0.52); the skill also gives the hero +1/2/3 Attack;
+--     from Advanced the rotation starts at the hero's patron aspect; at Expert hero forms (Man) are also ascendant in the patron aspect's round.
+--     Patron Temple (town building, hidden AOM_SEASON_TEMPLE on defending troops): in sieges the rotation also starts at the defending hero's patron aspect.
+--     Titan Legacy (AOM_RELIC): ascendant damage another +10%, all three aspects ascendant in the first round.
+--     Synergies: Tactics (AOM_SEASON_SPD) ascendant Speed another +1; Leadership (AOM_SEASON_MORALE) ascendant troops +1 Morale.
 local Base = require("combat/combatScript")
 local Script = setmetatable({}, {__index = Base})
 Script.__index = Script
@@ -24,14 +24,14 @@ Script.__index = Script
 local ROUND, SEASON, SKYEYE, TIMELAG, FROZEN = "AOM_ASPECT_ROUND", "AOM_INSEASON", "AOM_SKYEYE", "AOM_TIMELAG", "AOM_FROZEN"
 local ORDER = { sky = 0, time = 1, earth = 2 }
 local MAX_LAG = 3
-local CMD_BOOST = { [0] = 15, 30, 45, 60 }      -- 当令伤害：没有三相御令 15%，初级／中级／高级 30／45／60%
+local CMD_BOOST = { [0] = 15, 30, 45, 60 }      -- ascendant damage: 15% without Triune Order, Basic/Advanced/Expert 30/45/60%
 local GOD, HOLD = "AOM_GOD", "AOM_SEASON_HOLD"
 local KRONOS, ORANOS, GAIA = 1, 2, 3
 local CMD, CMD_SPD, CMD_MORALE = "AOM_SEASON_CMD", "AOM_SEASON_SPD", "AOM_SEASON_MORALE"
-local GOD_PHASE = { [1] = 1, [2] = 0, [3] = 2 }      -- 主神 → 它那一相在轮转里的序号（克洛诺斯 = 时，乌拉诺斯 = 天，盖亚 = 地）
+local GOD_PHASE = { [1] = 1, [2] = 0, [3] = 2 }      -- patron god -> index of its aspect in the rotation (Kronos = Time, Oranos = Sky, Gaia = Earth)
 local HELD = { [0] = 0, [1] = 1, [2] = 1, [3] = 2 }
 
--- 动画只在真打的时候放：电脑试算（describeChanges 为假）时发动画包，引擎每次报 "BattleAnimationPlayed is not allowed in battle evaluation"
+-- Animations only in real battles: sending animation packs during AI evaluation (describeChanges false) makes the engine log "BattleAnimationPlayed is not allowed in battle evaluation" every time
 local function showAnim(server, ...)
 	if server.describeChanges and not server:describeChanges() then return end
 	server:showBattleAnimation(...)
@@ -55,17 +55,17 @@ end
 local LUSH, MIRED = "AOM_LUSH", "AOM_MIRED"
 local LUSH_SPELL = { [0] = "aomLushGround0", [1] = "aomLushGround1" }
 local LUSH_ANIMATION = "aom/atlantean/fx/lush.json"
--- 消散：引擎把消散动画倒着播，所以帧序是从淡到实；不写的话 Yu 的引擎每块报一次 "I don't know how to animate removal of this obstacle"
+-- Dissolve: the engine plays the removal animation backwards, so frames go from faint to solid; without it the engine logs "I don't know how to animate removal of this obstacle" for every obstacle
 local LUSH_FADE = "aom/atlantean/fx/lushOut.json"
--- 状态挂上时的画面，都是游戏原版特效（tools/fx_spell.py、fx_cut.py）：天眼 = skypassage_symbol_glow，时滞和定格 = kronos_glow（小、大），天相当令 = sky_passage_glow
+-- Effects when a status is applied, all original game effects (tools/fx_spell.py, fx_cut.py): Sky Eye = skypassage_symbol_glow, Time Lag and Freeze = kronos_glow (small, large), Sky ascendant = sky_passage_glow
 local FX = { eye = "aom/atlantean/fx/skyeye.json", lag = "aom/atlantean/fx/timelag.json", frozen = "aom/atlantean/fx/frozen.json", seasonSky = "aom/atlantean/fx/seasonSky.json",
 	seasonEarth = "aom/atlantean/fx/seasonEarth.json", seasonCmd = "aom/atlantean/fx/seasonCmd.json" }
 local SEASON_FX = { sky = FX.seasonSky, time = FX.lag, earth = FX.seasonEarth }
 
--- 天眼的地面光盘要压在目标脚下：引擎按“行在先、层在后”画，特效总画在同一行部队的上面。
--- 所以光盘播在目标上一行的格子上（先于目标那一行画出来），图片事先按“脚底在图片中心下方 83 像素、左右偏 22 像素”裁好：
---   单格目标：左上格用 skyeyeGL，右上格用 skyeyeGR；双格目标：身体正中上方那一格用 skyeyeG0。
--- 头顶的光环（skyeyeTop）照常播在目标身上。上一行没有可用的格子（目标在最上一行，或那一格站着双格部队，引擎会把图横移半格）时退回整幅的 skyeye。
+-- The Sky Eye ground disc must be drawn under the target's feet: the engine draws by row first, then layer, so effects are always drawn above units in the same row.
+-- So the disc is played on a hex in the row above the target (drawn before the target's row); the images are pre-cut with the feet 83 px below the image centre and offset 22 px sideways:
+--   one-hex target: upper-left hex uses skyeyeGL, upper-right uses skyeyeGR; two-hex target: the hex above the body centre uses skyeyeG0.
+-- The halo over the head (skyeyeTop) is played on the target as usual. If there is no usable hex above (top row, or a two-hex unit there, which makes the engine shift the image half a hex) the full skyeye is used instead.
 local EYE_GROUND = { G0 = "aom/atlantean/fx/skyeyeG0.json", GL = "aom/atlantean/fx/skyeyeGL.json", GR = "aom/atlantean/fx/skyeyeGR.json" }
 local EYE_TOP = "aom/atlantean/fx/skyeyeTop.json"
 
@@ -123,12 +123,12 @@ local function onLush(battle, unit, key)
 	return false
 end
 
---- 地：留下繁茂地面，并结算站在本方繁茂地面上的部队
+--- Earth: leave Lush Ground and settle the troops standing on own Lush Ground
 function Script:lush(server, battle, unit)
 	local key = LUSH_SPELL[sideIndex(unit)]
 	local turn = ENUM.BonusDuration.nTurns
 
-	-- 每格一块（引擎只在障碍物的锚点格画一张图，双格单位要放两块）
+	-- one per hex (the engine draws an obstacle image only at its anchor hex, so two-hex units need two)
 	local hexes = unit:getHexes()
 	for i = 1, hexes:size() do
 		local hex = hexes:at(i)
@@ -172,7 +172,7 @@ end
 
 local USED, SURGE = "AOM_SURGE_USED", "AOM_SURGE"
 
---- 这一回合多攻击一次，每场一次
+--- one extra attack this round, once per battle
 function Script:extraAttack(server, battle, unit)
 	local turn = ENUM.BonusDuration.nTurns
 	add(server, battle, unit, { type = USED, val = 1, valueType = ENUM.BonusValueType.baseNumber, duration = ENUM.BonusDuration.oneBattle, hidden = true })
@@ -181,14 +181,14 @@ function Script:extraAttack(server, battle, unit)
 	server:appendLog(battle, { append = { "core.bonus." .. SURGE .. ".description.900001" }, replaceStrings = { unit:getCreature():getNameTextID(unit:getCount()) }, replaceNumbers = { 1 } })
 end
 
---- 神代轮转
+--- Aspect rotation
 function Script:season(server, battle, unit, round)
 	clear(server, battle, unit, ROUND)
 	add(server, battle, unit, { type = ROUND, val = round, valueType = ENUM.BonusValueType.baseNumber, duration = ENUM.BonusDuration.oneBattle, hidden = true })
 
 	if self.aspect == "earth" and unit:isAlive() then self:lush(server, battle, unit) end
 
-	-- 守城提示：第一回合，守城一方带三相脚本的部队里编号最小的那支写一次战报（主神神殿、神话／奇迹时代的守城加成）
+	-- Siege note: in the first round, the defending unit with this script and the lowest id writes one battle log line (Patron Temple, Mythic/Wonder Age siege bonuses)
 	if round == 1 and unit:isAlive() and (not server.describeChanges or server:describeChanges()) then
 		local temple, age = unit:hasBonuses({ type = "AOM_SEASON_TEMPLE" }), unit:getBonusesValue({ type = "AOM_AGE_SIEGE" })
 		if temple or age > 0 then
@@ -201,7 +201,7 @@ function Script:season(server, battle, unit, round)
 		end
 	end
 
-	-- 人：军中天、时、地、人四者齐备，每场一次，这一回合多攻击一次（原设计是额外行动，引擎没有这个手段）
+	-- Man: with Sky, Time, Earth and Man all in the army, one extra attack in one round per battle (the original design was an extra action, which the engine cannot do)
 	if self.aspect == "man" and unit:isAlive() and not unit:hasBonuses({ type = USED }) then
 		local side, seen = unit:getSide(), {}
 		for _, other in ipairs(battle:getUnitsIf(function(u) return u:isAlive() and u:getSide() == side end)) do
@@ -212,12 +212,12 @@ function Script:season(server, battle, unit, round)
 
 	local index = ORDER[self.aspect or ""]
 	local cmd, own = unit:getBonusesValue({ type = CMD }), GOD_PHASE[god(unit)]
-	local lead = cmd >= 2 or unit:hasBonuses({ type = "AOM_SEASON_TEMPLE" })      -- 三相御令高级，或在有主神神殿的城里守城：从主神之相开始
+	local lead = cmd >= 2 or unit:hasBonuses({ type = "AOM_SEASON_TEMPLE" })      -- Advanced Triune Order, or defending a town with a Patron Temple: start at the patron aspect
 	local start = (lead and own) or 0
 	local phase = (round - 1 + start) % 3
-	if unit:hasBonuses({ type = HOLD }) then phase = HELD[(round - 1 + (lead and 1 or 0)) % 4] end      -- 停转：天 时 时 地；御令高级从第一个“时”开始
-	-- 天穹之父／大地之母（乌拉诺斯、盖亚本人的特长：英雄带隐藏的 AOM_PARENT = 2／3，全军继承）[town_design2]
-	-- “天”（或“地”）当令的回合，所有带三相脚本的部队不论哪一相：天 = 幸运 +1、速度 +1；地 = 防御 +2、恢复 5% 生命
+	if unit:hasBonuses({ type = HOLD }) then phase = HELD[(round - 1 + (lead and 1 or 0)) % 4] end      -- Hold: Sky Time Time Earth; Advanced Triune Order starts at the first Time
+	-- Father of the Sky / Mother Earth (specialties of Oranos and Gaia themselves: hidden AOM_PARENT = 2/3 on the hero, inherited by the army) [town_design2]
+	-- in Sky (or Earth) ascendant rounds, every unit with this script, whatever its aspect: Sky = +1 Luck, +1 Speed; Earth = +2 Defense, regain 5% health
 	local parent = unit:getBonusesValue({ type = "AOM_PARENT" })
 	if unit:isAlive() and parent == 2 and phase == 0 then
 		add(server, battle, unit, { type = "LUCK", val = 1, duration = ENUM.BonusDuration.nTurns, turns = 1, hidden = true })
@@ -228,14 +228,14 @@ function Script:season(server, battle, unit, round)
 		local amount = math.min(missing, math.ceil(unit:getMaxHealth() * 5 / 100))
 		if amount > 0 then server:healUnit(battle, unit, amount, ENUM.HealLevel.heal, ENUM.HealPower.permanent) end
 	end
-	if self.aspect == "man" and cmd >= 3 then index = own end -- 三相御令专家：英雄形态在主神之相当令时也算当令
-	-- 泰坦遗宝（组合宝物，英雄带隐藏的 AOM_RELIC，全军继承）：第一回合天、时、地三相同时当令；当令伤害加成再 +10
-	if self.always then index = phase end      -- 三相一体（首都守护者）：每回合都当令
+	if self.aspect == "man" and cmd >= 3 then index = own end -- Expert Triune Order: hero forms are also ascendant when the patron aspect is
+	-- Titan Legacy (combination artifact, hidden AOM_RELIC on the hero, inherited by the army): Sky, Time and Earth all ascendant in the first round; ascendant damage another +10
+	if self.always then index = phase end      -- Triune Unity (capital guardian): ascendant every round
 	local relic = unit:getBonusesValue({ type = "AOM_RELIC" }) > 0
 	if index == nil or not unit:isAlive() then return end
 	if phase ~= index and not (relic and round == 1) then return end
 
-	-- 克洛诺斯泰坦：第一次当令的那一回合多攻击一次（每场一次；原设计是额外行动）
+	-- Kronos Titan: one extra attack in the first round it is ascendant (once per battle; originally an extra action)
 	if self.surgeOnce and not unit:hasBonuses({ type = USED }) then self:extraAttack(server, battle, unit) end
 
 	local turn = ENUM.BonusDuration.nTurns
@@ -244,7 +244,7 @@ function Script:season(server, battle, unit, round)
 	if unit:getBonusesValue({ type = CMD_MORALE }) > 0 then add(server, battle, unit, { type = "MORALE", val = 1, duration = turn, turns = 1, hidden = true }) end
 	add(server, battle, unit, { type = SEASON, val = (CMD_BOOST[cmd] or 15) + (relic and 10 or 0), valueType = ENUM.BonusValueType.baseNumber, duration = turn, turns = 1 })
 
-	-- 当令的画面：这一方同一相的部队里编号最小的那支替大家播一次（每支各播一次会一个接一个排队）
+	-- ascendant visuals: the unit with the lowest id of each aspect on a side plays it once for all (one per unit would queue up one after another)
 	local animation = SEASON_FX[self.aspect]
 	if animation then
 		local side, mine, shown, leader = unit:getSide(), unit:getBonusesValue({ type = "AOM_ASPECT" }), {}, unit:unitID()
@@ -255,12 +255,12 @@ function Script:season(server, battle, unit, round)
 			end
 		end
 		if leader == unit:unitID() then
-			local note = ({ sky = 1, time = 2, earth = 3 })[self.aspect]      -- 战报：本回合哪一相当令
+			local note = ({ sky = 1, time = 2, earth = 3 })[self.aspect]      -- battle log: which aspect is ascendant this round
 			if note and (not server.describeChanges or server:describeChanges()) then
 				server:appendLog(battle, { append = { "core.bonus." .. SEASON .. ".description." .. (900000 + note) }, replaceNumbers = { (CMD_BOOST[cmd] or 15) + (relic and 10 or 0) } })
 			end
 			showAnim(server, battle, shown, animation, "", 1.0, true)
-			if cmd > 0 then showAnim(server, battle, shown, FX.seasonCmd, "", 1.0, true) end      -- 三相御令：当令时再落一道时光光柱
+			if cmd > 0 then showAnim(server, battle, shown, FX.seasonCmd, "", 1.0, true) end      -- Triune Order: an extra time light pillar when ascendant
 			server:refreshBattleUnits(battle)
 		end
 	end
@@ -303,7 +303,7 @@ function Script:onBeforeAttack(server, battle, unit, other, payload)
 	end
 	if eye and lag then
 		add(server, battle, unit, { type = "ENEMY_DEFENCE_REDUCTION", val = 30, duration = once, hidden = true })
-		if (not server.describeChanges or server:describeChanges()) then      -- 战报：天时
+		if (not server.describeChanges or server:describeChanges()) then      -- battle log: Sky + Time
 			server:appendLog(battle, { append = { "core.bonus." .. SKYEYE .. ".description.900001" }, replaceStrings = { unit:getCreature():getNameTextID(unit:getCount()) }, replaceNumbers = { 30 } })
 		end
 	end
@@ -318,8 +318,8 @@ local function logLine(server, battle, key, unit, number)
 end
 
 function Script:addLag(server, battle, target, limit)
-	if target:hasBonuses({ type = "AOM_LAG_REST" }) then return nil end      -- 定格过的部队 2 回合内不再受时滞
-	if target:hasBonuses({ type = LUSH }) then return nil end          -- 地利：站在本方繁茂地面上免疫时滞和定格
+	if target:hasBonuses({ type = "AOM_LAG_REST" }) then return nil end      -- a unit that was frozen is immune to Time Lag for 2 rounds
+	if target:hasBonuses({ type = LUSH }) then return nil end          -- Earth advantage: standing on own Lush Ground gives immunity to Time Lag and Freeze
 	local layers = target:getBonusesValue({ type = TIMELAG })
 	local turn = ENUM.BonusDuration.nTurns
 
@@ -355,7 +355,7 @@ function Script:onAfterAttack(server, battle, unit, other, payload)
 				shown.eye[#shown.eye + 1] = target
 				changed = true
 			elseif self.aspect == "time" or (self.aspect == "man" and target:hasBonuses({ type = TIMELAG })) then
-				-- 时滞看分量：这一下的伤害不到目标整队生命（打之前）的 3% 就不叠层，免得 1 个兵也能定格一整队（审计 N6）
+				-- Time Lag needs weight: a hit dealing less than 3% of the target stack's total health (before the hit) adds no stack, so a single unit cannot freeze a whole stack (audit N6)
 				local left = (target:getCount() - 1) * target:getMaxHealth() + target:getFirstHPleft()
 				local what = (entry.damage * 100 >= (left + entry.damage) * 3) and self:addLag(server, battle, target, limit) or nil
 				if what then
@@ -366,7 +366,7 @@ function Script:onAfterAttack(server, battle, unit, other, payload)
 		end
 	end
 
-	-- 每种状态一次播给全部目标，最后刷新一次
+	-- play each status once for all targets, refresh once at the end
 	if changed then
 		if #shown.eye > 0 then showEye(server, battle, shown.eye) end
 		for _, what in ipairs({ "lag", "frozen" }) do

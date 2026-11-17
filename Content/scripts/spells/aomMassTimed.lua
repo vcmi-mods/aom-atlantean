@@ -1,4 +1,4 @@
--- 给己方全体合适的部队加状态，不看法术点的是哪一格（金苹果树的再生）。其余和核心的 timed 一样。
+-- Adds a status to every suitable own unit regardless of the hex clicked (Golden Apple Tree regeneration). Otherwise like core timed.
 local Base = require("spells/timed")
 local Script = setmetatable({}, {__index = Base})
 Script.__index = Script

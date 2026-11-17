@@ -1,9 +1,9 @@
 {
 	"aomSickleOfKronos": {
 		"text": {
-			"name": "克洛诺斯之镰",
-			"description": "{克洛诺斯之镰}\n\n攻击力+4，己方部队速度+1。\n\n泰坦遗宝的部件。",
-			"event": "海底裂谷的淤泥里斜插着一柄镰刀，刃口黑得不反光。你握住它的时候，四周的水流慢了一拍。这是克洛诺斯之镰。"
+			"name": "Sickle of Kronos",
+			"description": "{Sickle of Kronos}\n\n+4 Attack. Your troops get +1 Speed.\n\nA component of the Titan Legacy.",
+			"event": "A sickle stands aslant in the silt of an undersea rift, its edge so black that it gives back no light. As you grasp it, the currents around you slow by a beat. This is the Sickle of Kronos."
 		},
 		"type": [
 			"HERO"
@@ -32,9 +32,9 @@
 	},
 	"aomStarVeilOfOranos": {
 		"text": {
-			"name": "乌拉诺斯星幕",
-			"description": "{乌拉诺斯星幕}\n\n知识+4，己方部队幸运+1。\n\n泰坦遗宝的部件。",
-			"event": "山顶的祭坛上搭着一块深蓝的布，白天也看得见上面的星星在慢慢移动。你把它披上肩，夜空仿佛低了下来。这是乌拉诺斯星幕。"
+			"name": "Star Veil of Oranos",
+			"description": "{Star Veil of Oranos}\n\n+4 Knowledge. Your troops get +1 Luck.\n\nA component of the Titan Legacy.",
+			"event": "A deep blue cloth lies draped over the altar on the summit, and even by day you can see the stars on it drifting slowly. You put it around your shoulders, and the night sky seems to sink lower. This is the Star Veil of Oranos."
 		},
 		"type": [
 			"HERO"
@@ -63,9 +63,9 @@
 	},
 	"aomBookOfGaia": {
 		"text": {
-			"name": "盖亚之书",
-			"description": "{盖亚之书}\n\n力量+3，己方部队生命值+2。\n\n泰坦遗宝的部件。",
-			"event": "老树的树洞里长着一本书，藤蔓从封面的铜叶下钻出来，缠住了你伸过去的手，又慢慢松开。这是盖亚之书。"
+			"name": "Book of Gaia",
+			"description": "{Book of Gaia}\n\n+3 Spell Power. Your troops get +2 Hit Points.\n\nA component of the Titan Legacy.",
+			"event": "A book grows in the hollow of an old tree. Vines creep out from under the bronze leaves of its cover, wind around your outstretched hand, and slowly let go. This is the Book of Gaia."
 		},
 		"type": [
 			"HERO"
@@ -94,9 +94,9 @@
 	},
 	"aomCrownOfRheia": {
 		"text": {
-			"name": "瑞亚之冠",
-			"description": "{瑞亚之冠}\n\n每天提供500金币，己方部队士气+1。\n\n泰坦遗宝的部件。",
-			"event": "废弃的神庙里，众神之母的石像头上还戴着一顶城垛形的金冠。你向石像行过礼，才把它取了下来。这是瑞亚之冠。"
+			"name": "Crown of Rheia",
+			"description": "{Crown of Rheia}\n\nProvides 500 gold per day. Your troops get +1 Morale.\n\nA component of the Titan Legacy.",
+			"event": "In an abandoned temple the stone statue of the mother of the gods still wears a golden crown shaped like battlements. You bow to the statue before you take it down. This is the Crown of Rheia."
 		},
 		"type": [
 			"HERO"
@@ -128,9 +128,9 @@
 	},
 	"aomTorchesOfHekate": {
 		"text": {
-			"name": "赫卡特火炬",
-			"description": "{赫卡特火炬}\n\n大西洲神力法术的回响几率+10%（没有学习神力回响也有10%），每天额外恢复2点魔法值。\n\n泰坦遗宝的部件。",
-			"event": "三岔路口立着两支交叉的火炬，没有人添油，火却是冷的白色。你走近时，三条路上同时传来了自己的脚步声。这是赫卡特火炬。"
+			"name": "Torches of Hekate",
+			"description": "{Torches of Hekate}\n\n+10% Echo chance for Atlantean god powers (10% even without the Divine Echo skill), and 2 extra Spell Points restored each day.\n\nA component of the Titan Legacy.",
+			"event": "Two crossed torches stand at a three-way crossroads. No one feeds them, yet they burn with a cold white flame. As you draw near, you hear your own footsteps coming down all three roads at once. These are the Torches of Hekate."
 		},
 		"type": [
 			"HERO"
@@ -158,9 +158,9 @@
 	},
 	"aomPeltOfArgus": {
 		"text": {
-			"name": "阿耳戈斯之皮",
-			"description": "{阿耳戈斯之皮}\n\n侦察范围+2，防御力+2。\n\n泰坦遗宝的部件。",
-			"event": "牧人把一卷兽皮当褥子铺在石头上，皮上的眼状斑纹却随着你的走动转了过来。你用一袋金币换下了它。这是阿耳戈斯之皮。"
+			"name": "Pelt of Argus",
+			"description": "{Pelt of Argus}\n\n+2 scouting radius, +2 Defense.\n\nA component of the Titan Legacy.",
+			"event": "A herdsman has spread a hide over a rock as his bedding, yet the eye-shaped markings on it turn to follow you as you walk. You trade a bag of gold for it. This is the Pelt of Argus."
 		},
 		"type": [
 			"HERO"
@@ -189,9 +189,9 @@
 	},
 	"aomTitansTreasure": {
 		"text": {
-			"name": "泰坦宝藏",
-			"description": "{泰坦宝藏}\n\n每天提供1个水晶。\n\n泰坦遗宝的部件。",
-			"event": "塌了一半的地宫深处有一只铜箱，里面的山铜锭和水晶码得整整齐齐，像是昨天才放进去的。这是泰坦宝藏。"
+			"name": "Titans' Treasure",
+			"description": "{Titans' Treasure}\n\nProvides 1 Crystal per day.\n\nA component of the Titan Legacy.",
+			"event": "Deep in a half-collapsed vault sits a bronze chest. The orichalcum ingots and crystals inside are stacked as neatly as if they had been put there yesterday. This is the Titans' Treasure."
 		},
 		"type": [
 			"HERO"
@@ -223,9 +223,9 @@
 	},
 	"aomTitanLegacy": {
 		"text": {
-			"name": "泰坦遗宝",
-			"description": "{泰坦遗宝}\n\n攻击力+4，防御力+2，力量+3，知识+4。\n己方部队速度+1，生命值+2，士气+1，幸运+1。\n每天提供500金币和1个水晶，额外恢复2点魔法值，侦察范围+2。\n大西洲神力法术的回响几率+10%。\n泰坦三相：当令的部队伤害加成再+10%；每场战斗第一回合，天、时、地三相同时当令。\n\n由克洛诺斯之镰、乌拉诺斯星幕、盖亚之书、瑞亚之冠、赫卡特火炬、阿耳戈斯之皮、泰坦宝藏合成。\n（合成时部件会被消耗）",
-			"event": "七件遗物在你面前自己动了起来：镰刀立在中央，星幕、书、金冠、火炬、兽皮和铜箱绕着它转成三道环，最后合成一面山铜圆盘，盘上的星辰、沙漏和枝叶各自发亮。你得到了泰坦遗宝。"
+			"name": "Titan Legacy",
+			"description": "{Titan Legacy}\n\n+4 Attack, +2 Defense, +3 Spell Power, +4 Knowledge.\nYour troops get +1 Speed, +2 Hit Points, +1 Morale and +1 Luck.\nProvides 500 gold and 1 Crystal per day, restores 2 extra Spell Points and gives +2 scouting radius.\n+10% Echo chance for Atlantean god powers.\nThree Aspects: the damage bonus of ascendant troops is increased by a further 10%; in the first round of every battle Sky, Time and Earth are all ascendant.\n\nCombines the Sickle of Kronos, Star Veil of Oranos, Book of Gaia, Crown of Rheia, Torches of Hekate, Pelt of Argus and Titans' Treasure.\n(The components are consumed when combined.)",
+			"event": "The seven relics begin to move before you of their own accord: the sickle stands in the middle, and the veil, the book, the crown, the torches, the pelt and the bronze chest circle it in three rings until they fuse into a disc of orichalcum, on which the stars, the hourglass and the leaves each begin to shine. You have obtained the Titan Legacy."
 		},
 		"type": [
 			"HERO"
@@ -336,9 +336,9 @@
 		"slot": "MACH1",
 		"value": 2500,
 		"text": {
-			"name": "  手弩炮  ",
-			"description": "{  手弩炮  }\n\n战斗中手弩炮会向敌方部队射击，伤害随英雄的攻击力提高。学会炮术后可以亲自操作。",
-			"event": "路边停着一架没人看管的弩炮，绞盘上还缠着新弦，车辙通向远处的海岸。你叫人把它拖进了队伍。这是大西洲的手弩炮。"
+			"name": "Cheiroballista",
+			"description": "{Cheiroballista}\n\nIn battle the Cheiroballista shoots at enemy troops, and its damage grows with the hero's Attack. A hero who has learned Artillery can aim it personally.",
+			"event": "An unattended bolt thrower stands by the road, fresh cord still wound on its winch, its wheel ruts leading off towards the distant shore. You have it hauled into your column. This is a Cheiroballista of Atlantis."
 		},
 		"graphics": {
 			"image": "aom/atl/artifacts/backpack/aomCheiroballistaArt.png",

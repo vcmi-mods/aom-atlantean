@@ -1,7 +1,7 @@
 {
 	"aomAtlantean": {
-		"name": "大西洲",
-		"description": "{大西洲}\n种族阵营： 中立，守序\n种族地形： 草地\n所在地： 恩洛斯大陆-西方外海大西洲群岛\n大西洲（亚特兰蒂斯）是恩洛斯以西外海上的十王之国，都城波塞多尼亚由三重运河环绕。大西洲人原本敬奉海神，后来背弃奥林匹斯诸神，转而侍奉克洛诺斯、乌拉诺斯与盖亚三位泰坦，凭神力与机巧驱使自动机关和神话生物。本岛沉入海底之后，遗民在各处海岸重建环形的城邦，等待泰坦归来。",
+		"name": "Atlantis",
+		"description": "{Atlantis}\nAlignment: Neutral, Lawful\nNative Terrain: Grass\nLocation: Enroth - the Atlantis Isles in the Western Ocean\nAtlantis is the kingdom of the ten kings in the ocean west of Enroth, its capital Poseidonia ringed by three canals. The Atlanteans once revered the god of the sea; later they turned their backs on the Olympians to serve the three Titans Kronos, Oranos and Gaia, and with divine power and ingenuity they command automatons and creatures of myth. After the home island sank beneath the sea, the survivors rebuilt their ring-shaped cities on many shores, where they await the return of the Titans.",
 		"alignment": "neutral",
 		"nativeTerrain": [
 			"grass"
@@ -13,22 +13,22 @@
 		},
 		"town": {
 			"names": [
-				"波塞多尼亚",
-				"克莱托",
-				"山铜城",
-				"金环港",
-				"银环港",
-				"三叉湾",
-				"西海之门",
-				"日落岛",
-				"珊瑚堡",
-				"潮汐城",
-				"白石港",
-				"红石城",
-				"黑石城",
-				"象牙宫",
-				"温泉城",
-				"运河城"
+				"Poseidonia",
+				"Cleito",
+				"Orichalcos",
+				"Goldring",
+				"Silverring",
+				"Tridentum",
+				"Westgate",
+				"Hesperia",
+				"Coralkeep",
+				"Tidewater",
+				"Whitestone",
+				"Redstone",
+				"Blackstone",
+				"Ivory Hall",
+				"Hotsprings",
+				"Canalside"
 			],
 			"creatures": [
 				[
@@ -172,8 +172,8 @@
 			],
 			"buildings": {
 				"dwellingLvl1": {
-					"name": "角斗营",
-					"description": "角斗营允许你招募鱼盔角斗士。",
+					"name": "Gladiator School",
+					"description": "The Gladiator School allows you to recruit Murmillos.",
 					"cost": {
 						"gold": 500,
 						"ore": 10
@@ -183,8 +183,8 @@
 					]
 				},
 				"dwellingUpLvl1": {
-					"name": "高级角斗营",
-					"description": "高级角斗营允许你招募双剑角斗士和山铜卫士，并且可以在城中进行转换。",
+					"name": "Upg. Gladiator School",
+					"description": "The Upg. Gladiator School allows you to recruit Dimachaeri and Orichalcum Guards, and to convert one into the other in town.",
 					"cost": {
 						"gold": 1000,
 						"ore": 5
@@ -192,8 +192,8 @@
 					"upgrades": "dwellingLvl1"
 				},
 				"dwellingUp2Lvl1": {
-					"name": "高级角斗营",
-					"description": "高级角斗营允许你招募双剑角斗士和山铜卫士，并且可以在城中进行转换。",
+					"name": "Upg. Gladiator School",
+					"description": "The Upg. Gladiator School allows you to recruit Dimachaeri and Orichalcum Guards, and to convert one into the other in town.",
 					"cost": {
 						"gold": 1000,
 						"ore": 5
@@ -202,8 +202,8 @@
 					"mode": "auto"
 				},
 				"dwellingLvl2": {
-					"name": "弓术场",
-					"description": "弓术场允许你招募反曲弓手。",
+					"name": "Archery Range",
+					"description": "The Archery Range allows you to recruit Arcus.",
 					"cost": {
 						"gold": 1000,
 						"wood": 5,
@@ -214,8 +214,8 @@
 					]
 				},
 				"dwellingUpLvl2": {
-					"name": "高级弓术场",
-					"description": "高级弓术场允许你招募翼盔长弓手和连珠弓手，并且可以在城中进行转换。",
+					"name": "Upg. Archery Range",
+					"description": "The Upg. Archery Range allows you to recruit Winged Longbowmen and Volley Archers, and to convert one into the other in town.",
 					"cost": {
 						"gold": 1000,
 						"wood": 5,
@@ -224,8 +224,8 @@
 					"upgrades": "dwellingLvl2"
 				},
 				"dwellingUp2Lvl2": {
-					"name": "高级弓术场",
-					"description": "高级弓术场允许你招募翼盔长弓手和连珠弓手，并且可以在城中进行转换。",
+					"name": "Upg. Archery Range",
+					"description": "The Upg. Archery Range allows you to recruit Winged Longbowmen and Volley Archers, and to convert one into the other in town.",
 					"cost": {
 						"gold": 1000,
 						"wood": 5,
@@ -235,8 +235,8 @@
 					"mode": "auto"
 				},
 				"dwellingLvl3": {
-					"name": "机械工坊",
-					"description": "机械工坊允许你招募机关武士。",
+					"name": "Machine Workshop",
+					"description": "The Machine Workshop allows you to recruit Automaton Warriors.",
 					"cost": {
 						"gold": 1500,
 						"ore": 5,
@@ -253,8 +253,8 @@
 					]
 				},
 				"dwellingUpLvl3": {
-					"name": "高级机械工坊",
-					"description": "高级机械工坊允许你招募黑铁机关兵和青铜机关兵，并且可以在城中进行转换。",
+					"name": "Upg. Machine Workshop",
+					"description": "The Upg. Machine Workshop allows you to recruit Iron Automatons and Bronze Automatons, and to convert one into the other in town.",
 					"cost": {
 						"gold": 1500,
 						"ore": 5,
@@ -263,8 +263,8 @@
 					"upgrades": "dwellingLvl3"
 				},
 				"dwellingUp2Lvl3": {
-					"name": "高级机械工坊",
-					"description": "高级机械工坊允许你招募黑铁机关兵和青铜机关兵，并且可以在城中进行转换。",
+					"name": "Upg. Machine Workshop",
+					"description": "The Upg. Machine Workshop allows you to recruit Iron Automatons and Bronze Automatons, and to convert one into the other in town.",
 					"cost": {
 						"gold": 1500,
 						"ore": 5,
@@ -274,8 +274,8 @@
 					"mode": "auto"
 				},
 				"dwellingLvl4": {
-					"name": "灵鸟圣所",
-					"description": "灵鸟圣所允许你招募灵鸟女祭司。",
+					"name": "Bird Sanctuary",
+					"description": "The Bird Sanctuary allows you to recruit Caladrias.",
 					"cost": {
 						"gold": 2000,
 						"wood": 5,
@@ -292,8 +292,8 @@
 					]
 				},
 				"dwellingUpLvl4": {
-					"name": "高级灵鸟圣所",
-					"description": "高级灵鸟圣所允许你招募白羽枪卫和翠羽神谕者，并且可以在城中进行转换。",
+					"name": "Upg. Bird Sanctuary",
+					"description": "The Upg. Bird Sanctuary allows you to recruit White-Plume Lancers and Green-Plume Seers, and to convert one into the other in town.",
 					"cost": {
 						"gold": 2000,
 						"wood": 5,
@@ -302,8 +302,8 @@
 					"upgrades": "dwellingLvl4"
 				},
 				"dwellingUp2Lvl4": {
-					"name": "高级灵鸟圣所",
-					"description": "高级灵鸟圣所允许你招募白羽枪卫和翠羽神谕者，并且可以在城中进行转换。",
+					"name": "Upg. Bird Sanctuary",
+					"description": "The Upg. Bird Sanctuary allows you to recruit White-Plume Lancers and Green-Plume Seers, and to convert one into the other in town.",
 					"cost": {
 						"gold": 2000,
 						"wood": 5,
@@ -313,8 +313,8 @@
 					"mode": "auto"
 				},
 				"dwellingLvl5": {
-					"name": "海仙洞窟",
-					"description": "海仙洞窟允许你招募海仙女。",
+					"name": "Nereid Grotto",
+					"description": "The Nereid Grotto allows you to recruit Nereids.",
 					"cost": {
 						"gold": 3000,
 						"wood": 5,
@@ -332,8 +332,8 @@
 					]
 				},
 				"dwellingUpLvl5": {
-					"name": "高级海仙洞窟",
-					"description": "高级海仙洞窟允许你招募虎鲨海仙女和掷戟海仙女，并且可以在城中进行转换。",
+					"name": "Upg. Nereid Grotto",
+					"description": "The Upg. Nereid Grotto allows you to recruit Tiger Shark Nereids and Trident Nereids, and to convert one into the other in town.",
 					"cost": {
 						"gold": 2000,
 						"crystal": 5
@@ -341,8 +341,8 @@
 					"upgrades": "dwellingLvl5"
 				},
 				"dwellingUp2Lvl5": {
-					"name": "高级海仙洞窟",
-					"description": "高级海仙洞窟允许你招募虎鲨海仙女和掷戟海仙女，并且可以在城中进行转换。",
+					"name": "Upg. Nereid Grotto",
+					"description": "The Upg. Nereid Grotto allows you to recruit Tiger Shark Nereids and Trident Nereids, and to convert one into the other in town.",
 					"cost": {
 						"gold": 2000,
 						"crystal": 5
@@ -351,8 +351,8 @@
 					"mode": "auto"
 				},
 				"dwellingLvl6": {
-					"name": "百臂深牢",
-					"description": "百臂深牢允许你招募百臂巨人。",
+					"name": "Centimanus Prison",
+					"description": "The Centimanus Prison allows you to recruit Centimani.",
 					"cost": {
 						"gold": 5000,
 						"ore": 20,
@@ -369,8 +369,8 @@
 					]
 				},
 				"dwellingUpLvl6": {
-					"name": "高级百臂深牢",
-					"description": "高级百臂深牢允许你招募断链百臂巨人和星芒百臂巨人，并且可以在城中进行转换。",
+					"name": "Upg. Centimanus Prison",
+					"description": "The Upg. Centimanus Prison allows you to recruit Unbound Centimani and Starlit Centimani, and to convert one into the other in town.",
 					"cost": {
 						"gold": 3000,
 						"ore": 10,
@@ -379,8 +379,8 @@
 					"upgrades": "dwellingLvl6"
 				},
 				"dwellingUp2Lvl6": {
-					"name": "高级百臂深牢",
-					"description": "高级百臂深牢允许你招募断链百臂巨人和星芒百臂巨人，并且可以在城中进行转换。",
+					"name": "Upg. Centimanus Prison",
+					"description": "The Upg. Centimanus Prison allows you to recruit Unbound Centimani and Starlit Centimani, and to convert one into the other in town.",
 					"cost": {
 						"gold": 3000,
 						"ore": 10,
@@ -390,8 +390,8 @@
 					"mode": "auto"
 				},
 				"dwellingLvl7": {
-					"name": "泰坦之门",
-					"description": "泰坦之门允许你招募熔岩泰坦。",
+					"name": "Titan Gate",
+					"description": "The Titan Gate allows you to recruit Lava Titans.",
 					"cost": {
 						"gold": 20000,
 						"mercury": 10,
@@ -410,8 +410,8 @@
 					]
 				},
 				"dwellingUpLvl7": {
-					"name": "高级泰坦之门",
-					"description": "高级泰坦之门允许你招募持镰泰坦和苔岩泰坦，并且可以在城中进行转换。",
+					"name": "Upg. Titan Gate",
+					"description": "The Upg. Titan Gate allows you to recruit Sickle Titans and Moss Titans, and to convert one into the other in town.",
 					"cost": {
 						"gold": 20000,
 						"mercury": 10,
@@ -422,8 +422,8 @@
 					"upgrades": "dwellingLvl7"
 				},
 				"dwellingUp2Lvl7": {
-					"name": "高级泰坦之门",
-					"description": "高级泰坦之门允许你招募持镰泰坦和苔岩泰坦，并且可以在城中进行转换。",
+					"name": "Upg. Titan Gate",
+					"description": "The Upg. Titan Gate allows you to recruit Sickle Titans and Moss Titans, and to convert one into the other in town.",
 					"cost": {
 						"gold": 20000,
 						"mercury": 10,
@@ -435,12 +435,12 @@
 					"mode": "auto"
 				},
 				"villageHall": {
-					"name": "议事堂",
-					"description": "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。"
+					"name": "Village Hall",
+					"description": "The Village Hall lets you purchase town buildings and provides you with 500 gold per day."
 				},
 				"townHall": {
-					"name": "内政厅",
-					"description": "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"name": "Town Hall",
+					"description": "The Town Hall lets you purchase town buildings and provides you with 1000 gold per day.",
 					"cost": {
 						"gold": 2500
 					},
@@ -449,8 +449,8 @@
 					]
 				},
 				"cityHall": {
-					"name": "议会",
-					"description": "议会可以让你购买城镇建筑，并每天向你提供2000个金币。",
+					"name": "City Hall",
+					"description": "The City Hall lets you purchase town buildings and provides you with 2000 gold per day.",
 					"cost": {
 						"gold": 5000
 					},
@@ -468,8 +468,8 @@
 					]
 				},
 				"capitol": {
-					"name": "国会",
-					"description": "国会每天向你提供4000个金币。",
+					"name": "Capitol",
+					"description": "The Capitol provides you with 4000 gold per day.",
 					"cost": {
 						"gold": 10000
 					},
@@ -478,8 +478,8 @@
 					]
 				},
 				"fort": {
-					"name": "堡垒",
-					"description": "堡垒可为你的城镇提供城墙。",
+					"name": "Fort",
+					"description": "The Fort gives your town walls.",
 					"cost": {
 						"gold": 5000,
 						"wood": 20,
@@ -487,16 +487,16 @@
 					}
 				},
 				"citadel": {
-					"name": "大本营",
-					"description": "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"name": "Citadel",
+					"description": "The Citadel increases the base growth rate of creatures by 50% and strengthens the town's defenses.",
 					"cost": {
 						"gold": 2500,
 						"ore": 5
 					}
 				},
 				"castle": {
-					"name": "城堡",
-					"description": "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"name": "Castle",
+					"description": "The Castle provides 2 additional arrow towers to strengthen the town's defenses and doubles the base growth rate of creatures.",
 					"cost": {
 						"gold": 5000,
 						"wood": 10,
@@ -504,16 +504,16 @@
 					}
 				},
 				"tavern": {
-					"name": "酒馆",
-					"description": "酒馆可提高驻军的士气。",
+					"name": "Tavern",
+					"description": "The Tavern increases the morale of the garrison.",
 					"cost": {
 						"gold": 500,
 						"wood": 5
 					}
 				},
 				"blacksmith": {
-					"name": "铁匠铺",
-					"description": "铁匠铺可向你的军队提供手弩炮。",
+					"name": "Blacksmith",
+					"description": "The Blacksmith provides your armies with Cheiroballistae.",
 					"cost": {
 						"gold": 1000,
 						"wood": 5
@@ -521,16 +521,16 @@
 					"warMachine": "aomCheiroballistaArt"
 				},
 				"marketplace": {
-					"name": "市场",
-					"description": "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"name": "Marketplace",
+					"description": "The Marketplace lets you trade resources (the more Marketplaces you own, the better the rates).",
 					"cost": {
 						"gold": 500,
 						"wood": 5
 					}
 				},
 				"resourceSilo": {
-					"name": "物资仓库",
-					"description": "物资仓库每天为你额外提供1水晶。",
+					"name": "Resource Silo",
+					"description": "The Resource Silo provides you with an extra 1 Crystal per day.",
 					"cost": {
 						"gold": 5000,
 						"ore": 5
@@ -540,8 +540,8 @@
 					}
 				},
 				"shipyard": {
-					"name": "船坞",
-					"description": "船坞可以让你建造船只。",
+					"name": "Shipyard",
+					"description": "The Shipyard lets you build ships.",
 					"cost": {
 						"gold": 2000,
 						"wood": 20
@@ -549,8 +549,8 @@
 				},
 				"ship": {},
 				"special1": {
-					"name": "主神神殿",
-					"description": "主神神殿使每个来访英雄按自己侍奉的主神得到一次赐福：\n克洛诺斯的英雄攻击力+1，乌拉诺斯的英雄力量+1，盖亚的英雄知识+1，其他英雄防御力+1。\n守城战中，神代轮转从守城英雄的主神之相开始。",
+					"name": "Patron Temple",
+					"description": "The Patron Temple gives each visiting hero one blessing, according to the patron god the hero serves:\nheroes of Kronos get +1 Attack, heroes of Oranos +1 Spell Power, heroes of Gaia +1 Knowledge, and all other heroes +1 Defense.\nDuring sieges the Titan Cycle starts from the Aspect of the defending hero's patron god.",
 					"cost": {
 						"gold": 3000,
 						"wood": 5,
@@ -569,7 +569,7 @@
 										"aomKronosLord"
 									]
 								},
-								"message": "你在克洛诺斯的祭坛前献上祭品，时间之主赐你锋芒。（攻击力+1）",
+								"message": "You lay your offering before the altar of Kronos, and the Master of Time grants you a keener edge. (+1 Attack)",
 								"primary": {
 									"attack": 1
 								}
@@ -580,7 +580,7 @@
 										"aomOranosHerald"
 									]
 								},
-								"message": "你在乌拉诺斯的祭坛前献上祭品，苍穹之主赐你神威。（力量+1）",
+								"message": "You lay your offering before the altar of Oranos, and the Lord of the Heavens grants you divine might. (+1 Spell Power)",
 								"primary": {
 									"spellpower": 1
 								}
@@ -591,7 +591,7 @@
 										"aomGaiaPriest"
 									]
 								},
-								"message": "你在盖亚的祭坛前献上祭品，大地之母赐你智慧。（知识+1）",
+								"message": "You lay your offering before the altar of Gaia, and Mother Earth grants you wisdom. (+1 Knowledge)",
 								"primary": {
 									"knowledge": 1
 								}
@@ -608,7 +608,7 @@
 										}
 									]
 								},
-								"message": "三位泰坦主神不认得你，但神殿的石墙让你心安。（防御力+1）",
+								"message": "The three Titan gods do not know you, but the stone walls of the temple put your heart at ease. (+1 Defense)",
 								"primary": {
 									"defence": 1
 								}
@@ -624,8 +624,8 @@
 					]
 				},
 				"special2": {
-					"name": "天行通道",
-					"description": "天行通道让英雄在你的大西洲城镇之间瞬间往来。",
+					"name": "Sky Passage",
+					"description": "The Sky Passage lets heroes travel instantly between your Atlantis towns.",
 					"type": "castleGate",
 					"cost": {
 						"gold": 10000,
@@ -641,16 +641,16 @@
 					]
 				},
 				"horde1": {
-					"name": "庄园",
-					"description": "庄园使鱼盔角斗士的产量每周+4。",
+					"name": "Manor",
+					"description": "The Manor increases the weekly growth of Murmillos by 4.",
 					"cost": {
 						"gold": 1000
 					},
 					"upgrades": "dwellingLvl1"
 				},
 				"horde1Upgr": {
-					"name": "庄园",
-					"description": "庄园使鱼盔角斗士的产量每周+4。",
+					"name": "Manor",
+					"description": "The Manor increases the weekly growth of Murmillos by 4.",
 					"cost": {
 						"gold": 1000
 					},
@@ -661,8 +661,8 @@
 					"mode": "auto"
 				},
 				"grail": {
-					"name": "九环运河之都",
-					"description": "九环运河之都使城镇每天收入增加5000金币，生物产量增加50%，并使你所有英雄的神力回响几率+10%。\n大西洲职业的英雄来访这座城时学会{重返大西洲}：战斗中施放后，每回合都有一队大西洲的神话生物空降助战。",
+					"name": "Nine-Ring Canal Capital",
+					"description": "The Nine-Ring Canal Capital increases the town's income by 5000 gold per day and creature growth by 50%, and gives all your heroes +10% Divine Echo chance.\nHeroes of the Atlantean classes who visit this town learn {Return to Atlantis}: once it is cast in battle, a stack of Atlantean myth units drops in to help at the start of every round.",
 					"bonuses": [
 						{
 							"type": "AOM_ECHO",
@@ -682,7 +682,7 @@
 										"aomGaiaPriest"
 									]
 								},
-								"message": "九环运河的水面映出沉没前的故土。你记下了归途，从此能在战场上唤它回来。（学会重返大西洲）",
+								"message": "The waters of the Nine-Ring Canal show the homeland as it was before it sank. You commit the way back to memory, and from now on you can call it to you on the battlefield. (Learned Return to Atlantis)",
 								"bonuses": [
 									{
 										"type": "SPELL",
@@ -704,7 +704,7 @@
 										}
 									]
 								},
-								"message": "九环运河的水面映出一座你不认得的城。只有大西洲的英雄才记得回去的路。"
+								"message": "The waters of the Nine-Ring Canal show a city you do not recognize. Only the heroes of Atlantis remember the way back."
 							}
 						]
 					}
@@ -712,8 +712,8 @@
 				"horde2": null,
 				"horde2Upgr": null,
 				"extraCapitol": {
-					"name": "远古时代",
-					"description": "大西洲的城从远古时代起步。一个时代的建筑全部建成后，城自动进入下一个时代。\n下一个时代是{古典时代}：需要酒馆、堡垒、市场、角斗营、弓术场。",
+					"name": "Archaic Age",
+					"description": "An Atlantis town starts in the Archaic Age. Once all the buildings of an age are built, the town advances to the next age automatically.\nThe next age is the {Classical Age}: it needs the Tavern, Fort, Marketplace, Gladiator School and Archery Range.",
 					"mode": "auto",
 					"cost": {},
 					"requires": [
@@ -726,8 +726,8 @@
 						"wood": 5,
 						"ore": 5
 					},
-					"name": "1级魔法行会",
-					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+					"name": "Mage Guild Level 1",
+					"description": "Heroes visiting the Mage Guild can learn the spells it holds."
 				},
 				"mageGuild2": {
 					"cost": {
@@ -739,8 +739,8 @@
 						"crystal": 4,
 						"gems": 4
 					},
-					"name": "2级魔法行会",
-					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+					"name": "Mage Guild Level 2",
+					"description": "Heroes visiting the Mage Guild can learn the spells it holds."
 				},
 				"mageGuild3": {
 					"cost": {
@@ -752,8 +752,8 @@
 						"crystal": 6,
 						"gems": 6
 					},
-					"name": "3级魔法行会",
-					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+					"name": "Mage Guild Level 3",
+					"description": "Heroes visiting the Mage Guild can learn the spells it holds."
 				},
 				"mageGuild4": {
 					"cost": {
@@ -765,8 +765,8 @@
 						"crystal": 8,
 						"gems": 8
 					},
-					"name": "4级魔法行会",
-					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+					"name": "Mage Guild Level 4",
+					"description": "Heroes visiting the Mage Guild can learn the spells it holds."
 				},
 				"mageGuild5": {
 					"cost": {
@@ -778,12 +778,12 @@
 						"crystal": 10,
 						"gems": 10
 					},
-					"name": "5级魔法行会",
-					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+					"name": "Mage Guild Level 5",
+					"description": "Heroes visiting the Mage Guild can learn the spells it holds."
 				},
 				"special3": {
-					"name": "古典时代",
-					"description": "城里这一时代的建筑全部建成后自动达成。\n1～2级生物产量每周+2。\n下一个时代是{英雄时代}：需要内政厅、2级魔法行会、大本营、铁匠铺、机械工坊、灵鸟圣所。",
+					"name": "Classical Age",
+					"description": "Reached automatically once all of this age's buildings are built.\nWeekly growth of level 1-2 creatures +2.\nThe next age is the {Heroic Age}: it needs the Town Hall, Mage Guild Level 2, Citadel, Blacksmith, Machine Workshop and Bird Sanctuary.",
 					"mode": "auto",
 					"upgrades": "extraCapitol",
 					"cost": {},
@@ -821,14 +821,14 @@
 						"visitMode": "once",
 						"rewards": [
 							{
-								"message": "这座城进入了{古典时代}。\n\n1～2级生物产量每周+2。"
+								"message": "This town has entered the {Classical Age}.\n\nWeekly growth of level 1-2 creatures +2."
 							}
 						]
 					}
 				},
 				"special4": {
-					"name": "英雄时代",
-					"description": "城里这一时代的建筑全部建成后自动达成。\n1～2级生物产量每周+3，3～4级每周+1。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n下一个时代是{神话时代}：需要议会、3级魔法行会、城堡、主神神殿、海仙洞窟、百臂深牢。",
+					"name": "Heroic Age",
+					"description": "Reached automatically once all of this age's buildings are built.\nWeekly growth of level 1-2 creatures +3, level 3-4 +1.\nYour troops gain +20% stack experience (counted once, however many towns you own).\nThe next age is the {Mythic Age}: it needs the City Hall, Mage Guild Level 3, Castle, Patron Temple, Nereid Grotto and Centimanus Prison.",
 					"mode": "auto",
 					"cost": {},
 					"requires": [
@@ -886,14 +886,14 @@
 						"visitMode": "once",
 						"rewards": [
 							{
-								"message": "这座城进入了{英雄时代}。\n\n1～2级生物产量每周+3，3～4级每周+1。\n你的部队获得的兵种经验+20%（多座城只算一份）。"
+								"message": "This town has entered the {Heroic Age}.\n\nWeekly growth of level 1-2 creatures +3, level 3-4 +1.\nYour troops gain +20% stack experience (counted once, however many towns you own)."
 							}
 						]
 					}
 				},
 				"extraTownHall": {
-					"name": "神话时代",
-					"description": "城里这一时代的建筑全部建成后自动达成。\n1～2级生物产量每周+3，3～4级每周+2。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n守城战中英雄的神力法术回响几率+10%。\n下一个时代是{奇迹时代}：需要国会、5级魔法行会、天行通道、物资仓库、泰坦之门。",
+					"name": "Mythic Age",
+					"description": "Reached automatically once all of this age's buildings are built.\nWeekly growth of level 1-2 creatures +3, level 3-4 +2.\nYour troops gain +20% stack experience (counted once, however many towns you own).\nDuring sieges the defending hero's god powers get +10% Echo chance.\nThe next age is the {Wonder Age}: it needs the Capitol, Mage Guild Level 5, Sky Passage, Resource Silo and Titan Gate.",
 					"mode": "auto",
 					"cost": {},
 					"requires": [
@@ -962,14 +962,14 @@
 						"visitMode": "once",
 						"rewards": [
 							{
-								"message": "这座城进入了{神话时代}。\n\n1～2级生物产量每周+3，3～4级每周+2。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n守城战中英雄的神力法术回响几率+10%。"
+								"message": "This town has entered the {Mythic Age}.\n\nWeekly growth of level 1-2 creatures +3, level 3-4 +2.\nYour troops gain +20% stack experience (counted once, however many towns you own).\nDuring sieges the defending hero's god powers get +10% Echo chance."
 							}
 						]
 					}
 				},
 				"extraCityHall": {
-					"name": "奇迹时代",
-					"description": "城里这一时代的建筑全部建成后自动达成。\n1～2级生物产量每周+3，3～4级每周+2，5～6级每周+1。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n守城战中英雄的神力法术回响几率+10%，守城部队生命+10%。",
+					"name": "Wonder Age",
+					"description": "Reached automatically once all of this age's buildings are built.\nWeekly growth of level 1-2 creatures +3, level 3-4 +2, level 5-6 +1.\nYour troops gain +20% stack experience (counted once, however many towns you own).\nDuring sieges the defending hero's god powers get +10% Echo chance and the garrison gets +10% Hit Points.",
 					"mode": "auto",
 					"cost": {},
 					"requires": [
@@ -1050,7 +1050,7 @@
 						"visitMode": "once",
 						"rewards": [
 							{
-								"message": "这座城进入了{奇迹时代}。\n\n1～2级生物产量每周+3，3～4级每周+2，5～6级每周+1。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n守城战中英雄的神力法术回响几率+10%，守城部队生命+10%。"
+								"message": "This town has entered the {Wonder Age}.\n\nWeekly growth of level 1-2 creatures +3, level 3-4 +2, level 5-6 +1.\nYour troops gain +20% stack experience (counted once, however many towns you own).\nDuring sieges the defending hero's god powers get +10% Echo chance and the garrison gets +10% Hit Points."
 							}
 						]
 					}

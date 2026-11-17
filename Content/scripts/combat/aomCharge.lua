@@ -1,12 +1,12 @@
--- 蓄力一击（涅瑞伊得斯）：每 every 回合蓄满一次，蓄满后的下一次近战攻击伤害 +val%。
--- 计数用隐藏加成 AOM_CHARGE_COUNT；蓄满时挂可见的 AOM_CHARGE_READY 和同样时效的伤害加成（自己攻击一次后失效）。
+-- Charged Strike (Nereids): charges up every `every` rounds; the next melee attack after charging deals +val% damage.
+-- Counting uses the hidden AOM_CHARGE_COUNT; when charged, the visible AOM_CHARGE_READY and a damage bonus of the same duration are added (they end after the unit's own attack).
 local Base = require("combat/combatScript")
 local Script = setmetatable({}, {__index = Base})
 Script.__index = Script
 
 local COUNT, READY = "AOM_CHARGE_COUNT", "AOM_CHARGE_READY"
 
--- 动画只在真打的时候放：电脑试算（describeChanges 为假）时发动画包，引擎每次报 "BattleAnimationPlayed is not allowed in battle evaluation"
+-- Animations only in real battles: sending animation packs during AI evaluation (describeChanges false) makes the engine log "BattleAnimationPlayed is not allowed in battle evaluation" every time
 local function showAnim(server, ...)
 	if server.describeChanges and not server:describeChanges() then return end
 	server:showBattleAnimation(...)

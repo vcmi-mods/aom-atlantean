@@ -1,7 +1,7 @@
--- 聚光（指挥官召唤物“聚光镜塔”）：连续照同一个目标，光越聚越强。
--- 第一次照到某个目标不加成，之后每连续再照一次伤害 +val%（addInfo.max 层封顶）；换目标从头开始。
--- 记在镜塔自己身上：AOM_FOCUS 层数（看得见）、AOM_FOCUS_ID 正在照的部队编号 + 1（隐藏）。
--- 加成在出手前按“这一下打的是不是同一个目标”现挂（untilOwnAttack），所以换目标的那一下拿不到旧目标攒的层数。
+-- Focus (Mirror Tower, a commander summon): keeps shining on the same target and the light grows stronger.
+-- No bonus the first time a target is hit; each consecutive hit on it adds +val% damage (capped at addInfo.max stacks); switching targets starts over.
+-- Stored on the tower: AOM_FOCUS stacks (visible), AOM_FOCUS_ID id of the current target + 1 (hidden).
+-- The bonus is added right before the attack depending on whether it is the same target (untilOwnAttack), so the hit that switches targets gets none of the old stacks.
 local Base = require("combat/combatScript")
 local Script = setmetatable({}, {__index = Base})
 Script.__index = Script
@@ -47,7 +47,7 @@ function Script:onAfterAttack(server, battle, unit, other, payload)
 	if unit:getBonusesValue({ type = FOCUS_ID }) == id then
 		local old = unit:getBonusesValue({ type = FOCUS }); local now = math.min(self.max or 3, old + 1)
 		set(server, battle, unit, FOCUS, now, false)
-		if now > old and (not server.describeChanges or server:describeChanges()) then      -- 战报：聚光叠了一层
+		if now > old and (not server.describeChanges or server:describeChanges()) then      -- battle log: Focus gained a stack
 			server:appendLog(battle, { append = { "core.bonus." .. FOCUS .. ".description.900001" }, replaceStrings = { unit:getCreature():getNameTextID(unit:getCount()) }, replaceNumbers = { now, (self.val or 25) * now } })
 		end
 	else

@@ -1,8 +1,8 @@
 {
 	"coastalLand" :
 	{
-		"text":"海滩",
-		"grailRumor" : "在海滩中。",
+		"text":"Coastal Land",
+		"grailRumor" : "On the coastal land.",
 		"moveCost" : 125,
 		"minimapUnblocked" : [ 230, 196, 171 ],
 		"minimapBlocked"   : [101, 115, 54 ],

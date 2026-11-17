@@ -1,6 +1,6 @@
--- 天穹内爆：范围伤害，卷进来的部队越多越强——每多一队伤害 +perUnit%（默认 10），最多 +maxBonus%（默认 50）。
--- 7 级及以上的巨物（泰坦）卷不动，不受影响；飞行部队由法术的 targetCondition 排除。
--- 配置：{"type": "aomImplode", "perUnit": 10, "maxBonus": 50}
+-- Implode: area damage that grows with the number of stacks caught - +perUnit% (default 10) per extra stack, up to +maxBonus% (default 50).
+-- Level 7+ giants (Titans) cannot be pulled in and are unaffected; flying units are excluded by the spell's targetCondition.
+-- Config: {"type": "aomImplode", "perUnit": 10, "maxBonus": 50}
 local Base = require("spells/damage")
 local Script = setmetatable({}, {__index = Base})
 Script.__index = Script

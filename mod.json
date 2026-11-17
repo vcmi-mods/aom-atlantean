@@ -9,9 +9,6 @@
 			"config/translations/chinese.json"
 		]
 	},
-	"translations": [
-		"config/translations/english.json"
-	],
 	"version": "0.0.66",
 	"author": "yche2990",
 	"modType": "Expansion",
