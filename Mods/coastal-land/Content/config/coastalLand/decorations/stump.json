@@ -1,0 +1,40 @@
+{
+	"core:stump" : {
+		"types" : {
+			"stump" : {
+				"templates" : {
+					"coaLanStu01" : {
+						"animation" : "coastalLand/decorations/stump/coaLanStu01",
+						"mask" : [ "B" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanStu02" : {
+						"animation" : "coastalLand/decorations/stump/coaLanStu02",
+						"mask" : [ "B" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanStu03" : {
+						"animation" : "coastalLand/decorations/stump/coaLanStu03",
+						"mask" : [ "VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanStu04" : {
+						"animation" : "coastalLand/decorations/stump/coaLanStu04",
+						"mask" : [ "B" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanStu05" : {
+						"animation" : "coastalLand/decorations/stump/coaLanStu05",
+						"mask" : [ "B" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanStu06" : {
+						"animation" : "coastalLand/decorations/stump/coaLanStu06",
+						"mask" : [ "VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"basepath": "aom/atl/artifacts/map/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomTorchesOfHekate_0.png"
+		},
+		{
+			"frame": 1,
+			"file": "aomTorchesOfHekate_1.png"
+		},
+		{
+			"frame": 2,
+			"file": "aomTorchesOfHekate_2.png"
+		},
+		{
+			"frame": 3,
+			"file": "aomTorchesOfHekate_3.png"
+		},
+		{
+			"frame": 4,
+			"file": "aomTorchesOfHekate_4.png"
+		},
+		{
+			"frame": 5,
+			"file": "aomTorchesOfHekate_5.png"
+		},
+		{
+			"frame": 6,
+			"file": "aomTorchesOfHekate_6.png"
+		},
+		{
+			"frame": 7,
+			"file": "aomTorchesOfHekate_7.png"
+		}
+	]
+}

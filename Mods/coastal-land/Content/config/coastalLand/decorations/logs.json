@@ -1,0 +1,38 @@
+{
+	"core:log" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coaLanLog01" :
+					{
+						"animation" : "coastalLand/decorations/logs/coaLanLog01",
+						"visitableFrom" : ["---","+++","+++"],
+						"mask" : ["VB"],
+						"allowedTerrains": ["coastalLand"]
+					},
+					"coaLanLog02" :
+					{
+						"animation" : "coastalLand/decorations/logs/coaLanLog02",
+						"visitableFrom" : ["---","+++","+++"],
+						"mask" : ["BB"],
+						"allowedTerrains": ["coastalLand"]
+					},
+					"coaLanLog03" :
+					{
+						"animation" : "coastalLand/decorations/logs/coaLanLog03",
+						"visitableFrom" : ["---","+++","+++"],
+						"mask" : ["BB"],
+						"allowedTerrains": ["coastalLand"]
+					},
+					"coaLanLog04" :
+					{
+						"animation" : "coastalLand/decorations/logs/coaLanLog04",
+						"visitableFrom" : ["---","+++","+++"],
+						"mask" : ["VB"],
+						"allowedTerrains": ["coastalLand"]
+					}
+				}
+			}
+		}
+	}
+}

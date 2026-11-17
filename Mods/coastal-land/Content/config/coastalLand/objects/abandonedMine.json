@@ -1,0 +1,16 @@
+{
+	"core:abandonedMine": {
+		"types": {
+			"mine": {
+				"templates": {
+					"coastalLand_abandonedMine" : {
+						"animation" : "coastalLand/objects/abandonedMine/fiAbMe",
+						"mask" : [ "VVVV", "VBBB", "VBAB"],
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains" : ["coastalLand"]
+					}
+				}
+			}
+		}
+	}
+}

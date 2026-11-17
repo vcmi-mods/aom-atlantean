@@ -1,0 +1,32 @@
+{
+	"core:boat": {
+		"types": {
+			"boatAomAtlantean": {
+				"actualAnimation": "aom/atl/boat/aomAtlBoat.def",
+				"overlayAnimation": "ABM01_.def",
+				"flagAnimations": [
+					"aom/atl/boat/aomAtlBoatFL",
+					"aom/atl/boat/aomAtlBoatFG",
+					"aom/atl/boat/aomAtlBoatFR",
+					"aom/atl/boat/aomAtlBoatFD",
+					"aom/atl/boat/aomAtlBoatFB",
+					"aom/atl/boat/aomAtlBoatFP",
+					"aom/atl/boat/aomAtlBoatFW",
+					"aom/atl/boat/aomAtlBoatFK"
+				],
+				"templates": {
+					"default": {
+						"animation": "aom/atl/boat/aomAtlBoatMap",
+						"mask": [
+							"VVV",
+							"VAV"
+						],
+						"allowedTerrains": [
+							"water"
+						]
+					}
+				}
+			}
+		}
+	}
+}

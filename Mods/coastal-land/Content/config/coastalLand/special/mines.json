@@ -1,0 +1,78 @@
+{
+	"core:mine" : {
+		"types" : {
+			"crystalCavern" : {
+				"templates": {
+					"coastalLandMines01" : {
+						"animation" : "coastalLand/special/mines/coastalLandMines01",
+						"visitableFrom": ["---", "+++", "+++"],
+				     	"mask": ["VVVV", "BBB", "VBAB"],
+					    "allowedTerrains": ["coastalLand"]
+					}
+				}
+			},
+			"goldMine" : {
+				"templates": {
+					"coastalLandMines02": {
+					"animation" : "coastalLand/special/mines/coastalLandMines02",
+					"visitableFrom": ["---", "+++", "+++"],
+					"mask": ["VVVV", "BBB", "VBAB"],
+					"allowedTerrains": ["coastalLand"]
+					}
+				}
+			},
+			
+			"sawmill" : {
+				"templates" : {
+					    "coastalLandMines03": {
+					    "animation" : "coastalLand/special/mines/coastalLandMines03",
+                        "mask" : ["VVVVV", "VVBBB", "VBBAB"],
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains" : ["coastalLand"]
+					}
+				}
+			},
+			
+			"alchemistLab" : {
+				"templates" : {
+					"coastalLandMines04" : {
+						"animation" : "AVMalch0", 
+						"mask" : ["VVV", "VVV", "BAB"],
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains" : ["coastalLand"]
+					}
+				}
+			},
+			"orePit" : {
+				"templates" : {
+					"coastalLandMines05" : {
+						"animation" : "coastalLand/special/mines/coastalLandMines05",
+						"mask" : ["BBB", "BAB"],
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+						"allowedTerrains" : ["coastalLand"]
+					}
+				}
+			},
+			"sulfurDune" : {
+				"templates" : {
+					"coastalLandMines06" : {
+						"animation" : "AVMsulf0",  
+						"mask" : ["VVV", "BAB"],
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+					    "allowedTerrains": ["coastalLand"]
+					}
+				}
+			},
+			"gemPond" : {
+				"templates" : {
+					"coastalLandMines07": {
+					"animation" : "coastalLand/special/mines/coastalLandMines04",
+					"visitableFrom": ["---", "+++", "+++"],
+					"mask" : ["BBB", "BAB"],
+					"allowedTerrains": ["coastalLand"]
+					}
+				}
+			}
+		}
+	}
+}	

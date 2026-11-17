@@ -1,0 +1,194 @@
+{
+	"core:creatureBank": {
+		"types": {
+			"aomAtlRift": {
+				"name": "冥界裂口",
+				"aiValue": 9000,
+				"sounds": {
+					"ambient": [
+						"LOOPFIRE"
+					]
+				},
+				"templates": {
+					"base": {
+						"animation": "aom/atl/map/bank/aomAtlRift.json",
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						],
+						"mask": [
+							"VVV",
+							"BAB"
+						]
+					}
+				},
+				"rmg": {
+					"value": 7000,
+					"zoneLimit": 1,
+					"rarity": 50
+				},
+				"onGuardedMessage": "地面裂开了一道口子，熔岩的红光里有东西在爬动。这是一处通往冥界的裂口，守在里面的怪物不会让人白白拿走它们的东西。你要下去吗？",
+				"onVisitedMessage": "裂口里只剩下冷却的岩石和怪物的残骸，已经有人来过了。",
+				"visitMode": "once",
+				"selectMode": "selectFirst",
+				"guardsLayout": "creatureBankNarrow",
+				"rewards": [
+					{
+						"message": "门缝里的东西一只接一只扑出来，又一只接一只倒下。裂口安静下来之后，你在焦黑的石堆里捡出了它们守着的金币。",
+						"appearChance": {
+							"min": 0,
+							"max": 30
+						},
+						"guards": [
+							{
+								"amount": 3,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 3,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 3,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 3,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 3,
+								"type": "aomTartarian"
+							}
+						],
+						"resources": {
+							"gold": 5000
+						}
+					},
+					{
+						"message": "恶兽退回了地底。熔岩照亮的石缝里嵌着成块的水晶，旁边散着不知哪位旅人留下的钱袋。",
+						"appearChance": {
+							"min": 30,
+							"max": 60
+						},
+						"guards": [
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							}
+						],
+						"resources": {
+							"gold": 7500,
+							"crystal": 4
+						}
+					},
+					{
+						"message": "最后一只百眼怪闭上了它所有的眼睛。你在它盘踞的岩台上找到了金币，还有一件它一直盯着的小玩意。",
+						"appearChance": {
+							"min": 60,
+							"max": 90
+						},
+						"guards": [
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 4,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 2,
+								"type": "aomArgus"
+							},
+							{
+								"amount": 2,
+								"type": "aomArgus"
+							}
+						],
+						"resources": {
+							"gold": 10000
+						},
+						"artifacts": [
+							{
+								"class": "TREASURE"
+							}
+						]
+					},
+					{
+						"message": "裂口深处的守卫全数倒下，地底传来一声不甘的低吼。石堆后面压着一只铜箱，箱里的山铜锭还是温的。",
+						"appearChance": {
+							"min": 90,
+							"max": 100
+						},
+						"guards": [
+							{
+								"amount": 6,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 6,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 6,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 6,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 6,
+								"type": "aomTartarian"
+							},
+							{
+								"amount": 4,
+								"type": "aomArgus"
+							},
+							{
+								"amount": 4,
+								"type": "aomArgus"
+							}
+						],
+						"resources": {
+							"gold": 12000
+						},
+						"artifacts": [
+							"aomTitansTreasure"
+						]
+					}
+				]
+			}
+		}
+	}
+}

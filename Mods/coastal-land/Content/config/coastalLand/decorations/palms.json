@@ -1,0 +1,88 @@
+{
+	"core:trees" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coaLanPalms01" : { "animation" : "coastalLand/decorations/palms/coaLanPalms01",
+					"mask" : ["VBV","VBV"],
+					"allowedTerrains": ["coastalLand"]
+					},
+					"coaLanPalms02" : { "animation" : "coastalLand/decorations/palms/coaLanPalms02",
+					"mask" : ["VVVV","VBBV","BBBV","VBVV"],
+					"allowedTerrains": ["coastalLand"]
+					},
+					"coaLanPalms03" : { "animation" : "coastalLand/decorations/palms/coaLanPalms03",
+					"mask" : ["VBV","VBV","VBV","VBV"],
+					"allowedTerrains": ["coastalLand"]
+					},
+					"coaLanPalms04" : { "animation" : "coastalLand/decorations/palms/coaLanPalms04",  
+						"mask" : ["VV","VB"], 
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms05" : { "animation" : "coastalLand/decorations/palms/coaLanPalms05", 
+						"mask" : ["VV","VB"], 
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms06" : { "animation" : "coastalLand/decorations/palms/coaLanPalms06", 
+						"mask" : ["VB","VB"], 
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms07" : { "animation" : "coastalLand/decorations/palms/coaLanPalms07", 
+						"mask" : ["VV","VB"], 
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms08" : { "animation" : "coastalLand/decorations/palms/coaLanPalms08", 
+						"mask" : ["VV","VB"], 
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms09" : { "animation" : "coastalLand/decorations/palms/coaLanPalms09", 
+						"mask" : ["VV","VB"], 
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms10" : { "animation" : "coastalLand/decorations/palms/coaLanPalms10", 
+						"mask" : ["VV","VB"], 
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms11" : { "animation" : "coastalLand/decorations/palms/coaLanPalms11", 
+						"mask" : ["VV","VB"], 
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms12" : { "animation" : "coastalLand/decorations/palms/coaLanPalms12", 
+						"mask" : [ "VVVV","VBBB","VBBV"],  
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanPalms13" : { "animation" : "coastalLand/decorations/palms/coaLanPalms13", 
+						"mask" : [ "VBBV","VBBV","VVBB"],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanPalms14" : { "animation" : "coastalLand/decorations/palms/coaLanPalms14", 
+						"mask" : [ "VVVV","VVBB","VBBV"],  
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanPalms15" : { "animation" : "coastalLand/decorations/palms/coaLanPalms15", 
+						"mask" : [ "VVVV","VBBV","VVBB"],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms16" : { "animation" : "coastalLand/decorations/palms/coaLanPalms16", 
+						"mask" : [ "VVVV","VVBB","VBBB","VBBV"],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					
+					"coaLanPalms17" : { "animation" : "coastalLand/decorations/palms/coaLanPalms17", 
+						"mask" : [ "VVVV","VBBV","VBBB","VVBB"],
+						"allowedTerrains": [ "coastalLand" ]
+					}
+				}
+			}
+		}
+	}
+}

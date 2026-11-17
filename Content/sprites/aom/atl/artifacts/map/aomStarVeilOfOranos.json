@@ -1,0 +1,37 @@
+{
+	"basepath": "aom/atl/artifacts/map/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomStarVeilOfOranos_0.png"
+		},
+		{
+			"frame": 1,
+			"file": "aomStarVeilOfOranos_1.png"
+		},
+		{
+			"frame": 2,
+			"file": "aomStarVeilOfOranos_2.png"
+		},
+		{
+			"frame": 3,
+			"file": "aomStarVeilOfOranos_3.png"
+		},
+		{
+			"frame": 4,
+			"file": "aomStarVeilOfOranos_4.png"
+		},
+		{
+			"frame": 5,
+			"file": "aomStarVeilOfOranos_5.png"
+		},
+		{
+			"frame": 6,
+			"file": "aomStarVeilOfOranos_6.png"
+		},
+		{
+			"frame": 7,
+			"file": "aomStarVeilOfOranos_7.png"
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"basepath": "aom/atl/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "dwellingLvl1_00.png"
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"ycCoastalLandRock1" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "rock" },
+		"templates" : [ "coaLanHilLan02", "coaLanHilLan03", "coaLanHilLan04", "coaLanHilLan05", "coaLanHilLan06", "coaLanHilLan07", "coaLanHilLan08", "coaLanHilLan09" ]
+	},
+	"ycCoastalLandPlant1" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "plant" },
+		"templates" : [ "coaLanFlo00", "coaLanFlo01", "coaLanFlo02", "coaLanFlo03", "coaLanFlo04", "coaLanFlo05", "coaLanFlo06", "coaLanFlo07" ]
+	},
+	"ycCoastalLandPlant2" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "plant" },
+		"templates" : [ "coaLanLog01", "coaLanLog02", "coaLanLog03", "coaLanLog04" ]
+	},
+	"ycCoastalLandRock2" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "rock" },
+		"templates" : [ "coaLanMod00", "coaLanMod01", "coaLanMod02", "coaLanMod03", "coaLanMod04", "coaLanMod05" ]
+	},
+	"ycCoastalLandRock3" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "rock" },
+		"templates" : [ "coaLanMod06", "coaLanMod07", "coaLanMod08", "coaLanMod09", "coaLanMod10" ]
+	},
+	"ycCoastalLandMountain1" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "mountain" },
+		"templates" : [ "coaLanMou01", "coaLanMou02", "coaLanMou03", "coaLanMou04", "coaLanMou05", "coaLanMou06", "coaLanMou07", "coaLanMou08" ]
+	},
+	"ycCoastalLandTree1" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "tree" },
+		"templates" : [ "coaLanPalms01", "coaLanPalms02", "coaLanPalms03", "coaLanPalms04", "coaLanPalms05", "coaLanPalms06", "coaLanPalms07", "coaLanPalms08", "coaLanPalms09" ]
+	},
+	"ycCoastalLandTree2" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "tree" },
+		"templates" : [ "coaLanPalms10", "coaLanPalms11", "coaLanPalms12", "coaLanPalms13", "coaLanPalms14", "coaLanPalms15", "coaLanPalms16", "coaLanPalms17" ]
+	},
+	"ycCoastalLandRock4" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "rock" },
+		"templates" : [ "coaLanRoc01", "coaLanRoc02", "coaLanRoc03", "coaLanRoc04", "coaLanRoc05", "coaLanRoc06", "coaLanRoc07", "coaLanRoc08", "coaLanRoc09" ]
+	},
+	"ycCoastalLandPlant3" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "plant" },
+		"templates" : [ "coaLanShr00", "coaLanShr01", "coaLanShr02", "coaLanShr03", "coaLanShr04", "coaLanShr05", "coaLanShr06", "coaLanShr07" ]
+	},
+	"ycCoastalLandRock5" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "rock" },
+		"templates" : [ "coaLanSto01", "coaLanSto02", "coaLanSto03", "coaLanSto04", "coaLanSto05", "coaLanSto06", "coaLanSto07", "coaLanSto08", "coaLanSto09", "coaLanSto10" ]
+	},
+	"ycCoastalLandRock6" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "rock" },
+		"templates" : [ "coaLanSto11", "coaLanSto12", "coaLanSto13", "coaLanSto14", "coaLanSto15", "coaLanSto16", "coaLanSto17", "coaLanSto18", "coaLanSto19" ]
+	},
+	"ycCoastalLandTree3" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "tree" },
+		"templates" : [ "coaLanTre00", "coaLanTre01", "coaLanTre02", "coaLanTre03", "coaLanTre04", "coaLanTre05" ]
+	},
+	"ycCoastalLandTree4" : {
+		"biome" : { "terrain" : "coastalLand", "objectType" : "tree" },
+		"templates" : [ "coaLanTre06", "coaLanTre07", "coaLanTre08", "coaLanTre09", "coaLanTre10", "coaLanTre11" ]
+	}
+}

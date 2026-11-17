@@ -1,0 +1,235 @@
+{
+	"AOM_ASPECT": {
+		"hidden": true,
+		"creatureNature": true
+	},
+	"AOM_SURGE_USED": {
+		"hidden": true
+	},
+	"AOM_SURGE": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{乘势}\n这一回合多攻击一次。",
+		"valueDescriptions": {
+			"900001": "%s乘势而起，这一回合多攻击%d次。"
+		},
+		"graphics": {
+			"icon": "aom/atlantean/abicons/surge.png"
+		}
+	},
+	"AOM_LUSH": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{繁茂}\n本回合回血10%、防御+2，免疫时滞定格。",
+		"graphics": {
+			"icon": "aom/atlantean/abicons/lush.png"
+		}
+	},
+	"AOM_MIRED": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{草木缠足}\n踩在敌方繁茂地面上，本回合速度-2。",
+		"graphics": {
+			"icon": "aom/atlantean/abicons/mired.png"
+		}
+	},
+	"AOM_MENDER": {
+		"hidden": true,
+		"creatureNature": true
+	},
+	"AOM_MEND_KIND": {
+		"hidden": true,
+		"creatureNature": true
+	},
+	"AOM_ASPECT_ROUND": {
+		"hidden": true
+	},
+	"AOM_GOD": {
+		"hidden": true
+	},
+	"AOM_SEASON_HOLD": {
+		"hidden": true
+	},
+	"AOM_SEASON_CMD": {
+		"hidden": true
+	},
+	"AOM_SEASON_SPD": {
+		"hidden": true
+	},
+	"AOM_SEASON_MORALE": {
+		"hidden": true
+	},
+	"AOM_ECHO": {
+		"hidden": true,
+		"description": "{神力回响}\n神力法术有几率再生效一次。",
+		"valueDescriptions": {
+			"1": "神力回响：%s再次生效（几率%d%）。"
+		}
+	},
+	"AOM_ECHO_LUCK": {
+		"hidden": true
+	},
+	"AOM_ECHO_SEASON": {
+		"hidden": true
+	},
+	"AOM_SEASON_TEMPLE": {
+		"hidden": true,
+		"valueDescriptions": {
+			"1": "主神神殿：守城战中，神代轮转从守城英雄的主神之相开始。"
+		}
+	},
+	"AOM_INSEASON": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{当令}\n本相当令，本回合速度提高、伤害+${val}%。",
+		"graphics": {
+			"icon": "aom/atlantean/abicons/season.png"
+		},
+		"valueDescriptions": {
+			"900001": "天相当令：本回合天相部队速度提高、伤害+%d%。",
+			"900002": "时相当令：本回合时相部队速度提高、伤害+%d%。",
+			"900003": "地相当令：本回合地相部队速度提高、伤害+%d%。"
+		}
+	},
+	"AOM_SKYEYE": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{天眼}\n三相部队攻击它无距离城墙惩罚，幸运+1。",
+		"graphics": {
+			"icon": "aom/atlantean/abicons/sky.png"
+		},
+		"valueDescriptions": {
+			"900001": "天时：目标同时带天眼和时滞，%s的攻击无视它%d%的防御。"
+		}
+	},
+	"AOM_TIMELAG": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{时滞}\n${val}层：每层速度-1，3层定格\n伤害不足总生命3%不叠层",
+		"graphics": {
+			"icon": "aom/atlantean/abicons/time.png"
+		}
+	},
+	"AOM_FROZEN": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{定格}\n这一回合不能行动\n解除后2回合不受时滞",
+		"valueDescriptions": {
+			"900001": "%s的时滞叠满%d层，被定格。"
+		},
+		"graphics": {
+			"icon": "aom/atlantean/abicons/frozen.png"
+		}
+	},
+	"AOM_MYTHIC": {
+		"hidden": true,
+		"creatureNature": true
+	},
+	"AOM_CHARGE_COUNT": {
+		"hidden": true
+	},
+	"AOM_CHARGE_READY": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{蓄力已满}\n下一次近战攻击伤害+${val}%。",
+		"valueDescriptions": {
+			"900001": "%s蓄力已满，下一击伤害+%d%。"
+		},
+		"graphics": {
+			"icon": "aom/atlantean/abicons/charge.png"
+		}
+	},
+	"AOM_FAVOR": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{恩惠}\n当前${val}点，2、4、7点各得一次神恩。",
+		"valueDescriptions": {
+			"900001": "%s获得神性：恩惠%d点。",
+			"900002": "%s得到守护神的神恩：恩惠%d点。",
+			"900003": "%s得到主神神力：恩惠%d点。"
+		},
+		"graphics": {
+			"icon": "aom/atlantean/abicons/favor.png"
+		}
+	},
+	"AOM_DIVINITY": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{神性}\n攻击无视目标15%防御。",
+		"graphics": {
+			"icon": "aom/atlantean/abicons/divinity.png"
+		}
+	},
+	"AOM_FAVOR_SEEN": {
+		"hidden": true
+	},
+	"AOM_FAVOR_TICK": {
+		"hidden": true
+	},
+	"AOM_FAVOR_TIER": {
+		"hidden": true
+	},
+	"AOM_RELIC": {
+		"hidden": true
+	},
+	"AOM_BIG": {
+		"hidden": true
+	},
+	"AOM_PARENT": {
+		"hidden": true
+	},
+	"AOM_FOCUS": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{聚光}\n已对同一目标聚光${val}层。",
+		"graphics": {
+			"icon": "aom/atlantean/abicons/focus.png"
+		},
+		"valueDescriptions": {
+			"900001": "聚光：%s对同一目标聚光%d层，下一次伤害+%d%。"
+		}
+	},
+	"AOM_FOCUS_ID": {
+		"hidden": true
+	},
+	"AOM_WATCH": {
+		"hidden": false,
+		"creatureNature": false,
+		"description": "{观象}\n已站定${val}回合，本方射手远程伤害提高。",
+		"graphics": {
+			"icon": "aom/atlantean/abicons/watch.png"
+		},
+		"valueDescriptions": {
+			"900001": "观象：%s已站定%d回合，本方射手远程伤害+%d%。"
+		}
+	},
+	"AOM_WATCH_POS": {
+		"hidden": true
+	},
+	"AOM_FAVOR_PRAY": {
+		"hidden": true
+	},
+	"AOM_LAG_REST": {
+		"hidden": true
+	},
+	"AOM_AGE_SIEGE": {
+		"hidden": true,
+		"valueDescriptions": {
+			"1": "神话时代：守城战中英雄的神力法术回响几率+10%。",
+			"2": "奇迹时代：守城战中英雄的神力法术回响几率+10%，守城部队生命+10%。"
+		}
+	},
+	"AOM_RETURN": {
+		"hidden": true,
+		"description": "{重返大西洲}\n每回合开始，一队神话生物空降到本方。",
+		"valueDescriptions": {
+			"1": "重返大西洲：%s从天而降（%d）。"
+		}
+	},
+	"AOM_RETURN_SEEN": {
+		"hidden": true
+	},
+	"AOM_RETURN_TICK": {
+		"hidden": true
+	}
+}

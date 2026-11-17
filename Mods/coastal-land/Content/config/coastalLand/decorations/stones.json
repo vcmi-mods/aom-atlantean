@@ -1,0 +1,91 @@
+{
+	"coaStones" : {
+		"name" : "Stones",
+		"handler" : "static",
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coaLanSto01" : { "animation" : "coastalLand/decorations/stones/coaLanSto01",  
+						"mask" : [ "VBB","BBB","BBV" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanSto02" : { "animation" : "coastalLand/decorations/stones/coaLanSto02",  
+						"mask" : [ "BBV","BBB","VBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanSto03" : { "animation" : "coastalLand/decorations/stones/coaLanSto03",  
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+                    },
+					"coaLanSto04" : { "animation" : "coastalLand/decorations/stones/coaLanSto04",  
+						"mask" : [ "BB","BV" ],
+						"allowedTerrains": [ "coastalLand" ]
+					 },
+					"coaLanSto05" : { "animation" : "coastalLand/decorations/stones/coaLanSto05",  
+						"mask" : [ "VB","BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					 },
+					"coaLanSto06" : { "animation" : "coastalLand/decorations/stones/coaLanSto06",  
+						"mask" : [ "B","B" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	 },
+					"coaLanSto07" : { "animation" : "coastalLand/decorations/stones/coaLanSto07",  
+						"mask" : [ "BB","BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto08" : { "animation" : "coastalLand/decorations/stones/coaLanSto08",  
+						"mask" : [ "B" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto09" : { "animation" : "coastalLand/decorations/stones/coaLanSto09",  
+						"mask" : [ "B" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto10" : { "animation" : "coastalLand/decorations/stones/coaLanSto10",  
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto11" : { "animation" : "coastalLand/decorations/stones/coaLanSto11",  
+						"mask" : [ "VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto12" : { "animation" : "coastalLand/decorations/stones/coaLanSto12",  
+						"mask" : [ "BV","BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto13" : { "animation" : "coastalLand/decorations/stones/coaLanSto13",  
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto14" : { "animation" : "coastalLand/decorations/stones/coaLanSto14",  
+						"mask" : [ "BBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto15" : { "animation" : "coastalLand/decorations/stones/coaLanSto15",  
+						"mask" : [ "VB","VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto16" : { "animation" : "coastalLand/decorations/stones/coaLanSto16",  
+						"mask" : [ "VVV","BBV","VBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto17" : { "animation" : "coastalLand/decorations/stones/coaLanSto17",  
+						"mask" : [ "VVV","VBB","BBV" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto18" : { "animation" : "coastalLand/decorations/stones/coaLanSto18",  
+						"mask" : [ "VV","VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	},
+					"coaLanSto19" : { "animation" : "coastalLand/decorations/stones/coaLanSto19",  
+						"mask" : [ "BBV","BBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+			    	}
+				}
+			}
+		}
+	}
+}
+
+
+	

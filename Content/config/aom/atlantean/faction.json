@@ -1,0 +1,1995 @@
+{
+	"aomAtlantean": {
+		"name": "大西洲",
+		"description": "{大西洲}\n种族阵营： 中立，守序\n种族地形： 草地\n所在地： 恩洛斯大陆-西方外海大西洲群岛\n大西洲（亚特兰蒂斯）是恩洛斯以西外海上的十王之国，都城波塞多尼亚由三重运河环绕。大西洲人原本敬奉海神，后来背弃奥林匹斯诸神，转而侍奉克洛诺斯、乌拉诺斯与盖亚三位泰坦，凭神力与机巧驱使自动机关和神话生物。本岛沉入海底之后，遗民在各处海岸重建环形的城邦，等待泰坦归来。",
+		"alignment": "neutral",
+		"nativeTerrain": [
+			"grass"
+		],
+		"boat": "boatAomAtlantean",
+		"creatureBackground": {
+			"120px": "aom/atl/town/crbkg120.png",
+			"130px": "aom/atl/town/crbkg130.png"
+		},
+		"town": {
+			"names": [
+				"波塞多尼亚",
+				"克莱托",
+				"山铜城",
+				"金环港",
+				"银环港",
+				"三叉湾",
+				"西海之门",
+				"日落岛",
+				"珊瑚堡",
+				"潮汐城",
+				"白石港",
+				"红石城",
+				"黑石城",
+				"象牙宫",
+				"温泉城",
+				"运河城"
+			],
+			"creatures": [
+				[
+					"aomMurmillo",
+					"aomMurmilloChampion",
+					"aomMurmilloGuard"
+				],
+				[
+					"aomArcus",
+					"aomArcusFar",
+					"aomArcusVolley"
+				],
+				[
+					"aomAutomaton",
+					"aomAutomatonKronos",
+					"aomAutomatonGaia"
+				],
+				[
+					"aomCaladria",
+					"aomCaladriaUranus",
+					"aomCaladriaGaia"
+				],
+				[
+					"aomNereid",
+					"aomNereidKronos",
+					"aomNereidUranus"
+				],
+				[
+					"aomCentimanus",
+					"aomCentimanusKronos",
+					"aomCentimanusUranus"
+				],
+				[
+					"aomTitan",
+					"aomTitanKronos",
+					"aomTitanGaia"
+				]
+			],
+			"horde": [
+				0,
+				-1
+			],
+			"primaryResource": "crystal",
+			"mageGuild": 5,
+			"defaultTavern": 5,
+			"moatAbility": "castleMoat",
+			"hallSlots": [
+				[
+					[
+						"villageHall",
+						"townHall",
+						"cityHall",
+						"capitol"
+					],
+					[
+						"fort",
+						"citadel",
+						"castle"
+					],
+					[
+						"tavern"
+					],
+					[
+						"blacksmith"
+					]
+				],
+				[
+					[
+						"marketplace",
+						"resourceSilo"
+					],
+					[
+						"mageGuild1",
+						"mageGuild2",
+						"mageGuild3",
+						"mageGuild4",
+						"mageGuild5"
+					],
+					[
+						"shipyard"
+					],
+					[
+						"special1"
+					]
+				],
+				[
+					[
+						"special2"
+					],
+					[
+						"extraCapitol",
+						"special3",
+						"special4",
+						"extraTownHall",
+						"extraCityHall"
+					],
+					[
+						"horde1",
+						"horde1Upgr"
+					]
+				],
+				[
+					[
+						"dwellingLvl1",
+						"dwellingUpLvl1",
+						"dwellingUp2Lvl1"
+					],
+					[
+						"dwellingLvl2",
+						"dwellingUpLvl2",
+						"dwellingUp2Lvl2"
+					],
+					[
+						"dwellingLvl3",
+						"dwellingUpLvl3",
+						"dwellingUp2Lvl3"
+					],
+					[
+						"dwellingLvl4",
+						"dwellingUpLvl4",
+						"dwellingUp2Lvl4"
+					]
+				],
+				[
+					[
+						"dwellingLvl5",
+						"dwellingUpLvl5",
+						"dwellingUp2Lvl5"
+					],
+					[
+						"dwellingLvl6",
+						"dwellingUpLvl6",
+						"dwellingUp2Lvl6"
+					],
+					[
+						"dwellingLvl7",
+						"dwellingUpLvl7",
+						"dwellingUp2Lvl7"
+					]
+				]
+			],
+			"buildings": {
+				"dwellingLvl1": {
+					"name": "角斗营",
+					"description": "角斗营允许你招募鱼盔角斗士。",
+					"cost": {
+						"gold": 500,
+						"ore": 10
+					},
+					"requires": [
+						"fort"
+					]
+				},
+				"dwellingUpLvl1": {
+					"name": "高级角斗营",
+					"description": "高级角斗营允许你招募双剑角斗士和山铜卫士，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 1000,
+						"ore": 5
+					},
+					"upgrades": "dwellingLvl1"
+				},
+				"dwellingUp2Lvl1": {
+					"name": "高级角斗营",
+					"description": "高级角斗营允许你招募双剑角斗士和山铜卫士，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 1000,
+						"ore": 5
+					},
+					"upgrades": "dwellingUpLvl1",
+					"mode": "auto"
+				},
+				"dwellingLvl2": {
+					"name": "弓术场",
+					"description": "弓术场允许你招募反曲弓手。",
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5
+					},
+					"requires": [
+						"dwellingLvl1"
+					]
+				},
+				"dwellingUpLvl2": {
+					"name": "高级弓术场",
+					"description": "高级弓术场允许你招募翼盔长弓手和连珠弓手，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5
+					},
+					"upgrades": "dwellingLvl2"
+				},
+				"dwellingUp2Lvl2": {
+					"name": "高级弓术场",
+					"description": "高级弓术场允许你招募翼盔长弓手和连珠弓手，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5
+					},
+					"upgrades": "dwellingUpLvl2",
+					"mode": "auto"
+				},
+				"dwellingLvl3": {
+					"name": "机械工坊",
+					"description": "机械工坊允许你招募机关武士。",
+					"cost": {
+						"gold": 1500,
+						"ore": 5,
+						"crystal": 2
+					},
+					"requires": [
+						"allOf",
+						[
+							"blacksmith"
+						],
+						[
+							"dwellingLvl1"
+						]
+					]
+				},
+				"dwellingUpLvl3": {
+					"name": "高级机械工坊",
+					"description": "高级机械工坊允许你招募黑铁机关兵和青铜机关兵，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 1500,
+						"ore": 5,
+						"crystal": 2
+					},
+					"upgrades": "dwellingLvl3"
+				},
+				"dwellingUp2Lvl3": {
+					"name": "高级机械工坊",
+					"description": "高级机械工坊允许你招募黑铁机关兵和青铜机关兵，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 1500,
+						"ore": 5,
+						"crystal": 2
+					},
+					"upgrades": "dwellingUpLvl3",
+					"mode": "auto"
+				},
+				"dwellingLvl4": {
+					"name": "灵鸟圣所",
+					"description": "灵鸟圣所允许你招募灵鸟女祭司。",
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"crystal": 3
+					},
+					"requires": [
+						"allOf",
+						[
+							"dwellingLvl2"
+						],
+						[
+							"dwellingLvl3"
+						]
+					]
+				},
+				"dwellingUpLvl4": {
+					"name": "高级灵鸟圣所",
+					"description": "高级灵鸟圣所允许你招募白羽枪卫和翠羽神谕者，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"crystal": 3
+					},
+					"upgrades": "dwellingLvl4"
+				},
+				"dwellingUp2Lvl4": {
+					"name": "高级灵鸟圣所",
+					"description": "高级灵鸟圣所允许你招募白羽枪卫和翠羽神谕者，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"crystal": 3
+					},
+					"upgrades": "dwellingUpLvl4",
+					"mode": "auto"
+				},
+				"dwellingLvl5": {
+					"name": "海仙洞窟",
+					"description": "海仙洞窟允许你招募海仙女。",
+					"cost": {
+						"gold": 3000,
+						"wood": 5,
+						"ore": 5,
+						"crystal": 5
+					},
+					"requires": [
+						"allOf",
+						[
+							"mageGuild1"
+						],
+						[
+							"dwellingLvl4"
+						]
+					]
+				},
+				"dwellingUpLvl5": {
+					"name": "高级海仙洞窟",
+					"description": "高级海仙洞窟允许你招募虎鲨海仙女和掷戟海仙女，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 2000,
+						"crystal": 5
+					},
+					"upgrades": "dwellingLvl5"
+				},
+				"dwellingUp2Lvl5": {
+					"name": "高级海仙洞窟",
+					"description": "高级海仙洞窟允许你招募虎鲨海仙女和掷戟海仙女，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 2000,
+						"crystal": 5
+					},
+					"upgrades": "dwellingUpLvl5",
+					"mode": "auto"
+				},
+				"dwellingLvl6": {
+					"name": "百臂深牢",
+					"description": "百臂深牢允许你招募百臂巨人。",
+					"cost": {
+						"gold": 5000,
+						"ore": 20,
+						"crystal": 5
+					},
+					"requires": [
+						"allOf",
+						[
+							"citadel"
+						],
+						[
+							"dwellingLvl5"
+						]
+					]
+				},
+				"dwellingUpLvl6": {
+					"name": "高级百臂深牢",
+					"description": "高级百臂深牢允许你招募断链百臂巨人和星芒百臂巨人，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 3000,
+						"ore": 10,
+						"crystal": 5
+					},
+					"upgrades": "dwellingLvl6"
+				},
+				"dwellingUp2Lvl6": {
+					"name": "高级百臂深牢",
+					"description": "高级百臂深牢允许你招募断链百臂巨人和星芒百臂巨人，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 3000,
+						"ore": 10,
+						"crystal": 5
+					},
+					"upgrades": "dwellingUpLvl6",
+					"mode": "auto"
+				},
+				"dwellingLvl7": {
+					"name": "泰坦之门",
+					"description": "泰坦之门允许你招募熔岩泰坦。",
+					"cost": {
+						"gold": 20000,
+						"mercury": 10,
+						"sulfur": 10,
+						"crystal": 10,
+						"gems": 10
+					},
+					"requires": [
+						"allOf",
+						[
+							"castle"
+						],
+						[
+							"dwellingLvl6"
+						]
+					]
+				},
+				"dwellingUpLvl7": {
+					"name": "高级泰坦之门",
+					"description": "高级泰坦之门允许你招募持镰泰坦和苔岩泰坦，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 20000,
+						"mercury": 10,
+						"sulfur": 10,
+						"crystal": 10,
+						"gems": 10
+					},
+					"upgrades": "dwellingLvl7"
+				},
+				"dwellingUp2Lvl7": {
+					"name": "高级泰坦之门",
+					"description": "高级泰坦之门允许你招募持镰泰坦和苔岩泰坦，并且可以在城中进行转换。",
+					"cost": {
+						"gold": 20000,
+						"mercury": 10,
+						"sulfur": 10,
+						"crystal": 10,
+						"gems": 10
+					},
+					"upgrades": "dwellingUpLvl7",
+					"mode": "auto"
+				},
+				"villageHall": {
+					"name": "议事堂",
+					"description": "议事堂可以让你购买城镇建筑，并每天向你提供500个金币。"
+				},
+				"townHall": {
+					"name": "内政厅",
+					"description": "内政厅可以让你购买城镇建筑，并每天向你提供1000个金币。",
+					"cost": {
+						"gold": 2500
+					},
+					"requires": [
+						"tavern"
+					]
+				},
+				"cityHall": {
+					"name": "议会",
+					"description": "议会可以让你购买城镇建筑，并每天向你提供2000个金币。",
+					"cost": {
+						"gold": 5000
+					},
+					"requires": [
+						"allOf",
+						[
+							"mageGuild1"
+						],
+						[
+							"marketplace"
+						],
+						[
+							"blacksmith"
+						]
+					]
+				},
+				"capitol": {
+					"name": "国会",
+					"description": "国会每天向你提供4000个金币。",
+					"cost": {
+						"gold": 10000
+					},
+					"requires": [
+						"castle"
+					]
+				},
+				"fort": {
+					"name": "堡垒",
+					"description": "堡垒可为你的城镇提供城墙。",
+					"cost": {
+						"gold": 5000,
+						"wood": 20,
+						"ore": 20
+					}
+				},
+				"citadel": {
+					"name": "大本营",
+					"description": "大本营不仅使生物的基本生长率提高50%，还能加强城镇的防御设施。",
+					"cost": {
+						"gold": 2500,
+						"ore": 5
+					}
+				},
+				"castle": {
+					"name": "城堡",
+					"description": "城堡可提供2座副箭塔以加强城镇的防御，而且还使生物的基本生长率加倍。",
+					"cost": {
+						"gold": 5000,
+						"wood": 10,
+						"ore": 10
+					}
+				},
+				"tavern": {
+					"name": "酒馆",
+					"description": "酒馆可提高驻军的士气。",
+					"cost": {
+						"gold": 500,
+						"wood": 5
+					}
+				},
+				"blacksmith": {
+					"name": "铁匠铺",
+					"description": "铁匠铺可向你的军队提供手弩炮。",
+					"cost": {
+						"gold": 1000,
+						"wood": 5
+					},
+					"warMachine": "aomCheiroballistaArt"
+				},
+				"marketplace": {
+					"name": "市场",
+					"description": "市场可让你交换资源(你所拥有的市场越多，价格越便宜)。",
+					"cost": {
+						"gold": 500,
+						"wood": 5
+					}
+				},
+				"resourceSilo": {
+					"name": "物资仓库",
+					"description": "物资仓库每天为你额外提供1水晶。",
+					"cost": {
+						"gold": 5000,
+						"ore": 5
+					},
+					"produce": {
+						"crystal": 1
+					}
+				},
+				"shipyard": {
+					"name": "船坞",
+					"description": "船坞可以让你建造船只。",
+					"cost": {
+						"gold": 2000,
+						"wood": 20
+					}
+				},
+				"ship": {},
+				"special1": {
+					"name": "主神神殿",
+					"description": "主神神殿使每个来访英雄按自己侍奉的主神得到一次赐福：\n克洛诺斯的英雄攻击力+1，乌拉诺斯的英雄力量+1，盖亚的英雄知识+1，其他英雄防御力+1。\n守城战中，神代轮转从守城英雄的主神之相开始。",
+					"cost": {
+						"gold": 3000,
+						"wood": 5,
+						"ore": 5,
+						"crystal": 5
+					},
+					"requires": [
+						"mageGuild1"
+					],
+					"configuration": {
+						"visitMode": "hero",
+						"rewards": [
+							{
+								"limiter": {
+									"heroClasses": [
+										"aomKronosLord"
+									]
+								},
+								"message": "你在克洛诺斯的祭坛前献上祭品，时间之主赐你锋芒。（攻击力+1）",
+								"primary": {
+									"attack": 1
+								}
+							},
+							{
+								"limiter": {
+									"heroClasses": [
+										"aomOranosHerald"
+									]
+								},
+								"message": "你在乌拉诺斯的祭坛前献上祭品，苍穹之主赐你神威。（力量+1）",
+								"primary": {
+									"spellpower": 1
+								}
+							},
+							{
+								"limiter": {
+									"heroClasses": [
+										"aomGaiaPriest"
+									]
+								},
+								"message": "你在盖亚的祭坛前献上祭品，大地之母赐你智慧。（知识+1）",
+								"primary": {
+									"knowledge": 1
+								}
+							},
+							{
+								"limiter": {
+									"noneOf": [
+										{
+											"heroClasses": [
+												"aomKronosLord",
+												"aomOranosHerald",
+												"aomGaiaPriest"
+											]
+										}
+									]
+								},
+								"message": "三位泰坦主神不认得你，但神殿的石墙让你心安。（防御力+1）",
+								"primary": {
+									"defence": 1
+								}
+							}
+						]
+					},
+					"bonuses": [
+						{
+							"type": "AOM_SEASON_TEMPLE",
+							"val": 1,
+							"valueType": "BASE_NUMBER"
+						}
+					]
+				},
+				"special2": {
+					"name": "天行通道",
+					"description": "天行通道让英雄在你的大西洲城镇之间瞬间往来。",
+					"type": "castleGate",
+					"cost": {
+						"gold": 10000,
+						"wood": 5,
+						"ore": 5,
+						"mercury": 5,
+						"sulfur": 5,
+						"crystal": 5,
+						"gems": 5
+					},
+					"requires": [
+						"citadel"
+					]
+				},
+				"horde1": {
+					"name": "庄园",
+					"description": "庄园使鱼盔角斗士的产量每周+4。",
+					"cost": {
+						"gold": 1000
+					},
+					"upgrades": "dwellingLvl1"
+				},
+				"horde1Upgr": {
+					"name": "庄园",
+					"description": "庄园使鱼盔角斗士的产量每周+4。",
+					"cost": {
+						"gold": 1000
+					},
+					"upgrades": "dwellingUp2Lvl1",
+					"requires": [
+						"horde1"
+					],
+					"mode": "auto"
+				},
+				"grail": {
+					"name": "九环运河之都",
+					"description": "九环运河之都使城镇每天收入增加5000金币，生物产量增加50%，并使你所有英雄的神力回响几率+10%。\n大西洲职业的英雄来访这座城时学会{重返大西洲}：战斗中施放后，每回合都有一队大西洲的神话生物空降助战。",
+					"bonuses": [
+						{
+							"type": "AOM_ECHO",
+							"val": 10,
+							"valueType": "ADDITIVE_VALUE",
+							"propagator": "PLAYER"
+						}
+					],
+					"configuration": {
+						"visitMode": "hero",
+						"rewards": [
+							{
+								"limiter": {
+									"heroClasses": [
+										"aomKronosLord",
+										"aomOranosHerald",
+										"aomGaiaPriest"
+									]
+								},
+								"message": "九环运河的水面映出沉没前的故土。你记下了归途，从此能在战场上唤它回来。（学会重返大西洲）",
+								"bonuses": [
+									{
+										"type": "SPELL",
+										"subtype": "aomReturnAtlantis",
+										"val": 0,
+										"duration": "PERMANENT"
+									}
+								]
+							},
+							{
+								"limiter": {
+									"noneOf": [
+										{
+											"heroClasses": [
+												"aomKronosLord",
+												"aomOranosHerald",
+												"aomGaiaPriest"
+											]
+										}
+									]
+								},
+								"message": "九环运河的水面映出一座你不认得的城。只有大西洲的英雄才记得回去的路。"
+							}
+						]
+					}
+				},
+				"horde2": null,
+				"horde2Upgr": null,
+				"extraCapitol": {
+					"name": "远古时代",
+					"description": "大西洲的城从远古时代起步。一个时代的建筑全部建成后，城自动进入下一个时代。\n下一个时代是{古典时代}：需要酒馆、堡垒、市场、角斗营、弓术场。",
+					"mode": "auto",
+					"cost": {},
+					"requires": [
+						"villageHall"
+					]
+				},
+				"mageGuild1": {
+					"cost": {
+						"gold": 2000,
+						"wood": 5,
+						"ore": 5
+					},
+					"name": "1级魔法行会",
+					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+				},
+				"mageGuild2": {
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5,
+						"mercury": 4,
+						"sulfur": 4,
+						"crystal": 4,
+						"gems": 4
+					},
+					"name": "2级魔法行会",
+					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+				},
+				"mageGuild3": {
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5,
+						"mercury": 6,
+						"sulfur": 6,
+						"crystal": 6,
+						"gems": 6
+					},
+					"name": "3级魔法行会",
+					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+				},
+				"mageGuild4": {
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5,
+						"mercury": 8,
+						"sulfur": 8,
+						"crystal": 8,
+						"gems": 8
+					},
+					"name": "4级魔法行会",
+					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+				},
+				"mageGuild5": {
+					"cost": {
+						"gold": 1000,
+						"wood": 5,
+						"ore": 5,
+						"mercury": 10,
+						"sulfur": 10,
+						"crystal": 10,
+						"gems": 10
+					},
+					"name": "5级魔法行会",
+					"description": "进入魔法行会的来访英雄可以学会其中的魔法。"
+				},
+				"special3": {
+					"name": "古典时代",
+					"description": "城里这一时代的建筑全部建成后自动达成。\n1～2级生物产量每周+2。\n下一个时代是{英雄时代}：需要内政厅、2级魔法行会、大本营、铁匠铺、机械工坊、灵鸟圣所。",
+					"mode": "auto",
+					"upgrades": "extraCapitol",
+					"cost": {},
+					"requires": [
+						"allOf",
+						[
+							"tavern"
+						],
+						[
+							"fort"
+						],
+						[
+							"marketplace"
+						],
+						[
+							"dwellingLvl1"
+						],
+						[
+							"dwellingLvl2"
+						]
+					],
+					"bonuses": [
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel1",
+							"val": 2
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel2",
+							"val": 2
+						}
+					],
+					"configuration": {
+						"visitMode": "once",
+						"rewards": [
+							{
+								"message": "这座城进入了{古典时代}。\n\n1～2级生物产量每周+2。"
+							}
+						]
+					}
+				},
+				"special4": {
+					"name": "英雄时代",
+					"description": "城里这一时代的建筑全部建成后自动达成。\n1～2级生物产量每周+3，3～4级每周+1。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n下一个时代是{神话时代}：需要议会、3级魔法行会、城堡、主神神殿、海仙洞窟、百臂深牢。",
+					"mode": "auto",
+					"cost": {},
+					"requires": [
+						"allOf",
+						[
+							"townHall"
+						],
+						[
+							"mageGuild2"
+						],
+						[
+							"citadel"
+						],
+						[
+							"blacksmith"
+						],
+						[
+							"dwellingLvl3"
+						],
+						[
+							"dwellingLvl4"
+						]
+					],
+					"bonuses": [
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel1",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel2",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel3",
+							"val": 1
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel4",
+							"val": 1
+						},
+						{
+							"type": "STACK_EXPERIENCE_GAIN_PERCENT",
+							"val": 20,
+							"propagator": "PLAYER",
+							"stacking": "aomHeroicAge"
+						}
+					],
+					"upgrades": "special3",
+					"upgradeReplacesBonuses": true,
+					"configuration": {
+						"visitMode": "once",
+						"rewards": [
+							{
+								"message": "这座城进入了{英雄时代}。\n\n1～2级生物产量每周+3，3～4级每周+1。\n你的部队获得的兵种经验+20%（多座城只算一份）。"
+							}
+						]
+					}
+				},
+				"extraTownHall": {
+					"name": "神话时代",
+					"description": "城里这一时代的建筑全部建成后自动达成。\n1～2级生物产量每周+3，3～4级每周+2。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n守城战中英雄的神力法术回响几率+10%。\n下一个时代是{奇迹时代}：需要国会、5级魔法行会、天行通道、物资仓库、泰坦之门。",
+					"mode": "auto",
+					"cost": {},
+					"requires": [
+						"allOf",
+						[
+							"cityHall"
+						],
+						[
+							"mageGuild3"
+						],
+						[
+							"castle"
+						],
+						[
+							"special1"
+						],
+						[
+							"dwellingLvl5"
+						],
+						[
+							"dwellingLvl6"
+						]
+					],
+					"bonuses": [
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel1",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel2",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel3",
+							"val": 2
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel4",
+							"val": 2
+						},
+						{
+							"type": "STACK_EXPERIENCE_GAIN_PERCENT",
+							"val": 20,
+							"propagator": "PLAYER",
+							"stacking": "aomHeroicAge"
+						},
+						{
+							"type": "AOM_ECHO",
+							"val": 10,
+							"valueType": "ADDITIVE_VALUE"
+						},
+						{
+							"type": "AOM_AGE_SIEGE",
+							"val": 1,
+							"valueType": "BASE_NUMBER",
+							"stacking": "aomAgeSiege"
+						}
+					],
+					"upgrades": "special4",
+					"upgradeReplacesBonuses": true,
+					"configuration": {
+						"visitMode": "once",
+						"rewards": [
+							{
+								"message": "这座城进入了{神话时代}。\n\n1～2级生物产量每周+3，3～4级每周+2。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n守城战中英雄的神力法术回响几率+10%。"
+							}
+						]
+					}
+				},
+				"extraCityHall": {
+					"name": "奇迹时代",
+					"description": "城里这一时代的建筑全部建成后自动达成。\n1～2级生物产量每周+3，3～4级每周+2，5～6级每周+1。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n守城战中英雄的神力法术回响几率+10%，守城部队生命+10%。",
+					"mode": "auto",
+					"cost": {},
+					"requires": [
+						"allOf",
+						[
+							"capitol"
+						],
+						[
+							"mageGuild5"
+						],
+						[
+							"special2"
+						],
+						[
+							"resourceSilo"
+						],
+						[
+							"dwellingLvl7"
+						]
+					],
+					"bonuses": [
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel1",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel2",
+							"val": 3
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel3",
+							"val": 2
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel4",
+							"val": 2
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel5",
+							"val": 1
+						},
+						{
+							"type": "CREATURE_GROWTH",
+							"subtype": "creatureLevel6",
+							"val": 1
+						},
+						{
+							"type": "STACK_EXPERIENCE_GAIN_PERCENT",
+							"val": 20,
+							"propagator": "PLAYER",
+							"stacking": "aomHeroicAge"
+						},
+						{
+							"type": "AOM_ECHO",
+							"val": 10,
+							"valueType": "ADDITIVE_VALUE"
+						},
+						{
+							"type": "STACK_HEALTH",
+							"val": 10,
+							"valueType": "PERCENT_TO_BASE"
+						},
+						{
+							"type": "AOM_AGE_SIEGE",
+							"val": 2,
+							"valueType": "BASE_NUMBER",
+							"stacking": "aomAgeSiege"
+						}
+					],
+					"upgrades": "extraTownHall",
+					"upgradeReplacesBonuses": true,
+					"configuration": {
+						"visitMode": "once",
+						"rewards": [
+							{
+								"message": "这座城进入了{奇迹时代}。\n\n1～2级生物产量每周+3，3～4级每周+2，5～6级每周+1。\n你的部队获得的兵种经验+20%（多座城只算一份）。\n守城战中英雄的神力法术回响几率+10%，守城部队生命+10%。"
+							}
+						]
+					}
+				}
+			},
+			"guildSpells": {
+				"summonBoat": 4,
+				"scuttleBoat": 5,
+				"visions": 2,
+				"viewEarth": 3,
+				"disguise": 2,
+				"viewAir": 3,
+				"fly": 11,
+				"waterWalk": 10,
+				"dimensionDoor": 11,
+				"townPortal": 10,
+				"quicksand": 5,
+				"landMine": 8,
+				"forceField": 5,
+				"fireWall": 4,
+				"earthquake": 5,
+				"magicArrow": 30,
+				"iceBolt": 35,
+				"lightningBolt": 19,
+				"implosion": 10,
+				"chainLightning": 10,
+				"frostRing": 16,
+				"fireball": 8,
+				"inferno": 5,
+				"meteorShower": 10,
+				"destroyUndead": 9,
+				"shield": 6,
+				"airShield": 7,
+				"fireShield": 5,
+				"protectAir": 2,
+				"protectFire": 3,
+				"protectWater": 3,
+				"protectEarth": 4,
+				"antiMagic": 9,
+				"dispel": 10,
+				"magicMirror": 10,
+				"cure": 8,
+				"resurrection": 10,
+				"bless": 7,
+				"curse": 1,
+				"precision": 5,
+				"weakness": 2,
+				"stoneSkin": 7,
+				"disruptingRay": 5,
+				"prayer": 7,
+				"mirth": 4,
+				"sorrow": 5,
+				"fortune": 5,
+				"misfortune": 4,
+				"haste": 7,
+				"slow": 8,
+				"slayer": 5,
+				"frenzy": 5,
+				"counterstrike": 7,
+				"berserk": 5,
+				"hypnotize": 5,
+				"forgetfulness": 7,
+				"blind": 4,
+				"teleport": 8,
+				"removeObstacle": 5,
+				"clone": 7,
+				"earthElemental": 10,
+				"waterElemental": 10,
+				"airElemental": 5,
+				"aomShockwave": 20,
+				"aomDeconstruct": 20,
+				"aomValor": 20,
+				"aomCarnivoraSeed": 20,
+				"aomTraitor": 20,
+				"aomChaos": 20,
+				"aomGaiaForest": 20,
+				"aomSpiderLair": 20,
+				"aomHesperides": 20,
+				"aomVortex": 20,
+				"aomTartarianGate": 20,
+				"aomImplode": 20
+			},
+			"siege": {
+				"shooter": "aomArcusTurret",
+				"imagePrefix": "aom/atl/siege/SgAt",
+				"gate": {
+					"arch": {
+						"x": 477,
+						"y": 238
+					},
+					"gate": {
+						"x": 399,
+						"y": 274
+					}
+				},
+				"moat": {
+					"bank": {
+						"x": 403,
+						"y": 80
+					},
+					"moat": {
+						"x": 410,
+						"y": 90
+					}
+				},
+				"static": {
+					"background": {
+						"x": 600,
+						"y": 49
+					},
+					"bottom": {
+						"x": 512,
+						"y": 347
+					},
+					"top": {
+						"x": 489,
+						"y": 79
+					}
+				},
+				"towers": {
+					"bottom": {
+						"battlement": {
+							"x": 602,
+							"y": 500
+						},
+						"creature": {
+							"x": 394,
+							"y": 299
+						},
+						"tower": {
+							"x": 602,
+							"y": 500
+						}
+					},
+					"keep": {
+						"battlement": {
+							"x": 720,
+							"y": 158
+						},
+						"creature": {
+							"x": 526,
+							"y": -29
+						},
+						"tower": {
+							"x": 720,
+							"y": 158
+						}
+					},
+					"top": {
+						"battlement": {
+							"x": 557,
+							"y": 24
+						},
+						"creature": {
+							"x": 342,
+							"y": -187
+						},
+						"tower": {
+							"x": 569,
+							"y": 35
+						}
+					}
+				},
+				"walls": {
+					"bottom": {
+						"x": 528,
+						"y": 350
+					},
+					"bottomMid": {
+						"x": 469,
+						"y": 291
+					},
+					"upper": {
+						"x": 524,
+						"y": 32
+					},
+					"upperMid": {
+						"x": 470,
+						"y": 127
+					}
+				},
+				"towerIconSmall": "aom/atl/town/icons/tower-small.png",
+				"towerIconLarge": "aom/atl/town/icons/tower-large.png"
+			},
+			"structures": {
+				"villageHall": {
+					"animation": "aom/atl/town/villageHall.json",
+					"area": "aom/atl/town/area/villageHall.png",
+					"border": "aom/atl/town/border/villageHall.png",
+					"x": 439,
+					"y": 278,
+					"z": 351
+				},
+				"townHall": {
+					"animation": "aom/atl/town/townHall.json",
+					"area": "aom/atl/town/area/townHall.png",
+					"border": "aom/atl/town/border/townHall.png",
+					"x": 437,
+					"y": 277,
+					"z": 367
+				},
+				"cityHall": {
+					"animation": "aom/atl/town/cityHall.json",
+					"area": "aom/atl/town/area/cityHall.png",
+					"border": "aom/atl/town/border/cityHall.png",
+					"x": 437,
+					"y": 250,
+					"z": 367
+				},
+				"capitol": {
+					"animation": "aom/atl/town/capitol.json",
+					"area": "aom/atl/town/area/capitol.png",
+					"border": "aom/atl/town/border/capitol.png",
+					"x": 437,
+					"y": 218,
+					"z": 367
+				},
+				"fort": {
+					"animation": "aom/atl/town/fort.json",
+					"area": "aom/atl/town/area/fort.png",
+					"border": "aom/atl/town/border/fort.png",
+					"x": 360,
+					"y": 60,
+					"z": 190
+				},
+				"citadel": {
+					"animation": "aom/atl/town/citadel.json",
+					"area": "aom/atl/town/area/citadel.png",
+					"border": "aom/atl/town/border/citadel.png",
+					"x": 268,
+					"y": 28,
+					"z": 190
+				},
+				"castle": {
+					"animation": "aom/atl/town/castle.json",
+					"area": "aom/atl/town/area/castle.png",
+					"border": "aom/atl/town/border/castle.png",
+					"x": 268,
+					"y": 5,
+					"z": 190
+				},
+				"tavern": {
+					"animation": "aom/atl/town/tavern.json",
+					"area": "aom/atl/town/area/tavern.png",
+					"border": "aom/atl/town/border/tavern.png",
+					"x": 34,
+					"y": 166,
+					"z": 231
+				},
+				"blacksmith": {
+					"animation": "aom/atl/town/blacksmith.json",
+					"area": "aom/atl/town/area/blacksmith.png",
+					"border": "aom/atl/town/border/blacksmith.png",
+					"x": 417,
+					"y": 194,
+					"z": 244
+				},
+				"marketplace": {
+					"animation": "aom/atl/town/marketplace.json",
+					"area": "aom/atl/town/area/marketplace.png",
+					"border": "aom/atl/town/border/marketplace.png",
+					"x": 529,
+					"y": 235,
+					"z": 286
+				},
+				"resourceSilo": {
+					"animation": "aom/atl/town/resourceSilo.json",
+					"area": "aom/atl/town/area/resourceSilo.png",
+					"border": "aom/atl/town/border/resourceSilo.png",
+					"x": 649,
+					"y": 187,
+					"z": 234
+				},
+				"shipyard": {
+					"animation": "aom/atl/town/shipyard.json",
+					"area": "aom/atl/town/area/shipyard.png",
+					"border": "aom/atl/town/border/shipyard.png",
+					"x": 669,
+					"y": 265,
+					"z": 371
+				},
+				"ship": {
+					"animation": "aom/atl/town/ship.json",
+					"area": "aom/atl/town/area/ship.png",
+					"border": "aom/atl/town/border/ship.png",
+					"x": 613,
+					"y": 316,
+					"z": 362,
+					"hidden": true
+				},
+				"special1": {
+					"animation": "aom/atl/town/special1.json",
+					"area": "aom/atl/town/area/special1.png",
+					"border": "aom/atl/town/border/special1.png",
+					"x": 532,
+					"y": 69,
+					"z": 137
+				},
+				"special2": {
+					"animation": "aom/atl/town/special2.json",
+					"area": "aom/atl/town/area/special2.png",
+					"border": "aom/atl/town/border/special2.png",
+					"x": 219,
+					"y": 102,
+					"z": 137
+				},
+				"extraCapitol": {
+					"animation": "aom/atl/town/extraCapitol.json",
+					"area": "aom/atl/town/area/extraCapitol.png",
+					"border": "aom/atl/town/border/extraCapitol.png",
+					"x": 599,
+					"y": 194,
+					"z": 237
+				},
+				"special3": {
+					"animation": "aom/atl/town/special3.json",
+					"area": "aom/atl/town/area/special3.png",
+					"border": "aom/atl/town/border/special3.png",
+					"x": 599,
+					"y": 194,
+					"z": 237
+				},
+				"special4": {
+					"animation": "aom/atl/town/special4.json",
+					"area": "aom/atl/town/area/special4.png",
+					"border": "aom/atl/town/border/special4.png",
+					"x": 595,
+					"y": 188,
+					"z": 238
+				},
+				"extraTownHall": {
+					"animation": "aom/atl/town/extraTownHall.json",
+					"area": "aom/atl/town/area/extraTownHall.png",
+					"border": "aom/atl/town/border/extraTownHall.png",
+					"x": 596,
+					"y": 187,
+					"z": 238
+				},
+				"extraCityHall": {
+					"animation": "aom/atl/town/extraCityHall.json",
+					"area": "aom/atl/town/area/extraCityHall.png",
+					"border": "aom/atl/town/border/extraCityHall.png",
+					"x": 596,
+					"y": 184,
+					"z": 238
+				},
+				"grail": {
+					"animation": "aom/atl/town/grail.json",
+					"area": "aom/atl/town/area/grail.png",
+					"border": "aom/atl/town/border/grail.png",
+					"x": 646,
+					"y": 31,
+					"z": 1
+				},
+				"mageGuild1": {
+					"animation": "aom/atl/town/mageGuild1.json",
+					"area": "aom/atl/town/area/mageGuild1.png",
+					"border": "aom/atl/town/border/mageGuild1.png",
+					"x": 134,
+					"y": 199,
+					"z": 244
+				},
+				"mageGuild2": {
+					"animation": "aom/atl/town/mageGuild2.json",
+					"area": "aom/atl/town/area/mageGuild2.png",
+					"border": "aom/atl/town/border/mageGuild2.png",
+					"x": 134,
+					"y": 191,
+					"z": 244
+				},
+				"mageGuild3": {
+					"animation": "aom/atl/town/mageGuild3.json",
+					"area": "aom/atl/town/area/mageGuild3.png",
+					"border": "aom/atl/town/border/mageGuild3.png",
+					"x": 134,
+					"y": 184,
+					"z": 244
+				},
+				"mageGuild4": {
+					"animation": "aom/atl/town/mageGuild4.json",
+					"area": "aom/atl/town/area/mageGuild4.png",
+					"border": "aom/atl/town/border/mageGuild4.png",
+					"x": 131,
+					"y": 178,
+					"z": 244
+				},
+				"mageGuild5": {
+					"animation": "aom/atl/town/mageGuild5.json",
+					"area": "aom/atl/town/area/mageGuild5.png",
+					"border": "aom/atl/town/border/mageGuild5.png",
+					"x": 131,
+					"y": 172,
+					"z": 244
+				},
+				"dwellingLvl1": {
+					"animation": "aom/atl/town/dwellingLvl1.json",
+					"area": "aom/atl/town/area/dwellingLvl1.png",
+					"border": "aom/atl/town/border/dwellingLvl1.png",
+					"x": 244,
+					"y": 294,
+					"z": 361
+				},
+				"horde1": {
+					"animation": "aom/atl/town/horde1.json",
+					"area": "aom/atl/town/area/horde1.png",
+					"border": "aom/atl/town/border/horde1.png",
+					"x": 240,
+					"y": 265,
+					"z": 366,
+					"hidden": true
+				},
+				"dwellingUpLvl1": {
+					"animation": "aom/atl/town/dwellingUpLvl1.json",
+					"area": "aom/atl/town/area/dwellingUpLvl1.png",
+					"border": "aom/atl/town/border/dwellingUpLvl1.png",
+					"x": 244,
+					"y": 279,
+					"z": 367
+				},
+				"horde1Upgr": {
+					"animation": "aom/atl/town/horde1Upgr.json",
+					"area": "aom/atl/town/area/horde1Upgr.png",
+					"border": "aom/atl/town/border/horde1Upgr.png",
+					"x": 242,
+					"y": 274,
+					"z": 366,
+					"hidden": true
+				},
+				"dwellingLvl2": {
+					"animation": "aom/atl/town/dwellingLvl2.json",
+					"area": "aom/atl/town/area/dwellingLvl2.png",
+					"border": "aom/atl/town/border/dwellingLvl2.png",
+					"x": 183,
+					"y": 230,
+					"z": 299
+				},
+				"dwellingUpLvl2": {
+					"animation": "aom/atl/town/dwellingUpLvl2.json",
+					"area": "aom/atl/town/area/dwellingUpLvl2.png",
+					"border": "aom/atl/town/border/dwellingUpLvl2.png",
+					"x": 179,
+					"y": 224,
+					"z": 307
+				},
+				"dwellingLvl3": {
+					"animation": "aom/atl/town/dwellingLvl3.json",
+					"area": "aom/atl/town/area/dwellingLvl3.png",
+					"border": "aom/atl/town/border/dwellingLvl3.png",
+					"x": 286,
+					"y": 182,
+					"z": 246
+				},
+				"dwellingUpLvl3": {
+					"animation": "aom/atl/town/dwellingUpLvl3.json",
+					"area": "aom/atl/town/area/dwellingUpLvl3.png",
+					"border": "aom/atl/town/border/dwellingUpLvl3.png",
+					"x": 288,
+					"y": 159,
+					"z": 245
+				},
+				"dwellingLvl4": {
+					"animation": "aom/atl/town/dwellingLvl4.json",
+					"area": "aom/atl/town/area/dwellingLvl4.png",
+					"border": "aom/atl/town/border/dwellingLvl4.png",
+					"x": 741,
+					"y": 147,
+					"z": 223
+				},
+				"dwellingUpLvl4": {
+					"animation": "aom/atl/town/dwellingUpLvl4.json",
+					"area": "aom/atl/town/area/dwellingUpLvl4.png",
+					"border": "aom/atl/town/border/dwellingUpLvl4.png",
+					"x": 729,
+					"y": 118,
+					"z": 225
+				},
+				"dwellingLvl5": {
+					"animation": "aom/atl/town/dwellingLvl5.json",
+					"area": "aom/atl/town/area/dwellingLvl5.png",
+					"border": "aom/atl/town/border/dwellingLvl5.png",
+					"x": 0,
+					"y": 194,
+					"z": 2
+				},
+				"dwellingUpLvl5": {
+					"animation": "aom/atl/town/dwellingUpLvl5.json",
+					"area": "aom/atl/town/area/dwellingUpLvl5.png",
+					"border": "aom/atl/town/border/dwellingUpLvl5.png",
+					"x": 0,
+					"y": 194,
+					"z": 2
+				},
+				"dwellingLvl6": {
+					"animation": "aom/atl/town/dwellingLvl6.json",
+					"area": "aom/atl/town/area/dwellingLvl6.png",
+					"border": "aom/atl/town/border/dwellingLvl6.png",
+					"x": 693,
+					"y": 207,
+					"z": 270
+				},
+				"dwellingUpLvl6": {
+					"animation": "aom/atl/town/dwellingUpLvl6.json",
+					"area": "aom/atl/town/area/dwellingUpLvl6.png",
+					"border": "aom/atl/town/border/dwellingUpLvl6.png",
+					"x": 693,
+					"y": 206,
+					"z": 271
+				},
+				"dwellingLvl7": {
+					"animation": "aom/atl/town/dwellingLvl7.json",
+					"area": "aom/atl/town/area/dwellingLvl7.png",
+					"border": "aom/atl/town/border/dwellingLvl7.png",
+					"x": 25,
+					"y": 82,
+					"z": 161
+				},
+				"dwellingUpLvl7": {
+					"animation": "aom/atl/town/dwellingUpLvl7.json",
+					"area": "aom/atl/town/area/dwellingUpLvl7.png",
+					"border": "aom/atl/town/border/dwellingUpLvl7.png",
+					"x": 25,
+					"y": 83,
+					"z": 161
+				},
+				"dwellingUp2Lvl1": {
+					"animation": "aom/atl/town/dwellingUpLvl1.json",
+					"area": "aom/atl/town/area/dwellingUpLvl1.png",
+					"border": "aom/atl/town/border/dwellingUpLvl1.png",
+					"x": 244,
+					"y": 279,
+					"z": 367
+				},
+				"dwellingUp2Lvl2": {
+					"animation": "aom/atl/town/dwellingUpLvl2.json",
+					"area": "aom/atl/town/area/dwellingUpLvl2.png",
+					"border": "aom/atl/town/border/dwellingUpLvl2.png",
+					"x": 179,
+					"y": 224,
+					"z": 307
+				},
+				"dwellingUp2Lvl3": {
+					"animation": "aom/atl/town/dwellingUpLvl3.json",
+					"area": "aom/atl/town/area/dwellingUpLvl3.png",
+					"border": "aom/atl/town/border/dwellingUpLvl3.png",
+					"x": 288,
+					"y": 159,
+					"z": 245
+				},
+				"dwellingUp2Lvl4": {
+					"animation": "aom/atl/town/dwellingUpLvl4.json",
+					"area": "aom/atl/town/area/dwellingUpLvl4.png",
+					"border": "aom/atl/town/border/dwellingUpLvl4.png",
+					"x": 729,
+					"y": 118,
+					"z": 225
+				},
+				"dwellingUp2Lvl5": {
+					"animation": "aom/atl/town/dwellingUpLvl5.json",
+					"area": "aom/atl/town/area/dwellingUpLvl5.png",
+					"border": "aom/atl/town/border/dwellingUpLvl5.png",
+					"x": 0,
+					"y": 194,
+					"z": 2
+				},
+				"dwellingUp2Lvl6": {
+					"animation": "aom/atl/town/dwellingUpLvl6.json",
+					"area": "aom/atl/town/area/dwellingUpLvl6.png",
+					"border": "aom/atl/town/border/dwellingUpLvl6.png",
+					"x": 693,
+					"y": 206,
+					"z": 271
+				},
+				"dwellingUp2Lvl7": {
+					"animation": "aom/atl/town/dwellingUpLvl7.json",
+					"area": "aom/atl/town/area/dwellingUpLvl7.png",
+					"border": "aom/atl/town/border/dwellingUpLvl7.png",
+					"x": 25,
+					"y": 83,
+					"z": 161
+				},
+				"animatedWaterMoat": {
+					"animation": "aom/atl/town/animatedWaterMoat.json",
+					"x": 46,
+					"y": 137,
+					"z": -1
+				},
+				"animatedWaterHarbour": {
+					"animation": "aom/atl/town/animatedWaterHarbour.json",
+					"x": 603,
+					"y": 306,
+					"z": -1
+				}
+			},
+			"mapObject": {
+				"filters": {
+					"fort": [
+						"allOf",
+						[
+							"fort"
+						],
+						[
+							"noneOf",
+							[
+								"citadel"
+							]
+						]
+					]
+				},
+				"templates": {
+					"village": {
+						"animation": "aom/atl/map/aomAtlVillage.def",
+						"mask": [
+							"VVVVVV",
+							"VVVVVV",
+							"VVVVVV",
+							"VVBBBV",
+							"VBBBBB",
+							"VBBABB"
+						]
+					},
+					"fort": {
+						"animation": "aom/atl/map/aomAtlFort.def",
+						"mask": [
+							"VVVVVV",
+							"VVVVVV",
+							"VVVVVV",
+							"VVBBBV",
+							"VBBBBB",
+							"VBBABB"
+						]
+					},
+					"castle": {
+						"animation": "aom/atl/map/aomAtlCastle.def",
+						"mask": [
+							"VVVVVV",
+							"VVVVVV",
+							"VVVVVV",
+							"VVBBBV",
+							"VBBBBB",
+							"VBBABB"
+						]
+					},
+					"capitol": {
+						"animation": "aom/atl/map/aomAtlCapitol.def",
+						"mask": [
+							"VVVVVV",
+							"VVVVVV",
+							"VVVVVV",
+							"VVBBBV",
+							"VBBBBB",
+							"VBBABB"
+						]
+					}
+				}
+			},
+			"musicTheme": [
+				"music/aomAtlTown"
+			],
+			"tavernVideo": "aomAtlTavern.ogv",
+			"guildBackground": [
+				"aom/atl/town/guild-bg.png"
+			],
+			"townBackground": "aom/atl/town/background.png",
+			"guildWindow": [
+				"aom/atl/town/guild-window.png"
+			],
+			"buildingsIcons": "aom/atl/town/hall.json",
+			"hallBackground": "aom/atl/town/hall-bg",
+			"guildWindowPosition": {
+				"x": 332,
+				"y": 76
+			},
+			"icons": {
+				"fort": {
+					"normal": {
+						"large": "aom/atl/town/icons/fort-large.png",
+						"small": "aom/atl/town/icons/fort-small.png"
+					},
+					"built": {
+						"large": "aom/atl/town/icons/fort-large-built.png",
+						"small": "aom/atl/town/icons/fort-small-built.png"
+					}
+				},
+				"village": {
+					"normal": {
+						"large": "aom/atl/town/icons/village-large.png",
+						"small": "aom/atl/town/icons/village-small.png"
+					},
+					"built": {
+						"large": "aom/atl/town/icons/village-large-built.png",
+						"small": "aom/atl/town/icons/village-small-built.png"
+					}
+				}
+			}
+		},
+		"puzzleMap": {
+			"prefix": "aom/atl/puzzle/",
+			"pieces": [
+				{
+					"x": 7,
+					"y": 8,
+					"index": 3
+				},
+				{
+					"x": 48,
+					"y": 56,
+					"index": 12
+				},
+				{
+					"x": 109,
+					"y": 8,
+					"index": 14
+				},
+				{
+					"x": 205,
+					"y": 8,
+					"index": 20
+				},
+				{
+					"x": 185,
+					"y": 8,
+					"index": 29
+				},
+				{
+					"x": 269,
+					"y": 19,
+					"index": 33
+				},
+				{
+					"x": 315,
+					"y": 8,
+					"index": 17
+				},
+				{
+					"x": 414,
+					"y": 42,
+					"index": 13
+				},
+				{
+					"x": 393,
+					"y": 8,
+					"index": 4
+				},
+				{
+					"x": 7,
+					"y": 85,
+					"index": 8
+				},
+				{
+					"x": 79,
+					"y": 116,
+					"index": 32
+				},
+				{
+					"x": 134,
+					"y": 70,
+					"index": 27
+				},
+				{
+					"x": 194,
+					"y": 132,
+					"index": 41
+				},
+				{
+					"x": 272,
+					"y": 134,
+					"index": 42
+				},
+				{
+					"x": 357,
+					"y": 108,
+					"index": 36
+				},
+				{
+					"x": 400,
+					"y": 70,
+					"index": 24
+				},
+				{
+					"x": 473,
+					"y": 97,
+					"index": 10
+				},
+				{
+					"x": 7,
+					"y": 198,
+					"index": 15
+				},
+				{
+					"x": 7,
+					"y": 123,
+					"index": 19
+				},
+				{
+					"x": 54,
+					"y": 131,
+					"index": 40
+				},
+				{
+					"x": 151,
+					"y": 166,
+					"index": 46
+				},
+				{
+					"x": 402,
+					"y": 84,
+					"index": 26
+				},
+				{
+					"x": 14,
+					"y": 270,
+					"index": 23
+				},
+				{
+					"x": 54,
+					"y": 221,
+					"index": 35
+				},
+				{
+					"x": 209,
+					"y": 300,
+					"index": 45
+				},
+				{
+					"x": 187,
+					"y": 266,
+					"index": 47
+				},
+				{
+					"x": 286,
+					"y": 284,
+					"index": 48
+				},
+				{
+					"x": 367,
+					"y": 263,
+					"index": 43
+				},
+				{
+					"x": 413,
+					"y": 267,
+					"index": 28
+				},
+				{
+					"x": 535,
+					"y": 227,
+					"index": 11
+				},
+				{
+					"x": 7,
+					"y": 324,
+					"index": 5
+				},
+				{
+					"x": 126,
+					"y": 279,
+					"index": 37
+				},
+				{
+					"x": 172,
+					"y": 354,
+					"index": 39
+				},
+				{
+					"x": 273,
+					"y": 311,
+					"index": 44
+				},
+				{
+					"x": 344,
+					"y": 347,
+					"index": 38
+				},
+				{
+					"x": 414,
+					"y": 312,
+					"index": 31
+				},
+				{
+					"x": 7,
+					"y": 424,
+					"index": 1
+				},
+				{
+					"x": 31,
+					"y": 396,
+					"index": 9
+				},
+				{
+					"x": 91,
+					"y": 487,
+					"index": 6
+				},
+				{
+					"x": 135,
+					"y": 449,
+					"index": 18
+				},
+				{
+					"x": 225,
+					"y": 467,
+					"index": 21
+				},
+				{
+					"x": 237,
+					"y": 403,
+					"index": 30
+				},
+				{
+					"x": 291,
+					"y": 438,
+					"index": 25
+				},
+				{
+					"x": 272,
+					"y": 339,
+					"index": 34
+				},
+				{
+					"x": 339,
+					"y": 465,
+					"index": 22
+				},
+				{
+					"x": 384,
+					"y": 420,
+					"index": 16
+				},
+				{
+					"x": 477,
+					"y": 385,
+					"index": 7
+				},
+				{
+					"x": 503,
+					"y": 450,
+					"index": 2
+				}
+			]
+		}
+	}
+}

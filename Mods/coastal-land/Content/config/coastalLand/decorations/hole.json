@@ -1,0 +1,15 @@
+{
+	"core:hole" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coastalLandHole" : {
+						"animation" : "coastalLand/decorations/hole/coastalLandHole",
+						"mask" : [ "V" ],
+						"allowedTerrains": [ "coastalLand" ]
+					}
+				}
+			}
+		}
+	}
+}

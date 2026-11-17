@@ -1,0 +1,37 @@
+{
+	"basepath": "aom/atl/map/bank/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomAtlRift_0.png"
+		},
+		{
+			"frame": 1,
+			"file": "aomAtlRift_1.png"
+		},
+		{
+			"frame": 2,
+			"file": "aomAtlRift_2.png"
+		},
+		{
+			"frame": 3,
+			"file": "aomAtlRift_3.png"
+		},
+		{
+			"frame": 4,
+			"file": "aomAtlRift_4.png"
+		},
+		{
+			"frame": 5,
+			"file": "aomAtlRift_5.png"
+		},
+		{
+			"frame": 6,
+			"file": "aomAtlRift_6.png"
+		},
+		{
+			"frame": 7,
+			"file": "aomAtlRift_7.png"
+		}
+	]
+}

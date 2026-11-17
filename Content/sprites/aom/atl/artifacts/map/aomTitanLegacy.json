@@ -1,0 +1,37 @@
+{
+	"basepath": "aom/atl/artifacts/map/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomTitanLegacy_0.png"
+		},
+		{
+			"frame": 1,
+			"file": "aomTitanLegacy_1.png"
+		},
+		{
+			"frame": 2,
+			"file": "aomTitanLegacy_2.png"
+		},
+		{
+			"frame": 3,
+			"file": "aomTitanLegacy_3.png"
+		},
+		{
+			"frame": 4,
+			"file": "aomTitanLegacy_4.png"
+		},
+		{
+			"frame": 5,
+			"file": "aomTitanLegacy_5.png"
+		},
+		{
+			"frame": 6,
+			"file": "aomTitanLegacy_6.png"
+		},
+		{
+			"frame": 7,
+			"file": "aomTitanLegacy_7.png"
+		}
+	]
+}

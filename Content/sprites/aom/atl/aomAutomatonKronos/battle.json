@@ -1,0 +1,239 @@
+{
+	"basepath": "aom/atl/aomAutomatonKronos/battle/",
+	"sequences": [
+		{
+			"group": 0,
+			"frames": [
+				"g00_00.png",
+				"g00_01.png",
+				"g00_02.png",
+				"g00_03.png",
+				"g00_04.png",
+				"g00_05.png",
+				"g00_06.png",
+				"g00_07.png"
+			]
+		},
+		{
+			"group": 1,
+			"frames": [
+				"g01_00.png",
+				"g01_01.png",
+				"g01_02.png",
+				"g01_03.png",
+				"g01_04.png",
+				"g01_05.png"
+			]
+		},
+		{
+			"group": 2,
+			"frames": [
+				"g02_00.png",
+				"g02_01.png",
+				"g02_02.png",
+				"g02_03.png",
+				"g02_04.png",
+				"g02_05.png",
+				"g02_06.png",
+				"g02_07.png",
+				"g02_08.png",
+				"g02_09.png",
+				"g02_10.png",
+				"g02_11.png"
+			]
+		},
+		{
+			"group": 3,
+			"frames": [
+				"g03_00.png",
+				"g03_01.png",
+				"g03_02.png",
+				"g03_03.png",
+				"g03_04.png",
+				"g03_05.png"
+			]
+		},
+		{
+			"group": 4,
+			"frames": [
+				"g04_00.png",
+				"g04_01.png",
+				"g04_02.png",
+				"g04_03.png",
+				"g04_04.png"
+			]
+		},
+		{
+			"group": 5,
+			"frames": [
+				"g05_00.png",
+				"g05_01.png",
+				"g05_02.png",
+				"g05_03.png",
+				"g05_04.png",
+				"g05_05.png",
+				"g05_06.png",
+				"g05_07.png",
+				"g05_08.png",
+				"g05_09.png",
+				"g05_10.png",
+				"g05_11.png"
+			]
+		},
+		{
+			"group": 11,
+			"frames": [
+				"g11_00.png",
+				"g11_01.png",
+				"g11_02.png",
+				"g11_03.png",
+				"g11_04.png",
+				"g11_05.png",
+				"g11_06.png",
+				"g11_07.png",
+				"g11_08.png",
+				"g11_09.png"
+			]
+		},
+		{
+			"group": 12,
+			"frames": [
+				"g12_00.png",
+				"g12_01.png",
+				"g12_02.png",
+				"g12_03.png",
+				"g12_04.png",
+				"g12_05.png",
+				"g12_06.png",
+				"g12_07.png",
+				"g12_08.png",
+				"g12_09.png"
+			]
+		},
+		{
+			"group": 13,
+			"frames": [
+				"g13_00.png",
+				"g13_01.png",
+				"g13_02.png",
+				"g13_03.png",
+				"g13_04.png",
+				"g13_05.png",
+				"g13_06.png",
+				"g13_07.png",
+				"g13_08.png",
+				"g13_09.png"
+			]
+		},
+		{
+			"group": 20,
+			"frames": [
+				"g20_00.png",
+				"g20_01.png"
+			]
+		},
+		{
+			"group": 21,
+			"frames": [
+				"g21_00.png",
+				"g21_01.png"
+			]
+		},
+		{
+			"group": 30,
+			"frames": [
+				"g30_00.png",
+				"g30_01.png",
+				"g30_02.png",
+				"g30_03.png",
+				"g30_04.png",
+				"g30_05.png",
+				"g30_06.png",
+				"g30_07.png",
+				"g30_08.png",
+				"g30_09.png",
+				"g30_10.png",
+				"g30_11.png"
+			]
+		},
+		{
+			"group": 31,
+			"frames": [
+				"g31_00.png",
+				"g31_01.png",
+				"g31_02.png",
+				"g31_03.png",
+				"g31_04.png",
+				"g31_05.png",
+				"g31_06.png",
+				"g31_07.png",
+				"g31_08.png",
+				"g31_09.png",
+				"g31_10.png",
+				"g31_11.png"
+			]
+		},
+		{
+			"group": 32,
+			"frames": [
+				"g32_00.png",
+				"g32_01.png",
+				"g32_02.png",
+				"g32_03.png",
+				"g32_04.png",
+				"g32_05.png",
+				"g32_06.png",
+				"g32_07.png",
+				"g32_08.png",
+				"g32_09.png",
+				"g32_10.png",
+				"g32_11.png"
+			]
+		},
+		{
+			"group": 40,
+			"frames": [
+				"g40_00.png",
+				"g40_01.png",
+				"g40_02.png",
+				"g40_03.png",
+				"g40_04.png",
+				"g40_05.png",
+				"g40_06.png",
+				"g40_07.png",
+				"g40_08.png",
+				"g40_09.png"
+			]
+		},
+		{
+			"group": 41,
+			"frames": [
+				"g41_00.png",
+				"g41_01.png",
+				"g41_02.png",
+				"g41_03.png",
+				"g41_04.png",
+				"g41_05.png",
+				"g41_06.png",
+				"g41_07.png",
+				"g41_08.png",
+				"g41_09.png"
+			]
+		},
+		{
+			"group": 42,
+			"frames": [
+				"g42_00.png",
+				"g42_01.png",
+				"g42_02.png",
+				"g42_03.png",
+				"g42_04.png",
+				"g42_05.png",
+				"g42_06.png",
+				"g42_07.png",
+				"g42_08.png",
+				"g42_09.png"
+			]
+		}
+	]
+}

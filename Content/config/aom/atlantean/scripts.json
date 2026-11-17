@@ -1,0 +1,274 @@
+{
+	"aomAspect": {
+		"implements": "combatEvent",
+		"script": "combat/aomAspect",
+		"patches": [],
+		"priority": 10,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"aspect": {
+					"type": "string",
+					"enum": [
+						"sky",
+						"time",
+						"earth",
+						"man"
+					]
+				},
+				"surgeOnce": {
+					"type": "boolean"
+				},
+				"always": {
+					"type": "boolean"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{泰坦三相}\n天、时、地每回合轮流当令，人借三相之势。"
+	},
+	"aomMend": {
+		"implements": "combatEvent",
+		"script": "combat/aomMend",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"mechanicalOnly": {
+					"type": "boolean"
+				},
+				"resurrect": {
+					"type": "boolean"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{治疗}\n回合开始为相邻友军各恢复${val}点生命。"
+	},
+	"aomCharge": {
+		"implements": "combatEvent",
+		"script": "combat/aomCharge",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"every": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{蓄力一击}\n每${every}回合蓄满，下次近战伤害+${val}%。"
+	},
+	"aomFavor": {
+		"implements": "combatEvent",
+		"script": "combat/aomFavor",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"creatures": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"patron": {
+					"type": "string"
+				},
+				"god": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{恩惠}\n每回合恩惠+${val}，2、4、7点各得神恩。"
+	},
+	"aomEchoDamage": {
+		"implements": "spellEffect",
+		"script": "spells/aomEchoDamage",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomEchoTimed": {
+		"implements": "spellEffect",
+		"script": "spells/aomEchoTimed",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomEchoSummon": {
+		"implements": "spellEffect",
+		"script": "spells/aomEchoSummon",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomAffinityTimed": {
+		"implements": "spellEffect",
+		"script": "spells/aomAffinityTimed",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomImplode": {
+		"implements": "spellEffect",
+		"script": "spells/aomImplode",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomVortex": {
+		"implements": "spellEffect",
+		"script": "spells/aomVortex",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomSummonAt": {
+		"implements": "spellEffect",
+		"script": "spells/aomSummonAt",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomGodObstacle": {
+		"implements": "spellEffect",
+		"script": "spells/aomGodObstacle",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomEchoObstacle": {
+		"implements": "spellEffect",
+		"script": "spells/aomEchoObstacle",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomMassTimed": {
+		"implements": "spellEffect",
+		"script": "spells/aomMassTimed",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomBigMark": {
+		"implements": "combatEvent",
+		"script": "combat/aomBigMark",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {},
+			"additionalProperties": false
+		},
+		"description": "{克制巨物}\n对双格部队伤害+${val}%。"
+	},
+	"aomAiProxy": {
+		"implements": "spellEffect",
+		"script": "spells/aomAiProxy",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomTrialTimed": {
+		"implements": "spellEffect",
+		"script": "spells/aomTrialTimed",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	},
+	"aomFocus": {
+		"implements": "combatEvent",
+		"script": "combat/aomFocus",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"max": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{聚光}\n连续照射同一目标伤害递增\n每次+${val}%，最多${max}层。"
+	},
+	"aomWatch": {
+		"implements": "combatEvent",
+		"script": "combat/aomWatch",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {
+				"max": {
+					"type": "number"
+				}
+			},
+			"additionalProperties": false
+		},
+		"description": "{观象}\n未移动时全军射手远程伤害\n每回合+${val}%，最多${max}层。"
+	},
+	"aomPray": {
+		"implements": "combatEvent",
+		"script": "combat/aomPray",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"properties": {},
+			"additionalProperties": false
+		},
+		"description": "{祈神}\n英雄每回合多得${val}点恩惠\n无恩惠时全军士气+1。"
+	},
+	"aomReturn": {
+		"implements": "combatEvent",
+		"script": "combat/aomReturn",
+		"patches": [],
+		"priority": 0,
+		"schema": {
+			"type": "object",
+			"additionalProperties": false
+		},
+		"description": "{重返大西洲}\n每回合开始，一队神话生物空降到本方。"
+	},
+	"aomReturnCast": {
+		"implements": "spellEffect",
+		"script": "spells/aomReturn",
+		"patches": [],
+		"schema": {
+			"type": "object",
+			"additionalProperties": true
+		}
+	}
+}

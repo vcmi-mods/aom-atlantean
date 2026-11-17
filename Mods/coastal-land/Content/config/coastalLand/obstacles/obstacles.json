@@ -1,0 +1,77 @@
+{
+	"core:4" : {
+		"allowedTerrains" : {
+			"append" : "coastalLand"
+		}
+	},
+	"core:16" : {
+		"allowedTerrains" : {
+			"append" : "coastalLand"
+		}
+	},
+	"core:17" : {
+		"allowedTerrains" : {
+			"append" : "coastalLand"
+		}
+	},
+	"core:18" : {
+		"allowedTerrains" : {
+			"append" : "coastalLand"
+		}
+	},
+	"core:56" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:57" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:58" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:59" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:60" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:123" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:124" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:125" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:126" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:127" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	},
+	"core:128" : {
+		"allowedTerrains" : [
+			"coastalLand"
+		]
+	}
+}

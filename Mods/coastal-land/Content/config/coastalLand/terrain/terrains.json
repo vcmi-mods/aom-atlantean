@@ -1,0 +1,21 @@
+{
+	"coastalLand" :
+	{
+		"text":"海滩",
+		"grailRumor" : "在海滩中。",
+		"moveCost" : 125,
+		"minimapUnblocked" : [ 230, 196, 171 ],
+		"minimapBlocked"   : [101, 115, 54 ],
+		"music" : [ "aomCoastalLand.ogg" ],
+		"tiles" : "coastalLand/terrain/coastalLand",
+		"shortIdentifier" : "co",
+		"battleFields" : ["coastalLandBattlefields"],
+		"terrainViewPatterns" : "grass",
+		"type" : [],
+"allowedLayers": ["surface", "unknown"],
+		"river" : "waterRiver",
+		"rockTerrain":"rock",
+		"horseSound" : "horse04",
+		"horseSoundPenalty" : "horse24"
+	}
+}

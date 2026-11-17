@@ -1,0 +1,69 @@
+{
+	"basepath": "aom/atl/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "animatedWaterMoat_00.png"
+		},
+		{
+			"frame": 1,
+			"file": "animatedWaterMoat_01.png"
+		},
+		{
+			"frame": 2,
+			"file": "animatedWaterMoat_02.png"
+		},
+		{
+			"frame": 3,
+			"file": "animatedWaterMoat_03.png"
+		},
+		{
+			"frame": 4,
+			"file": "animatedWaterMoat_04.png"
+		},
+		{
+			"frame": 5,
+			"file": "animatedWaterMoat_05.png"
+		},
+		{
+			"frame": 6,
+			"file": "animatedWaterMoat_06.png"
+		},
+		{
+			"frame": 7,
+			"file": "animatedWaterMoat_07.png"
+		},
+		{
+			"frame": 8,
+			"file": "animatedWaterMoat_08.png"
+		},
+		{
+			"frame": 9,
+			"file": "animatedWaterMoat_09.png"
+		},
+		{
+			"frame": 10,
+			"file": "animatedWaterMoat_10.png"
+		},
+		{
+			"frame": 11,
+			"file": "animatedWaterMoat_11.png"
+		},
+		{
+			"frame": 12,
+			"file": "animatedWaterMoat_12.png"
+		},
+		{
+			"frame": 13,
+			"file": "animatedWaterMoat_13.png"
+		},
+		{
+			"frame": 14,
+			"file": "animatedWaterMoat_14.png"
+		},
+		{
+			"frame": 15,
+			"file": "animatedWaterMoat_15.png"
+		}
+	]
+}

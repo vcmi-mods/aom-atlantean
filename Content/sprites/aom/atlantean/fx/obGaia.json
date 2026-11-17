@@ -1,0 +1,11 @@
+{
+	"basepath": "aom/atlantean/fx/obGaia/",
+	"sequences": [
+		{
+			"group": 0,
+			"frames": [
+				"00.png"
+			]
+		}
+	]
+}

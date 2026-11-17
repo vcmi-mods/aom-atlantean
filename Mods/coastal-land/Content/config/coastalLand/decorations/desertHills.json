@@ -1,0 +1,52 @@
+{
+	"core:desertHills" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coaLanHilLan02" : {
+						"animation" : "coastalLand/decorations/desertHills/coaLanHilLan02",
+						"mask" : [ "BB","BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanHilLan03" : {
+						"animation" : "coastalLand/decorations/desertHills/coaLanHilLan03",
+						"mask" : [ "BB","BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanHilLan04" : {
+						"animation" : "coastalLand/decorations/desertHills/coaLanHilLan04",
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanHilLan05" : {
+						"animation" : "coastalLand/decorations/desertHills/coaLanHilLan05",
+						"mask" : [ "BBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanHilLan06" : {
+						"animation" : "coastalLand/decorations/desertHills/coaLanHilLan06",
+						"mask" : [ "VBBB","VBBV" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanHilLan07" : {
+						"animation" : "coastalLand/decorations/desertHills/coaLanHilLan07",
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanHilLan08" : {
+						"animation" : "coastalLand/decorations/desertHills/coaLanHilLan08",
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanHilLan09" : {
+						"animation" : "coastalLand/decorations/desertHills/coaLanHilLan09",
+						"mask" : [ "BBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					}
+				}
+			}
+		}	
+	}	
+}
+	
+	

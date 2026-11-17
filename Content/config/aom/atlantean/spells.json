@@ -1,0 +1,1706 @@
+{
+	"aomLushGround0": {
+		"type": "combat",
+		"name": "繁茂地面",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 0,
+		"power": 0,
+		"gainChance": {},
+		"flags": {
+			"special": true,
+			"positive": true
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"description": "盖亚的子民脚下草木自生。本方部队站在上面每回合回血10%、防御+2，敌人速度-2。",
+				"cost": 0,
+				"power": 0,
+				"aiValue": 0
+			}
+		}
+	},
+	"aomLushGround1": {
+		"type": "combat",
+		"name": "繁茂地面",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 0,
+		"power": 0,
+		"gainChance": {},
+		"flags": {
+			"special": true,
+			"positive": true
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"description": "盖亚的子民脚下草木自生。本方部队站在上面每回合回血10%、防御+2，敌人速度-2。",
+				"cost": 0,
+				"power": 0,
+				"aiValue": 0
+			}
+		}
+	},
+	"aomShockwave": {
+		"type": "combat",
+		"name": "震地冲击",
+		"targetType": "LOCATION",
+		"school": {
+			"air": true,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 8,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spShockwave"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomShockwave.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomShockwave_book",
+			"iconScroll": "aom/atlantean/spells/aomShockwave_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomShockwave_bonus",
+			"iconEffect": "aom/atlantean/spells/aomShockwave_effect",
+			"iconImmune": "aom/atlantean/spells/aomShockwave_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0-1",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"directDamage": {
+						"type": "damage"
+					},
+					"slow": {
+						"type": "aomTrialTimed",
+						"bonus": {
+							"slow": {
+								"type": "STACKS_SPEED",
+								"val": -2,
+								"duration": "N_TURNS",
+								"turns": 1
+							}
+						},
+						"trialRatio": 0.04
+					},
+					"zEcho": {
+						"type": "aomEchoDamage",
+						"echoFactor": 0.5,
+						"animation": "aom/atlantean/fx/spShockwave"
+					}
+				}
+			},
+			"none": {
+				"description": "{震地冲击}\n\n目标格和周围一圈的敌军受到（力量×8＋10）点伤害，速度-2，持续1回合。\n{神力亲和}：主神是乌拉诺斯的英雄施放时，伤害+25%。",
+				"cost": 10,
+				"power": 10
+			},
+			"basic": {
+				"description": "{初级震地冲击}\n\n目标格和周围一圈的敌军受到（力量×8＋10）点伤害，速度-2，持续1回合。\n{神力亲和}：主神是乌拉诺斯的英雄施放时，伤害+25%。",
+				"cost": 8,
+				"power": 10
+			},
+			"advanced": {
+				"battleEffects": {
+					"slow": {
+						"bonus": {
+							"slow": {
+								"type": "STACKS_SPEED",
+								"val": -3,
+								"duration": "N_TURNS",
+								"turns": 1
+							}
+						}
+					}
+				},
+				"description": "{中级震地冲击}\n\n目标格和周围一圈的敌军受到（力量×8＋20）点伤害，速度-3，持续1回合。\n{神力亲和}：主神是乌拉诺斯的英雄施放时，伤害+25%。",
+				"cost": 8,
+				"power": 20
+			},
+			"expert": {
+				"battleEffects": {
+					"slow": {
+						"bonus": {
+							"slow": {
+								"type": "STACKS_SPEED",
+								"val": -4,
+								"duration": "N_TURNS",
+								"turns": 2
+							}
+						}
+					}
+				},
+				"description": "{高级震地冲击}\n\n目标格和周围一圈的敌军受到（力量×8＋40）点伤害，速度-4，持续2回合。\n{神力亲和}：主神是乌拉诺斯的英雄施放时，伤害+25%。",
+				"cost": 8,
+				"power": 40
+			}
+		}
+	},
+	"aomDeconstruct": {
+		"type": "combat",
+		"name": "时光拆解",
+		"targetType": "CREATURE",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 25,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition": {
+			"anyOf": {
+				"bonus.SIEGE_WEAPON": "absolute",
+				"bonus.MECHANICAL": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spDecon"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomDeconstruct.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomDeconstruct_book",
+			"iconScroll": "aom/atlantean/spells/aomDeconstruct_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomDeconstruct_bonus",
+			"iconEffect": "aom/atlantean/spells/aomDeconstruct_effect",
+			"iconImmune": "aom/atlantean/spells/aomDeconstruct_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"directDamage": {
+						"type": "damage"
+					},
+					"zEcho": {
+						"type": "aomEchoDamage",
+						"echoFactor": 0.5,
+						"animation": "aom/atlantean/fx/spDecon"
+					}
+				}
+			},
+			"none": {
+				"description": "{时光拆解}\n\n把敌方一台战争器械或一队机械部队倒放拆解：造成（力量×25＋25）点伤害。\n对活物无效。\n{神力亲和}：主神是克洛诺斯的英雄施放时，伤害+25%。",
+				"cost": 10,
+				"power": 25
+			},
+			"basic": {
+				"description": "{初级时光拆解}\n\n把敌方一台战争器械或一队机械部队倒放拆解：造成（力量×25＋25）点伤害。\n对活物无效。\n{神力亲和}：主神是克洛诺斯的英雄施放时，伤害+25%。",
+				"cost": 8,
+				"power": 25
+			},
+			"advanced": {
+				"description": "{中级时光拆解}\n\n把敌方一台战争器械或一队机械部队倒放拆解：造成（力量×25＋50）点伤害。\n对活物无效。\n{神力亲和}：主神是克洛诺斯的英雄施放时，伤害+25%。",
+				"cost": 8,
+				"power": 50
+			},
+			"expert": {
+				"description": "{高级时光拆解}\n\n把敌方一台战争器械或一队机械部队倒放拆解：造成（力量×25＋100）点伤害。\n对活物无效。\n{神力亲和}：主神是克洛诺斯的英雄施放时，伤害+25%。",
+				"cost": 8,
+				"power": 100
+			}
+		}
+	},
+	"aomValor": {
+		"type": "combat",
+		"name": "英勇赐福",
+		"targetType": "CREATURE",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 2,
+		"power": 30,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"positive": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.NON_LIVING": "absolute",
+				"bonus.MECHANICAL": "absolute",
+				"bonus.SIEGE_WEAPON": "absolute",
+				"bonus.UNDEAD": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spValor"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomValor.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomValor_book",
+			"iconScroll": "aom/atlantean/spells/aomValor_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomValor_bonus",
+			"iconEffect": "aom/atlantean/spells/aomValor_effect",
+			"iconImmune": "aom/atlantean/spells/aomValor_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"heal": {
+						"type": "heal",
+						"healLevel": "heal",
+						"healPower": "permanent",
+						"optional": true
+					},
+					"valor": {
+						"type": "timed",
+						"bonus": {
+							"atk": {
+								"type": "PRIMARY_SKILL",
+								"val": 2,
+								"duration": "N_TURNS",
+								"subtype": "attack"
+							},
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 2,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							},
+							"spd": {
+								"type": "STACKS_SPEED",
+								"val": 1,
+								"duration": "N_TURNS"
+							}
+						}
+					},
+					"zEcho": {
+						"type": "aomEchoTimed",
+						"bonus": {
+							"atk": {
+								"type": "PRIMARY_SKILL",
+								"val": 1,
+								"duration": "N_TURNS",
+								"subtype": "attack"
+							},
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 1,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							},
+							"spd": {
+								"type": "STACKS_SPEED",
+								"val": 1,
+								"duration": "N_TURNS"
+							}
+						},
+						"animation": "aom/atlantean/fx/spValor"
+					}
+				}
+			},
+			"none": {
+				"description": "{英勇赐福}\n\n己方一队活物恢复（力量×30＋30）点生命（不复活），并如英雄般奋战：攻击和防御+2，速度+1，持续回合数等于力量。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，治疗量+25%。",
+				"cost": 10,
+				"power": 30
+			},
+			"basic": {
+				"description": "{初级英勇赐福}\n\n己方一队活物恢复（力量×30＋30）点生命（不复活），并如英雄般奋战：攻击和防御+2，速度+1，持续回合数等于力量。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，治疗量+25%。",
+				"cost": 8,
+				"power": 30
+			},
+			"advanced": {
+				"battleEffects": {
+					"valor": {
+						"bonus": {
+							"atk": {
+								"type": "PRIMARY_SKILL",
+								"val": 3,
+								"duration": "N_TURNS",
+								"subtype": "attack"
+							},
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 3,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							},
+							"spd": {
+								"type": "STACKS_SPEED",
+								"val": 1,
+								"duration": "N_TURNS"
+							}
+						}
+					},
+					"zEcho": {
+						"bonus": {
+							"atk": {
+								"type": "PRIMARY_SKILL",
+								"val": 2,
+								"duration": "N_TURNS",
+								"subtype": "attack"
+							},
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 2,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							},
+							"spd": {
+								"type": "STACKS_SPEED",
+								"val": 1,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				},
+				"description": "{中级英勇赐福}\n\n己方一队活物恢复（力量×30＋60）点生命（不复活），并如英雄般奋战：攻击和防御+3，速度+1，持续回合数等于力量。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，治疗量+25%。",
+				"cost": 8,
+				"power": 60
+			},
+			"expert": {
+				"battleEffects": {
+					"valor": {
+						"bonus": {
+							"atk": {
+								"type": "PRIMARY_SKILL",
+								"val": 4,
+								"duration": "N_TURNS",
+								"subtype": "attack"
+							},
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 4,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							},
+							"spd": {
+								"type": "STACKS_SPEED",
+								"val": 2,
+								"duration": "N_TURNS"
+							}
+						}
+					},
+					"zEcho": {
+						"bonus": {
+							"atk": {
+								"type": "PRIMARY_SKILL",
+								"val": 2,
+								"duration": "N_TURNS",
+								"subtype": "attack"
+							},
+							"def": {
+								"type": "PRIMARY_SKILL",
+								"val": 2,
+								"duration": "N_TURNS",
+								"subtype": "defence"
+							},
+							"spd": {
+								"type": "STACKS_SPEED",
+								"val": 1,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				},
+				"description": "{高级英勇赐福}\n\n己方一队活物恢复（力量×30＋120）点生命（不复活），并如英雄般奋战：攻击和防御+4，速度+2，持续回合数等于力量。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，治疗量+25%。",
+				"cost": 8,
+				"power": 120
+			}
+		}
+	},
+	"aomCarnivoraSeed": {
+		"type": "combat",
+		"name": "食人花种",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 3,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomCarnivoraSeed.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomCarnivoraSeed_book",
+			"iconScroll": "aom/atlantean/spells/aomCarnivoraSeed_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomCarnivoraSeed_bonus",
+			"iconEffect": "aom/atlantean/spells/aomCarnivoraSeed_effect",
+			"iconImmune": "aom/atlantean/spells/aomCarnivoraSeed_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"battleEffects": {
+					"summon": {
+						"type": "summon",
+						"id": "aomCarnivora",
+						"exclusive": false,
+						"permanent": false,
+						"summonByHealth": true,
+						"summonSameUnit": true
+					},
+					"zEcho": {
+						"type": "aomEchoSummon",
+						"id": "aomCarnivora",
+						"exclusive": false,
+						"permanent": false,
+						"summonByHealth": true,
+						"summonSameUnit": true,
+						"echoFactor": 0.5
+					}
+				}
+			},
+			"none": {
+				"description": "{食人花种}\n\n种下食人花助战，本场战斗有效：总生命为力量×35（每株60点生命）。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，召唤量+25%。",
+				"cost": 15,
+				"power": 35
+			},
+			"basic": {
+				"description": "{初级食人花种}\n\n种下食人花助战，本场战斗有效：总生命为力量×35（每株60点生命）。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，召唤量+25%。",
+				"cost": 12,
+				"power": 35
+			},
+			"advanced": {
+				"description": "{中级食人花种}\n\n种下食人花助战，本场战斗有效：总生命为力量×50（每株60点生命）。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，召唤量+25%。",
+				"cost": 12,
+				"power": 50
+			},
+			"expert": {
+				"description": "{高级食人花种}\n\n种下食人花助战，本场战斗有效：总生命为力量×65（每株60点生命）。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，召唤量+25%。",
+				"cost": 12,
+				"power": 65
+			}
+		}
+	},
+	"aomTraitor": {
+		"type": "combat",
+		"name": "策反叛徒",
+		"targetType": "CREATURE",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 4,
+		"power": 25,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"negative": true
+		},
+		"targetCondition": {
+			"allOf": {
+				"healthValueSpecial": "absolute"
+			},
+			"noneOf": {
+				"bonus.MIND_IMMUNITY": "normal",
+				"bonus.NON_LIVING": "normal",
+				"bonus.MECHANICAL": "normal",
+				"bonus.SIEGE_WEAPON": "absolute",
+				"bonus.UNDEAD": "normal",
+				"spell.magicMirror": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spTraitor"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomTraitor.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomTraitor_book",
+			"iconScroll": "aom/atlantean/spells/aomTraitor_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomTraitor_bonus",
+			"iconEffect": "aom/atlantean/spells/aomTraitor_effect",
+			"iconImmune": "aom/atlantean/spells/aomTraitor_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"traitor": {
+						"type": "aomAffinityTimed",
+						"gods": [
+							1,
+							3
+						],
+						"extraTurns": 1,
+						"bonus": {
+							"hypnotized": {
+								"type": "HYPNOTIZED",
+								"val": 1,
+								"duration": "N_TURNS"
+							}
+						},
+						"noCommander": true
+					},
+					"zEcho": {
+						"type": "aomEchoTimed",
+						"bonus": {
+							"hypnotized": {
+								"type": "HYPNOTIZED",
+								"val": 0,
+								"duration": "N_TURNS",
+								"turns": 1
+							}
+						},
+						"animation": "aom/atlantean/fx/spTraitor",
+						"noCommander": true
+					}
+				}
+			},
+			"none": {
+				"battleEffects": {
+					"traitor": {
+						"bonus": {
+							"hypnotized": {
+								"type": "HYPNOTIZED",
+								"val": 0,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				},
+				"description": "{策反叛徒}\n\n策反敌方一队总生命不超过（力量×25＋10）的部队，让它为你作战，持续回合数等于力量。\n对不受心智魔法影响的部队和指挥官无效。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，多持续一回合。",
+				"cost": 20,
+				"power": 10
+			},
+			"basic": {
+				"description": "{初级策反叛徒}\n\n策反敌方一队总生命不超过（力量×25＋10）的部队，让它为你作战，持续回合数等于力量。\n对不受心智魔法影响的部队和指挥官无效。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，多持续一回合。",
+				"cost": 16,
+				"power": 10
+			},
+			"advanced": {
+				"battleEffects": {
+					"traitor": {
+						"bonus": {
+							"hypnotized": {
+								"type": "HYPNOTIZED",
+								"val": 2,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				},
+				"description": "{中级策反叛徒}\n\n策反敌方一队总生命不超过（力量×25＋20）的部队，让它为你作战，持续回合数等于力量。\n对不受心智魔法影响的部队和指挥官无效。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，多持续一回合。",
+				"cost": 16,
+				"power": 20
+			},
+			"expert": {
+				"battleEffects": {
+					"traitor": {
+						"bonus": {
+							"hypnotized": {
+								"type": "HYPNOTIZED",
+								"val": 3,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				},
+				"description": "{高级策反叛徒}\n\n策反敌方一队总生命不超过（力量×25＋50）的部队，让它为你作战，持续回合数等于力量。\n对不受心智魔法影响的部队和指挥官无效。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，多持续一回合。",
+				"cost": 16,
+				"power": 50
+			}
+		},
+		"counters": {
+			"berserk": true
+		}
+	},
+	"aomChaos": {
+		"type": "combat",
+		"name": "动荡之乱",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 4,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.MIND_IMMUNITY": "normal",
+				"bonus.NON_LIVING": "normal",
+				"bonus.MECHANICAL": "normal",
+				"bonus.SIEGE_WEAPON": "absolute",
+				"bonus.UNDEAD": "normal"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spChaos"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomChaos.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomChaos_book",
+			"iconScroll": "aom/atlantean/spells/aomChaos_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomChaos_bonus",
+			"iconEffect": "aom/atlantean/spells/aomChaos_effect",
+			"iconImmune": "aom/atlantean/spells/aomChaos_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0-1",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"chaos": {
+						"type": "aomAffinityTimed",
+						"gods": [
+							1,
+							2
+						],
+						"bonus": {
+							"hypnotized": {
+								"type": "HYPNOTIZED",
+								"val": 0,
+								"duration": "UNTIL_OWN_ATTACK"
+							},
+							"cpu": {
+								"type": "CPU_CONTROLLED",
+								"val": 0,
+								"duration": "UNTIL_OWN_ATTACK",
+								"hidden": true
+							}
+						},
+						"affinityBonus": {
+							"hypnotized": {
+								"type": "HYPNOTIZED",
+								"val": 0,
+								"duration": "N_TURNS",
+								"turns": 2
+							},
+							"cpu": {
+								"type": "CPU_CONTROLLED",
+								"val": 0,
+								"duration": "N_TURNS",
+								"hidden": true,
+								"turns": 2
+							}
+						},
+						"noCommander": true
+					},
+					"zEcho": {
+						"type": "aomEchoTimed",
+						"bonus": {
+							"hypnotized": {
+								"type": "HYPNOTIZED",
+								"val": 0,
+								"duration": "UNTIL_OWN_ATTACK"
+							},
+							"cpu": {
+								"type": "CPU_CONTROLLED",
+								"val": 0,
+								"duration": "UNTIL_OWN_ATTACK",
+								"hidden": true
+							}
+						},
+						"animation": "aom/atlantean/fx/spChaos",
+						"noCommander": true
+					}
+				}
+			},
+			"none": {
+				"range": "0",
+				"description": "{动荡之乱}\n\n目标格的敌方部队陷入混乱，转头攻击自己一方的部队，直到它攻击过一次。\n对不受心智魔法影响的部队和指挥官无效。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，多持续一回合。",
+				"cost": 20,
+				"power": 0
+			},
+			"basic": {
+				"description": "{初级动荡之乱}\n\n目标格和周围一圈的敌方部队陷入混乱，转头攻击自己一方的部队，直到它攻击过一次。\n对不受心智魔法影响的部队和指挥官无效。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，多持续一回合。",
+				"cost": 16,
+				"power": 0
+			},
+			"advanced": {
+				"description": "{中级动荡之乱}\n\n目标格和周围一圈的敌方部队陷入混乱，转头攻击自己一方的部队，直到它攻击过一次。\n对不受心智魔法影响的部队和指挥官无效。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，多持续一回合。",
+				"cost": 16,
+				"power": 0
+			},
+			"expert": {
+				"range": "0-2",
+				"description": "{高级动荡之乱}\n\n目标格和周围两圈的敌方部队陷入混乱，转头攻击自己一方的部队，直到它攻击过一次。\n对不受心智魔法影响的部队和指挥官无效。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，多持续一回合。",
+				"cost": 16,
+				"power": 0
+			}
+		},
+		"counters": {
+			"hypnotize": true
+		}
+	},
+	"aomGaiaForest": {
+		"type": "combat",
+		"name": "盖亚之林",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 2,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spGaia"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomGaiaForest.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomGaiaForest_book",
+			"iconScroll": "aom/atlantean/spells/aomGaiaForest_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomGaiaForest_bonus",
+			"iconEffect": "aom/atlantean/spells/aomGaiaForest_effect",
+			"iconImmune": "aom/atlantean/spells/aomGaiaForest_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"clearAffected": true
+				},
+				"battleEffects": {
+					"forest": {
+						"type": "aomGodObstacle",
+						"gods": [
+							3
+						],
+						"extraTurns": 1,
+						"hidden": false,
+						"passable": false,
+						"trap": false,
+						"turnsRemaining": 2,
+						"attacker": {
+							"animation": "aom/atlantean/fx/obGaia",
+							"range": [
+								[
+									"L"
+								],
+								[
+									"TR",
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/atlantean/fx/obGaia",
+							"range": [
+								[
+									"L"
+								],
+								[
+									"TL",
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						}
+					},
+					"zEcho": {
+						"type": "aomEchoObstacle",
+						"optional": true,
+						"radius": 2,
+						"anchorWest": true,
+						"hidden": false,
+						"passable": false,
+						"trap": false,
+						"turnsRemaining": 2,
+						"animation": "aom/atlantean/fx/obGaia"
+					},
+					"aiProxy": {
+						"type": "aomAiProxy",
+						"optional": true,
+						"mode": "wall",
+						"radius": 3,
+						"ratio": 0.06,
+						"max": 2
+					}
+				}
+			},
+			"none": {
+				"description": "{盖亚之林}\n\n从目标格起向上长出一排2格宽的树林，挡住去路，持续2回合。\n{神力亲和}：主神是盖亚的英雄施放时，多持续一回合。",
+				"cost": 10,
+				"power": 0
+			},
+			"basic": {
+				"description": "{初级盖亚之林}\n\n从目标格起向上长出一排2格宽的树林，挡住去路，持续2回合。\n{神力亲和}：主神是盖亚的英雄施放时，多持续一回合。",
+				"cost": 8,
+				"power": 0
+			},
+			"advanced": {
+				"battleEffects": {
+					"forest": {
+						"turnsRemaining": 2,
+						"attacker": {
+							"animation": "aom/atlantean/fx/obGaia",
+							"range": [
+								[
+									"L"
+								],
+								[
+									"TR",
+									"L"
+								],
+								[
+									"TR",
+									"TL",
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/atlantean/fx/obGaia",
+							"range": [
+								[
+									"L"
+								],
+								[
+									"TL",
+									"L"
+								],
+								[
+									"TL",
+									"TR",
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						}
+					}
+				},
+				"description": "{中级盖亚之林}\n\n从目标格起向上长出一排3格宽的树林，挡住去路，持续2回合。\n{神力亲和}：主神是盖亚的英雄施放时，多持续一回合。",
+				"cost": 8,
+				"power": 0
+			},
+			"expert": {
+				"battleEffects": {
+					"forest": {
+						"turnsRemaining": 3,
+						"attacker": {
+							"animation": "aom/atlantean/fx/obGaia",
+							"range": [
+								[
+									"L"
+								],
+								[
+									"TR",
+									"L"
+								],
+								[
+									"TR",
+									"TL",
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/atlantean/fx/obGaia",
+							"range": [
+								[
+									"L"
+								],
+								[
+									"TL",
+									"L"
+								],
+								[
+									"TL",
+									"TR",
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R"
+								]
+							]
+						}
+					},
+					"zEcho": {
+						"turnsRemaining": 3
+					}
+				},
+				"description": "{高级盖亚之林}\n\n从目标格起向上长出一排3格宽的树林，挡住去路，持续3回合。\n{神力亲和}：主神是盖亚的英雄施放时，多持续一回合。",
+				"cost": 8,
+				"power": 0
+			}
+		}
+	},
+	"aomSpiderLair": {
+		"type": "combat",
+		"name": "蛛穴陷阱",
+		"targetType": "NO_TARGET",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 3,
+		"power": 12,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomSpiderLair.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomSpiderLair_book",
+			"iconScroll": "aom/atlantean/spells/aomSpiderLair_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomSpiderLair_bonus",
+			"iconEffect": "aom/atlantean/spells/aomSpiderLair_effect",
+			"iconImmune": "aom/atlantean/spells/aomSpiderLair_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"battleEffects": {
+					"obstacle": {
+						"type": "obstacle",
+						"hidden": true,
+						"passable": true,
+						"trap": true,
+						"triggerAbility": "aom-atlantean:aomSpiderBite",
+						"removeOnTrigger": true,
+						"patchCount": 2,
+						"turnsRemaining": -1,
+						"attacker": {
+							"animation": "aom/atlantean/fx/obEgg",
+							"appearSound": "aom/atlantean/sp_aomSpiderLair.wav"
+						},
+						"defender": {
+							"animation": "aom/atlantean/fx/obEgg",
+							"appearSound": "aom/atlantean/sp_aomSpiderLair.wav"
+						}
+					},
+					"zEcho": {
+						"type": "aomEchoObstacle",
+						"optional": true,
+						"hidden": true,
+						"passable": true,
+						"trap": true,
+						"triggerAbility": "aom-atlantean:aomSpiderBite",
+						"removeOnTrigger": true,
+						"turnsRemaining": -1,
+						"animation": "aom/atlantean/fx/obEgg"
+					},
+					"aiProxy": {
+						"type": "aomAiProxy",
+						"optional": true,
+						"mode": "trap",
+						"bite": "aom-atlantean:aomSpiderBite",
+						"factor": 0.5,
+						"max": 2
+					}
+				}
+			},
+			"none": {
+				"description": "{蛛穴陷阱}\n\n在战场随机空格埋下2个敌人看不见的蛛穴。部队踩上去会被巨蛛拖住：停止移动，受到（力量×12＋30）点伤害，速度-3，持续2回合。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，伤害+25%。",
+				"cost": 15,
+				"power": 30
+			},
+			"basic": {
+				"description": "{初级蛛穴陷阱}\n\n在战场随机空格埋下2个敌人看不见的蛛穴。部队踩上去会被巨蛛拖住：停止移动，受到（力量×12＋30）点伤害，速度-3，持续2回合。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，伤害+25%。",
+				"cost": 12,
+				"power": 30
+			},
+			"advanced": {
+				"battleEffects": {
+					"obstacle": {
+						"patchCount": 3
+					}
+				},
+				"description": "{中级蛛穴陷阱}\n\n在战场随机空格埋下3个敌人看不见的蛛穴。部队踩上去会被巨蛛拖住：停止移动，受到（力量×12＋60）点伤害，速度-3，持续2回合。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，伤害+25%。",
+				"cost": 12,
+				"power": 60
+			},
+			"expert": {
+				"battleEffects": {
+					"obstacle": {
+						"patchCount": 4
+					}
+				},
+				"description": "{高级蛛穴陷阱}\n\n在战场随机空格埋下4个敌人看不见的蛛穴。部队踩上去会被巨蛛拖住：停止移动，受到（力量×12＋120）点伤害，速度-3，持续2回合。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，伤害+25%。",
+				"cost": 12,
+				"power": 120
+			}
+		}
+	},
+	"aomSpiderBite": {
+		"type": "combat",
+		"name": "巨蛛扑咬",
+		"targetType": "CREATURE",
+		"school": {
+			"air": false,
+			"earth": true,
+			"fire": false,
+			"water": false
+		},
+		"level": 3,
+		"power": 12,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true,
+			"special": true
+		},
+		"targetCondition": {},
+		"animation": {
+			"hit": [
+				"aom/atlantean/fx/spSpider"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomSpiderBite.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomSpiderLair_book",
+			"iconScroll": "aom/atlantean/spells/aomSpiderLair_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomSpiderLair_bonus",
+			"iconEffect": "aom/atlantean/spells/aomSpiderLair_effect",
+			"iconImmune": "aom/atlantean/spells/aomSpiderLair_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"description": "被巨蛛咬伤并缠上蛛网：速度-3，持续2回合。",
+				"cost": 0,
+				"power": 30,
+				"targetModifier": {
+					"smart": false
+				},
+				"battleEffects": {
+					"directDamage": {
+						"type": "damage"
+					},
+					"web": {
+						"type": "timed",
+						"bonus": {
+							"web": {
+								"type": "STACKS_SPEED",
+								"val": -3,
+								"duration": "N_TURNS",
+								"turns": 2
+							}
+						}
+					}
+				}
+			},
+			"none": {
+				"power": 30,
+				"description": "被巨蛛咬伤并缠上蛛网：速度-3，持续2回合。",
+				"cost": 0
+			},
+			"basic": {
+				"power": 30,
+				"description": "被巨蛛咬伤并缠上蛛网：速度-3，持续2回合。",
+				"cost": 0
+			},
+			"advanced": {
+				"power": 60,
+				"description": "被巨蛛咬伤并缠上蛛网：速度-3，持续2回合。",
+				"cost": 0
+			},
+			"expert": {
+				"power": 120,
+				"description": "被巨蛛咬伤并缠上蛛网：速度-3，持续2回合。",
+				"cost": 0
+			}
+		}
+	},
+	"aomHesperides": {
+		"type": "combat",
+		"name": "金苹果树",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": false,
+			"water": true
+		},
+		"level": 3,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"indifferent": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.NON_LIVING": "normal",
+				"bonus.MECHANICAL": "normal",
+				"bonus.UNDEAD": "normal",
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spSummon"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomHesperides.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomHesperides_book",
+			"iconScroll": "aom/atlantean/spells/aomHesperides_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomHesperides_bonus",
+			"iconEffect": "aom/atlantean/spells/aomHesperides_effect",
+			"iconImmune": "aom/atlantean/spells/aomHesperides_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"targetModifier": {
+					"clearAffected": true
+				},
+				"battleEffects": {
+					"tree": {
+						"type": "aomGodObstacle",
+						"hidden": false,
+						"passable": false,
+						"trap": false,
+						"turnsRemaining": -1,
+						"attacker": {
+							"animation": "aom/atlantean/fx/obHesp",
+							"range": [
+								[
+									"L",
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R",
+									"R"
+								]
+							]
+						},
+						"defender": {
+							"animation": "aom/atlantean/fx/obHesp",
+							"range": [
+								[
+									"L",
+									"L"
+								]
+							],
+							"shape": [
+								[
+									"R",
+									"R"
+								]
+							]
+						}
+					},
+					"dryads": {
+						"type": "aomSummonAt",
+						"id": "aomDryad",
+						"exclusive": false,
+						"permanent": false,
+						"summonByHealth": true,
+						"summonSameUnit": true
+					},
+					"regen": {
+						"type": "aomMassTimed",
+						"optional": true,
+						"bonus": {
+							"regen": {
+								"type": "HP_REGENERATION",
+								"val": 10,
+								"duration": "N_TURNS"
+							}
+						}
+					},
+					"zEcho": {
+						"type": "aomEchoSummon",
+						"optional": true,
+						"id": "aomDryad",
+						"exclusive": false,
+						"permanent": false,
+						"summonByHealth": true,
+						"summonSameUnit": true,
+						"echoFactor": 0.5
+					}
+				}
+			},
+			"none": {
+				"description": "{金苹果树}\n\n在目标空格种下金苹果树（占一格，整场战斗都在），树仙女前来守护：总生命为力量×20（每位54点生命）。\n己方全体活物每回合恢复10点生命，持续回合数等于力量。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，召唤量+25%。",
+				"cost": 15,
+				"power": 20
+			},
+			"basic": {
+				"description": "{初级金苹果树}\n\n在目标空格种下金苹果树（占一格，整场战斗都在），树仙女前来守护：总生命为力量×20（每位54点生命）。\n己方全体活物每回合恢复10点生命，持续回合数等于力量。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，召唤量+25%。",
+				"cost": 12,
+				"power": 20
+			},
+			"advanced": {
+				"battleEffects": {
+					"regen": {
+						"bonus": {
+							"regen": {
+								"type": "HP_REGENERATION",
+								"val": 20,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				},
+				"description": "{中级金苹果树}\n\n在目标空格种下金苹果树（占一格，整场战斗都在），树仙女前来守护：总生命为力量×30（每位54点生命）。\n己方全体活物每回合恢复20点生命，持续回合数等于力量。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，召唤量+25%。",
+				"cost": 12,
+				"power": 30
+			},
+			"expert": {
+				"battleEffects": {
+					"regen": {
+						"bonus": {
+							"regen": {
+								"type": "HP_REGENERATION",
+								"val": 30,
+								"duration": "N_TURNS"
+							}
+						}
+					}
+				},
+				"description": "{高级金苹果树}\n\n在目标空格种下金苹果树（占一格，整场战斗都在），树仙女前来守护：总生命为力量×40（每位54点生命）。\n己方全体活物每回合恢复30点生命，持续回合数等于力量。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，召唤量+25%。",
+				"cost": 12,
+				"power": 40
+			}
+		}
+	},
+	"aomVortex": {
+		"type": "combat",
+		"name": "旋涡传送",
+		"targetType": "LOCATION",
+		"school": {
+			"air": true,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 3,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"indifferent": true
+		},
+		"targetCondition": {},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spVortex"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomVortex.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomVortex_book",
+			"iconScroll": "aom/atlantean/spells/aomVortex_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomVortex_bonus",
+			"iconEffect": "aom/atlantean/spells/aomVortex_effect",
+			"iconImmune": "aom/atlantean/spells/aomVortex_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0",
+				"battleEffects": {
+					"vortex": {
+						"type": "aomVortex",
+						"count": 2,
+						"gods": [
+							1,
+							2
+						],
+						"animation": "aom/atlantean/fx/spVortex"
+					}
+				}
+			},
+			"none": {
+				"description": "{旋涡传送}\n\n旋涡把己方离目标格最近的2队部队瞬间卷到目标格周围。战争器械不受影响。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，多传一队。",
+				"cost": 15,
+				"power": 0
+			},
+			"basic": {
+				"description": "{初级旋涡传送}\n\n旋涡把己方离目标格最近的2队部队瞬间卷到目标格周围。战争器械不受影响。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，多传一队。",
+				"cost": 12,
+				"power": 0
+			},
+			"advanced": {
+				"battleEffects": {
+					"vortex": {
+						"count": 3
+					}
+				},
+				"description": "{中级旋涡传送}\n\n旋涡把己方离目标格最近的3队部队瞬间卷到目标格周围。战争器械不受影响。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，多传一队。",
+				"cost": 12,
+				"power": 0
+			},
+			"expert": {
+				"battleEffects": {
+					"vortex": {
+						"count": 5
+					}
+				},
+				"description": "{高级旋涡传送}\n\n旋涡把己方离目标格最近的5队部队瞬间卷到目标格周围。战争器械不受影响。\n{神力亲和}：主神是克洛诺斯或乌拉诺斯的英雄施放时，多传一队。",
+				"cost": 12,
+				"power": 0
+			}
+		}
+	},
+	"aomTartarianGate": {
+		"type": "combat",
+		"name": "冥界之门",
+		"targetType": "LOCATION",
+		"school": {
+			"air": false,
+			"earth": false,
+			"fire": true,
+			"water": false
+		},
+		"level": 4,
+		"power": 12,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spGate"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomTartarianGate.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomTartarianGate_book",
+			"iconScroll": "aom/atlantean/spells/aomTartarianGate_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomTartarianGate_bonus",
+			"iconEffect": "aom/atlantean/spells/aomTartarianGate_effect",
+			"iconImmune": "aom/atlantean/spells/aomTartarianGate_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0-1",
+				"targetModifier": {
+					"smart": false
+				},
+				"battleEffects": {
+					"directDamage": {
+						"type": "damage",
+						"optional": true
+					},
+					"beasts": {
+						"type": "aomSummonAt",
+						"id": "aomTartarian",
+						"exclusive": false,
+						"permanent": false,
+						"summonByHealth": true,
+						"summonSameUnit": true,
+						"minDistance": 1
+					},
+					"zEcho": {
+						"type": "aomEchoDamage",
+						"optional": true,
+						"echoFactor": 0.5,
+						"animation": "aom/atlantean/fx/spGate"
+					}
+				}
+			},
+			"none": {
+				"description": "{冥界之门}\n\n冥界之门在目标格破土而出：目标格和周围一圈的所有部队受到（力量×12＋20）点火焰伤害，冥渊恶兽从门里爬出为你作战：总生命为力量×20（每只48点生命）。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，伤害和召唤量+25%。",
+				"cost": 20,
+				"power": 20
+			},
+			"basic": {
+				"description": "{初级冥界之门}\n\n冥界之门在目标格破土而出：目标格和周围一圈的所有部队受到（力量×12＋20）点火焰伤害，冥渊恶兽从门里爬出为你作战：总生命为力量×20（每只48点生命）。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，伤害和召唤量+25%。",
+				"cost": 16,
+				"power": 20
+			},
+			"advanced": {
+				"description": "{中级冥界之门}\n\n冥界之门在目标格破土而出：目标格和周围一圈的所有部队受到（力量×12＋30）点火焰伤害，冥渊恶兽从门里爬出为你作战：总生命为力量×30（每只48点生命）。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，伤害和召唤量+25%。",
+				"cost": 16,
+				"power": 30
+			},
+			"expert": {
+				"description": "{高级冥界之门}\n\n冥界之门在目标格破土而出：目标格和周围一圈的所有部队受到（力量×12＋40）点火焰伤害，冥渊恶兽从门里爬出为你作战：总生命为力量×40（每只48点生命）。\n{神力亲和}：主神是乌拉诺斯或盖亚的英雄施放时，伤害和召唤量+25%。",
+				"cost": 16,
+				"power": 40
+			}
+		}
+	},
+	"aomImplode": {
+		"type": "combat",
+		"name": "天穹内爆",
+		"targetType": "LOCATION",
+		"school": {
+			"air": true,
+			"earth": false,
+			"fire": false,
+			"water": false
+		},
+		"level": 5,
+		"power": 20,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"damage": true,
+			"negative": true
+		},
+		"targetCondition": {
+			"noneOf": {
+				"bonus.FLYING": "absolute",
+				"bonus.SIEGE_WEAPON": "absolute"
+			}
+		},
+		"animation": {
+			"affect": [
+				"aom/atlantean/fx/spImplode"
+			]
+		},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomImplode.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomImplode_book",
+			"iconScroll": "aom/atlantean/spells/aomImplode_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomImplode_bonus",
+			"iconEffect": "aom/atlantean/spells/aomImplode_effect",
+			"iconImmune": "aom/atlantean/spells/aomImplode_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "0-1",
+				"targetModifier": {
+					"smart": false
+				},
+				"battleEffects": {
+					"implode": {
+						"type": "aomImplode",
+						"perUnit": 10,
+						"maxBonus": 50
+					},
+					"zEcho": {
+						"type": "aomEchoDamage",
+						"optional": true,
+						"echoFactor": 0.5,
+						"animation": "aom/atlantean/fx/spImplode"
+					}
+				}
+			},
+			"none": {
+				"description": "{天穹内爆}\n\n把目标格和周围一圈的所有部队吸向一点再炸开：各受到（力量×20＋40）点伤害，每多卷入一队伤害+10%（最多+50%）。\n飞行部队和7级以上的巨物不受影响。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，伤害+25%。",
+				"cost": 25,
+				"power": 40
+			},
+			"basic": {
+				"description": "{初级天穹内爆}\n\n把目标格和周围一圈的所有部队吸向一点再炸开：各受到（力量×20＋40）点伤害，每多卷入一队伤害+10%（最多+50%）。\n飞行部队和7级以上的巨物不受影响。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，伤害+25%。",
+				"cost": 20,
+				"power": 40
+			},
+			"advanced": {
+				"range": "0-2",
+				"description": "{中级天穹内爆}\n\n把目标格和周围两圈的所有部队吸向一点再炸开：各受到（力量×20＋80）点伤害，每多卷入一队伤害+10%（最多+50%）。\n飞行部队和7级以上的巨物不受影响。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，伤害+25%。",
+				"cost": 20,
+				"power": 80
+			},
+			"expert": {
+				"range": "0-2",
+				"description": "{高级天穹内爆}\n\n把目标格和周围两圈的所有部队吸向一点再炸开：各受到（力量×20＋160）点伤害，每多卷入一队伤害+10%（最多+50%）。\n飞行部队和7级以上的巨物不受影响。\n{神力亲和}：主神是克洛诺斯或盖亚的英雄施放时，伤害+25%。",
+				"cost": 20,
+				"power": 160
+			}
+		}
+	},
+	"aomReturnAtlantis": {
+		"type": "combat",
+		"name": "重返大西洲",
+		"targetType": "CREATURE",
+		"school": {
+			"air": true,
+			"earth": true,
+			"fire": true,
+			"water": true
+		},
+		"level": 5,
+		"power": 0,
+		"defaultGainChance": 0,
+		"gainChance": {},
+		"flags": {
+			"positive": true,
+			"special": true
+		},
+		"targetCondition": {},
+		"animation": {},
+		"sounds": {
+			"cast": "aom/atlantean/sp_aomTartarianGate.wav"
+		},
+		"graphics": {
+			"iconBook": "aom/atlantean/spells/aomReturnAtlantis_book",
+			"iconScroll": "aom/atlantean/spells/aomReturnAtlantis_scroll",
+			"iconScenarioBonus": "aom/atlantean/spells/aomReturnAtlantis_bonus",
+			"iconEffect": "aom/atlantean/spells/aomReturnAtlantis_effect",
+			"iconImmune": "aom/atlantean/spells/aomReturnAtlantis_effect"
+		},
+		"levels": {
+			"base": {
+				"range": "X",
+				"targetModifier": {
+					"smart": true
+				},
+				"battleEffects": {
+					"mark": {
+						"type": "timed",
+						"bonus": {
+							"ret": {
+								"type": "COMBAT_EVENT_TRIGGER",
+								"subtype": "aomReturn",
+								"val": 1,
+								"duration": "ONE_BATTLE",
+								"hidden": true
+							}
+						}
+					},
+					"drop": {
+						"type": "aomReturnCast"
+					}
+				}
+			},
+			"none": {
+				"description": "{重返大西洲}\n\n沉没的故土应召而来：一队随机的大西洲城外神话生物立刻空降到本方，此后每回合开始再降一队，直到战斗结束。\n每队总生命为力量×20，至少1只。每场战斗只能施放一次。",
+				"cost": 30,
+				"power": 20
+			},
+			"basic": {
+				"description": "{初级重返大西洲}\n\n沉没的故土应召而来：一队随机的大西洲城外神话生物立刻空降到本方，此后每回合开始再降一队，直到战斗结束。\n每队总生命为力量×20，至少1只。每场战斗只能施放一次。",
+				"cost": 25,
+				"power": 20
+			},
+			"advanced": {
+				"description": "{中级重返大西洲}\n\n沉没的故土应召而来：一队随机的大西洲城外神话生物立刻空降到本方，此后每回合开始再降一队，直到战斗结束。\n每队总生命为力量×30，至少1只。每场战斗只能施放一次。",
+				"cost": 25,
+				"power": 30
+			},
+			"expert": {
+				"description": "{高级重返大西洲}\n\n沉没的故土应召而来：一队随机的大西洲城外神话生物立刻空降到本方，此后每回合开始再降一队，直到战斗结束。\n每队总生命为力量×40，至少1只。每场战斗只能施放一次。",
+				"cost": 25,
+				"power": 40
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "大西洲百科",
+	"description": "在游戏百科的词汇表里加入一页“大西洲：三相、恩惠与时代”，讲解大西洲的泰坦三相、恩惠、神力法术、时代和重返大西洲。",
+	"english": {
+		"name": "Atlantis Wiki Page",
+		"description": "Adds the page \"Atlantis: Aspects, Favor and Ages\" to the glossary of the in-game wiki, explaining the Titan Aspects, Favor, god powers, Ages and Return to Atlantis.",
+		"translations": [
+			"config/translations/english.json"
+		]
+	},
+	"chinese": {
+		"translations": [
+			"config/translations/chinese.json"
+		]
+	},
+	"author": "yche2990",
+	"version": "1.0.0",
+	"modType": "Other",
+	"compatibility": {
+		"min": "1.8.0"
+	}
+}

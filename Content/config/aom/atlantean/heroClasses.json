@@ -1,0 +1,248 @@
+{
+	"aomKronosLord": {
+		"name": "时序领主",
+		"faction": "aomAtlantean",
+		"affinity": "might",
+		"commander": "aomCommander",
+		"primarySkills": {
+			"attack": 2,
+			"defence": 2,
+			"spellpower": 1,
+			"knowledge": 1
+		},
+		"lowLevelChance": {
+			"attack": 35,
+			"defence": 45,
+			"spellpower": 10,
+			"knowledge": 10
+		},
+		"highLevelChance": {
+			"attack": 30,
+			"defence": 30,
+			"spellpower": 20,
+			"knowledge": 20
+		},
+		"secondarySkills": {
+			"pathfinding": 4,
+			"archery": 5,
+			"logistics": 5,
+			"scouting": 4,
+			"diplomacy": 4,
+			"navigation": 8,
+			"leadership": 10,
+			"wisdom": 3,
+			"mysticism": 2,
+			"luck": 3,
+			"ballistics": 8,
+			"eagleEye": 2,
+			"necromancy": 0,
+			"estates": 6,
+			"fireMagic": 1,
+			"airMagic": 3,
+			"waterMagic": 4,
+			"earthMagic": 2,
+			"scholar": 1,
+			"tactics": 7,
+			"artillery": 5,
+			"learning": 4,
+			"offence": 7,
+			"armorer": 5,
+			"intelligence": 1,
+			"sorcery": 1,
+			"resistance": 5,
+			"firstAid": 2,
+			"aomSeasonCommand": 10,
+			"aomEcho": 10
+		},
+		"defaultTavern": 5,
+		"tavern": {
+			"castle": 5,
+			"rampart": 5,
+			"tower": 5,
+			"inferno": 5,
+			"necropolis": 5,
+			"dungeon": 5,
+			"stronghold": 5,
+			"fortress": 5,
+			"conflux": 5,
+			"aomAtlantean": 6
+		},
+		"animation": {
+			"battle": {
+				"male": "aom/atlantean/heroes/kronos/battle.json",
+				"female": "aom/atlantean/heroes/kronosF/battle.json"
+			}
+		},
+		"mapObject": {
+			"templates": {
+				"normal": {
+					"animation": "aom/atlantean/heroes/kronos/map.json"
+				}
+			}
+		}
+	},
+	"aomOranosHerald": {
+		"name": "天穹使者",
+		"faction": "aomAtlantean",
+		"affinity": "might",
+		"commander": "aomCommander",
+		"primarySkills": {
+			"attack": 2,
+			"defence": 1,
+			"spellpower": 1,
+			"knowledge": 2
+		},
+		"lowLevelChance": {
+			"attack": 35,
+			"defence": 20,
+			"spellpower": 15,
+			"knowledge": 30
+		},
+		"highLevelChance": {
+			"attack": 30,
+			"defence": 20,
+			"spellpower": 20,
+			"knowledge": 30
+		},
+		"secondarySkills": {
+			"pathfinding": 7,
+			"archery": 8,
+			"logistics": 5,
+			"scouting": 7,
+			"diplomacy": 4,
+			"navigation": 3,
+			"leadership": 6,
+			"wisdom": 3,
+			"mysticism": 3,
+			"luck": 6,
+			"ballistics": 4,
+			"eagleEye": 2,
+			"necromancy": 0,
+			"estates": 2,
+			"fireMagic": 0,
+			"airMagic": 1,
+			"waterMagic": 3,
+			"earthMagic": 3,
+			"scholar": 1,
+			"tactics": 5,
+			"artillery": 6,
+			"learning": 4,
+			"offence": 5,
+			"armorer": 8,
+			"intelligence": 2,
+			"sorcery": 2,
+			"resistance": 9,
+			"firstAid": 3,
+			"aomSeasonCommand": 10,
+			"aomEcho": 10
+		},
+		"defaultTavern": 5,
+		"tavern": {
+			"castle": 5,
+			"rampart": 5,
+			"tower": 5,
+			"inferno": 5,
+			"necropolis": 5,
+			"dungeon": 5,
+			"stronghold": 5,
+			"fortress": 5,
+			"conflux": 5,
+			"aomAtlantean": 6
+		},
+		"animation": {
+			"battle": {
+				"male": "aom/atlantean/heroes/uranus/battle.json",
+				"female": "aom/atlantean/heroes/uranusF/battle.json"
+			}
+		},
+		"mapObject": {
+			"templates": {
+				"normal": {
+					"animation": "aom/atlantean/heroes/uranus/map.json"
+				}
+			}
+		}
+	},
+	"aomGaiaPriest": {
+		"name": "大地祭司",
+		"faction": "aomAtlantean",
+		"affinity": "magic",
+		"commander": "aomCommander",
+		"primarySkills": {
+			"attack": 0,
+			"defence": 2,
+			"spellpower": 2,
+			"knowledge": 2
+		},
+		"lowLevelChance": {
+			"attack": 10,
+			"defence": 15,
+			"spellpower": 40,
+			"knowledge": 35
+		},
+		"highLevelChance": {
+			"attack": 20,
+			"defence": 20,
+			"spellpower": 30,
+			"knowledge": 30
+		},
+		"secondarySkills": {
+			"pathfinding": 5,
+			"archery": 5,
+			"logistics": 5,
+			"scouting": 2,
+			"diplomacy": 4,
+			"navigation": 2,
+			"leadership": 2,
+			"wisdom": 8,
+			"mysticism": 6,
+			"luck": 9,
+			"ballistics": 4,
+			"eagleEye": 7,
+			"necromancy": 0,
+			"estates": 3,
+			"fireMagic": 1,
+			"airMagic": 2,
+			"waterMagic": 4,
+			"earthMagic": 4,
+			"scholar": 8,
+			"tactics": 1,
+			"artillery": 1,
+			"learning": 4,
+			"offence": 1,
+			"armorer": 3,
+			"intelligence": 7,
+			"sorcery": 6,
+			"resistance": 1,
+			"firstAid": 7,
+			"aomSeasonCommand": 10,
+			"aomEcho": 10
+		},
+		"defaultTavern": 5,
+		"tavern": {
+			"castle": 5,
+			"rampart": 5,
+			"tower": 5,
+			"inferno": 5,
+			"necropolis": 5,
+			"dungeon": 5,
+			"stronghold": 5,
+			"fortress": 5,
+			"conflux": 5,
+			"aomAtlantean": 6
+		},
+		"animation": {
+			"battle": {
+				"male": "aom/atlantean/heroes/gaia/battle.json",
+				"female": "aom/atlantean/heroes/gaiaF/battle.json"
+			}
+		},
+		"mapObject": {
+			"templates": {
+				"normal": {
+					"animation": "aom/atlantean/heroes/gaia/map.json"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"core:trees" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coaLanTre00" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre00",
+						"mask" : [ "VVBB", "VBBB", "VBBV" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre01" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre01",
+						"mask" : [ "VVBB", "VBBB", "VBBV" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre02" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre02",
+						"mask" : [ "VVBV", "VBBB", "VBBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre03" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre03",
+						"mask" : [ "VVVV", "VBBB", "VVBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre04" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre04",
+						"mask" : [ "VVVV", "VBBV", "VBBB", "VVBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre05" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre05",
+						"mask" : [ "VVVV", "VVBB", "VBBB", "VBBV" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre06" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre06",
+						"mask" : [ "VBV", "VBV", "VBV" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre07" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre07",
+						"mask" : [ "VVV", "VBV", "VBV" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre08" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre08",
+						"mask" : [ "VV", "VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre09" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre09",
+						"mask" : [ "VV", "VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre10" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre10",
+						"mask" : [ "VB", "VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanTre11" : {
+						"animation" : "coastalLand/decorations/trees/coaLanTre11",
+						"mask" : [ "VB", "VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					 }
+				}
+			}
+		}	
+	}	
+}
+	
+	

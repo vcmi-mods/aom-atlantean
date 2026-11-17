@@ -1,0 +1,50 @@
+{
+	"core:shrub" :{
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coaLanShr00" : {
+						"animation" : "coastalLand/decorations/shrub/coaLanShr00",
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanShr01" : {
+						"animation" : "coastalLand/decorations/shrub/coaLanShr01",
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanShr02" : {
+						"animation" : "coastalLand/decorations/shrub/coaLanShr02",
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanShr03" : {
+						"animation" : "coastalLand/decorations/shrub/coaLanShr03",
+						"mask" : [ "BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanShr04" : {
+						"animation" : "coastalLand/decorations/shrub/coaLanShr04",
+						"mask" : [ "VBB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanShr05" : {
+						"animation" : "coastalLand/decorations/shrub/coaLanShr05",
+						"mask" : [ "VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanShr06" : {
+						"animation" : "coastalLand/decorations/shrub/coaLanShr06",
+						"mask" : [ "VV","BB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					},
+					"coaLanShr07" : {
+						"animation" : "coastalLand/decorations/shrub/coaLanShr07",
+						"mask" : [ "VV","VB" ],
+						"allowedTerrains": [ "coastalLand" ]
+					}
+				}
+			}
+		}
+	}
+}

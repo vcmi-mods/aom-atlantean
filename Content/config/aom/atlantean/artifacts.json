@@ -1,0 +1,349 @@
+{
+	"aomSickleOfKronos": {
+		"text": {
+			"name": "克洛诺斯之镰",
+			"description": "{克洛诺斯之镰}\n\n攻击力+4，己方部队速度+1。\n\n泰坦遗宝的部件。",
+			"event": "海底裂谷的淤泥里斜插着一柄镰刀，刃口黑得不反光。你握住它的时候，四周的水流慢了一拍。这是克洛诺斯之镰。"
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "RIGHT_HAND",
+		"class": "MAJOR",
+		"value": 9000,
+		"graphics": {
+			"image": "aom/atl/artifacts/backpack/aomSickleOfKronos.png",
+			"map": "aom/atl/artifacts/map/aomSickleOfKronos.json",
+			"scenarioBonus": "aom/atl/artifacts/bonus/aomSickleOfKronos.png"
+		},
+		"bonuses": {
+			"attack": {
+				"type": "PRIMARY_SKILL",
+				"val": 4,
+				"valueType": "BASE_NUMBER",
+				"subtype": "attack"
+			},
+			"speed": {
+				"type": "STACKS_SPEED",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			}
+		}
+	},
+	"aomStarVeilOfOranos": {
+		"text": {
+			"name": "乌拉诺斯星幕",
+			"description": "{乌拉诺斯星幕}\n\n知识+4，己方部队幸运+1。\n\n泰坦遗宝的部件。",
+			"event": "山顶的祭坛上搭着一块深蓝的布，白天也看得见上面的星星在慢慢移动。你把它披上肩，夜空仿佛低了下来。这是乌拉诺斯星幕。"
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "SHOULDERS",
+		"class": "MAJOR",
+		"value": 8000,
+		"graphics": {
+			"image": "aom/atl/artifacts/backpack/aomStarVeilOfOranos.png",
+			"map": "aom/atl/artifacts/map/aomStarVeilOfOranos.json",
+			"scenarioBonus": "aom/atl/artifacts/bonus/aomStarVeilOfOranos.png"
+		},
+		"bonuses": {
+			"knowledge": {
+				"type": "PRIMARY_SKILL",
+				"val": 4,
+				"valueType": "BASE_NUMBER",
+				"subtype": "knowledge"
+			},
+			"luck": {
+				"type": "LUCK",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			}
+		}
+	},
+	"aomBookOfGaia": {
+		"text": {
+			"name": "盖亚之书",
+			"description": "{盖亚之书}\n\n力量+3，己方部队生命值+2。\n\n泰坦遗宝的部件。",
+			"event": "老树的树洞里长着一本书，藤蔓从封面的铜叶下钻出来，缠住了你伸过去的手，又慢慢松开。这是盖亚之书。"
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "MISC",
+		"class": "MAJOR",
+		"value": 7000,
+		"graphics": {
+			"image": "aom/atl/artifacts/backpack/aomBookOfGaia.png",
+			"map": "aom/atl/artifacts/map/aomBookOfGaia.json",
+			"scenarioBonus": "aom/atl/artifacts/bonus/aomBookOfGaia.png"
+		},
+		"bonuses": {
+			"power": {
+				"type": "PRIMARY_SKILL",
+				"val": 3,
+				"valueType": "BASE_NUMBER",
+				"subtype": "spellpower"
+			},
+			"health": {
+				"type": "STACK_HEALTH",
+				"val": 2,
+				"valueType": "ADDITIVE_VALUE"
+			}
+		}
+	},
+	"aomCrownOfRheia": {
+		"text": {
+			"name": "瑞亚之冠",
+			"description": "{瑞亚之冠}\n\n每天提供500金币，己方部队士气+1。\n\n泰坦遗宝的部件。",
+			"event": "废弃的神庙里，众神之母的石像头上还戴着一顶城垛形的金冠。你向石像行过礼，才把它取了下来。这是瑞亚之冠。"
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "HEAD",
+		"class": "MAJOR",
+		"value": 8000,
+		"graphics": {
+			"image": "aom/atl/artifacts/backpack/aomCrownOfRheia.png",
+			"map": "aom/atl/artifacts/map/aomCrownOfRheia.json",
+			"scenarioBonus": "aom/atl/artifacts/bonus/aomCrownOfRheia.png"
+		},
+		"bonuses": {
+			"morale": {
+				"type": "MORALE",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			}
+		},
+		"instanceBonuses": {
+			"gold": {
+				"type": "GENERATE_RESOURCE",
+				"val": 500,
+				"valueType": "BASE_NUMBER",
+				"subtype": "gold",
+				"stacking": "ALWAYS"
+			}
+		}
+	},
+	"aomTorchesOfHekate": {
+		"text": {
+			"name": "赫卡特火炬",
+			"description": "{赫卡特火炬}\n\n大西洲神力法术的回响几率+10%（没有学习神力回响也有10%），每天额外恢复2点魔法值。\n\n泰坦遗宝的部件。",
+			"event": "三岔路口立着两支交叉的火炬，没有人添油，火却是冷的白色。你走近时，三条路上同时传来了自己的脚步声。这是赫卡特火炬。"
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "MISC",
+		"class": "MAJOR",
+		"value": 6000,
+		"graphics": {
+			"image": "aom/atl/artifacts/backpack/aomTorchesOfHekate.png",
+			"map": "aom/atl/artifacts/map/aomTorchesOfHekate.json",
+			"scenarioBonus": "aom/atl/artifacts/bonus/aomTorchesOfHekate.png"
+		},
+		"bonuses": {
+			"echo": {
+				"type": "AOM_ECHO",
+				"val": 10,
+				"valueType": "ADDITIVE_VALUE"
+			},
+			"mana": {
+				"type": "MANA_REGENERATION",
+				"val": 2,
+				"valueType": "BASE_NUMBER"
+			}
+		}
+	},
+	"aomPeltOfArgus": {
+		"text": {
+			"name": "阿耳戈斯之皮",
+			"description": "{阿耳戈斯之皮}\n\n侦察范围+2，防御力+2。\n\n泰坦遗宝的部件。",
+			"event": "牧人把一卷兽皮当褥子铺在石头上，皮上的眼状斑纹却随着你的走动转了过来。你用一袋金币换下了它。这是阿耳戈斯之皮。"
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "TORSO",
+		"class": "MINOR",
+		"value": 4000,
+		"graphics": {
+			"image": "aom/atl/artifacts/backpack/aomPeltOfArgus.png",
+			"map": "aom/atl/artifacts/map/aomPeltOfArgus.json",
+			"scenarioBonus": "aom/atl/artifacts/bonus/aomPeltOfArgus.png"
+		},
+		"bonuses": {
+			"sight": {
+				"type": "SIGHT_RADIUS",
+				"val": 2,
+				"valueType": "BASE_NUMBER"
+			},
+			"defence": {
+				"type": "PRIMARY_SKILL",
+				"val": 2,
+				"valueType": "BASE_NUMBER",
+				"subtype": "defence"
+			}
+		}
+	},
+	"aomTitansTreasure": {
+		"text": {
+			"name": "泰坦宝藏",
+			"description": "{泰坦宝藏}\n\n每天提供1个水晶。\n\n泰坦遗宝的部件。",
+			"event": "塌了一半的地宫深处有一只铜箱，里面的山铜锭和水晶码得整整齐齐，像是昨天才放进去的。这是泰坦宝藏。"
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "MISC",
+		"class": "MAJOR",
+		"value": 5000,
+		"graphics": {
+			"image": "aom/atl/artifacts/backpack/aomTitansTreasure.png",
+			"map": "aom/atl/artifacts/map/aomTitansTreasure.json",
+			"scenarioBonus": "aom/atl/artifacts/bonus/aomTitansTreasure.png"
+		},
+		"instanceBonuses": {
+			"crystal": {
+				"type": "GENERATE_RESOURCE",
+				"val": 1,
+				"valueType": "BASE_NUMBER",
+				"subtype": "crystal",
+				"stacking": "ALWAYS"
+			}
+		},
+		"bonuses": {
+			"mark": {
+				"type": "STACKS_SPEED",
+				"val": 0,
+				"hidden": true
+			}
+		}
+	},
+	"aomTitanLegacy": {
+		"text": {
+			"name": "泰坦遗宝",
+			"description": "{泰坦遗宝}\n\n攻击力+4，防御力+2，力量+3，知识+4。\n己方部队速度+1，生命值+2，士气+1，幸运+1。\n每天提供500金币和1个水晶，额外恢复2点魔法值，侦察范围+2。\n大西洲神力法术的回响几率+10%。\n泰坦三相：当令的部队伤害加成再+10%；每场战斗第一回合，天、时、地三相同时当令。\n\n由克洛诺斯之镰、乌拉诺斯星幕、盖亚之书、瑞亚之冠、赫卡特火炬、阿耳戈斯之皮、泰坦宝藏合成。\n（合成时部件会被消耗）",
+			"event": "七件遗物在你面前自己动了起来：镰刀立在中央，星幕、书、金冠、火炬、兽皮和铜箱绕着它转成三道环，最后合成一面山铜圆盘，盘上的星辰、沙漏和枝叶各自发亮。你得到了泰坦遗宝。"
+		},
+		"type": [
+			"HERO"
+		],
+		"slot": "MISC",
+		"class": "RELIC",
+		"value": 50000,
+		"components": [
+			"aomSickleOfKronos",
+			"aomStarVeilOfOranos",
+			"aomBookOfGaia",
+			"aomCrownOfRheia",
+			"aomTorchesOfHekate",
+			"aomPeltOfArgus",
+			"aomTitansTreasure"
+		],
+		"fusedComponents": true,
+		"bonuses": {
+			"SickleOfKronos_attack": {
+				"type": "PRIMARY_SKILL",
+				"val": 4,
+				"valueType": "BASE_NUMBER",
+				"subtype": "attack"
+			},
+			"SickleOfKronos_speed": {
+				"type": "STACKS_SPEED",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			},
+			"StarVeilOfOranos_knowledge": {
+				"type": "PRIMARY_SKILL",
+				"val": 4,
+				"valueType": "BASE_NUMBER",
+				"subtype": "knowledge"
+			},
+			"StarVeilOfOranos_luck": {
+				"type": "LUCK",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			},
+			"BookOfGaia_power": {
+				"type": "PRIMARY_SKILL",
+				"val": 3,
+				"valueType": "BASE_NUMBER",
+				"subtype": "spellpower"
+			},
+			"BookOfGaia_health": {
+				"type": "STACK_HEALTH",
+				"val": 2,
+				"valueType": "ADDITIVE_VALUE"
+			},
+			"CrownOfRheia_morale": {
+				"type": "MORALE",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			},
+			"CrownOfRheia_gold": {
+				"type": "GENERATE_RESOURCE",
+				"val": 500,
+				"valueType": "BASE_NUMBER",
+				"subtype": "gold"
+			},
+			"TorchesOfHekate_echo": {
+				"type": "AOM_ECHO",
+				"val": 10,
+				"valueType": "ADDITIVE_VALUE"
+			},
+			"TorchesOfHekate_mana": {
+				"type": "MANA_REGENERATION",
+				"val": 2,
+				"valueType": "BASE_NUMBER"
+			},
+			"PeltOfArgus_sight": {
+				"type": "SIGHT_RADIUS",
+				"val": 2,
+				"valueType": "BASE_NUMBER"
+			},
+			"PeltOfArgus_defence": {
+				"type": "PRIMARY_SKILL",
+				"val": 2,
+				"valueType": "BASE_NUMBER",
+				"subtype": "defence"
+			},
+			"TitansTreasure_crystal": {
+				"type": "GENERATE_RESOURCE",
+				"val": 1,
+				"valueType": "BASE_NUMBER",
+				"subtype": "crystal"
+			},
+			"relic": {
+				"type": "AOM_RELIC",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			}
+		},
+		"graphics": {
+			"image": "aom/atl/artifacts/backpack/aomTitanLegacy.png",
+			"map": "aom/atl/artifacts/map/aomTitanLegacy.json",
+			"scenarioBonus": "aom/atl/artifacts/bonus/aomTitanLegacy.png"
+		}
+	},
+	"aomCheiroballistaArt": {
+		"type": [
+			"HERO"
+		],
+		"warMachine": "aomCheiroballista",
+		"class": "SPECIAL",
+		"slot": "MACH1",
+		"value": 2500,
+		"text": {
+			"name": "  手弩炮  ",
+			"description": "{  手弩炮  }\n\n战斗中手弩炮会向敌方部队射击，伤害随英雄的攻击力提高。学会炮术后可以亲自操作。",
+			"event": "路边停着一架没人看管的弩炮，绞盘上还缠着新弦，车辙通向远处的海岸。你叫人把它拖进了队伍。这是大西洲的手弩炮。"
+		},
+		"graphics": {
+			"image": "aom/atl/artifacts/backpack/aomCheiroballistaArt.png",
+			"scenarioBonus": "aom/atl/artifacts/bonus/aomCheiroballistaArt.png",
+			"map": "aom/atl/aomCheiroballista/map.json"
+		}
+	}
+}

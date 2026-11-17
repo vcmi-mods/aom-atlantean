@@ -1,0 +1,37 @@
+{
+	"basepath": "aom/atl/artifacts/map/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomBookOfGaia_0.png"
+		},
+		{
+			"frame": 1,
+			"file": "aomBookOfGaia_1.png"
+		},
+		{
+			"frame": 2,
+			"file": "aomBookOfGaia_2.png"
+		},
+		{
+			"frame": 3,
+			"file": "aomBookOfGaia_3.png"
+		},
+		{
+			"frame": 4,
+			"file": "aomBookOfGaia_4.png"
+		},
+		{
+			"frame": 5,
+			"file": "aomBookOfGaia_5.png"
+		},
+		{
+			"frame": 6,
+			"file": "aomBookOfGaia_6.png"
+		},
+		{
+			"frame": 7,
+			"file": "aomBookOfGaia_7.png"
+		}
+	]
+}

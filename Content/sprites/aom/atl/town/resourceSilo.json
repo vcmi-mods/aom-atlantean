@@ -1,0 +1,9 @@
+{
+	"basepath": "aom/atl/town/frames/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "resourceSilo_00.png"
+		}
+	]
+}

@@ -1,0 +1,10195 @@
+{
+	"aomMurmillo": {
+		"name": {
+			"singular": "鱼盔角斗士",
+			"plural": "鱼盔角斗士"
+		},
+		"description": "大西洲的重步兵，戴鱼形盔，持短剑和方盾。",
+		"faction": "aomAtlantean",
+		"level": 1,
+		"cost": {
+			"gold": 70
+		},
+		"speed": 5,
+		"hitPoints": 11,
+		"attack": 5,
+		"defense": 4,
+		"damage": {
+			"min": 3,
+			"max": 4
+		},
+		"doubleWide": false,
+		"fightValue": 114,
+		"aiValue": 114,
+		"growth": 10,
+		"advMapAmount": {
+			"min": 12,
+			"max": 36
+		},
+		"abilities": {
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 1,
+				"addInfo": {
+					"aspect": "sky"
+				},
+				"icon": "aom/atlantean/abicons/sky.png",
+				"description": "{天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 1
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomMurmillo/battle.json",
+			"map": "aom/atl/aomMurmillo/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomMurmillo/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomMurmillo/map/atkL.png",
+			"iconLarge": "aom/atl/aomMurmillo/iconLarge.png",
+			"iconSmall": "aom/atl/aomMurmillo/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomMurmillo_attack.wav",
+			"defend": "aom/atl/aomMurmillo_defend.wav",
+			"wince": "aom/atl/aomMurmillo_wince.wav",
+			"killed": "aom/atl/aomMurmillo_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"upgrades": [
+			"aomMurmilloChampion",
+			"aomMurmilloGuard"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPECIAL_UPGRADE",
+					"addInfo": "aomMurmilloHero",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomMurmillo"
+						}
+					]
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"horde": 4
+	},
+	"aomMurmilloChampion": {
+		"name": {
+			"singular": "双剑角斗士",
+			"plural": "双剑角斗士"
+		},
+		"description": "竞技场里杀出来的冠军，双手各执一剑。",
+		"faction": "aomAtlantean",
+		"level": 1,
+		"cost": {
+			"gold": 95
+		},
+		"speed": 6,
+		"hitPoints": 12,
+		"attack": 7,
+		"defense": 5,
+		"damage": {
+			"min": 3,
+			"max": 5
+		},
+		"doubleWide": false,
+		"fightValue": 169,
+		"aiValue": 169,
+		"growth": 10,
+		"advMapAmount": {
+			"min": 12,
+			"max": 36
+		},
+		"abilities": {
+			"ignoreDefence": {
+				"type": "ENEMY_DEFENCE_REDUCTION",
+				"val": 20,
+				"stacking": "aomMurmilloChampionExpEnemyDefenceReduction"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 2,
+				"addInfo": {
+					"aspect": "time"
+				},
+				"icon": "aom/atlantean/abicons/time.png",
+				"description": "{时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 2
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "skeletonWarrior",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomMurmilloChampion/battle.json",
+			"map": "aom/atl/aomMurmilloChampion/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomMurmilloChampion/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomMurmilloChampion/map/atkL.png",
+			"iconLarge": "aom/atl/aomMurmilloChampion/iconLarge.png",
+			"iconSmall": "aom/atl/aomMurmilloChampion/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomMurmilloChampion_attack.wav",
+			"defend": "aom/atl/aomMurmilloChampion_defend.wav",
+			"wince": "aom/atl/aomMurmilloChampion_wince.wav",
+			"killed": "aom/atl/aomMurmilloChampion_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION",
+					"stacking": "aomMurmilloChampionExpEnemyDefenceReduction"
+				},
+				"values": [
+					22,
+					24,
+					26,
+					28,
+					30,
+					32,
+					34,
+					36,
+					38,
+					40
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPECIAL_UPGRADE",
+					"addInfo": "aomMurmilloHero",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomMurmilloChampion"
+						}
+					]
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"upgrades": [
+			"aomMurmilloGuard"
+		],
+		"horde": 4
+	},
+	"aomMurmilloGuard": {
+		"name": {
+			"singular": "山铜卫士",
+			"plural": "山铜卫士"
+		},
+		"description": "披山铜甲的王城卫士，盾不离手。",
+		"faction": "aomAtlantean",
+		"level": 1,
+		"cost": {
+			"gold": 95
+		},
+		"speed": 5,
+		"hitPoints": 14,
+		"attack": 5,
+		"defense": 7,
+		"damage": {
+			"min": 3,
+			"max": 5
+		},
+		"doubleWide": false,
+		"fightValue": 178,
+		"aiValue": 178,
+		"growth": 10,
+		"advMapAmount": {
+			"min": 12,
+			"max": 36
+		},
+		"abilities": {
+			"rangedCover": {
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"subtype": "damageTypeRanged",
+				"val": 25,
+				"stacking": "aomMurmilloGuardExpGeneralDamageReduction"
+			},
+			"shieldWall": {
+				"type": "PRIMARY_SKILL",
+				"subtype": "defence",
+				"val": 2,
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"stacking": "aomAura_aomMurmilloGuard",
+				"limiters": [
+					"allOf",
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomMurmilloGuard"
+					},
+					[
+						"noneOf",
+						"OPPOSITE_SIDE"
+					]
+				]
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 3,
+				"addInfo": {
+					"aspect": "earth"
+				},
+				"icon": "aom/atlantean/abicons/lush.png",
+				"description": "{地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 3
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "skeletonWarrior",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomMurmilloGuard/battle.json",
+			"map": "aom/atl/aomMurmilloGuard/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomMurmilloGuard/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomMurmilloGuard/map/atkL.png",
+			"iconLarge": "aom/atl/aomMurmilloGuard/iconLarge.png",
+			"iconSmall": "aom/atl/aomMurmilloGuard/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomMurmilloGuard_attack.wav",
+			"defend": "aom/atl/aomMurmilloGuard_defend.wav",
+			"wince": "aom/atl/aomMurmilloGuard_wince.wav",
+			"killed": "aom/atl/aomMurmilloGuard_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "GENERAL_DAMAGE_REDUCTION",
+					"subtype": "damageTypeRanged",
+					"stacking": "aomMurmilloGuardExpGeneralDamageReduction"
+				},
+				"values": [
+					27,
+					29,
+					31,
+					33,
+					35,
+					37,
+					39,
+					41,
+					43,
+					45
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPECIAL_UPGRADE",
+					"addInfo": "aomMurmilloHero",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomMurmilloGuard"
+						}
+					]
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"upgrades": [
+			"aomMurmilloChampion"
+		],
+		"horde": 4
+	},
+	"aomMurmilloHero": {
+		"name": {
+			"singular": "角斗英雄",
+			"plural": "角斗英雄"
+		},
+		"description": "受神恩化身英雄的角斗士。",
+		"faction": "aomAtlantean",
+		"level": 1,
+		"cost": {
+			"gold": 150
+		},
+		"speed": 6,
+		"hitPoints": 16,
+		"attack": 7,
+		"defense": 7,
+		"damage": {
+			"min": 4,
+			"max": 5
+		},
+		"doubleWide": false,
+		"fightValue": 239,
+		"aiValue": 239,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 2
+		},
+		"abilities": {
+			"mythSlayer": {
+				"type": "HATES_TRAIT",
+				"subtype": "AOM_MYTHIC",
+				"val": 50
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 4,
+				"addInfo": {
+					"aspect": "man"
+				},
+				"icon": "aom/atlantean/abicons/surge.png",
+				"description": "{人相}\n打天眼伤害翻倍，打时滞多叠一层。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 4
+			},
+			"concord": {
+				"type": "MORALE",
+				"val": 1,
+				"propagator": "ARMY",
+				"stacking": "aomConcord"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "skeletonWarrior",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomMurmilloHero/battle.json",
+			"map": "aom/atl/aomMurmilloHero/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomMurmilloHero/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomMurmilloHero/map/atkL.png",
+			"iconLarge": "aom/atl/aomMurmilloHero/iconLarge.png",
+			"iconSmall": "aom/atl/aomMurmilloHero/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomMurmilloHero_attack.wav",
+			"defend": "aom/atl/aomMurmilloHero_defend.wav",
+			"wince": "aom/atl/aomMurmilloHero_wince.wav",
+			"killed": "aom/atl/aomMurmilloHero_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"special": true
+	},
+	"aomArcus": {
+		"name": {
+			"singular": "反曲弓手",
+			"plural": "反曲弓手"
+		},
+		"description": "使反曲弓的大西洲射手。",
+		"faction": "aomAtlantean",
+		"level": 2,
+		"cost": {
+			"gold": 130
+		},
+		"speed": 5,
+		"hitPoints": 12,
+		"attack": 6,
+		"defense": 3,
+		"damage": {
+			"min": 3,
+			"max": 5
+		},
+		"doubleWide": false,
+		"fightValue": 172,
+		"aiValue": 189,
+		"growth": 7,
+		"advMapAmount": {
+			"min": 8,
+			"max": 24
+		},
+		"abilities": {
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 3,
+				"addInfo": {
+					"aspect": "earth"
+				},
+				"icon": "aom/atlantean/abicons/lush.png",
+				"description": "{地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 3
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomArcus/battle.json",
+			"map": "aom/atl/aomArcus/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomArcus/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomArcus/map/atkL.png",
+			"iconLarge": "aom/atl/aomArcus/iconLarge.png",
+			"iconSmall": "aom/atl/aomArcus/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 3,
+				"projectile": "aom/atl/missile/arrow.json",
+				"offset": {
+					"upperX": 10,
+					"upperY": -85,
+					"middleX": 26,
+					"middleY": -75,
+					"lowerX": -1,
+					"lowerY": -68
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomArcus_attack.wav",
+			"defend": "aom/atl/aomArcus_defend.wav",
+			"wince": "aom/atl/aomArcus_wince.wav",
+			"killed": "aom/atl/aomArcus_killed.wav",
+			"shoot": "aom/atl/aomArcus_shoot.wav",
+			"move": "LCRSMOVE.wav"
+		},
+		"shots": 12,
+		"upgrades": [
+			"aomArcusFar",
+			"aomArcusVolley"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPECIAL_UPGRADE",
+					"addInfo": "aomArcusHero",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomArcus"
+						}
+					]
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomArcusFar": {
+		"name": {
+			"singular": "翼盔长弓手",
+			"plural": "翼盔长弓手"
+		},
+		"description": "头戴翼盔的长弓手，箭能及远。",
+		"faction": "aomAtlantean",
+		"level": 2,
+		"cost": {
+			"gold": 210
+		},
+		"speed": 6,
+		"hitPoints": 14,
+		"attack": 8,
+		"defense": 4,
+		"damage": {
+			"min": 5,
+			"max": 8
+		},
+		"doubleWide": false,
+		"fightValue": 374,
+		"aiValue": 410,
+		"growth": 7,
+		"advMapAmount": {
+			"min": 8,
+			"max": 24
+		},
+		"abilities": {
+			"noDistance": {
+				"type": "NO_DISTANCE_PENALTY"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 1,
+				"addInfo": {
+					"aspect": "sky"
+				},
+				"icon": "aom/atlantean/abicons/sky.png",
+				"description": "{天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomArcusFar/battle.json",
+			"map": "aom/atl/aomArcusFar/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomArcusFar/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomArcusFar/map/atkL.png",
+			"iconLarge": "aom/atl/aomArcusFar/iconLarge.png",
+			"iconSmall": "aom/atl/aomArcusFar/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 3,
+				"projectile": "aom/atl/missile/arrow.json",
+				"offset": {
+					"upperX": 10,
+					"upperY": -85,
+					"middleX": 26,
+					"middleY": -75,
+					"lowerX": -1,
+					"lowerY": -68
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomArcusFar_attack.wav",
+			"defend": "aom/atl/aomArcusFar_defend.wav",
+			"wince": "aom/atl/aomArcusFar_wince.wav",
+			"killed": "aom/atl/aomArcusFar_killed.wav",
+			"shoot": "aom/atl/aomArcusFar_shoot.wav",
+			"move": "LCRSMOVE.wav"
+		},
+		"shots": 16,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPECIAL_UPGRADE",
+					"addInfo": "aomArcusHero",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomArcusFar"
+						}
+					]
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"upgrades": [
+			"aomArcusVolley"
+		]
+	},
+	"aomArcusVolley": {
+		"name": {
+			"singular": "连珠弓手",
+			"plural": "连珠弓手"
+		},
+		"description": "一口气连发数箭的弓手。",
+		"faction": "aomAtlantean",
+		"level": 2,
+		"cost": {
+			"gold": 210
+		},
+		"speed": 6,
+		"hitPoints": 13,
+		"attack": 6,
+		"defense": 4,
+		"damage": {
+			"min": 3,
+			"max": 4
+		},
+		"doubleWide": false,
+		"fightValue": 322,
+		"aiValue": 354,
+		"growth": 7,
+		"advMapAmount": {
+			"min": 8,
+			"max": 24
+		},
+		"abilities": {
+			"twice": {
+				"type": "ADDITIONAL_ATTACK",
+				"val": 1,
+				"effectRange": "ONLY_DISTANCE_FIGHT"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 2,
+				"addInfo": {
+					"aspect": "time"
+				},
+				"icon": "aom/atlantean/abicons/time.png",
+				"description": "{时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 2
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomArcusVolley/battle.json",
+			"map": "aom/atl/aomArcusVolley/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomArcusVolley/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomArcusVolley/map/atkL.png",
+			"iconLarge": "aom/atl/aomArcusVolley/iconLarge.png",
+			"iconSmall": "aom/atl/aomArcusVolley/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 3,
+				"projectile": "aom/atl/missile/arrow.json",
+				"offset": {
+					"upperX": 10,
+					"upperY": -85,
+					"middleX": 26,
+					"middleY": -75,
+					"lowerX": -1,
+					"lowerY": -68
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomArcusVolley_attack.wav",
+			"defend": "aom/atl/aomArcusVolley_defend.wav",
+			"wince": "aom/atl/aomArcusVolley_wince.wav",
+			"killed": "aom/atl/aomArcusVolley_killed.wav",
+			"shoot": "aom/atl/aomArcusVolley_shoot.wav",
+			"move": "LCRSMOVE.wav"
+		},
+		"shots": 24,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPECIAL_UPGRADE",
+					"addInfo": "aomArcusHero",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomArcusVolley"
+						}
+					]
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"upgrades": [
+			"aomArcusFar"
+		]
+	},
+	"aomArcusHero": {
+		"name": {
+			"singular": "神射英雄",
+			"plural": "神射英雄"
+		},
+		"description": "受神恩化身英雄的弓手。",
+		"faction": "aomAtlantean",
+		"level": 2,
+		"cost": {
+			"gold": 250
+		},
+		"speed": 6,
+		"hitPoints": 17,
+		"attack": 8,
+		"defense": 5,
+		"damage": {
+			"min": 4,
+			"max": 7
+		},
+		"doubleWide": false,
+		"fightValue": 353,
+		"aiValue": 388,
+		"growth": 0,
+		"advMapAmount": {
+			"min": 1,
+			"max": 2
+		},
+		"abilities": {
+			"noDistance": {
+				"type": "NO_DISTANCE_PENALTY"
+			},
+			"mythSlayer": {
+				"type": "HATES_TRAIT",
+				"subtype": "AOM_MYTHIC",
+				"val": 50
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 4,
+				"addInfo": {
+					"aspect": "man"
+				},
+				"icon": "aom/atlantean/abicons/surge.png",
+				"description": "{人相}\n打天眼伤害翻倍，打时滞多叠一层。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 4
+			},
+			"concord": {
+				"type": "MORALE",
+				"val": 1,
+				"propagator": "ARMY",
+				"stacking": "aomConcord"
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomArcusHero/battle.json",
+			"map": "aom/atl/aomArcusHero/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomArcusHero/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomArcusHero/map/atkL.png",
+			"iconLarge": "aom/atl/aomArcusHero/iconLarge.png",
+			"iconSmall": "aom/atl/aomArcusHero/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 3,
+				"projectile": "aom/atl/missile/arrow.json",
+				"offset": {
+					"upperX": 10,
+					"upperY": -85,
+					"middleX": 26,
+					"middleY": -75,
+					"lowerX": -1,
+					"lowerY": -68
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomArcusHero_attack.wav",
+			"defend": "aom/atl/aomArcusHero_defend.wav",
+			"wince": "aom/atl/aomArcusHero_wince.wav",
+			"killed": "aom/atl/aomArcusHero_killed.wav",
+			"shoot": "aom/atl/aomArcusHero_shoot.wav",
+			"move": "LCRSMOVE.wav"
+		},
+		"special": true,
+		"shots": 16
+	},
+	"aomAutomaton": {
+		"name": {
+			"singular": "机关武士",
+			"plural": "机关武士"
+		},
+		"description": "青铜铸成的机关武士，倒下的同伴会被它们修好。",
+		"faction": "aomAtlantean",
+		"level": 3,
+		"cost": {
+			"gold": 250
+		},
+		"speed": 5,
+		"hitPoints": 36,
+		"attack": 7,
+		"defense": 10,
+		"damage": {
+			"min": 4,
+			"max": 8
+		},
+		"doubleWide": false,
+		"fightValue": 332,
+		"aiValue": 401,
+		"growth": 5,
+		"advMapAmount": {
+			"min": 6,
+			"max": 18
+		},
+		"abilities": {
+			"mechanical": {
+				"type": "MECHANICAL"
+			},
+			"repair": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomMend",
+				"val": 3,
+				"addInfo": {
+					"mechanicalOnly": true
+				},
+				"icon": "aom/atlantean/abicons/repair.png"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 1,
+				"addInfo": {
+					"aspect": "sky"
+				},
+				"icon": "aom/atlantean/abicons/godOranos.png",
+				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 1
+			},
+			"mender": {
+				"type": "AOM_MENDER",
+				"val": 3,
+				"valueType": "BASE_NUMBER"
+			},
+			"mendKind": {
+				"type": "AOM_MEND_KIND",
+				"val": 2,
+				"valueType": "BASE_NUMBER"
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomAutomaton/battle.json",
+			"map": "aom/atl/aomAutomaton/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomAutomaton/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomAutomaton/map/atkL.png",
+			"iconLarge": "aom/atl/aomAutomaton/iconLarge.png",
+			"iconSmall": "aom/atl/aomAutomaton/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomAutomaton_attack.wav",
+			"defend": "aom/atl/aomAutomaton_defend.wav",
+			"wince": "aom/atl/aomAutomaton_wince.wav",
+			"killed": "aom/atl/aomAutomaton_killed.wav",
+			"move": "aom/atl/aomAutomaton_move.wav"
+		},
+		"upgrades": [
+			"aomAutomatonKronos",
+			"aomAutomatonGaia"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			}
+		]
+	},
+	"aomAutomatonKronos": {
+		"name": {
+			"singular": "黑铁机关兵",
+			"plural": "黑铁机关兵"
+		},
+		"description": "黑铁打造的机关兵。",
+		"faction": "aomAtlantean",
+		"level": 3,
+		"cost": {
+			"gold": 320
+		},
+		"speed": 7,
+		"hitPoints": 38,
+		"attack": 8,
+		"defense": 11,
+		"damage": {
+			"min": 5,
+			"max": 8
+		},
+		"doubleWide": false,
+		"fightValue": 525,
+		"aiValue": 634,
+		"growth": 5,
+		"advMapAmount": {
+			"min": 6,
+			"max": 18
+		},
+		"abilities": {
+			"mechanical": {
+				"type": "MECHANICAL"
+			},
+			"firstStrike": {
+				"type": "FIRST_STRIKE",
+				"subtype": "damageTypeMelee"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 2,
+				"addInfo": {
+					"aspect": "time"
+				},
+				"icon": "aom/atlantean/abicons/godKronos.png",
+				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 2
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomAutomatonKronos/battle.json",
+			"map": "aom/atl/aomAutomatonKronos/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomAutomatonKronos/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomAutomatonKronos/map/atkL.png",
+			"iconLarge": "aom/atl/aomAutomatonKronos/iconLarge.png",
+			"iconSmall": "aom/atl/aomAutomatonKronos/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomAutomatonKronos_attack.wav",
+			"defend": "aom/atl/aomAutomatonKronos_defend.wav",
+			"wince": "aom/atl/aomAutomatonKronos_wince.wav",
+			"killed": "aom/atl/aomAutomatonKronos_killed.wav",
+			"move": "aom/atl/aomAutomatonKronos_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			},
+			{
+				"bonus": {
+					"type": "BLOCKS_RETALIATION"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"upgrades": [
+			"aomAutomatonGaia"
+		]
+	},
+	"aomAutomatonGaia": {
+		"name": {
+			"singular": "青铜机关兵",
+			"plural": "青铜机关兵"
+		},
+		"description": "生了铜绿的青铜机关兵。",
+		"faction": "aomAtlantean",
+		"level": 3,
+		"cost": {
+			"gold": 320
+		},
+		"speed": 6,
+		"hitPoints": 50,
+		"attack": 8,
+		"defense": 12,
+		"damage": {
+			"min": 5,
+			"max": 9
+		},
+		"doubleWide": false,
+		"fightValue": 522,
+		"aiValue": 631,
+		"growth": 5,
+		"advMapAmount": {
+			"min": 6,
+			"max": 18
+		},
+		"abilities": {
+			"mechanical": {
+				"type": "MECHANICAL"
+			},
+			"regrow": {
+				"type": "HP_REGENERATION",
+				"val": 38
+			},
+			"noPoison": {
+				"type": "SPELL_IMMUNITY",
+				"subtype": "poison"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 3,
+				"addInfo": {
+					"aspect": "earth"
+				},
+				"icon": "aom/atlantean/abicons/godGaia.png",
+				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 3
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomAutomatonGaia/battle.json",
+			"map": "aom/atl/aomAutomatonGaia/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomAutomatonGaia/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomAutomatonGaia/map/atkL.png",
+			"iconLarge": "aom/atl/aomAutomatonGaia/iconLarge.png",
+			"iconSmall": "aom/atl/aomAutomatonGaia/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomAutomatonGaia_attack.wav",
+			"defend": "aom/atl/aomAutomatonGaia_defend.wav",
+			"wince": "aom/atl/aomAutomatonGaia_wince.wav",
+			"killed": "aom/atl/aomAutomatonGaia_killed.wav",
+			"move": "aom/atl/aomAutomatonGaia_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			}
+		],
+		"upgrades": [
+			"aomAutomatonKronos"
+		]
+	},
+	"aomCaladria": {
+		"name": {
+			"singular": "灵鸟女祭司",
+			"plural": "灵鸟女祭司"
+		},
+		"description": "骑着灵鸟的女祭司，能为同伴疗伤。",
+		"faction": "aomAtlantean",
+		"level": 4,
+		"cost": {
+			"gold": 370
+		},
+		"speed": 9,
+		"hitPoints": 48,
+		"attack": 9,
+		"defense": 10,
+		"damage": {
+			"min": 7,
+			"max": 11
+		},
+		"doubleWide": true,
+		"fightValue": 528,
+		"aiValue": 634,
+		"growth": 4,
+		"advMapAmount": {
+			"min": 4,
+			"max": 12
+		},
+		"abilities": {
+			"fly": {
+				"type": "FLYING"
+			},
+			"heal": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomMend",
+				"val": 4,
+				"addInfo": {},
+				"icon": "aom/atlantean/abicons/heal.png"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 2,
+				"addInfo": {
+					"aspect": "time"
+				},
+				"icon": "aom/atlantean/abicons/godKronos.png",
+				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 2
+			},
+			"mender": {
+				"type": "AOM_MENDER",
+				"val": 4,
+				"valueType": "BASE_NUMBER"
+			},
+			"mendKind": {
+				"type": "AOM_MEND_KIND",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "lich",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomCaladria/battle.json",
+			"map": "aom/atl/aomCaladria/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomCaladria/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomCaladria/map/atkL.png",
+			"iconLarge": "aom/atl/aomCaladria/iconLarge.png",
+			"iconSmall": "aom/atl/aomCaladria/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomCaladria_attack.wav",
+			"defend": "aom/atl/aomCaladria_defend.wav",
+			"wince": "aom/atl/aomCaladria_wince.wav",
+			"killed": "aom/atl/aomCaladria_killed.wav",
+			"move": "aom/atl/aomCaladria_move.wav"
+		},
+		"upgrades": [
+			"aomCaladriaUranus",
+			"aomCaladriaGaia"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					21,
+					24,
+					27,
+					30
+				]
+			}
+		]
+	},
+	"aomCaladriaUranus": {
+		"name": {
+			"singular": "白羽枪卫",
+			"plural": "白羽枪卫"
+		},
+		"description": "骑白羽灵鸟的持枪卫士。",
+		"faction": "aomAtlantean",
+		"level": 4,
+		"cost": {
+			"gold": 440
+		},
+		"speed": 12,
+		"hitPoints": 50,
+		"attack": 10,
+		"defense": 10,
+		"damage": {
+			"min": 8,
+			"max": 11
+		},
+		"doubleWide": true,
+		"fightValue": 716,
+		"aiValue": 859,
+		"growth": 4,
+		"advMapAmount": {
+			"min": 4,
+			"max": 12
+		},
+		"abilities": {
+			"fly": {
+				"type": "FLYING"
+			},
+			"haste": {
+				"type": "SPELLCASTER",
+				"subtype": "haste",
+				"val": 2
+			},
+			"casts": {
+				"type": "CASTS",
+				"val": 3,
+				"stacking": "aomCaladriaUranusExpCasts"
+			},
+			"enchantPower": {
+				"type": "CREATURE_ENCHANT_POWER",
+				"val": 3
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 1,
+				"addInfo": {
+					"aspect": "sky"
+				},
+				"icon": "aom/atlantean/abicons/godOranos.png",
+				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 1
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "lich",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomCaladriaUranus/battle.json",
+			"map": "aom/atl/aomCaladriaUranus/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomCaladriaUranus/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomCaladriaUranus/map/atkL.png",
+			"iconLarge": "aom/atl/aomCaladriaUranus/iconLarge.png",
+			"iconSmall": "aom/atl/aomCaladriaUranus/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomCaladriaUranus_attack.wav",
+			"defend": "aom/atl/aomCaladriaUranus_defend.wav",
+			"wince": "aom/atl/aomCaladriaUranus_wince.wav",
+			"killed": "aom/atl/aomCaladriaUranus_killed.wav",
+			"move": "aom/atl/aomCaladriaUranus_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "CASTS",
+					"stacking": "aomCaladriaUranusExpCasts"
+				},
+				"values": [
+					3,
+					3,
+					4,
+					4,
+					4,
+					5,
+					5,
+					5,
+					6,
+					6
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					21,
+					24,
+					27,
+					30
+				]
+			}
+		],
+		"upgrades": [
+			"aomCaladriaGaia"
+		]
+	},
+	"aomCaladriaGaia": {
+		"name": {
+			"singular": "翠羽神谕者",
+			"plural": "翠羽神谕者"
+		},
+		"description": "骑翠羽灵鸟的神谕者。",
+		"faction": "aomAtlantean",
+		"level": 4,
+		"cost": {
+			"gold": 440
+		},
+		"speed": 9,
+		"hitPoints": 54,
+		"attack": 9,
+		"defense": 12,
+		"damage": {
+			"min": 7,
+			"max": 11
+		},
+		"doubleWide": true,
+		"fightValue": 677,
+		"aiValue": 813,
+		"growth": 4,
+		"advMapAmount": {
+			"min": 4,
+			"max": 12
+		},
+		"abilities": {
+			"fly": {
+				"type": "FLYING"
+			},
+			"heal": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomMend",
+				"val": 6,
+				"addInfo": {
+					"resurrect": true
+				},
+				"icon": "aom/atlantean/abicons/heal.png"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 3,
+				"addInfo": {
+					"aspect": "earth"
+				},
+				"icon": "aom/atlantean/abicons/godGaia.png",
+				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 3
+			},
+			"mender": {
+				"type": "AOM_MENDER",
+				"val": 6,
+				"valueType": "BASE_NUMBER"
+			},
+			"mendKind": {
+				"type": "AOM_MEND_KIND",
+				"val": 3,
+				"valueType": "BASE_NUMBER"
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "lich",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomCaladriaGaia/battle.json",
+			"map": "aom/atl/aomCaladriaGaia/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomCaladriaGaia/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomCaladriaGaia/map/atkL.png",
+			"iconLarge": "aom/atl/aomCaladriaGaia/iconLarge.png",
+			"iconSmall": "aom/atl/aomCaladriaGaia/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomCaladriaGaia_attack.wav",
+			"defend": "aom/atl/aomCaladriaGaia_defend.wav",
+			"wince": "aom/atl/aomCaladriaGaia_wince.wav",
+			"killed": "aom/atl/aomCaladriaGaia_killed.wav",
+			"move": "aom/atl/aomCaladriaGaia_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					21,
+					24,
+					27,
+					30
+				]
+			}
+		],
+		"upgrades": [
+			"aomCaladriaUranus"
+		]
+	},
+	"aomNereid": {
+		"name": {
+			"singular": "海仙女",
+			"plural": "海仙女"
+		},
+		"description": "骑着鲨鱼的海仙女。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 650
+		},
+		"speed": 7,
+		"hitPoints": 78,
+		"attack": 13,
+		"defense": 11,
+		"damage": {
+			"min": 16,
+			"max": 22
+		},
+		"doubleWide": true,
+		"fightValue": 1421,
+		"aiValue": 1456,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 3,
+			"max": 9
+		},
+		"abilities": {
+			"charge": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomCharge",
+				"val": 200,
+				"addInfo": {
+					"every": 3
+				},
+				"icon": "aom/atlantean/abicons/charge.png"
+			},
+			"mythSlayer": {
+				"type": "HATES_TRAIT",
+				"subtype": "AOM_MYTHIC",
+				"val": 25
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 3,
+				"addInfo": {
+					"aspect": "earth"
+				},
+				"icon": "aom/atlantean/abicons/godGaia.png",
+				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 3
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomNereid/battle.json",
+			"map": "aom/atl/aomNereid/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomNereid/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomNereid/map/atkL.png",
+			"iconLarge": "aom/atl/aomNereid/iconLarge.png",
+			"iconSmall": "aom/atl/aomNereid/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomNereid_attack.wav",
+			"defend": "aom/atl/aomNereid_defend.wav",
+			"wince": "aom/atl/aomNereid_wince.wav",
+			"killed": "aom/atl/aomNereid_killed.wav",
+			"move": "aom/atl/aomNereid_move.wav"
+		},
+		"upgrades": [
+			"aomNereidKronos",
+			"aomNereidUranus"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					10,
+					15,
+					20,
+					25,
+					30
+				]
+			}
+		]
+	},
+	"aomNereidKronos": {
+		"name": {
+			"singular": "虎鲨海仙女",
+			"plural": "虎鲨海仙女"
+		},
+		"description": "驾虎鲨冲阵的海仙女。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 800
+		},
+		"speed": 8,
+		"hitPoints": 84,
+		"attack": 15,
+		"defense": 12,
+		"damage": {
+			"min": 18,
+			"max": 24
+		},
+		"doubleWide": true,
+		"fightValue": 1908,
+		"aiValue": 1955,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 3,
+			"max": 9
+		},
+		"abilities": {
+			"charge": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomCharge",
+				"val": 200,
+				"addInfo": {
+					"every": 2
+				},
+				"icon": "aom/atlantean/abicons/charge.png"
+			},
+			"mythSlayer": {
+				"type": "HATES_TRAIT",
+				"subtype": "AOM_MYTHIC",
+				"val": 25
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 2,
+				"addInfo": {
+					"aspect": "time"
+				},
+				"icon": "aom/atlantean/abicons/godKronos.png",
+				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 2
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomNereidKronos/battle.json",
+			"map": "aom/atl/aomNereidKronos/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomNereidKronos/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomNereidKronos/map/atkL.png",
+			"iconLarge": "aom/atl/aomNereidKronos/iconLarge.png",
+			"iconSmall": "aom/atl/aomNereidKronos/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomNereidKronos_attack.wav",
+			"defend": "aom/atl/aomNereidKronos_defend.wav",
+			"wince": "aom/atl/aomNereidKronos_wince.wav",
+			"killed": "aom/atl/aomNereidKronos_killed.wav",
+			"move": "aom/atl/aomNereidKronos_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					10,
+					15,
+					20,
+					25,
+					30
+				]
+			}
+		],
+		"upgrades": [
+			"aomNereidUranus"
+		]
+	},
+	"aomNereidUranus": {
+		"name": {
+			"singular": "掷戟海仙女",
+			"plural": "掷戟海仙女"
+		},
+		"description": "从鲨背上投掷三叉戟的海仙女。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 800
+		},
+		"speed": 9,
+		"hitPoints": 86,
+		"attack": 15,
+		"defense": 12,
+		"damage": {
+			"min": 19,
+			"max": 27
+		},
+		"doubleWide": true,
+		"fightValue": 2173,
+		"aiValue": 2226,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 3,
+			"max": 9
+		},
+		"abilities": {
+			"mythSlayer": {
+				"type": "HATES_TRAIT",
+				"subtype": "AOM_MYTHIC",
+				"val": 25
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 1,
+				"addInfo": {
+					"aspect": "sky"
+				},
+				"icon": "aom/atlantean/abicons/godOranos.png",
+				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 1
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomNereidUranus/battle.json",
+			"map": "aom/atl/aomNereidUranus/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomNereidUranus/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomNereidUranus/map/atkL.png",
+			"iconLarge": "aom/atl/aomNereidUranus/iconLarge.png",
+			"iconSmall": "aom/atl/aomNereidUranus/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 6,
+				"projectile": "aom/atl/missile/waterbolt.json",
+				"offset": {
+					"upperX": 38,
+					"upperY": -59,
+					"middleX": 69,
+					"middleY": -40,
+					"lowerX": 19,
+					"lowerY": -26
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomNereidUranus_attack.wav",
+			"shoot": "aom/atl/aomNereidUranus_shoot.wav",
+			"defend": "aom/atl/aomNereidUranus_defend.wav",
+			"wince": "aom/atl/aomNereidUranus_wince.wav",
+			"killed": "aom/atl/aomNereidUranus_killed.wav",
+			"move": "aom/atl/aomNereidUranus_move.wav"
+		},
+		"shots": 10,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					10,
+					15,
+					20,
+					25,
+					30
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"upgrades": [
+			"aomNereidKronos"
+		]
+	},
+	"aomCentimanus": {
+		"name": {
+			"singular": "百臂巨人",
+			"plural": "百臂巨人"
+		},
+		"description": "百臂巨人，曾被囚在塔耳塔洛斯。",
+		"faction": "aomAtlantean",
+		"level": 6,
+		"cost": {
+			"gold": 1300
+		},
+		"speed": 6,
+		"hitPoints": 140,
+		"attack": 17,
+		"defense": 16,
+		"damage": {
+			"min": 22,
+			"max": 28
+		},
+		"doubleWide": true,
+		"fightValue": 2127,
+		"aiValue": 2491,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 2,
+			"max": 6
+		},
+		"abilities": {
+			"shockwave": {
+				"type": "THREE_HEADED_ATTACK"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 3,
+				"addInfo": {
+					"aspect": "earth"
+				},
+				"icon": "aom/atlantean/abicons/godGaia.png",
+				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 3
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomCentimanus/battle.json",
+			"map": "aom/atl/aomCentimanus/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomCentimanus/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomCentimanus/map/atkL.png",
+			"iconLarge": "aom/atl/aomCentimanus/iconLarge.png",
+			"iconSmall": "aom/atl/aomCentimanus/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomCentimanus_attack.wav",
+			"defend": "aom/atl/aomCentimanus_defend.wav",
+			"wince": "aom/atl/aomCentimanus_wince.wav",
+			"killed": "aom/atl/aomCentimanus_killed.wav",
+			"move": "aom/atl/aomCentimanus_move.wav"
+		},
+		"upgrades": [
+			"aomCentimanusKronos",
+			"aomCentimanusUranus"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "ADDITIONAL_RETALIATION"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					4
+				]
+			}
+		]
+	},
+	"aomCentimanusKronos": {
+		"name": {
+			"singular": "断链百臂巨人",
+			"plural": "断链百臂巨人"
+		},
+		"description": "挣断锁链的百臂巨人。",
+		"faction": "aomAtlantean",
+		"level": 6,
+		"cost": {
+			"gold": 1500,
+			"crystal": 1
+		},
+		"speed": 7,
+		"hitPoints": 140,
+		"attack": 18,
+		"defense": 18,
+		"damage": {
+			"min": 18,
+			"max": 24
+		},
+		"doubleWide": true,
+		"fightValue": 2602,
+		"aiValue": 3047,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 2,
+			"max": 6
+		},
+		"abilities": {
+			"boulderSplash": {
+				"type": "SHOOTS_ALL_ADJACENT"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 2,
+				"addInfo": {
+					"aspect": "time"
+				},
+				"icon": "aom/atlantean/abicons/godKronos.png",
+				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 2
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomCentimanusKronos/battle.json",
+			"map": "aom/atl/aomCentimanusKronos/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomCentimanusKronos/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomCentimanusKronos/map/atkL.png",
+			"iconLarge": "aom/atl/aomCentimanusKronos/iconLarge.png",
+			"iconSmall": "aom/atl/aomCentimanusKronos/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 9,
+				"projectile": "aom/atl/missile/boulder.json",
+				"offset": {
+					"upperX": -11,
+					"upperY": -77,
+					"middleX": 38,
+					"middleY": -80,
+					"lowerX": 56,
+					"lowerY": -65
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomCentimanusKronos_attack.wav",
+			"shoot": "aom/atl/aomCentimanusKronos_shoot.wav",
+			"defend": "aom/atl/aomCentimanusKronos_defend.wav",
+			"wince": "aom/atl/aomCentimanusKronos_wince.wav",
+			"killed": "aom/atl/aomCentimanusKronos_killed.wav",
+			"move": "aom/atl/aomCentimanusKronos_move.wav"
+		},
+		"shots": 8,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_DISTANCE_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"upgrades": [
+			"aomCentimanusUranus"
+		]
+	},
+	"aomCentimanusUranus": {
+		"name": {
+			"singular": "星芒百臂巨人",
+			"plural": "星芒百臂巨人"
+		},
+		"description": "身上嵌着星芒的百臂巨人。",
+		"faction": "aomAtlantean",
+		"level": 6,
+		"cost": {
+			"gold": 1500,
+			"crystal": 1
+		},
+		"speed": 6,
+		"hitPoints": 160,
+		"attack": 19,
+		"defense": 17,
+		"damage": {
+			"min": 24,
+			"max": 30
+		},
+		"doubleWide": true,
+		"fightValue": 2521,
+		"aiValue": 2952,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 2,
+			"max": 6
+		},
+		"abilities": {
+			"sweep": {
+				"type": "ATTACKS_ALL_ADJACENT"
+			},
+			"siege": {
+				"type": "CATAPULT",
+				"subtype": "cyclopsShot"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 1,
+				"addInfo": {
+					"aspect": "sky"
+				},
+				"icon": "aom/atlantean/abicons/godOranos.png",
+				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 1
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomCentimanusUranus/battle.json",
+			"map": "aom/atl/aomCentimanusUranus/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomCentimanusUranus/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomCentimanusUranus/map/atkL.png",
+			"iconLarge": "aom/atl/aomCentimanusUranus/iconLarge.png",
+			"iconSmall": "aom/atl/aomCentimanusUranus/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomCentimanusUranus_attack.wav",
+			"defend": "aom/atl/aomCentimanusUranus_defend.wav",
+			"wince": "aom/atl/aomCentimanusUranus_wince.wav",
+			"killed": "aom/atl/aomCentimanusUranus_killed.wav",
+			"move": "aom/atl/aomCentimanusUranus_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "ADDITIONAL_RETALIATION"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					4
+				]
+			}
+		],
+		"upgrades": [
+			"aomCentimanusKronos"
+		]
+	},
+	"aomTitan": {
+		"name": {
+			"singular": "熔岩泰坦",
+			"plural": "熔岩泰坦"
+		},
+		"description": "浑身流淌熔岩的泰坦。",
+		"faction": "aomAtlantean",
+		"level": 7,
+		"cost": {
+			"gold": 3600,
+			"crystal": 1
+		},
+		"speed": 8,
+		"hitPoints": 240,
+		"attack": 24,
+		"defense": 24,
+		"damage": {
+			"min": 40,
+			"max": 52
+		},
+		"doubleWide": true,
+		"fightValue": 4887,
+		"aiValue": 6631,
+		"growth": 1,
+		"advMapAmount": {
+			"min": 1,
+			"max": 3
+		},
+		"abilities": {
+			"mind": {
+				"type": "MIND_IMMUNITY"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 1,
+				"addInfo": {
+					"aspect": "sky"
+				},
+				"icon": "aom/atlantean/abicons/godOranos.png",
+				"description": "{乌拉诺斯·天相}\n攻击挂天眼；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 1
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomTitan/battle.json",
+			"map": "aom/atl/aomTitan/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomTitan/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomTitan/map/atkL.png",
+			"iconLarge": "aom/atl/aomTitan/iconLarge.png",
+			"iconSmall": "aom/atl/aomTitan/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomTitan_attack.wav",
+			"defend": "aom/atl/aomTitan_defend.wav",
+			"wince": "aom/atl/aomTitan_wince.wav",
+			"killed": "aom/atl/aomTitan_killed.wav",
+			"move": "aom/atl/aomTitan_move.wav"
+		},
+		"upgrades": [
+			"aomTitanKronos",
+			"aomTitanGaia"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "FEARFUL",
+					"valueType": "AT_MOST",
+					"val": 0,
+					"description": "{无惧}\n免疫恐惧特质"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomTitanKronos": {
+		"name": {
+			"singular": "持镰泰坦",
+			"plural": "持镰泰坦"
+		},
+		"description": "手持巨镰的泰坦，时间之主的造物。",
+		"faction": "aomAtlantean",
+		"level": 7,
+		"cost": {
+			"gold": 5000,
+			"crystal": 3
+		},
+		"speed": 9,
+		"hitPoints": 300,
+		"attack": 28,
+		"defense": 27,
+		"damage": {
+			"min": 45,
+			"max": 58
+		},
+		"doubleWide": true,
+		"fightValue": 6914,
+		"aiValue": 9381,
+		"growth": 1,
+		"advMapAmount": {
+			"min": 1,
+			"max": 3
+		},
+		"abilities": {
+			"mind": {
+				"type": "MIND_IMMUNITY"
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 2,
+				"addInfo": {
+					"aspect": "time",
+					"surgeOnce": true
+				},
+				"icon": "aom/atlantean/abicons/godKronos.png",
+				"description": "{克洛诺斯·时相}\n攻击叠时滞；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 2
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomTitanKronos/battle.json",
+			"map": "aom/atl/aomTitanKronos/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomTitanKronos/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomTitanKronos/map/atkL.png",
+			"iconLarge": "aom/atl/aomTitanKronos/iconLarge.png",
+			"iconSmall": "aom/atl/aomTitanKronos/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomTitanKronos_attack.wav",
+			"defend": "aom/atl/aomTitanKronos_defend.wav",
+			"wince": "aom/atl/aomTitanKronos_wince.wav",
+			"killed": "aom/atl/aomTitanKronos_killed.wav",
+			"move": "aom/atl/aomTitanKronos_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "FEARFUL",
+					"valueType": "AT_MOST",
+					"val": 0,
+					"description": "{无惧}\n免疫恐惧特质"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"upgrades": [
+			"aomTitanGaia"
+		]
+	},
+	"aomTitanGaia": {
+		"name": {
+			"singular": "苔岩泰坦",
+			"plural": "苔岩泰坦"
+		},
+		"description": "覆满苔藓和岩石的泰坦，大地之母的造物。",
+		"faction": "aomAtlantean",
+		"level": 7,
+		"cost": {
+			"gold": 5000,
+			"crystal": 3
+		},
+		"speed": 8,
+		"hitPoints": 320,
+		"attack": 27,
+		"defense": 29,
+		"damage": {
+			"min": 45,
+			"max": 55
+		},
+		"doubleWide": true,
+		"fightValue": 7187,
+		"aiValue": 9752,
+		"growth": 1,
+		"advMapAmount": {
+			"min": 1,
+			"max": 3
+		},
+		"abilities": {
+			"mind": {
+				"type": "MIND_IMMUNITY"
+			},
+			"moss": {
+				"type": "HP_REGENERATION",
+				"val": 40
+			},
+			"mossAura": {
+				"type": "HP_REGENERATION",
+				"val": 20,
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"stacking": "aomAura_aomTitanGaia",
+				"limiters": [
+					"allOf",
+					{
+						"type": "UNIT_ADJACENT",
+						"creature": "aomTitanGaia"
+					},
+					[
+						"noneOf",
+						"OPPOSITE_SIDE"
+					]
+				]
+			},
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 3,
+				"addInfo": {
+					"aspect": "earth"
+				},
+				"icon": "aom/atlantean/abicons/godGaia.png",
+				"description": "{盖亚·地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 3
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomTitanGaia/battle.json",
+			"map": "aom/atl/aomTitanGaia/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomTitanGaia/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomTitanGaia/map/atkL.png",
+			"iconLarge": "aom/atl/aomTitanGaia/iconLarge.png",
+			"iconSmall": "aom/atl/aomTitanGaia/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomTitanGaia_attack.wav",
+			"defend": "aom/atl/aomTitanGaia_defend.wav",
+			"wince": "aom/atl/aomTitanGaia_wince.wav",
+			"killed": "aom/atl/aomTitanGaia_killed.wav",
+			"move": "aom/atl/aomTitanGaia_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "FEARFUL",
+					"valueType": "AT_MOST",
+					"val": 0,
+					"description": "{无惧}\n免疫恐惧特质"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		],
+		"upgrades": [
+			"aomTitanKronos"
+		]
+	},
+	"aomPromethean": {
+		"name": {
+			"singular": "泥塑人",
+			"plural": "泥塑人"
+		},
+		"description": "普罗米修斯用泥土捏成的人形，打碎了还能重新捏起来。",
+		"faction": "aomAtlantean",
+		"level": 3,
+		"cost": {
+			"gold": 220
+		},
+		"speed": 5,
+		"hitPoints": 34,
+		"attack": 8,
+		"defense": 8,
+		"damage": {
+			"min": 6,
+			"max": 10
+		},
+		"doubleWide": false,
+		"fightValue": 391,
+		"aiValue": 472,
+		"growth": 6,
+		"advMapAmount": {
+			"min": 6,
+			"max": 18
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"nonLiving": {
+				"type": "NON_LIVING"
+			},
+			"reform": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "rebirth",
+				"val": 40,
+				"addInfo": {
+					"guaranteed": false
+				},
+				"description": "{重塑}\n阵亡后有40%的数量重新站起来，每场战斗一次。",
+				"icon": "aom/atlantean/abicons/reform.png"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomPromethean/battle.json",
+			"map": "aom/atl/aomPromethean/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomPromethean/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomPromethean/map/atkL.png",
+			"iconLarge": "aom/atl/aomPromethean/iconLarge.png",
+			"iconSmall": "aom/atl/aomPromethean/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomPromethean_attack.wav",
+			"defend": "aom/atl/aomPromethean_defend.wav",
+			"wince": "aom/atl/aomPromethean_wince.wav",
+			"killed": "aom/atl/aomPromethean_killed.wav",
+			"move": "aom/atl/aomPromethean_move.wav"
+		},
+		"upgrades": [
+			"aomPrometheanLava"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			}
+		]
+	},
+	"aomStymphalian": {
+		"name": {
+			"singular": "铜羽怪鸟",
+			"plural": "铜羽怪鸟"
+		},
+		"description": "斯廷法罗斯湖的怪鸟，羽毛是铜的。",
+		"faction": "aomAtlantean",
+		"level": 4,
+		"cost": {
+			"gold": 420
+		},
+		"speed": 9,
+		"hitPoints": 38,
+		"attack": 10,
+		"defense": 7,
+		"damage": {
+			"min": 10,
+			"max": 14
+		},
+		"doubleWide": true,
+		"fightValue": 766,
+		"aiValue": 920,
+		"growth": 4,
+		"advMapAmount": {
+			"min": 4,
+			"max": 12
+		},
+		"abilities": {
+			"fly": {
+				"type": "FLYING"
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomStymphalian/battle.json",
+			"map": "aom/atl/aomStymphalian/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomStymphalian/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomStymphalian/map/atkL.png",
+			"iconLarge": "aom/atl/aomStymphalian/iconLarge.png",
+			"iconSmall": "aom/atl/aomStymphalian/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 8,
+				"projectile": "aom/atl/missile/feather.json",
+				"offset": {
+					"upperX": 28,
+					"upperY": -89,
+					"middleX": 59,
+					"middleY": -76,
+					"lowerX": 25,
+					"lowerY": -63
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomStymphalian_attack.wav",
+			"shoot": "aom/atl/aomStymphalian_shoot.wav",
+			"defend": "aom/atl/aomStymphalian_defend.wav",
+			"wince": "aom/atl/aomStymphalian_wince.wav",
+			"killed": "aom/atl/aomStymphalian_killed.wav",
+			"move": "aom/atl/aomStymphalian_move.wav"
+		},
+		"shots": 12,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomTartarian": {
+		"name": {
+			"singular": "冥渊恶兽",
+			"plural": "冥渊恶兽"
+		},
+		"description": "从冥界之门里爬出来的恶兽。",
+		"faction": "aomAtlantean",
+		"level": 4,
+		"cost": {
+			"gold": 450
+		},
+		"speed": 7,
+		"hitPoints": 48,
+		"attack": 11,
+		"defense": 9,
+		"damage": {
+			"min": 11,
+			"max": 18
+		},
+		"doubleWide": true,
+		"fightValue": 704,
+		"aiValue": 845,
+		"growth": 4,
+		"advMapAmount": {
+			"min": 4,
+			"max": 12
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"rend": {
+				"type": "ENEMY_DEFENCE_REDUCTION",
+				"val": 20,
+				"description": "{撕裂}\n攻击无视目标20%防御。",
+				"icon": "aom/atlantean/abicons/rend.png"
+			},
+			"fireproof": {
+				"type": "SPELL_SCHOOL_IMMUNITY",
+				"subtype": "fire"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomTartarian/battle.json",
+			"map": "aom/atl/aomTartarian/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomTartarian/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomTartarian/map/atkL.png",
+			"iconLarge": "aom/atl/aomTartarian/iconLarge.png",
+			"iconSmall": "aom/atl/aomTartarian/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomTartarian_attack.wav",
+			"defend": "aom/atl/aomTartarian_defend.wav",
+			"wince": "aom/atl/aomTartarian_wince.wav",
+			"killed": "aom/atl/aomTartarian_killed.wav",
+			"move": "HHNDMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					0,
+					0,
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					35
+				]
+			}
+		]
+	},
+	"aomArgus": {
+		"name": {
+			"singular": "百眼怪",
+			"plural": "百眼怪"
+		},
+		"description": "浑身是眼的怪物，能喷出腐蚀的酸液。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 650
+		},
+		"speed": 5,
+		"hitPoints": 84,
+		"attack": 13,
+		"defense": 12,
+		"damage": {
+			"min": 16,
+			"max": 22
+		},
+		"doubleWide": true,
+		"fightValue": 1313,
+		"aiValue": 1345,
+		"growth": 3,
+		"advMapAmount": {
+			"min": 3,
+			"max": 9
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomArgus/battle.json",
+			"map": "aom/atl/aomArgus/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomArgus/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomArgus/map/atkL.png",
+			"iconLarge": "aom/atl/aomArgus/iconLarge.png",
+			"iconSmall": "aom/atl/aomArgus/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 6,
+				"projectile": "aom/atl/missile/acid.json",
+				"offset": {
+					"upperX": 22,
+					"upperY": -53,
+					"middleX": 29,
+					"middleY": -50,
+					"lowerX": 21,
+					"lowerY": -47
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomArgus_attack.wav",
+			"shoot": "aom/atl/aomArgus_shoot.wav",
+			"defend": "aom/atl/aomArgus_defend.wav",
+			"wince": "aom/atl/aomArgus_wince.wav",
+			"killed": "aom/atl/aomArgus_killed.wav",
+			"move": "BMTHMOVE.wav"
+		},
+		"shots": 4,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomPrometheanOffspring": {
+		"name": {
+			"singular": "小泥人",
+			"plural": "小泥人"
+		},
+		"description": "用边角泥料捏成的小泥人。",
+		"faction": "aomAtlantean",
+		"level": 2,
+		"cost": {
+			"gold": 110
+		},
+		"speed": 5,
+		"hitPoints": 17,
+		"attack": 6,
+		"defense": 5,
+		"damage": {
+			"min": 3,
+			"max": 6
+		},
+		"doubleWide": false,
+		"fightValue": 179,
+		"aiValue": 196,
+		"growth": 9,
+		"advMapAmount": {
+			"min": 9,
+			"max": 27
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"nonLiving": {
+				"type": "NON_LIVING"
+			},
+			"swarm": {
+				"type": "BLOCKS_RETALIATION",
+				"description": "{一拥而上}\n攻击不受反击。",
+				"icon": "aom/atlantean/abicons/swarm.png"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomPrometheanOffspring/battle.json",
+			"map": "aom/atl/aomPrometheanOffspring/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomPrometheanOffspring/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomPrometheanOffspring/map/atkL.png",
+			"iconLarge": "aom/atl/aomPrometheanOffspring/iconLarge.png",
+			"iconSmall": "aom/atl/aomPrometheanOffspring/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomPrometheanOffspring_attack.wav",
+			"defend": "aom/atl/aomPrometheanOffspring_defend.wav",
+			"wince": "aom/atl/aomPrometheanOffspring_wince.wav",
+			"killed": "aom/atl/aomPrometheanOffspring_killed.wav",
+			"move": "EELMMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomServant": {
+		"name": {
+			"singular": "海洋侍从",
+			"plural": "海洋侍从"
+		},
+		"description": "海神的侍从，能为同伴疗伤。",
+		"faction": "aomAtlantean",
+		"level": 2,
+		"cost": {
+			"gold": 140
+		},
+		"speed": 6,
+		"hitPoints": 19,
+		"attack": 5,
+		"defense": 6,
+		"damage": {
+			"min": 3,
+			"max": 5
+		},
+		"doubleWide": false,
+		"fightValue": 200,
+		"aiValue": 219,
+		"growth": 8,
+		"advMapAmount": {
+			"min": 8,
+			"max": 24
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"heal": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomMend",
+				"val": 4,
+				"addInfo": {},
+				"icon": "aom/atlantean/abicons/heal.png",
+				"description": "{治疗}\n回合开始为相邻友军各恢复4点生命。"
+			},
+			"mender": {
+				"type": "AOM_MENDER",
+				"val": 4,
+				"valueType": "BASE_NUMBER"
+			},
+			"mendKind": {
+				"type": "AOM_MEND_KIND",
+				"val": 1,
+				"valueType": "BASE_NUMBER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomServant/battle.json",
+			"map": "aom/atl/aomServant/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomServant/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomServant/map/atkL.png",
+			"iconLarge": "aom/atl/aomServant/iconLarge.png",
+			"iconSmall": "aom/atl/aomServant/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomServant_attack.wav",
+			"defend": "aom/atl/aomServant_defend.wav",
+			"wince": "aom/atl/aomServant_wince.wav",
+			"killed": "aom/atl/aomServant_killed.wav",
+			"move": "WELMMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					21,
+					24,
+					27,
+					30
+				]
+			}
+		]
+	},
+	"aomSatyr": {
+		"name": {
+			"singular": "羊人",
+			"plural": "羊人"
+		},
+		"description": "山林里的羊人，善投标枪。",
+		"faction": "aomAtlantean",
+		"level": 3,
+		"cost": {
+			"gold": 260
+		},
+		"speed": 6,
+		"hitPoints": 31,
+		"attack": 9,
+		"defense": 6,
+		"damage": {
+			"min": 6,
+			"max": 11
+		},
+		"doubleWide": false,
+		"fightValue": 480,
+		"aiValue": 580,
+		"growth": 6,
+		"advMapAmount": {
+			"min": 6,
+			"max": 18
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomSatyr/battle.json",
+			"map": "aom/atl/aomSatyr/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomSatyr/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomSatyr/map/atkL.png",
+			"iconLarge": "aom/atl/aomSatyr/iconLarge.png",
+			"iconSmall": "aom/atl/aomSatyr/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 4,
+				"projectile": "aom/atl/missile/javelin.json",
+				"offset": {
+					"upperX": 30,
+					"upperY": -83,
+					"middleX": 36,
+					"middleY": -64,
+					"lowerX": -18,
+					"lowerY": -59
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomSatyr_attack.wav",
+			"shoot": "aom/atl/aomSatyr_shoot.wav",
+			"defend": "aom/atl/aomSatyr_defend.wav",
+			"wince": "aom/atl/aomSatyr_wince.wav",
+			"killed": "aom/atl/aomSatyr_killed.wav",
+			"move": "CNTRMOVE.wav"
+		},
+		"shots": 10,
+		"upgrades": [
+			"aomSatyrGold"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_MELEE_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomDryad": {
+		"name": {
+			"singular": "树仙女",
+			"plural": "树仙女"
+		},
+		"description": "守护金苹果树的树仙女。",
+		"faction": "aomAtlantean",
+		"level": 4,
+		"cost": {
+			"gold": 420
+		},
+		"speed": 5,
+		"hitPoints": 54,
+		"attack": 10,
+		"defense": 11,
+		"damage": {
+			"min": 11,
+			"max": 16
+		},
+		"doubleWide": false,
+		"fightValue": 593,
+		"aiValue": 712,
+		"growth": 4,
+		"advMapAmount": {
+			"min": 4,
+			"max": 12
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"regrow": {
+				"type": "HP_REGENERATION",
+				"val": 15,
+				"description": "{回春}\n每回合开始恢复15点生命。",
+				"icon": "aom/atlantean/abicons/regrow.png",
+				"stacking": "aomDryadExpRegen"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomDryad/battle.json",
+			"map": "aom/atl/aomDryad/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomDryad/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomDryad/map/atkL.png",
+			"iconLarge": "aom/atl/aomDryad/iconLarge.png",
+			"iconSmall": "aom/atl/aomDryad/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomDryad_attack.wav",
+			"defend": "aom/atl/aomDryad_defend.wav",
+			"wince": "aom/atl/aomDryad_wince.wav",
+			"killed": "aom/atl/aomDryad_killed.wav",
+			"move": "TREEMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "HP_REGENERATION",
+					"stacking": "aomDryadExpRegen"
+				},
+				"values": [
+					17,
+					19,
+					21,
+					23,
+					25,
+					27,
+					29,
+					31,
+					33,
+					35
+				]
+			}
+		]
+	},
+	"aomLampades": {
+		"name": {
+			"singular": "火炬仙女",
+			"plural": "火炬仙女"
+		},
+		"description": "赫卡特的随从，手持火炬的冥府仙女。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 850
+		},
+		"speed": 6,
+		"hitPoints": 66,
+		"attack": 12,
+		"defense": 10,
+		"damage": {
+			"min": 18,
+			"max": 24
+		},
+		"doubleWide": false,
+		"fightValue": 1679,
+		"aiValue": 1720,
+		"growth": 3,
+		"advMapAmount": {
+			"min": 3,
+			"max": 9
+		},
+		"abilities": {
+			"noMelee": {
+				"type": "NO_MELEE_PENALTY"
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "lich",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomLampades/battle.json",
+			"map": "aom/atl/aomLampades/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomLampades/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomLampades/map/atkL.png",
+			"iconLarge": "aom/atl/aomLampades/iconLarge.png",
+			"iconSmall": "aom/atl/aomLampades/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 15,
+				"projectile": "aom/atl/missile/darkbolt.json",
+				"offset": {
+					"upperX": 17,
+					"upperY": -79,
+					"middleX": 18,
+					"middleY": -69,
+					"lowerX": -10,
+					"lowerY": -66
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomLampades_attack.wav",
+			"shoot": "aom/atl/aomLampades_shoot.wav",
+			"defend": "aom/atl/aomLampades_defend.wav",
+			"wince": "aom/atl/aomLampades_wince.wav",
+			"killed": "aom/atl/aomLampades_killed.wav",
+			"move": "MAGEMOVE.wav"
+		},
+		"shots": 8,
+		"upgrades": [
+			"aomLampadesStar"
+		],
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					21,
+					24,
+					27,
+					30,
+					33
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomManOWar": {
+		"name": {
+			"singular": "僧帽水母",
+			"plural": "僧帽水母"
+		},
+		"description": "浮在半空的僧帽水母，触须带电。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 820
+		},
+		"speed": 6,
+		"hitPoints": 72,
+		"attack": 12,
+		"defense": 12,
+		"damage": {
+			"min": 16,
+			"max": 26
+		},
+		"doubleWide": false,
+		"fightValue": 1514,
+		"aiValue": 1551,
+		"growth": 3,
+		"advMapAmount": {
+			"min": 3,
+			"max": 9
+		},
+		"abilities": {
+			"fly": {
+				"type": "FLYING"
+			},
+			"noMelee": {
+				"type": "NO_MELEE_PENALTY"
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomManOWar/battle.json",
+			"map": "aom/atl/aomManOWar/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomManOWar/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomManOWar/map/atkL.png",
+			"iconLarge": "aom/atl/aomManOWar/iconLarge.png",
+			"iconSmall": "aom/atl/aomManOWar/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 9,
+				"projectile": "aom/atl/missile/spark.json",
+				"offset": {
+					"upperX": 9,
+					"upperY": -128,
+					"middleX": 67,
+					"middleY": -106,
+					"lowerX": 14,
+					"lowerY": -83
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomManOWar_attack.wav",
+			"shoot": "aom/atl/aomManOWar_shoot.wav",
+			"defend": "aom/atl/aomManOWar_defend.wav",
+			"wince": "aom/atl/aomManOWar_wince.wav",
+			"killed": "aom/atl/aomManOWar_killed.wav",
+			"move": "AELMMOVE.wav"
+		},
+		"shots": 12,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_IMMUNITY",
+					"subtype": "lightningBolt"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomCarnivora": {
+		"name": {
+			"singular": "食人花",
+			"plural": "食人花"
+		},
+		"description": "扎根在地里的食人花。",
+		"faction": "aomAtlantean",
+		"level": 4,
+		"cost": {
+			"gold": 480
+		},
+		"speed": 4,
+		"hitPoints": 60,
+		"attack": 11,
+		"defense": 10,
+		"damage": {
+			"min": 13,
+			"max": 19
+		},
+		"doubleWide": true,
+		"fightValue": 814,
+		"aiValue": 977,
+		"growth": 4,
+		"advMapAmount": {
+			"min": 4,
+			"max": 12
+		},
+		"abilities": {
+			"teleports": {
+				"type": "FLYING",
+				"subtype": "movementTeleporting"
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomCarnivora/battle.json",
+			"map": "aom/atl/aomCarnivora/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomCarnivora/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomCarnivora/map/atkL.png",
+			"iconLarge": "aom/atl/aomCarnivora/iconLarge.png",
+			"iconSmall": "aom/atl/aomCarnivora/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomCarnivora_attack.wav",
+			"defend": "aom/atl/aomCarnivora_defend.wav",
+			"wince": "aom/atl/aomCarnivora_wince.wav",
+			"killed": "aom/atl/aomCarnivora_killed.wav",
+			"startMoving": "aom/atl/aomCarnivora_startMoving.wav",
+			"endMoving": "aom/atl/aomCarnivora_endMoving.wav",
+			"move": "aom/atl/aomCarnivora_endMoving.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "HP_REGENERATION"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			}
+		]
+	},
+	"aomPrometheanLava": {
+		"name": {
+			"singular": "熔岩泥塑人",
+			"plural": "熔岩泥塑人"
+		},
+		"description": "用熔岩烧过的泥塑人。",
+		"faction": "aomAtlantean",
+		"level": 3,
+		"cost": {
+			"gold": 300
+		},
+		"speed": 5,
+		"hitPoints": 41,
+		"attack": 9,
+		"defense": 10,
+		"damage": {
+			"min": 8,
+			"max": 11
+		},
+		"doubleWide": false,
+		"fightValue": 494,
+		"aiValue": 597,
+		"growth": 6,
+		"advMapAmount": {
+			"min": 6,
+			"max": 18
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"nonLiving": {
+				"type": "NON_LIVING"
+			},
+			"fireproof": {
+				"type": "SPELL_SCHOOL_IMMUNITY",
+				"subtype": "fire"
+			},
+			"scorch": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "fireShield",
+				"val": 20,
+				"stacking": "fireShield",
+				"description": "{灼身}\n近战攻击它的敌人受到所造成伤害20%的火焰伤害。",
+				"icon": "aom/atlantean/abicons/scorch.png"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomPrometheanLava/battle.json",
+			"map": "aom/atl/aomPrometheanLava/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomPrometheanLava/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomPrometheanLava/map/atkL.png",
+			"iconLarge": "aom/atl/aomPrometheanLava/iconLarge.png",
+			"iconSmall": "aom/atl/aomPrometheanLava/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomPrometheanLava_attack.wav",
+			"defend": "aom/atl/aomPrometheanLava_defend.wav",
+			"wince": "aom/atl/aomPrometheanLava_wince.wav",
+			"killed": "aom/atl/aomPrometheanLava_killed.wav",
+			"move": "aom/atl/aomPrometheanLava_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					4,
+					8,
+					12,
+					16,
+					20,
+					24,
+					28,
+					32,
+					36,
+					40
+				]
+			}
+		]
+	},
+	"aomSatyrGold": {
+		"name": {
+			"singular": "金角羊人",
+			"plural": "金角羊人"
+		},
+		"description": "长着金角的羊人。",
+		"faction": "aomAtlantean",
+		"level": 3,
+		"cost": {
+			"gold": 340
+		},
+		"speed": 7,
+		"hitPoints": 36,
+		"attack": 10,
+		"defense": 7,
+		"damage": {
+			"min": 8,
+			"max": 13
+		},
+		"doubleWide": false,
+		"fightValue": 551,
+		"aiValue": 665,
+		"growth": 6,
+		"advMapAmount": {
+			"min": 6,
+			"max": 18
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomSatyrGold/battle.json",
+			"map": "aom/atl/aomSatyrGold/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomSatyrGold/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomSatyrGold/map/atkL.png",
+			"iconLarge": "aom/atl/aomSatyrGold/iconLarge.png",
+			"iconSmall": "aom/atl/aomSatyrGold/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 4,
+				"projectile": "aom/atl/missile/javelin2.json",
+				"offset": {
+					"upperX": 30,
+					"upperY": -83,
+					"middleX": 36,
+					"middleY": -64,
+					"lowerX": -18,
+					"lowerY": -59
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomSatyrGold_attack.wav",
+			"shoot": "aom/atl/aomSatyrGold_shoot.wav",
+			"defend": "aom/atl/aomSatyrGold_defend.wav",
+			"wince": "aom/atl/aomSatyrGold_wince.wav",
+			"killed": "aom/atl/aomSatyrGold_killed.wav",
+			"move": "CNTRMOVE.wav"
+		},
+		"shots": 14,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_MELEE_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomLampadesStar": {
+		"name": {
+			"singular": "星炬仙女",
+			"plural": "星炬仙女"
+		},
+		"description": "火炬里燃着星光的冥府仙女。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 1050
+		},
+		"speed": 7,
+		"hitPoints": 78,
+		"attack": 13,
+		"defense": 11,
+		"damage": {
+			"min": 21,
+			"max": 27
+		},
+		"doubleWide": false,
+		"fightValue": 2092,
+		"aiValue": 2143,
+		"growth": 3,
+		"advMapAmount": {
+			"min": 3,
+			"max": 9
+		},
+		"abilities": {
+			"noMelee": {
+				"type": "NO_MELEE_PENALTY"
+			},
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "lich",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomLampadesStar/battle.json",
+			"map": "aom/atl/aomLampadesStar/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomLampadesStar/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomLampadesStar/map/atkL.png",
+			"iconLarge": "aom/atl/aomLampadesStar/iconLarge.png",
+			"iconSmall": "aom/atl/aomLampadesStar/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 15,
+				"projectile": "aom/atl/missile/darkbolt.json",
+				"offset": {
+					"upperX": 17,
+					"upperY": -79,
+					"middleX": 18,
+					"middleY": -69,
+					"lowerX": -10,
+					"lowerY": -66
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomLampadesStar_attack.wav",
+			"shoot": "aom/atl/aomLampadesStar_shoot.wav",
+			"defend": "aom/atl/aomLampadesStar_defend.wav",
+			"wince": "aom/atl/aomLampadesStar_wince.wav",
+			"killed": "aom/atl/aomLampadesStar_killed.wav",
+			"move": "MAGEMOVE.wav"
+		},
+		"shots": 12,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "SPELL_DAMAGE_REDUCTION",
+					"subtype": "any"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					21,
+					24,
+					27,
+					30,
+					33
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_WALL_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomOracle": {
+		"name": {
+			"singular": "神谕祭司",
+			"plural": "神谕祭司"
+		},
+		"description": "大西洲的神谕祭司，能预见不祥。",
+		"faction": "aomAtlantean",
+		"level": 1,
+		"cost": {
+			"gold": 70
+		},
+		"speed": 5,
+		"hitPoints": 10,
+		"attack": 3,
+		"defense": 3,
+		"damage": {
+			"min": 2,
+			"max": 3
+		},
+		"doubleWide": false,
+		"fightValue": 100,
+		"aiValue": 100,
+		"growth": 12,
+		"advMapAmount": {
+			"min": 12,
+			"max": 36
+		},
+		"abilities": {
+			"omen": {
+				"type": "LUCK",
+				"val": -1,
+				"propagator": "BATTLE_WIDE",
+				"limiters": [
+					"OPPOSITE_SIDE"
+				],
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"stacking": "aomOracleOmen",
+				"description": "{凶兆}\n敌方全军幸运-1。多队神谕祭司不叠加。",
+				"icon": "aom/atlantean/abicons/omen.png"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "lich",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomOracle/battle.json",
+			"map": "aom/atl/aomOracle/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomOracle/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomOracle/map/atkL.png",
+			"iconLarge": "aom/atl/aomOracle/iconLarge.png",
+			"iconSmall": "aom/atl/aomOracle/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomOracle_attack.wav",
+			"defend": "aom/atl/aomOracle_defend.wav",
+			"wince": "aom/atl/aomOracle_wince.wav",
+			"killed": "aom/atl/aomOracle_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "MAGIC_RESISTANCE"
+				},
+				"values": [
+					3,
+					6,
+					9,
+					12,
+					15,
+					18,
+					21,
+					24,
+					27,
+					30
+				]
+			}
+		]
+	},
+	"aomKatapeltes": {
+		"name": {
+			"singular": "长锤步兵",
+			"plural": "长锤步兵"
+		},
+		"description": "专门对付骑兵和巨兽的长锤步兵。",
+		"faction": "aomAtlantean",
+		"level": 2,
+		"cost": {
+			"gold": 120
+		},
+		"speed": 5,
+		"hitPoints": 18,
+		"attack": 6,
+		"defense": 5,
+		"damage": {
+			"min": 3,
+			"max": 6
+		},
+		"doubleWide": false,
+		"fightValue": 176,
+		"aiValue": 193,
+		"growth": 9,
+		"advMapAmount": {
+			"min": 9,
+			"max": 27
+		},
+		"abilities": {
+			"brace": {
+				"type": "CHARGE_IMMUNITY",
+				"val": 0,
+				"hidden": true
+			},
+			"bigMark": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomBigMark",
+				"val": 30,
+				"description": "{克制巨物}\n对双格部队伤害+30%，不受冲锋加成。",
+				"icon": "aom/atlantean/abicons/bigHate.png"
+			},
+			"bigHate": {
+				"type": "HATES_TRAIT",
+				"subtype": "AOM_BIG",
+				"val": 30,
+				"hidden": true
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "skeletonWarrior",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomKatapeltes/battle.json",
+			"map": "aom/atl/aomKatapeltes/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomKatapeltes/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomKatapeltes/map/atkL.png",
+			"iconLarge": "aom/atl/aomKatapeltes/iconLarge.png",
+			"iconSmall": "aom/atl/aomKatapeltes/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomKatapeltes_attack.wav",
+			"defend": "aom/atl/aomKatapeltes_defend.wav",
+			"wince": "aom/atl/aomKatapeltes_wince.wav",
+			"killed": "aom/atl/aomKatapeltes_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					3
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					1,
+					2,
+					2,
+					2,
+					3,
+					3,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomDestroyer": {
+		"name": {
+			"singular": "破城兵",
+			"plural": "破城兵"
+		},
+		"description": "披重甲的破城兵，不怕箭矢。",
+		"faction": "aomAtlantean",
+		"level": 3,
+		"cost": {
+			"gold": 240
+		},
+		"speed": 4,
+		"hitPoints": 36,
+		"attack": 7,
+		"defense": 11,
+		"damage": {
+			"min": 5,
+			"max": 8
+		},
+		"doubleWide": false,
+		"fightValue": 334,
+		"aiValue": 403,
+		"growth": 6,
+		"advMapAmount": {
+			"min": 6,
+			"max": 18
+		},
+		"abilities": {
+			"wreckMachine": {
+				"type": "HATES_TRAIT",
+				"subtype": "SIEGE_WEAPON",
+				"val": 100,
+				"description": "{拆毁}\n对战争器械和机械部队伤害+100%。",
+				"icon": "aom/atlantean/abicons/wreck.png"
+			},
+			"wreckMech": {
+				"type": "HATES_TRAIT",
+				"subtype": "MECHANICAL",
+				"val": 100,
+				"hidden": true
+			},
+			"arrowproof": {
+				"type": "GENERAL_DAMAGE_REDUCTION",
+				"subtype": "damageTypeRanged",
+				"val": 40,
+				"description": "{重甲}\n受到的远程伤害-40%。",
+				"icon": "aom/atlantean/abicons/heavyArmor.png"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "skeletonWarrior",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomDestroyer/battle.json",
+			"map": "aom/atl/aomDestroyer/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomDestroyer/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomDestroyer/map/atkL.png",
+			"iconLarge": "aom/atl/aomDestroyer/iconLarge.png",
+			"iconSmall": "aom/atl/aomDestroyer/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomDestroyer_attack.wav",
+			"defend": "aom/atl/aomDestroyer_defend.wav",
+			"wince": "aom/atl/aomDestroyer_wince.wav",
+			"killed": "aom/atl/aomDestroyer_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomFanatic": {
+		"name": {
+			"singular": "双刃狂徒",
+			"plural": "双刃狂徒"
+		},
+		"description": "双手持刃的狂徒，一次攻击两下。",
+		"faction": "aomAtlantean",
+		"level": 4,
+		"cost": {
+			"gold": 400
+		},
+		"speed": 6,
+		"hitPoints": 46,
+		"attack": 12,
+		"defense": 8,
+		"damage": {
+			"min": 10,
+			"max": 14
+		},
+		"doubleWide": false,
+		"fightValue": 626,
+		"aiValue": 752,
+		"growth": 4,
+		"advMapAmount": {
+			"min": 4,
+			"max": 12
+		},
+		"abilities": {
+			"twice": {
+				"type": "ADDITIONAL_ATTACK",
+				"val": 1
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "skeletonWarrior",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomFanatic/battle.json",
+			"map": "aom/atl/aomFanatic/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomFanatic/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomFanatic/map/atkL.png",
+			"iconLarge": "aom/atl/aomFanatic/iconLarge.png",
+			"iconSmall": "aom/atl/aomFanatic/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomFanatic_attack.wav",
+			"defend": "aom/atl/aomFanatic_defend.wav",
+			"wince": "aom/atl/aomFanatic_wince.wav",
+			"killed": "aom/atl/aomFanatic_killed.wav",
+			"move": "SWRDMOVE.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					4
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomTurma": {
+		"name": {
+			"singular": "标枪骑兵",
+			"plural": "标枪骑兵"
+		},
+		"description": "骑马投标枪的轻骑兵。",
+		"faction": "aomAtlantean",
+		"level": 3,
+		"cost": {
+			"gold": 280
+		},
+		"speed": 9,
+		"hitPoints": 34,
+		"attack": 8,
+		"defense": 6,
+		"damage": {
+			"min": 6,
+			"max": 10
+		},
+		"doubleWide": true,
+		"fightValue": 505,
+		"aiValue": 610,
+		"growth": 6,
+		"advMapAmount": {
+			"min": 6,
+			"max": 18
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomTurma/battle.json",
+			"map": "aom/atl/aomTurma/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomTurma/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomTurma/map/atkL.png",
+			"iconLarge": "aom/atl/aomTurma/iconLarge.png",
+			"iconSmall": "aom/atl/aomTurma/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 4,
+				"projectile": "aom/atl/missile/javelinT.json",
+				"offset": {
+					"upperX": 38,
+					"upperY": -80,
+					"middleX": 54,
+					"middleY": -65,
+					"lowerX": 14,
+					"lowerY": -57
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomTurma_attack.wav",
+			"shoot": "aom/atl/aomTurma_shoot.wav",
+			"defend": "aom/atl/aomTurma_defend.wav",
+			"wince": "aom/atl/aomTurma_wince.wav",
+			"killed": "aom/atl/aomTurma_killed.wav",
+			"move": "aom/atl/aomTurma_move.wav"
+		},
+		"shots": 10,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					0,
+					1,
+					1,
+					2,
+					2,
+					3,
+					3,
+					4,
+					4,
+					5
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			},
+			{
+				"bonus": {
+					"type": "NO_MELEE_PENALTY"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomContarius": {
+		"name": {
+			"singular": "长矛骑兵",
+			"plural": "长矛骑兵"
+		},
+		"description": "持长矛冲锋的重骑兵。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 900
+		},
+		"speed": 8,
+		"hitPoints": 90,
+		"attack": 14,
+		"defense": 12,
+		"damage": {
+			"min": 19,
+			"max": 29
+		},
+		"doubleWide": true,
+		"fightValue": 1738,
+		"aiValue": 1781,
+		"growth": 3,
+		"advMapAmount": {
+			"min": 3,
+			"max": 9
+		},
+		"abilities": {
+			"jousting": {
+				"type": "JOUSTING",
+				"val": 5
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "blackKnight",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomContarius/battle.json",
+			"map": "aom/atl/aomContarius/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomContarius/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomContarius/map/atkL.png",
+			"iconLarge": "aom/atl/aomContarius/iconLarge.png",
+			"iconSmall": "aom/atl/aomContarius/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomContarius_attack.wav",
+			"defend": "aom/atl/aomContarius_defend.wav",
+			"wince": "aom/atl/aomContarius_wince.wav",
+			"killed": "aom/atl/aomContarius_killed.wav",
+			"move": "aom/atl/aomContarius_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "DOUBLE_DAMAGE_CHANCE"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					10,
+					15,
+					20,
+					25,
+					30
+				]
+			}
+		]
+	},
+	"aomCheiroballista": {
+		"name": {
+			"singular": "手弩炮",
+			"plural": "手弩炮"
+		},
+		"description": "大西洲的战争器械，架在车上的手弩炮。伤害随英雄的攻击力提高。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 2500
+		},
+		"speed": 0,
+		"hitPoints": 250,
+		"attack": 10,
+		"defense": 10,
+		"damage": {
+			"min": 2,
+			"max": 3
+		},
+		"doubleWide": true,
+		"fightValue": 650,
+		"aiValue": 600,
+		"abilities": {
+			"warMachine": {
+				"type": "SIEGE_WEAPON"
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"noRetaliation": {
+				"type": "NO_RETALIATION"
+			},
+			"blocksRangedRetaliation": {
+				"type": "BLOCKS_RANGED_RETALIATION",
+				"hidden": true
+			},
+			"cpuControlled": {
+				"type": "CPU_CONTROLLED",
+				"hidden": true
+			},
+			"heroAttackDamage": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "ballistaDamage",
+				"val": 5
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomCheiroballista/battle.json",
+			"map": "aom/atl/aomCheiroballista/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomCheiroballista/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomCheiroballista/map/atkL.png",
+			"iconLarge": "aom/atl/aomCheiroballista/iconLarge.png",
+			"iconSmall": "aom/atl/aomCheiroballista/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 5,
+				"projectile": "aom/atl/missile/arrow.json",
+				"offset": {
+					"upperX": 19,
+					"upperY": -23,
+					"middleX": 15,
+					"middleY": -24,
+					"lowerX": 19,
+					"lowerY": -26
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomCheiroballista_attack.wav",
+			"shoot": "aom/atl/aomCheiroballista_shoot.wav",
+			"defend": "aom/atl/aomCheiroballista_defend.wav",
+			"wince": "aom/atl/aomCheiroballista_wince.wav",
+			"killed": "aom/atl/aomCheiroballista_killed.wav",
+			"move": "aom/atl/aomCheiroballista_move.wav"
+		},
+		"shots": 24,
+		"special": true,
+		"growth": 0
+	},
+	"aomFireSiphon": {
+		"name": {
+			"singular": "喷火战车",
+			"plural": "喷火战车"
+		},
+		"description": "喷吐火焰的攻城战车。",
+		"faction": "aomAtlantean",
+		"level": 5,
+		"cost": {
+			"gold": 950
+		},
+		"speed": 4,
+		"hitPoints": 108,
+		"attack": 12,
+		"defense": 14,
+		"damage": {
+			"min": 19,
+			"max": 29
+		},
+		"doubleWide": true,
+		"fightValue": 1742,
+		"aiValue": 1785,
+		"growth": 3,
+		"advMapAmount": {
+			"min": 3,
+			"max": 9
+		},
+		"abilities": {
+			"shooter": {
+				"type": "SHOOTER"
+			},
+			"mechanical": {
+				"type": "MECHANICAL"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomFireSiphon/battle.json",
+			"map": "aom/atl/aomFireSiphon/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomFireSiphon/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomFireSiphon/map/atkL.png",
+			"iconLarge": "aom/atl/aomFireSiphon/iconLarge.png",
+			"iconSmall": "aom/atl/aomFireSiphon/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 5,
+				"projectile": "aom/atl/missile/flame.json",
+				"offset": {
+					"upperX": 29,
+					"upperY": -75,
+					"middleX": 70,
+					"middleY": -58,
+					"lowerX": 29,
+					"lowerY": -41
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomFireSiphon_attack.wav",
+			"shoot": "aom/atl/aomFireSiphon_shoot.wav",
+			"defend": "aom/atl/aomFireSiphon_defend.wav",
+			"wince": "aom/atl/aomFireSiphon_wince.wav",
+			"killed": "aom/atl/aomFireSiphon_killed.wav",
+			"move": "aom/atl/aomFireSiphon_move.wav"
+		},
+		"shots": 8,
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					3,
+					4,
+					4,
+					6,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					3,
+					4,
+					5,
+					6,
+					6,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					7
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				]
+			},
+			{
+				"bonus": {
+					"type": "ENEMY_DEFENCE_REDUCTION"
+				},
+				"values": [
+					2,
+					4,
+					6,
+					8,
+					10,
+					12,
+					14,
+					16,
+					18,
+					20
+				]
+			}
+		]
+	},
+	"aomBehemoth": {
+		"name": {
+			"singular": "铁甲巨兽",
+			"plural": "铁甲巨兽"
+		},
+		"description": "披着铁甲的巨兽，城墙也挡不住它。",
+		"faction": "aomAtlantean",
+		"level": 6,
+		"cost": {
+			"gold": 1300
+		},
+		"speed": 5,
+		"hitPoints": 140,
+		"attack": 15,
+		"defense": 20,
+		"damage": {
+			"min": 18,
+			"max": 24
+		},
+		"doubleWide": true,
+		"fightValue": 1810,
+		"aiValue": 2120,
+		"growth": 2,
+		"advMapAmount": {
+			"min": 2,
+			"max": 6
+		},
+		"abilities": {
+			"mythic": {
+				"type": "AOM_MYTHIC",
+				"val": 1
+			},
+			"ram": {
+				"type": "CATAPULT",
+				"subtype": "cyclopsShot",
+				"description": "{撞城}\n攻城时可以攻击城墙。",
+				"icon": "aom/atlantean/abicons/ram.png"
+			},
+			"regrow": {
+				"type": "HP_REGENERATION",
+				"val": 40,
+				"description": "{再生}\n每回合开始恢复40点生命。",
+				"icon": "aom/atlantean/abicons/regen.png",
+				"stacking": "aomBehemothExpRegen"
+			},
+			"skeletonTarget": {
+				"type": "SKELETON_TRANSFORMER_TARGET",
+				"subtype": "boneDragon",
+				"hidden": true
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomBehemoth/battle.json",
+			"map": "aom/atl/aomBehemoth/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomBehemoth/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomBehemoth/map/atkL.png",
+			"iconLarge": "aom/atl/aomBehemoth/iconLarge.png",
+			"iconSmall": "aom/atl/aomBehemoth/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1
+		},
+		"sound": {
+			"attack": "aom/atl/aomBehemoth_attack.wav",
+			"defend": "aom/atl/aomBehemoth_defend.wav",
+			"wince": "aom/atl/aomBehemoth_wince.wav",
+			"killed": "aom/atl/aomBehemoth_killed.wav",
+			"move": "aom/atl/aomBehemoth_move.wav"
+		},
+		"stackExperience": [
+			{
+				"bonus": {
+					"type": "STACK_HEALTH",
+					"valueType": "PERCENT_TO_BASE"
+				},
+				"values": [
+					5,
+					10,
+					15,
+					20,
+					25,
+					30,
+					35,
+					40,
+					45,
+					50
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence"
+				},
+				"values": [
+					1,
+					2,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMin"
+				},
+				"values": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					5,
+					6,
+					7,
+					8
+				]
+			},
+			{
+				"bonus": {
+					"type": "CREATURE_DAMAGE",
+					"subtype": "creatureDamageMax"
+				},
+				"values": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					8,
+					9
+				]
+			},
+			{
+				"bonus": {
+					"type": "STACKS_SPEED"
+				},
+				"values": [
+					0,
+					0,
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					2
+				]
+			},
+			{
+				"bonus": {
+					"type": "HP_REGENERATION",
+					"stacking": "aomBehemothExpRegen"
+				},
+				"values": [
+					43,
+					46,
+					49,
+					52,
+					55,
+					58,
+					61,
+					64,
+					67,
+					70
+				]
+			},
+			{
+				"bonus": {
+					"type": "FEARFUL",
+					"valueType": "AT_MOST",
+					"val": 0,
+					"description": "{无惧}\n免疫恐惧特质"
+				},
+				"values": [
+					false,
+					false,
+					false,
+					false,
+					true,
+					true,
+					true,
+					true,
+					true,
+					true
+				]
+			}
+		]
+	},
+	"aomArcusTurret": {
+		"name": {
+			"singular": "箭塔弓手",
+			"plural": "箭塔弓手"
+		},
+		"description": "守在大西洲城墙箭塔里的反曲弓手。",
+		"faction": "aomAtlantean",
+		"level": 2,
+		"cost": {
+			"gold": 130
+		},
+		"speed": 5,
+		"hitPoints": 12,
+		"attack": 6,
+		"defense": 3,
+		"damage": {
+			"min": 3,
+			"max": 5
+		},
+		"doubleWide": false,
+		"fightValue": 172,
+		"aiValue": 189,
+		"abilities": {
+			"aspect": {
+				"type": "COMBAT_EVENT_TRIGGER",
+				"subtype": "aomAspect",
+				"val": 3,
+				"addInfo": {
+					"aspect": "earth"
+				},
+				"icon": "aom/atlantean/abicons/lush.png",
+				"description": "{地相}\n脚下生繁茂；当令时速度+2、伤害+15%。"
+			},
+			"aspectMark": {
+				"type": "AOM_ASPECT",
+				"val": 3
+			},
+			"shooter": {
+				"type": "SHOOTER"
+			}
+		},
+		"graphics": {
+			"animation": "aom/atl/aomArcusTurret/battle.json",
+			"map": "aom/atl/aomArcus/map.json",
+			"mapMask": [
+				"VV",
+				"VA"
+			],
+			"mapAttackFromRight": "aom/atl/aomArcus/map/atkR.png",
+			"mapAttackFromLeft": "aom/atl/aomArcus/map/atkL.png",
+			"iconLarge": "aom/atl/aomArcus/iconLarge.png",
+			"iconSmall": "aom/atl/aomArcus/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 3,
+				"projectile": "aom/atl/missile/arrow.json",
+				"offset": {
+					"upperX": 29,
+					"upperY": -71,
+					"middleX": 29,
+					"middleY": -71,
+					"lowerX": 5,
+					"lowerY": -64
+				}
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomArcus_attack.wav",
+			"defend": "aom/atl/aomArcus_defend.wav",
+			"wince": "aom/atl/aomArcus_wince.wav",
+			"killed": "aom/atl/aomArcus_killed.wav",
+			"shoot": "aom/atl/aomArcus_shoot.wav",
+			"move": "LCRSMOVE.wav"
+		},
+		"shots": 12,
+		"special": true,
+		"excludeFromRandomization": true
+	},
+	"aomCommander": {
+		"name": {
+			"singular": "神谕长",
+			"plural": "神谕长"
+		},
+		"description": "大西洲的神谕长，随英雄出征的指挥官。他站定观象，为全军的射手指明目标；献祭祈神，为英雄求来众神的恩惠。",
+		"faction": "aomAtlantean",
+		"level": 0,
+		"special": true,
+		"cost": {
+			"gold": 550
+		},
+		"speed": 5,
+		"hitPoints": 40,
+		"attack": 5,
+		"defense": 5,
+		"damage": {
+			"min": 12,
+			"max": 12
+		},
+		"doubleWide": false,
+		"fightValue": 810,
+		"aiValue": 866,
+		"growth": 1,
+		"graphics": {
+			"animation": "aom/atl/aomCommander/battle.json",
+			"iconLarge": "aom/atl/aomCommander/iconLarge.png",
+			"iconSmall": "aom/atl/aomCommander/iconSmall.png",
+			"animationTime": {
+				"walk": 1,
+				"attack": 1,
+				"idle": 10
+			},
+			"timeBetweenFidgets": 1,
+			"missile": {
+				"frameAngles": [
+					90,
+					67.5,
+					45,
+					22.5,
+					0,
+					-22.5,
+					-45,
+					-67.5,
+					-90
+				],
+				"attackClimaxFrame": 7,
+				"offset": {
+					"upperX": 20,
+					"upperY": -45,
+					"middleX": 13,
+					"middleY": -36,
+					"lowerX": -16,
+					"lowerY": -36
+				},
+				"ray": [
+					{
+						"start": [
+							255,
+							214,
+							120,
+							255
+						],
+						"end": [
+							255,
+							214,
+							120,
+							64
+						]
+					},
+					{
+						"start": [
+							255,
+							240,
+							190,
+							255
+						],
+						"end": [
+							255,
+							240,
+							190,
+							160
+						]
+					},
+					{
+						"start": [
+							255,
+							214,
+							120,
+							255
+						],
+						"end": [
+							255,
+							214,
+							120,
+							64
+						]
+					}
+				]
+			}
+		},
+		"sound": {
+			"attack": "aom/atl/aomOracle_attack.wav",
+			"defend": "aom/atl/aomOracle_defend.wav",
+			"wince": "aom/atl/aomOracle_wince.wav",
+			"killed": "aom/atl/aomOracle_killed.wav",
+			"move": "SWRDMOVE.wav",
+			"shoot": "aom/atl/aomOracle_attack.wav"
+		},
+		"abilities": {
+			"omen": {
+				"type": "LUCK",
+				"val": -1,
+				"propagator": "BATTLE_WIDE",
+				"limiters": [
+					"OPPOSITE_SIDE"
+				],
+				"propagationUpdater": "BONUS_OWNER_UPDATER",
+				"stacking": "aomOracleOmen",
+				"description": "{凶兆}\n敌方全军幸运-1。",
+				"icon": "aom/atlantean/abicons/omen.png"
+			},
+			"castsAmount": {
+				"type": "CASTS",
+				"val": 1
+			},
+			"spellpower": {
+				"type": "CREATURE_SPELL_POWER",
+				"val": 100
+			}
+		}
+	}
+}

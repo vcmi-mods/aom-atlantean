@@ -1,0 +1,351 @@
+{
+	"core:creatureGeneratorCommon": {
+		"types": {
+			"aomAtlDwell1": {
+				"name": "角斗营",
+				"creatures": [
+					[
+						"aomMurmillo"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlDwell1",
+				"sounds": {
+					"ambient": [
+						"LOOPSWOR"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlDwell1.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomAtlDwell2": {
+				"name": "弓术场",
+				"creatures": [
+					[
+						"aomArcus"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlDwell2",
+				"sounds": {
+					"ambient": [
+						"LOOPARCH"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlDwell2.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomAtlDwell3": {
+				"name": "机械工坊",
+				"creatures": [
+					[
+						"aomAutomaton"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlDwell3",
+				"sounds": {
+					"ambient": [
+						"LOOPFACT"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlDwell3.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomAtlDwell4": {
+				"name": "灵鸟圣所",
+				"creatures": [
+					[
+						"aomCaladria"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlDwell4",
+				"sounds": {
+					"ambient": [
+						"LOOPBIRD"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlDwell4.def",
+						"mask": [
+							"VVV",
+							"VVB",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomAtlDwell5": {
+				"name": "海仙洞窟",
+				"creatures": [
+					[
+						"aomNereid"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlDwell5",
+				"sounds": {
+					"ambient": [
+						"LOOPFOUN"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlDwell5.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomAtlDwell6": {
+				"name": "百臂深牢",
+				"creatures": [
+					[
+						"aomCentimanus"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlDwell6",
+				"sounds": {
+					"ambient": [
+						"LOOPCAVE"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlDwell6.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomAtlDwell7": {
+				"name": "泰坦之门",
+				"creatures": [
+					[
+						"aomTitan"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlDwell7",
+				"sounds": {
+					"ambient": [
+						"LOOPTITA"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlDwell7.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"aomAtlClayWorks": {
+				"name": "泥塑工坊",
+				"creatures": [
+					[
+						"aomPrometheanOffspring"
+					],
+					[
+						"aomPromethean"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlClayWorks",
+				"sounds": {
+					"ambient": [
+						"LOOPEART"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlClayWorks.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				},
+				"bannedForRandomDwelling": true
+			},
+			"aomAtlNymphGrove": {
+				"name": "仙女林",
+				"creatures": [
+					[
+						"aomSatyr"
+					],
+					[
+						"aomDryad"
+					],
+					[
+						"aomLampades"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlNymphGrove",
+				"sounds": {
+					"ambient": [
+						"LOOPELF"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlNymphGrove.def",
+						"mask": [
+							"VVV",
+							"VBB",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				},
+				"bannedForRandomDwelling": true
+			},
+			"aomAtlCavalryYard": {
+				"name": "骑兵校场",
+				"creatures": [
+					[
+						"aomTurma"
+					],
+					[
+						"aomContarius"
+					]
+				],
+				"guards": true,
+				"kingdomOverviewImage": "icons/kingdomOverview/aom-atlantean/aomAtlCavalryYard",
+				"sounds": {
+					"ambient": [
+						"LOOPHORS"
+					],
+					"visit": [
+						"MILITARY"
+					]
+				},
+				"templates": {
+					"default": {
+						"animation": "aom/atl/map/aomAtlCavalryYard.def",
+						"mask": [
+							"VVV",
+							"VVV",
+							"VAB"
+						],
+						"visitableFrom": [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				},
+				"bannedForRandomDwelling": true
+			}
+		}
+	}
+}

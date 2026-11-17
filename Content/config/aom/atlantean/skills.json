@@ -1,0 +1,292 @@
+{
+	"aomSeasonCommand": {
+		"name": "三相御令",
+		"gainChance": {
+			"might": 0,
+			"magic": 0
+		},
+		"tags": {
+			"wisdom": false,
+			"special": false,
+			"onlyOnWaterMap": false,
+			"spellSchool": true,
+			"bannedForUniversity": true,
+			"bannedForWitchHut": true,
+			"bannedForScholar": true
+		},
+		"specialty": [],
+		"base": {
+			"effects": {
+				"combocreature1": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 2,
+					"valueType": "ADDITIVE_VALUE",
+					"limiters": [
+						"allOf",
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomTitanKronos",
+							"includeUpgrades": false
+						}
+					]
+				},
+				"combocreature2": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence",
+					"val": 2,
+					"valueType": "ADDITIVE_VALUE",
+					"limiters": [
+						"allOf",
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomTitanKronos",
+							"includeUpgrades": false
+						}
+					]
+				},
+				"mark": {
+					"type": "STACKS_SPEED",
+					"val": 0
+				},
+				"comboTactics": {
+					"type": "AOM_SEASON_SPD",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"limiters": [
+						"allOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "BEFORE_BATTLE_REPOSITION",
+							"bonusSourceType": "SECONDARY_SKILL",
+							"bonusSourceID": "tactics"
+						}
+					]
+				},
+				"comboLeadership": {
+					"type": "AOM_SEASON_MORALE",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"limiters": [
+						"allOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "MORALE",
+							"bonusSourceType": "SECONDARY_SKILL",
+							"bonusSourceID": "leadership"
+						}
+					]
+				}
+			}
+		},
+		"basic": {
+			"description": "{初级三相御令}\n\n当令的部队伤害加成提高到30%。\n英雄攻击力+1。\n\n {#F800F8|联动效果} \n {#002366|持镰泰坦}：持镰泰坦攻击和防御+2。\n {#D7D7D7|战术}：当令的部队速度再+1。\n {#D7D7D7|领导术}：当令的部队这一回合士气+1。\n {#D7D7D7|神力回响}：回响触发的回合，主神之相的部队当令。",
+			"images": {
+				"small": "aom/atlantean/skills/aomSeasonCommand_basic_32",
+				"medium": "aom/atlantean/skills/aomSeasonCommand_basic_44",
+				"large": "aom/atlantean/skills/aomSeasonCommand_basic_82",
+				"scenarioBonus": "aom/atlantean/skills/aomSeasonCommand_basic_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_SEASON_CMD",
+					"val": 1,
+					"valueType": "BASE_NUMBER"
+				},
+				"attack": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 1,
+					"valueType": "ADDITIVE_VALUE"
+				}
+			}
+		},
+		"advanced": {
+			"description": "{中级三相御令}\n\n当令的部队伤害加成提高到45%。\n英雄攻击力+2。\n神代轮转从英雄主神之相开始。\n\n {#F800F8|联动效果} \n {#002366|持镰泰坦}：持镰泰坦攻击和防御+2。\n {#D7D7D7|战术}：当令的部队速度再+1。\n {#D7D7D7|领导术}：当令的部队这一回合士气+1。\n {#D7D7D7|神力回响}：回响触发的回合，主神之相的部队当令。",
+			"images": {
+				"small": "aom/atlantean/skills/aomSeasonCommand_advanced_32",
+				"medium": "aom/atlantean/skills/aomSeasonCommand_advanced_44",
+				"large": "aom/atlantean/skills/aomSeasonCommand_advanced_82",
+				"scenarioBonus": "aom/atlantean/skills/aomSeasonCommand_advanced_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_SEASON_CMD",
+					"val": 2,
+					"valueType": "BASE_NUMBER"
+				},
+				"attack": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 2,
+					"valueType": "ADDITIVE_VALUE"
+				}
+			}
+		},
+		"expert": {
+			"description": "{高级三相御令}\n\n当令的部队伤害加成提高到60%。\n英雄攻击力+3。\n神代轮转从英雄主神之相开始。\n英雄形态在主神之相当令的回合也算当令。\n\n {#F800F8|联动效果} \n {#002366|持镰泰坦}：持镰泰坦攻击和防御+2。\n {#D7D7D7|战术}：当令的部队速度再+1。\n {#D7D7D7|领导术}：当令的部队这一回合士气+1。\n {#D7D7D7|神力回响}：回响触发的回合，主神之相的部队当令。",
+			"images": {
+				"small": "aom/atlantean/skills/aomSeasonCommand_expert_32",
+				"medium": "aom/atlantean/skills/aomSeasonCommand_expert_44",
+				"large": "aom/atlantean/skills/aomSeasonCommand_expert_82",
+				"scenarioBonus": "aom/atlantean/skills/aomSeasonCommand_expert_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_SEASON_CMD",
+					"val": 3,
+					"valueType": "BASE_NUMBER"
+				},
+				"attack": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 3,
+					"valueType": "ADDITIVE_VALUE"
+				}
+			}
+		}
+	},
+	"aomEcho": {
+		"name": "神力回响",
+		"gainChance": {
+			"might": 0,
+			"magic": 0
+		},
+		"tags": {
+			"wisdom": false,
+			"special": false,
+			"onlyOnWaterMap": false,
+			"spellSchool": true,
+			"bannedForUniversity": true,
+			"bannedForWitchHut": true,
+			"bannedForScholar": true
+		},
+		"specialty": [],
+		"base": {
+			"effects": {
+				"combocreature1": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "attack",
+					"val": 2,
+					"valueType": "ADDITIVE_VALUE",
+					"limiters": [
+						"allOf",
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomTitanGaia",
+							"includeUpgrades": false
+						}
+					]
+				},
+				"combocreature2": {
+					"type": "PRIMARY_SKILL",
+					"subtype": "defence",
+					"val": 2,
+					"valueType": "ADDITIVE_VALUE",
+					"limiters": [
+						"allOf",
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomTitanGaia",
+							"includeUpgrades": false
+						}
+					]
+				},
+				"mark": {
+					"type": "STACKS_SPEED",
+					"val": 0
+				},
+				"comboSorcery": {
+					"type": "AOM_ECHO",
+					"val": 10,
+					"valueType": "ADDITIVE_VALUE",
+					"limiters": [
+						"allOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SPELL_DAMAGE",
+							"bonusSourceType": "SECONDARY_SKILL",
+							"bonusSourceID": "sorcery"
+						}
+					]
+				},
+				"comboSeason": {
+					"type": "AOM_ECHO_SEASON",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"limiters": [
+						"allOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "AOM_SEASON_CMD",
+							"bonusSourceType": "SECONDARY_SKILL",
+							"bonusSourceID": "aomSeasonCommand"
+						}
+					]
+				},
+				"comboLuck": {
+					"type": "AOM_ECHO_LUCK",
+					"val": 1,
+					"valueType": "BASE_NUMBER",
+					"limiters": [
+						"allOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "LUCK",
+							"bonusSourceType": "SECONDARY_SKILL",
+							"bonusSourceID": "luck"
+						}
+					]
+				}
+			}
+		},
+		"basic": {
+			"description": "{初级神力回响}\n\n英雄施放大西洲神力法术后，有30%几率回响：\n同一神力对随机目标再生效一次，效果减半，不耗法力。\n\n {#F800F8|联动效果} \n {#002366|苔岩泰坦}：苔岩泰坦攻击和防御+2。\n {#D7D7D7|魔力术}：回响几率+10%。\n {#D7D7D7|幸运术}：回响触发的回合全军幸运+1。\n {#D7D7D7|三相御令}：回响触发的回合，主神之相的部队当令。",
+			"images": {
+				"small": "aom/atlantean/skills/aomEcho_basic_32",
+				"medium": "aom/atlantean/skills/aomEcho_basic_44",
+				"large": "aom/atlantean/skills/aomEcho_basic_82",
+				"scenarioBonus": "aom/atlantean/skills/aomEcho_basic_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_ECHO",
+					"val": 30,
+					"valueType": "ADDITIVE_VALUE"
+				}
+			}
+		},
+		"advanced": {
+			"description": "{中级神力回响}\n\n英雄施放大西洲神力法术后，有45%几率回响：\n同一神力对随机目标再生效一次，效果减半，不耗法力。\n\n {#F800F8|联动效果} \n {#002366|苔岩泰坦}：苔岩泰坦攻击和防御+2。\n {#D7D7D7|魔力术}：回响几率+10%。\n {#D7D7D7|幸运术}：回响触发的回合全军幸运+1。\n {#D7D7D7|三相御令}：回响触发的回合，主神之相的部队当令。",
+			"images": {
+				"small": "aom/atlantean/skills/aomEcho_advanced_32",
+				"medium": "aom/atlantean/skills/aomEcho_advanced_44",
+				"large": "aom/atlantean/skills/aomEcho_advanced_82",
+				"scenarioBonus": "aom/atlantean/skills/aomEcho_advanced_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_ECHO",
+					"val": 45,
+					"valueType": "ADDITIVE_VALUE"
+				}
+			}
+		},
+		"expert": {
+			"description": "{高级神力回响}\n\n英雄施放大西洲神力法术后，有60%几率回响：\n同一神力对随机目标再生效一次，效果减半，不耗法力。\n\n {#F800F8|联动效果} \n {#002366|苔岩泰坦}：苔岩泰坦攻击和防御+2。\n {#D7D7D7|魔力术}：回响几率+10%。\n {#D7D7D7|幸运术}：回响触发的回合全军幸运+1。\n {#D7D7D7|三相御令}：回响触发的回合，主神之相的部队当令。",
+			"images": {
+				"small": "aom/atlantean/skills/aomEcho_expert_32",
+				"medium": "aom/atlantean/skills/aomEcho_expert_44",
+				"large": "aom/atlantean/skills/aomEcho_expert_82",
+				"scenarioBonus": "aom/atlantean/skills/aomEcho_expert_82"
+			},
+			"effects": {
+				"main": {
+					"type": "AOM_ECHO",
+					"val": 60,
+					"valueType": "ADDITIVE_VALUE"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"core:hillFort" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coastalHillFort" : {
+						"animation" : "coastalLand/objects/hillfort/coastalLandhillFort",
+						"visitableFrom" : ["---", "-+-", "+++"],
+						"mask" : ["VVV", "VBB", "VBA"],
+						"allowedTerrains" : ["coastalLand"]
+					}
+				}
+			}
+		}
+	}
+}

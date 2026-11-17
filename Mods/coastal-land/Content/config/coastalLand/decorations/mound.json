@@ -1,0 +1,65 @@
+{
+	"core:mound" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coaLanMod00" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod00",
+						"mask" : [ "VBB","BBB","BBV" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod01" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod01",
+						"mask" : [ "BBV","BBB","VBB" ],
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod02" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod02",
+						"mask" : [ "BB","BB" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod03" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod03",
+						"mask" : [ "VB","BB" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod04" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod04",
+						"mask" : [ "BB" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod05" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod05",
+						"mask" : [ "B","B" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod06" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod06",
+						"mask" : [ "BB" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod07" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod07",
+						"mask" : [ "BV","BB" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod08" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod08",
+						"mask" : [ "VB","VB" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod09" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod09",
+						"mask" : [ "VVV","BBV","VBB" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					},
+					"coaLanMod10" : {
+						"animation" : "coastalLand/decorations/mounds/coaLanMod10",
+						"mask" : [ "VVV","VBB","BBV" ], 
+						"allowedTerrains" : [ "coastalLand" ]
+					}
+				}
+			}
+		}
+	}
+}

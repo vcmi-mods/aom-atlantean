@@ -1,0 +1,16 @@
+{
+	"core:sign" : {
+		"types" : {
+			"object" : {
+				"templates" : {
+					"coastalLand_sign" : {
+						"animation" : "coastalLand/objects/sign/coastalLandSign",
+						"allowedTerrains": [ "coastalLand" ],
+						"mask" : [ "A" ],
+						"visitableFrom" : [ "---", "+++", "+++" ]
+					}
+				}
+			}
+		}
+	}
+}

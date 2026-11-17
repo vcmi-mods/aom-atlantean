@@ -1,0 +1,37 @@
+{
+	"basepath": "aom/atl/artifacts/map/",
+	"images": [
+		{
+			"frame": 0,
+			"file": "aomCrownOfRheia_0.png"
+		},
+		{
+			"frame": 1,
+			"file": "aomCrownOfRheia_1.png"
+		},
+		{
+			"frame": 2,
+			"file": "aomCrownOfRheia_2.png"
+		},
+		{
+			"frame": 3,
+			"file": "aomCrownOfRheia_3.png"
+		},
+		{
+			"frame": 4,
+			"file": "aomCrownOfRheia_4.png"
+		},
+		{
+			"frame": 5,
+			"file": "aomCrownOfRheia_5.png"
+		},
+		{
+			"frame": 6,
+			"file": "aomCrownOfRheia_6.png"
+		},
+		{
+			"frame": 7,
+			"file": "aomCrownOfRheia_7.png"
+		}
+	]
+}

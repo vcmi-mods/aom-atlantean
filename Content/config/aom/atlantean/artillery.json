@@ -1,0 +1,83 @@
+{
+	"core:artillery": {
+		"base": {
+			"effects": {
+				"aomCheiroChance": {
+					"type": "BONUS_DAMAGE_CHANCE",
+					"subtype": "aomCheiroballista",
+					"valueType": "BASE_NUMBER"
+				},
+				"aomCheiroPower": {
+					"type": "BONUS_DAMAGE_PERCENTAGE",
+					"subtype": "aomCheiroballista",
+					"valueType": "BASE_NUMBER"
+				},
+				"aomCheiroAttacks": {
+					"type": "ADDITIONAL_ATTACK",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomCheiroballista"
+						}
+					],
+					"valueType": "BASE_NUMBER"
+				},
+				"aomCheiroManual": {
+					"type": "MANUAL_CONTROL",
+					"subtype": "aomCheiroballista",
+					"val": 100
+				},
+				"aomCheiroCap": {
+					"type": "DAMAGE_RECEIVED_CAP",
+					"limiters": [
+						{
+							"type": "CREATURE_TYPE_LIMITER",
+							"creature": "aomCheiroballista"
+						}
+					],
+					"valueType": "AT_MOST",
+					"val": 40
+				}
+			}
+		},
+		"basic": {
+			"effects": {
+				"aomCheiroChance": {
+					"val": 50
+				},
+				"aomCheiroPower": {
+					"val": 100
+				},
+				"aomCheiroAttacks": {
+					"val": 0
+				}
+			}
+		},
+		"advanced": {
+			"effects": {
+				"aomCheiroChance": {
+					"val": 75
+				},
+				"aomCheiroPower": {
+					"val": 100
+				},
+				"aomCheiroAttacks": {
+					"val": 1
+				}
+			}
+		},
+		"expert": {
+			"effects": {
+				"aomCheiroChance": {
+					"val": 100
+				},
+				"aomCheiroPower": {
+					"val": 150
+				},
+				"aomCheiroAttacks": {
+					"val": 1
+				}
+			}
+		}
+	}
+}

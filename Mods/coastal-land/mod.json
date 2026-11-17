@@ -1,0 +1,52 @@
+{
+	"language": "chinese",
+	"name": "海滩地形",
+	"description": "加入海滩地形（含地图装饰、矿场、战场背景和地形音乐），并把它设为大西洲的本地地形。\n\n海滩地形原作者 Zeryss（Coastal Lands）；yche2990 调淡了地表草丛、换用《神话时代：重述版》原声作为地形音乐、加了随机地图生态配置，并去掉了对 HotA 地图装饰的依赖。",
+	"english": {
+		"name": "Coastal Land Terrain",
+		"description": "Adds the Coastal Land terrain (with map decorations, mines, a battlefield and terrain music) and makes it the native terrain of Atlantis.\n\nCoastal Land terrain originally by Zeryss (Coastal Lands); adapted by yche2990: lighter ground tiles, terrain music from the Age of Mythology: Retold soundtrack, random map biomes, and no dependency on the HotA map decorations.",
+		"translations": [
+			"config/translations/english.json"
+		]
+	},
+	"author": "Zeryss (terrain), yche2990 (adaptation)",
+	"version": "1.0.0",
+	"modType": "Objects",
+	"compatibility": {
+		"min": "1.8.0"
+	},
+	"battlefields": [
+		"config/coastalLand/battlefields/battlefields.json"
+	],
+	"terrains": [
+		"config/coastalLand/terrain/terrains.json"
+	],
+	"obstacles": [
+		"config/coastalLand/obstacles/obstacles.json"
+	],
+	"objects": [
+		"config/coastalLand/decorations/desertHills.json",
+		"config/coastalLand/decorations/flowers.json",
+		"config/coastalLand/decorations/hole.json",
+		"config/coastalLand/decorations/logs.json",
+		"config/coastalLand/decorations/mound.json",
+		"config/coastalLand/decorations/mountains.json",
+		"config/coastalLand/decorations/palms.json",
+		"config/coastalLand/decorations/rocks.json",
+		"config/coastalLand/decorations/shrub.json",
+		"config/coastalLand/decorations/stones.json",
+		"config/coastalLand/decorations/stump.json",
+		"config/coastalLand/decorations/trees.json",
+		"config/coastalLand/objects/abandonedMine.json",
+		"config/coastalLand/objects/hillFort.json",
+		"config/coastalLand/objects/signs.json",
+		"config/coastalLand/special/obelisk.json",
+		"config/coastalLand/special/mines.json"
+	],
+	"biomes": [
+		"config/yc-biomes/coastalLandBiomes.json"
+	],
+	"factions": [
+		"config/aom/aomAtlanteanTerrain.json"
+	]
+}
