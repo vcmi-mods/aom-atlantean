@@ -19,6 +19,8 @@ Submods (both optional, enabled by default):
 
 Languages: English (base) and Chinese. Players using any other game language get English.
 
+Sprites are included at 1x only; VCMI scales them up for higher interface scaling.
+
 ## Requirements
 
 VCMI 1.8 or later (the mod uses Lua battle scripts). No other mods are required.

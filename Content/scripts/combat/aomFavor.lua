@@ -8,7 +8,10 @@
 -- Favor is counted per side: the script fires once per unit, so two hidden counters tell whether this side was already settled this round -
 --   AOM_FAVOR_SEEN  rounds this unit has seen; AOM_FAVOR_TICK  round this side has been settled up to.
 -- The first unit of a side that finds "own round count > settled round" settles; the rest skip.
--- Favor and the tiers already triggered are stored on every unit of the side with this script (visible on the specialty creatures), so no death loses them.
+-- Favor and the tiers already reached are stored on every unit of this side that has the script, so nothing is lost when a unit dies; the Favor value is visible on every non-war-machine stack
+-- (earlier it was only on the specialty creatures). War machines do not get this script (limiter in the specialty).
+-- Battle log: one line per round "Favor N, next tier at M" (stops once all three tiers are reached); when a blessing fires, the concrete effect of the patron or major god is written,
+-- and army-wide effects are not described as given to one stack.
 --
 -- Three blessing tiers (once each per battle, automatic, same for players and AI):
 --   3 points  Divinity: specialty creatures ignore 15% of the target's Defense for 2 rounds
@@ -21,12 +24,16 @@ Script.__index = Script
 local FAVOR, SEEN, TICK, TIER, DIVINE = "AOM_FAVOR", "AOM_FAVOR_SEEN", "AOM_FAVOR_TICK", "AOM_FAVOR_TIER", "AOM_DIVINITY"
 local FAVOR_FX = "aom/atlantean/fx/favor.json"      -- golden light pillar of a blessing (previously borrowed the Bless / Prayer animations)
 local THRESHOLD = { 2, 4, 7 }      -- 3/6/10 before the 2026-11-14 audit: the later two rarely came up in a normal battle
+local PATRON_LOG = { leto = 21, atlas = 22, krios = 23, hyperion = 24, helios = 25, oceanus = 26, kastor = 27 }
+local GOD_LOG = { kronos = 31, oranos = 32, gaia = 33 }
 
 -- Animations only in real battles: sending animation packs during AI evaluation (describeChanges false) makes the engine log "BattleAnimationPlayed is not allowed in battle evaluation" every time
+local function real(server) return not server.describeChanges or server:describeChanges() end
 local function showAnim(server, ...)
-	if server.describeChanges and not server:describeChanges() then return end
+	if not real(server) then return end
 	server:showBattleAnimation(...)
 end
+local function isSiege(u) return u:hasBonuses({ type = "SIEGE_WEAPON" }) end
 
 local function setValue(server, battle, unit, bonusType, value, hidden)
 	local old = unit:getBonuses({ type = bonusType })
@@ -185,11 +192,15 @@ function Script:grant(server, battle, units, tier, favor)
 		end
 	end
 
-	server:appendLog(battle, {
-		append         = { "core.bonus." .. FAVOR .. ".description." .. (900000 + tier) },
-		replaceStrings = { (favored[1] or units[1]):getCreature():getNameTextID((favored[1] or units[1]):getCount()) },
-		replaceNumbers = { favor }
-	})
+	if not real(server) then return end
+	local key = tier == 1 and 1 or (tier == 2 and PATRON_LOG[self.patron] or GOD_LOG[self.god])
+	if key == nil then return end
+	local who = favored[1]
+	local log = { append = { "core.bonus." .. FAVOR .. ".description." .. (900000 + key) }, replaceNumbers = { favor } }
+	if who and (tier == 1 or (tier == 2 and self.patron ~= "oceanus")) then
+		log.replaceStrings = { who:getCreature():getNameTextID(who:getCount()) }
+	end
+	server:appendLog(battle, log)
 end
 
 function Script:onBattleStart(server, battle, unit, other)
@@ -217,12 +228,15 @@ function Script:onRoundStart(server, battle, unit, other)
 
 	for _, u in ipairs(units) do
 		setValue(server, battle, u, TICK, seen, true)
-		setValue(server, battle, u, FAVOR, favor, not self:isFavored(u))
+		setValue(server, battle, u, FAVOR, favor, isSiege(u))
 		setValue(server, battle, u, TIER, reached, true)
 	end
 
 	for t = tier + 1, reached do
 		self:grant(server, battle, units, t, favor)
+	end
+	if reached < #THRESHOLD and real(server) then
+		server:appendLog(battle, { append = { "core.bonus." .. FAVOR .. ".description.900009" }, replaceNumbers = { favor, THRESHOLD[reached + 1] } })
 	end
 end
 

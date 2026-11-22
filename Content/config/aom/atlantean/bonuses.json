@@ -144,9 +144,18 @@
 		"creatureNature": false,
 		"description": "{Favor}\n${val} Favor now.\nBoons at 2, 4 and 7.",
 		"valueDescriptions": {
-			"900001": "%s gains Divinity: Favor %d.",
-			"900002": "%s receives the boon of its guardian god: Favor %d.",
-			"900003": "%s receives the power of the patron god: Favor %d."
+			"900001": "%s gains Divinity: ignores 15% of target Defense for 2 rounds (Favor %d).",
+			"900021": "Leto grants %s her boon: fully repaired (Favor %d).",
+			"900022": "Atlas grants %s Skybearer: damage taken -50% this round (Favor %d).",
+			"900023": "Krios grants %s Starpath: one more attack this round (Favor %d).",
+			"900024": "Hyperion grants %s Radiance: fully charged at once (Favor %d).",
+			"900025": "Helios grants %s Blazing Sun: damage +25% for 2 rounds (Favor %d).",
+			"900026": "Oceanus raises a Tidal Surge: all friendly living troops heal 20% (Favor %d).",
+			"900027": "Kastor grants %s Hero's Will: Attack and Defense +4 for 2 rounds (Favor %d).",
+			"900031": "Kronos's power: all enemy troops get +1 stack of Time Lag (Favor %d).",
+			"900032": "Oranos's Shockwave: all enemy troops get -2 Speed for 2 rounds (Favor %d).",
+			"900033": "Gaia's power: Lush Ground grows under all friendly troops (Favor %d).",
+			"900009": "Favor %d; next boon at %d."
 		},
 		"graphics": {
 			"icon": "aom/atlantean/abicons/favor.png"

@@ -9,11 +9,26 @@
 			"config/translations/chinese.json"
 		]
 	},
-	"version": "0.0.66",
+	"version": "0.0.69",
 	"author": "yche2990",
+	"contact": "https://github.com/yche2990/aom-atlantean",
 	"modType": "Expansion",
 	"compatibility": {
 		"min": "1.8.0"
+	},
+	"changelog": {
+		"0.0.66": [
+			"First public release"
+		],
+		"0.0.69": [
+			"Favor is shown on every stack except war machines, which no longer take part in Favor; the battle log shows the Favor gained each round and the next boon, and names the concrete effect of each boon",
+			"Upgraded dwellings of levels 5-7 cost more (level 5: 4000 gold and 5 ore; level 6: 6000 gold and 10 crystal; level 7: 25000 gold)",
+			"Return to Atlantis can be cast without a spell book",
+			"Skeleton Transformer: Atlantean creatures no longer turn into Bone Dragons, Liches or Black Knights",
+			"The adventure map shows the castle look of the town once the Citadel is built",
+			"New puzzle map; reframed large creature portraits; town screen ship position and animation frames fixed; hero battle images updated",
+			"Release no longer includes the 2x creature sprites (the game scales the 1x sprites), so the download is much smaller"
+		]
 	},
 	"creatures": [
 		"config/aom/atlantean/creatures.json"

@@ -140,6 +140,14 @@
 				"favor": {
 					"type": "COMBAT_EVENT_TRIGGER",
 					"subtype": "aomFavor",
+					"icon": "aom/atlantean/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						}
+					],
 					"val": 1,
 					"addInfo": {
 						"creatures": [
@@ -322,6 +330,14 @@
 				"favor": {
 					"type": "COMBAT_EVENT_TRIGGER",
 					"subtype": "aomFavor",
+					"icon": "aom/atlantean/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						}
+					],
 					"val": 1,
 					"addInfo": {
 						"creatures": [
@@ -417,6 +433,14 @@
 				"favor": {
 					"type": "COMBAT_EVENT_TRIGGER",
 					"subtype": "aomFavor",
+					"icon": "aom/atlantean/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						}
+					],
 					"val": 1,
 					"addInfo": {
 						"creatures": [
@@ -935,6 +959,14 @@
 				"favor": {
 					"type": "COMBAT_EVENT_TRIGGER",
 					"subtype": "aomFavor",
+					"icon": "aom/atlantean/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						}
+					],
 					"val": 1,
 					"addInfo": {
 						"creatures": [
@@ -1030,6 +1062,14 @@
 				"favor": {
 					"type": "COMBAT_EVENT_TRIGGER",
 					"subtype": "aomFavor",
+					"icon": "aom/atlantean/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						}
+					],
 					"val": 1,
 					"addInfo": {
 						"creatures": [
@@ -1653,6 +1693,14 @@
 				"favor": {
 					"type": "COMBAT_EVENT_TRIGGER",
 					"subtype": "aomFavor",
+					"icon": "aom/atlantean/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						}
+					],
 					"val": 1,
 					"addInfo": {
 						"creatures": [
@@ -1946,6 +1994,14 @@
 				"favor": {
 					"type": "COMBAT_EVENT_TRIGGER",
 					"subtype": "aomFavor",
+					"icon": "aom/atlantean/abicons/favor.png",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SIEGE_WEAPON"
+						}
+					],
 					"val": 1,
 					"addInfo": {
 						"creatures": [

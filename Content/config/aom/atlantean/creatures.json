@@ -269,11 +269,6 @@
 			"aspectMark": {
 				"type": "AOM_ASPECT",
 				"val": 2
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "skeletonWarrior",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -523,11 +518,6 @@
 			"aspectMark": {
 				"type": "AOM_ASPECT",
 				"val": 3
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "skeletonWarrior",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -764,11 +754,6 @@
 				"val": 1,
 				"propagator": "ARMY",
 				"stacking": "aomConcord"
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "skeletonWarrior",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -2452,11 +2437,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "lich",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -2677,11 +2657,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "lich",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -2924,11 +2899,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "lich",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -3145,11 +3115,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "blackKnight",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -3367,11 +3332,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "blackKnight",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -3582,11 +3542,6 @@
 			},
 			"shooter": {
 				"type": "SHOOTER"
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "blackKnight",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -3834,11 +3789,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "boneDragon",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -4049,11 +3999,6 @@
 			},
 			"shooter": {
 				"type": "SHOOTER"
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "boneDragon",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -4306,11 +4251,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "boneDragon",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -4517,11 +4457,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "boneDragon",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -4750,11 +4685,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "boneDragon",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -5003,11 +4933,6 @@
 			"mythic": {
 				"type": "AOM_MYTHIC",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "boneDragon",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -5849,11 +5774,6 @@
 			},
 			"shooter": {
 				"type": "SHOOTER"
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "boneDragon",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -6909,11 +6829,6 @@
 			},
 			"shooter": {
 				"type": "SHOOTER"
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "lich",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -8010,11 +7925,6 @@
 			},
 			"shooter": {
 				"type": "SHOOTER"
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "lich",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -8251,11 +8161,6 @@
 				"stacking": "aomOracleOmen",
 				"description": "{Ill Omen}\nAll enemies get -1 Luck.\nDoes not stack.",
 				"icon": "aom/atlantean/abicons/omen.png"
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "lich",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -8454,11 +8359,6 @@
 				"type": "HATES_TRAIT",
 				"subtype": "AOM_BIG",
 				"val": 30,
-				"hidden": true
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "skeletonWarrior",
 				"hidden": true
 			}
 		},
@@ -8661,11 +8561,6 @@
 				"val": 40,
 				"description": "{Heavy Armor}\nTakes 40% less\nranged damage.",
 				"icon": "aom/atlantean/abicons/heavyArmor.png"
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "skeletonWarrior",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -8851,11 +8746,6 @@
 			"twice": {
 				"type": "ADDITIONAL_ATTACK",
 				"val": 1
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "skeletonWarrior",
-				"hidden": true
 			}
 		},
 		"graphics": {
@@ -9786,11 +9676,6 @@
 				"description": "{Regeneration}\nRestores 40 Hit Points\nat the start of each round.",
 				"icon": "aom/atlantean/abicons/regen.png",
 				"stacking": "aomBehemothExpRegen"
-			},
-			"skeletonTarget": {
-				"type": "SKELETON_TRANSFORMER_TARGET",
-				"subtype": "boneDragon",
-				"hidden": true
 			}
 		},
 		"graphics": {
