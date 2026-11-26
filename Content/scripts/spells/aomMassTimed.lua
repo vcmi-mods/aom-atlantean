@@ -17,4 +17,10 @@ function Script:applicableGeneral(mechanics, problem) return true end
 function Script:applicableTarget(mechanics, problem, target) return true end
 function Script:adjustAffectedHexes(mechanics, hexes, spellTarget) return hexes end
 
+--- Cursor and status bar text while choosing a target: return nil to use the engine default ("Cast X on Y" / "Cast X", with damage and healing estimates added automatically).
+--- Every spell effect script must define this function.
+function Script:describeTargetStep(mechanics, partialTarget, hoveredHex)
+	return nil
+end
+
 return Script

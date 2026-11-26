@@ -97,8 +97,8 @@
 			"name": "Leto",
 			"biography": "A Titaness, guardian of the Automaton Warriors. Her creations repair one another after they fall.",
 			"specialty": {
-				"name": "Favor: Automatons",
-				"tooltip": "Favor: Automaton Warriors",
+				"name": "Favor: Automata",
+				"tooltip": "Favor: Automata",
 				"description": "Gains 1 Favor at the start of each round and receives a boon at each mark:\n{2 Favor}: Automaton Warriors gain Divinity for 2 rounds.\n{4 Favor}: Automaton Warriors are repaired to full Hit Points.\n{7 Favor}: All enemy troops get +1 stack of Time Lag.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
@@ -287,8 +287,8 @@
 			"name": "Atlas the Skybearer",
 			"biography": "The Titan condemned to hold up the sky. Beside him, nothing can be shaken.",
 			"specialty": {
-				"name": "Favor: Lava Titans",
-				"tooltip": "Favor: Lava Titans",
+				"name": "Favor: Titans",
+				"tooltip": "Favor: Titans",
 				"description": "Gains 1 Favor at the start of each round and receives a boon at each mark:\n{2 Favor}: Lava Titans gain Divinity for 2 rounds.\n{4 Favor}: Skybearer: Lava Titans take 50% less damage this round.\n{7 Favor}: All enemy troops get +1 stack of Time Lag.\n\n{Patron God: Kronos}: Time Aspect troops under the hero Timelock their target at 2 stacks of Time Lag.\n{Affinity}: god powers of Kronos are stronger in the hero's hands; see each spell."
 			}
 		},
@@ -740,8 +740,8 @@
 			"name": "Oranos",
 			"biography": "The primordial god of the sky. All things lie beneath his gaze.",
 			"specialty": {
-				"name": "Father of the Sky",
-				"tooltip": "Father of the Sky",
+				"name": "Sky Father",
+				"tooltip": "Sky Father",
 				"description": "In rounds of the Titan Cycle when Sky is ascendant, all Aspect troops under the hero get +1 Luck and +1 Speed. Haste is cast with increased effect, based on the hero's level.\n\n{Patron God: Oranos}: Sky Eye marked by Sky Aspect troops under the hero lasts 3 rounds.\n{Affinity}: god powers of Oranos are stronger in the hero's hands; see each spell."
 			}
 		},
