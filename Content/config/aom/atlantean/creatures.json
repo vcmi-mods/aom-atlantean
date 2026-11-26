@@ -1338,7 +1338,7 @@
 		"defense": 4,
 		"damage": {
 			"min": 3,
-			"max": 4
+			"max": 5
 		},
 		"doubleWide": false,
 		"fightValue": 322,
@@ -3964,8 +3964,8 @@
 		"attack": 18,
 		"defense": 18,
 		"damage": {
-			"min": 18,
-			"max": 24
+			"min": 22,
+			"max": 28
 		},
 		"doubleWide": true,
 		"fightValue": 2602,

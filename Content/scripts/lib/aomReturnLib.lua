@@ -55,7 +55,7 @@ function M.drop(server, battle, side, budget)
 	local count = math.max(1, math.floor(budget / creature:getMaxHealth()))
 	local key = creature:getJsonKey()
 	local same = battle:getUnitsIf(function(u)
-		return u:isAlive() and u:getSide() == side and u:isSummoned() and not u:isClone() and u:getCreature():getJsonKey() == key
+		return u:isAlive() and u:getSide() == side and u:copy():isSummoned() and not u:isClone() and u:getCreature():getJsonKey() == key
 	end)[1]
 	local where
 	if same ~= nil then

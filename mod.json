@@ -9,7 +9,7 @@
 			"config/translations/chinese.json"
 		]
 	},
-	"version": "0.0.69",
+	"version": "0.0.70",
 	"author": "yche2990",
 	"contact": "https://github.com/yche2990/aom-atlantean",
 	"modType": "Expansion",
@@ -28,6 +28,12 @@
 			"The adventure map shows the castle look of the town once the Citadel is built",
 			"New puzzle map; reframed large creature portraits; town screen ship position and animation frames fixed; hero battle images updated",
 			"Release no longer includes the 2x creature sprites (the game scales the 1x sprites), so the download is much smaller"
+		],
+		"0.0.70": [
+			"Volley Archer damage 3-4 -> 3-5; Unbound Centimanus damage 18-24 -> 22-28",
+			"Gaia Forest, Vortex, Hesperides and Tartarian Gate show their own cursor while choosing the target hex; summoning spells show how many creatures will appear",
+			"Return to Atlantis recognises summoned stacks reliably",
+			"Shorter hero specialty names: Favor: Automata, Favor: Titans, Sky Father"
 		]
 	},
 	"creatures": [

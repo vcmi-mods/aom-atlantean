@@ -19,10 +19,9 @@
 		"levels": {
 			"base": {
 				"range": "0",
-				"description": "Gaia's people make plants grow under their feet. Allied troops standing on it regain 10% health each round and get +2 Defense; enemies on it get -2 Speed.",
+				"description": "Gaia's people make plants spring up underfoot. Friendly troops standing on it regain 10% health each round and get Defense +2; enemies on it get Speed -2.",
 				"cost": 0,
-				"power": 0,
-				"aiValue": 0
+				"power": 0
 			}
 		}
 	},
@@ -46,10 +45,9 @@
 		"levels": {
 			"base": {
 				"range": "0",
-				"description": "Gaia's people make plants grow under their feet. Allied troops standing on it regain 10% health each round and get +2 Defense; enemies on it get -2 Speed.",
+				"description": "Gaia's people make plants spring up underfoot. Friendly troops standing on it regain 10% health each round and get Defense +2; enemies on it get Speed -2.",
 				"cost": 0,
-				"power": 0,
-				"aiValue": 0
+				"power": 0
 			}
 		}
 	},
